@@ -19,5 +19,4 @@ public abstract class Item : InteractiveObject
     {
         InventoryManager.instance.AddItem(this);
     }
-
 }

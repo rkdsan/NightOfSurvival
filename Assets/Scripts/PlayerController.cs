@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour
         isInteractiveObj = false;
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, 2.5f))
         {
-            if(hit.collider.tag == "InteractiveObject")
+            if(hit.collider.CompareTag("InteractiveObject"))
             {
                 OnObjectInformation();
             }
