@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AboutGhost\DangerArea.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\DefaltItem.cs" />
@@ -62,9 +63,10 @@
     <Compile Include="Assets\Scripts\Managers\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveObject.cs" />
     <Compile Include="Assets\Scripts\Interactive\HideBin.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
-    <Compile Include="Assets\Scripts\AboutGhost\DangerArea.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftManager.cs" />
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftRecipe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public InventoryManager inventory;
     public GameObject informationTextObejct;
     public GameObject hand;
     public Image runGaugeImage;
     public Text objectName;
     public Text explainText;
 
-    [HideInInspector] public bool canMove;
+    public LayerMask rayLayerMask;
+
+    [HideInInspector] public bool onTab;
 
     public float walkSpeed = 1;
     public float runSpeed = 2;
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         isInteractiveObj = false;
         isRunning = false;
-        canMove = true;
+        onTab = true;
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -59,22 +60,23 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        ManageMove();
-        ShootRaycast();
-        CheckUseObject();
+        if (onTab)
+        {
+            ManageMove();
+            ShootRaycast();
+            CheckUseObject();
+        }
+        controller.SimpleMove(Vector3.down * Time.deltaTime);
     }
 
 
     #region 이동관련
     private void ManageMove()
     {
-        if (canMove)
-        {
-            CheckRun();
-            MovePos();
-            RotateCamera();
-            RotatePlayer();
-        }
+        CheckRun();
+        MovePos();
+        RotateCamera();
+        RotatePlayer();
     }
 
     public void CheckRun()
@@ -119,7 +121,6 @@ public class PlayerController : MonoBehaviour
         moveDir = (moveHorizontal + moveVertical).normalized * applySpeed;
 
         controller.Move(moveDir * Time.deltaTime);
-        controller.SimpleMove(Vector3.down);
     }
 
     private void RotatePlayer()
@@ -146,7 +147,7 @@ public class PlayerController : MonoBehaviour
     public void ShootRaycast()
     {
         isInteractiveObj = false;
-        if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, 2.5f))
+        if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, 2.5f, rayLayerMask))
         {
             if(hit.collider.CompareTag("InteractiveObject"))
             {

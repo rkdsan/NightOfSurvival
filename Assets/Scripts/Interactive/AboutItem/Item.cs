@@ -7,16 +7,18 @@ public abstract class Item : InteractiveObject
 {
     public Sprite itemImage;
     public Vector3 originRotate;
+    public bool canCraft;
 
     private void Reset()
     {
         explainComment = "LB: ащ╠Б";
+        canCraft = false;
     }
 
     public abstract void UseItem();
 
     public override void Interact()
     {
-        InventoryManager.instance.AddItem(this);
+        GameManager.instance.inventoryManager.AddItem(this);
     }
 }

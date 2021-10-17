@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public PlayerController playerController;
+    public InventoryManager inventoryManager;
     public GameObject player;
     public GameObject hideWindow;
 
@@ -12,6 +14,11 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         Application.targetFrameRate = 144;
+    }
+
+    void Start()
+    {
+        Slot.inventoryManager = inventoryManager;
     }
 
 }

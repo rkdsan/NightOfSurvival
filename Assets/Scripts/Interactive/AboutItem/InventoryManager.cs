@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager instance;
     public PlayerController playerController;
-    public GameObject InventoryWindow;
+    public CraftManager craftManager;
+    public GameObject CraftWindow;
     public GameObject ItemFrame;
     public Slot[] slots;
 
+    [HideInInspector] public int itemCount;
+
     private GameObject nowItemObject;
+    private Slot clickedSlot;
+
     private int nowItemIndex;
-    private int itemCount;
 
     void Awake()
     {
-        instance = this;
         nowItemIndex = 0;
         itemCount = 0;
     }
@@ -62,6 +65,7 @@ public class InventoryManager : MonoBehaviour
         if (itemCount >= slots.Length)
         {
             Debug.Log("¿Œ∫•≈‰∏Æ∞° ≤À√°Ω¿¥œ¥Ÿ.");
+            return;
         }
 
         foreach (Slot slot in slots)
@@ -92,6 +96,20 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void SortInventory()
+    {
+        for(int i = 0; i < itemCount; i++)
+        {
+            if(slots[i].itemCount == 0 && itemCount < slots.Length)
+            {
+                slots[i].NewItem(slots[i + 1].item);
+            }
+        }
+
+        if (itemCount < slots.Length) slots[itemCount].ClearSlot();
+        SetNowItem();
+    }
+
     public void SetNowItem()
     {
         if (nowItemObject != null)
@@ -101,36 +119,18 @@ public class InventoryManager : MonoBehaviour
         nowItemObject = slots[nowItemIndex - 1].item.gameObject;
         nowItemObject.SetActive(true);
         ItemFrame.transform.position = slots[nowItemIndex - 1].transform.position;
-
     }
 
+    public void ClickItem()
+    {
+        clickedSlot = EventSystem.current.currentSelectedGameObject.GetComponent<Slot>();
 
-    //private void CheckTabKey()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Tab))
-    //    {
-    //        if (InventoryWindow.activeSelf)
-    //        {
-    //            OffInventory();
-    //        }
-    //        else
-    //        {
-    //            OnInventory();
-    //        }
-    //    }
-    //}
+        if (clickedSlot.itemCount > 0 && clickedSlot.item.canCraft)
+        {
+            craftManager.PutOnCrafter(clickedSlot);
+        }
 
-    //private void OffInventory()
-    //{
-    //    InventoryWindow.SetActive(false);
-    //    Cursor.lockState = CursorLockMode.Locked;
-    //    playerController.canMove = true;
-    //}
-    //private void OnInventory()
-    //{
-    //    InventoryWindow.SetActive(true);
-    //    Cursor.lockState = CursorLockMode.None;
-    //    playerController.canMove = false;
-    //}
+    }
+    
 
 }

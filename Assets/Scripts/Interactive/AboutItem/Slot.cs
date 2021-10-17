@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
+    public static InventoryManager inventoryManager;
     public Image image;
     public Text countText;
 
@@ -13,7 +14,7 @@ public class Slot : MonoBehaviour
 
     private void Awake()
     {
-        DeleteItem();
+        //DeleteItem();
     }
 
     public void NewItem(Item _item)
@@ -22,13 +23,13 @@ public class Slot : MonoBehaviour
         image.sprite = _item.itemImage;
         image.color = Color.white;
         itemCount = 1;
+        item.gameObject.layer = 1 << 1;
 
         Transform ItemObj = item.gameObject.transform;
-        ItemObj.transform.parent = InventoryManager.instance.playerController.hand.transform;
+        ItemObj.transform.parent = GameManager.instance.playerController.hand.transform;
         ItemObj.localPosition = Vector3.zero;
         ItemObj.localRotation = Quaternion.Euler(item.originRotate);
-        ItemObj.tag = "Item";
-
+        
         item.gameObject.SetActive(false);
 
         SetCountText();
@@ -45,19 +46,34 @@ public class Slot : MonoBehaviour
         if (itemCount == 0)
         {
             countText.text = "";
+            DeleteItem();
         }
         else
         {
             countText.text = "x" + itemCount;
         }
+        
+    }
+
+    public void DownCount()
+    {
+        itemCount--;
+        SetCountText();
     }
 
     public void DeleteItem()
     {
-        image.color = Color.clear;
-        image.sprite = null;
-        itemCount = 0;
-        SetCountText();
+        ClearSlot();
+        inventoryManager.itemCount--;
+        //inventoryManager.SortInventory();
     }
 
+    public void ClearSlot()
+    {
+        item = null;
+        image.color = Color.clear;
+        image.sprite = null;
+        itemCount = 0; 
+        countText.text = null;
+    }
 }
