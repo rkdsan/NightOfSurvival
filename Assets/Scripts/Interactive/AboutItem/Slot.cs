@@ -61,11 +61,18 @@ public class Slot : MonoBehaviour
         SetCountText();
     }
 
+    public IEnumerator DownCountQueue()
+    {
+        yield return null;
+        itemCount--;
+        SetCountText();
+    }
+
     public void DeleteItem()
     {
         ClearSlot();
-        inventoryManager.itemCount--;
-        //inventoryManager.SortInventory();
+        inventoryManager.itemKindCount--;
+        inventoryManager.SortInventory();
     }
 
     public void ClearSlot()

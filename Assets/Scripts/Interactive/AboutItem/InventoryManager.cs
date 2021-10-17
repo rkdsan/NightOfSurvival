@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemFrame;
     public Slot[] slots;
 
-    [HideInInspector] public int itemCount;
+    [HideInInspector] public int itemKindCount;
 
     private GameObject nowItemObject;
     private Slot clickedSlot;
@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
     void Awake()
     {
         nowItemIndex = 0;
-        itemCount = 0;
+        itemKindCount = 0;
     }
 
     void Update()
@@ -44,7 +44,7 @@ public class InventoryManager : MonoBehaviour
 
     private void UpItemIndex()
     {
-        if(nowItemIndex < itemCount)
+        if(nowItemIndex < itemKindCount)
         {
             nowItemIndex++;
             SetNowItem();
@@ -62,7 +62,7 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(Item _item)
     {
-        if (itemCount >= slots.Length)
+        if (itemKindCount >= slots.Length)
         {
             Debug.Log("ÀÎº¥Åä¸®°¡ ²ËÃ¡½À´Ï´Ù.");
             return;
@@ -73,7 +73,7 @@ public class InventoryManager : MonoBehaviour
             if (slot.itemCount == 0)
             {
                 slot.NewItem(_item);
-                itemCount++;
+                itemKindCount++;
                 CheckItemIndex();
                 break;
             }
@@ -88,7 +88,7 @@ public class InventoryManager : MonoBehaviour
 
     public void CheckItemIndex()
     {
-        if(nowItemIndex == 0 && itemCount > 0)
+        if(nowItemIndex == 0 && itemKindCount > 0)
         {
             nowItemIndex = 1;
             ItemFrame.SetActive(true);
@@ -98,23 +98,33 @@ public class InventoryManager : MonoBehaviour
 
     public void SortInventory()
     {
-        for(int i = 0; i < itemCount; i++)
+        for(int i = 0; i < itemKindCount; i++)
         {
-            if(slots[i].itemCount == 0 && itemCount < slots.Length)
+            if(slots[i].itemCount == 0)
             {
-                slots[i].NewItem(slots[i + 1].item);
+                for (int j = i; j < itemKindCount - 1; j++)
+                {
+                    slots[j].NewItem(slots[j + 1].item);
+                }
+                break;
             }
         }
 
-        if (itemCount < slots.Length) slots[itemCount].ClearSlot();
+        //for(int i = itemCount; i < slots.Length; i++)
+        //{
+        //    slots[i].ClearSlot();
+        //}
+
         SetNowItem();
     }
 
+
     public void SetNowItem()
     {
-        if (nowItemObject != null)
+        if (itemKindCount == 0)
         {
             nowItemObject.SetActive(false);
+            return;
         }
         nowItemObject = slots[nowItemIndex - 1].item.gameObject;
         nowItemObject.SetActive(true);

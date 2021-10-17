@@ -32,15 +32,34 @@ public class CraftManager : MonoBehaviour
 
     public void PutOnCrafter(Slot slot)
     {
-        for (int i = 0; i < craftImages.Length; i++)
+        if (craftImages[0].sprite == null)
         {
-            if (craftImages[i].sprite == null)
-            { 
-                craftSlots[i] = slot;
-                craftImages[i].sprite = slot.image.sprite;
-                break;
+            if (craftSlots[1] != null && slot.item.objectName.Equals(craftSlots[1].item.objectName))
+            {
+                return;
             }
+            craftSlots[0] = slot;
+            craftImages[0].sprite = slot.image.sprite;
         }
+        else if (craftImages[1].sprite == null)
+        {
+            if (craftSlots[0] != null && slot.item.objectName.Equals(craftSlots[0].item.objectName))
+            {
+                return;
+            }
+            craftSlots[1] = slot;
+            craftImages[1].sprite = slot.image.sprite;
+        }
+
+        //for (int i = 0; i < craftImages.Length; i++)
+        //{
+        //    if (craftImages[i].sprite == null)
+        //    { 
+        //        craftSlots[i] = slot;
+        //        craftImages[i].sprite = slot.image.sprite;
+        //        break;
+        //    }
+        //}
         TryCraft();
     }
 
@@ -74,15 +93,17 @@ public class CraftManager : MonoBehaviour
         for(int i = 0; i < craftImages.Length; i++)
         {
             craftImages[i].sprite = null;
-            craftSlots[i].item.canCraft = true;
-            craftSlots[i].DownCount();
-            //craftSlots[i] = null;
+            StartCoroutine(craftSlots[i].DownCountQueue());
+            //craftSlots[i].DownCount();
+            craftSlots[i] = null;
         }
 
-        inventoryManager.SortInventory();
-        inventoryManager.SortInventory();
+        //inventoryManager.SortInventory();
+        //inventoryManager.SortInventory();
         inventoryManager.AddItem(temp);
     }
+
+    
 
     public void ClickOnCraftItem()
     {
