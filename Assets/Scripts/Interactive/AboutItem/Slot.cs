@@ -70,9 +70,10 @@ public class Slot : MonoBehaviour
 
     public void DeleteItem()
     {
+        Destroy(item.gameObject);
         ClearSlot();
         inventoryManager.itemKindCount--;
-        inventoryManager.SortInventory();
+        //inventoryManager.SortInventory();
     }
 
     public void ClearSlot()

@@ -92,18 +92,17 @@ public class CraftManager : MonoBehaviour
 
         for(int i = 0; i < craftImages.Length; i++)
         {
+            craftSlots[i].DownCount();
             craftImages[i].sprite = null;
-            StartCoroutine(craftSlots[i].DownCountQueue());
-            //craftSlots[i].DownCount();
             craftSlots[i] = null;
         }
 
-        //inventoryManager.SortInventory();
-        //inventoryManager.SortInventory();
+        inventoryManager.SortInventory();
         inventoryManager.AddItem(temp);
+        inventoryManager.SetNowItem();
     }
 
-    
+
 
     public void ClickOnCraftItem()
     {
@@ -131,13 +130,22 @@ public class CraftManager : MonoBehaviour
     {
         craftWindow.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
-        playerController.onTab = true;
+        playerController.onTab = false;
+
+        for (int i = 0; i < craftImages.Length; i++)
+        {
+            craftImages[i].sprite = null;
+            craftSlots[i] = null;
+        }
     }
     private void OnCraftWindow()
     {
         craftWindow.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        playerController.onTab = false;
+        playerController.onTab = true;
     }
+
+
+
     #endregion
 }

@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         isInteractiveObj = false;
         isRunning = false;
-        onTab = true;
+        onTab = false;
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -60,9 +60,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (onTab)
+        ManageMove();
+        if (!onTab)
         {
-            ManageMove();
             ShootRaycast();
             CheckUseObject();
         }
@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
     {
         CheckRun();
         MovePos();
+        if (onTab) return;
         RotateCamera();
         RotatePlayer();
     }

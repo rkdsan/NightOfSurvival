@@ -98,34 +98,78 @@ public class InventoryManager : MonoBehaviour
 
     public void SortInventory()
     {
-        for(int i = 0; i < itemKindCount; i++)
+        //StartCoroutine(TTest());
+        int lastIndex;
+        while (true)
         {
-            if(slots[i].itemCount == 0)
+            lastIndex = GetLastIndex();
+            if (lastIndex + 1 <= itemKindCount) break;
+
+            for (int i = 0; i < lastIndex; i++)
             {
-                for (int j = i; j < itemKindCount - 1; j++)
+                if (slots[i].itemCount == 0)
                 {
-                    slots[j].NewItem(slots[j + 1].item);
+                    if (slots[i + 1].itemCount == 0) slots[i].ClearSlot();
+                    else
+                    {
+                        slots[i].NewItem(slots[i + 1].item);
+                        slots[i + 1].ClearSlot();
+                    }
                 }
-                break;
             }
+            slots[lastIndex].ClearSlot();
         }
 
-        //for(int i = itemCount; i < slots.Length; i++)
-        //{
-        //    slots[i].ClearSlot();
-        //}
-
-        SetNowItem();
     }
 
+    IEnumerator TTest()
+    {
+        int lastIndex;
+        while (true)
+        {
+            lastIndex = GetLastIndex();
+            if (lastIndex + 1 <= itemKindCount) break;
+            Debug.Log(lastIndex + ", " + itemKindCount);
+
+            for (int i = 0; i < lastIndex; i++)
+            {
+                if (slots[i].itemCount == 0)
+                {
+                    if (slots[i + 1].itemCount == 0) slots[i].ClearSlot();
+                    else slots[i].NewItem(slots[i + 1].item);
+                }
+            }
+            slots[lastIndex].ClearSlot();
+            yield return null;
+            Debug.Break();
+        }
+    }
+
+    private int GetLastIndex()
+    {
+        for (int i = slots.Length - 1; i >= 0; i--)
+        {
+            if (slots[i].itemCount > 0)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 
     public void SetNowItem()
     {
-        if (itemKindCount == 0)
+        if (nowItemObject != null)
         {
             nowItemObject.SetActive(false);
+        }
+        if (itemKindCount == 0)
+        {
+            ItemFrame.SetActive(false);
             return;
         }
+        if (nowItemIndex > itemKindCount) nowItemIndex = itemKindCount;
+
         nowItemObject = slots[nowItemIndex - 1].item.gameObject;
         nowItemObject.SetActive(true);
         ItemFrame.transform.position = slots[nowItemIndex - 1].transform.position;
