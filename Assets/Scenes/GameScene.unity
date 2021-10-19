@@ -2116,7 +2116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2671612809918191352, guid: 55d393ab70003d24aaefb95e1e3df825, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.13
+      value: -1.55
       objectReference: {fileID: 0}
     - target: {fileID: 2671612809918191352, guid: 55d393ab70003d24aaefb95e1e3df825, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2124,7 +2124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2671612809918191352, guid: 55d393ab70003d24aaefb95e1e3df825, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.61
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 2671612809918191352, guid: 55d393ab70003d24aaefb95e1e3df825, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5660,7 +5660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   craftWindow: {fileID: 598258834}
   craftItems:
-  - {fileID: 4410002613971536730, guid: 18cc4c638541b4046a20846e08bdf1f6, type: 3}
+  - {fileID: -2564762872500006770, guid: 18cc4c638541b4046a20846e08bdf1f6, type: 3}
   craftImages:
   - {fileID: 1655639310}
   - {fileID: 101440947}
@@ -8328,6 +8328,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 51
   onTab: 0
+  inventoryManager: {fileID: 0}
   walkSpeed: 4
   runSpeed: 8
   lookSensitivity: 2

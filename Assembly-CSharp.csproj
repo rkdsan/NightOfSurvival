@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\DefaltItem.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\Item.cs" />
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftRecipe.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\Slot.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CameraManager.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftRecipe.cs" />
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\ThrowTestItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

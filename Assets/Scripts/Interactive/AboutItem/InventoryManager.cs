@@ -22,6 +22,7 @@ public class InventoryManager : MonoBehaviour
     {
         nowItemIndex = 0;
         itemKindCount = 0;
+        playerController.inventoryManager = this;
     }
 
     void Update()
@@ -88,7 +89,7 @@ public class InventoryManager : MonoBehaviour
 
     public void CheckItemIndex()
     {
-        if(nowItemIndex == 0 && itemKindCount > 0)
+        if (nowItemIndex == 0 && itemKindCount > 0)
         {
             nowItemIndex = 1;
             ItemFrame.SetActive(true);
@@ -113,35 +114,12 @@ public class InventoryManager : MonoBehaviour
                     else
                     {
                         slots[i].NewItem(slots[i + 1].item);
+                        slots[i].itemCount = slots[i + 1].itemCount;
                         slots[i + 1].ClearSlot();
                     }
                 }
             }
             slots[lastIndex].ClearSlot();
-        }
-
-    }
-
-    IEnumerator TTest()
-    {
-        int lastIndex;
-        while (true)
-        {
-            lastIndex = GetLastIndex();
-            if (lastIndex + 1 <= itemKindCount) break;
-            Debug.Log(lastIndex + ", " + itemKindCount);
-
-            for (int i = 0; i < lastIndex; i++)
-            {
-                if (slots[i].itemCount == 0)
-                {
-                    if (slots[i + 1].itemCount == 0) slots[i].ClearSlot();
-                    else slots[i].NewItem(slots[i + 1].item);
-                }
-            }
-            slots[lastIndex].ClearSlot();
-            yield return null;
-            Debug.Break();
         }
     }
 
@@ -165,6 +143,7 @@ public class InventoryManager : MonoBehaviour
         }
         if (itemKindCount == 0)
         {
+            nowItemIndex = 0;
             ItemFrame.SetActive(false);
             return;
         }
@@ -186,5 +165,10 @@ public class InventoryManager : MonoBehaviour
 
     }
     
+    public void UseNowItem()
+    {
+        if (nowItemObject == null) return;
+        slots[nowItemIndex - 1].UseSlotItem();
+    }
 
 }

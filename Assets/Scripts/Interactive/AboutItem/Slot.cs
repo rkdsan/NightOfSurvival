@@ -84,4 +84,14 @@ public class Slot : MonoBehaviour
         itemCount = 0; 
         countText.text = null;
     }
+
+    public void UseSlotItem()
+    {
+        if (item == null) return;
+        item.UseItem();
+        DownCount();
+        inventoryManager.SortInventory();
+        inventoryManager.SetNowItem();
+    }
+
 }

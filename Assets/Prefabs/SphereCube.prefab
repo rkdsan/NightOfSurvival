@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4410002613971536729}
-  - component: {fileID: 4410002613971536730}
+  - component: {fileID: -2564762872500006770}
   m_Layer: 0
   m_Name: SphereCube
   m_TagString: Untagged
@@ -26,14 +26,14 @@ Transform:
   m_GameObject: {fileID: 4410002613971536728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.486, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4410002614431303369}
   - {fileID: 4410002615216041802}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4410002613971536730
+--- !u!114 &-2564762872500006770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,13 +42,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4410002613971536728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bef179e98f29144cb1747e1a4f238fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 74bc8fec91eb3944e82b4f4ee462c9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: "\uC815\uC721\uAD6C\uCCB4"
   explainComment: "LB: \uC90D\uAE30"
   itemImage: {fileID: 21300000, guid: f7fae4a6d94d67947a7e71f0ad105d49, type: 3}
   originRotate: {x: 0, y: 0, z: 0}
+  canCraft: 0
 --- !u!1 &4410002614431303368
 GameObject:
   m_ObjectHideFlags: 0

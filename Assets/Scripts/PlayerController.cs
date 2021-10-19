@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask rayLayerMask;
 
     [HideInInspector] public bool onTab;
+    [HideInInspector] public InventoryManager inventoryManager;
 
     public float walkSpeed = 1;
     public float runSpeed = 2;
@@ -64,7 +65,8 @@ public class PlayerController : MonoBehaviour
         if (!onTab)
         {
             ShootRaycast();
-            CheckUseObject();
+            CheckInteracteObject();
+            CheckUseItem();
         }
         controller.SimpleMove(Vector3.down * Time.deltaTime);
     }
@@ -176,9 +178,10 @@ public class PlayerController : MonoBehaviour
         informationTextObejct.SetActive(false);
     }
 
-    public void CheckUseObject()
+    public void CheckInteracteObject()
     {
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
+        //오브젝트 상호작용
+        if (Input.GetMouseButtonDown(0))
         {
             if (isInteractiveObj)
             {
@@ -186,6 +189,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void CheckUseItem()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            inventoryManager.UseNowItem();
+        }
+    }
+
     #endregion
 
 }
