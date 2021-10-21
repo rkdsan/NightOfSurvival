@@ -10,8 +10,11 @@ public class ThrowTestItem : Item
         forward.y += 0.3f;
         GameObject copy = Instantiate(gameObject, transform.position + forward, transform.rotation);
 
-        Rigidbody rigid = copy.AddComponent<Rigidbody>();
+        //Rigidbody rigid = copy.AddComponent<Rigidbody>();
+        Rigidbody rigid = copy.GetComponent<Rigidbody>();
+        rigid.isKinematic = false;
         rigid.velocity = forward * 8f;
+
     }
 
 }

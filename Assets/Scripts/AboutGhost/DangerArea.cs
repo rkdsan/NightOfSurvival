@@ -19,7 +19,7 @@ public class DangerArea : MonoBehaviour
     {
         if (isPlayer(other))
         {
-            ghost.CancelTargetPlayer();
+            ghost.SetPatrol();
         }
     }
 

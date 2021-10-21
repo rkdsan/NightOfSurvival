@@ -14,10 +14,13 @@ public class CraftManager : MonoBehaviour
 
     private PlayerController playerController;
     private InventoryManager inventoryManager;
+
     private string craftResult;
+    private bool isCrafting;
 
     void Start()
     {
+        isCrafting = false;
         craftSlots = new Slot[craftImages.Length];
         playerController = GameManager.instance.playerController;
         inventoryManager = GameManager.instance.inventoryManager;
@@ -32,6 +35,8 @@ public class CraftManager : MonoBehaviour
 
     public void PutOnCrafter(Slot slot)
     {
+        if (isCrafting) return;
+
         if (craftImages[0].sprite == null)
         {
             if (craftSlots[1] != null && slot.item.objectName.Equals(craftSlots[1].item.objectName))
@@ -51,20 +56,14 @@ public class CraftManager : MonoBehaviour
             craftImages[1].sprite = slot.image.sprite;
         }
 
-        //for (int i = 0; i < craftImages.Length; i++)
-        //{
-        //    if (craftImages[i].sprite == null)
-        //    { 
-        //        craftSlots[i] = slot;
-        //        craftImages[i].sprite = slot.image.sprite;
-        //        break;
-        //    }
-        //}
+        
         TryCraft();
     }
 
+
     public void TryCraft()
     {
+        //조합 칸이 다 채워졌는지 검사
         for (int i = 0; i < craftImages.Length; i++)
         {
             if (craftImages[i].sprite == null)
@@ -73,6 +72,7 @@ public class CraftManager : MonoBehaviour
             }
         }
 
+        //조합 목록에 아이템이 있는지 검사
         craftResult = CraftRecipe.GetCraftResult(craftSlots[0].item.objectName, craftSlots[1].item.objectName);
 
         if (craftResult.Equals("")) return;
@@ -80,17 +80,18 @@ public class CraftManager : MonoBehaviour
         {
             if (craftResult.Equals(item.objectName))
             {
-                MakeItem(item);
+                StartCoroutine(MakeItem(item));
             }
         }
     }
     
-
-    private void MakeItem(Item item)
+    IEnumerator MakeItem(Item item)
     {
+        isCrafting = true;
+        yield return new WaitForSeconds(1);
         Item temp = Instantiate(item.gameObject).GetComponent<Item>();
 
-        for(int i = 0; i < craftImages.Length; i++)
+        for (int i = 0; i < craftImages.Length; i++)
         {
             craftSlots[i].DownCount();
             craftImages[i].sprite = null;
@@ -100,14 +101,40 @@ public class CraftManager : MonoBehaviour
         inventoryManager.SortInventory();
         inventoryManager.AddItem(temp);
         inventoryManager.SetNowItem();
+        isCrafting = false;
     }
+
+    //private void MakeItem(Item item)
+    //{
+    //    Item temp = Instantiate(item.gameObject).GetComponent<Item>();
+
+    //    for(int i = 0; i < craftImages.Length; i++)
+    //    {
+    //        craftSlots[i].DownCount();
+    //        craftImages[i].sprite = null;
+    //        craftSlots[i] = null;
+    //    }
+
+    //    inventoryManager.SortInventory();
+    //    inventoryManager.AddItem(temp);
+    //    inventoryManager.SetNowItem();
+    //}
 
 
 
     public void ClickOnCraftItem()
     {
+        if (isCrafting) return;
         GameObject clickedObject = EventSystem.current.currentSelectedGameObject;
         clickedObject.GetComponent<Image>().sprite = null;
+
+        for (int i = 0; i < craftImages.Length; i++)
+        {
+            if (craftImages[i].sprite == null)
+            {
+                craftSlots[i] = null;
+            }
+        }
     }
 
     #region 창 껐다켜는 기능
@@ -128,6 +155,8 @@ public class CraftManager : MonoBehaviour
 
     private void OffCraftWindow()
     {
+        if (isCrafting) return;
+
         craftWindow.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         playerController.onTab = false;

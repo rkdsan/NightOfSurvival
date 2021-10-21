@@ -89,6 +89,10 @@ public class Slot : MonoBehaviour
     {
         if (item == null) return;
         item.UseItem();
+
+        //소모성 아이템은 개수차감
+        if (!item.isConsumable) return;
+
         DownCount();
         inventoryManager.SortInventory();
         inventoryManager.SetNowItem();

@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\ThrowTestItem.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\DangerArea.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
@@ -67,7 +68,7 @@
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Interactive\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\ThrowTestItem.cs" />
+    <Compile Include="Assets\Scripts\Interactive\AboutItem\Items\SongPyeon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

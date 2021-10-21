@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4410002613971536729}
   - component: {fileID: -2564762872500006770}
+  - component: {fileID: -4631963393278291410}
   m_Layer: 0
   m_Name: SphereCube
   m_TagString: Untagged
@@ -50,6 +51,23 @@ MonoBehaviour:
   itemImage: {fileID: 21300000, guid: f7fae4a6d94d67947a7e71f0ad105d49, type: 3}
   originRotate: {x: 0, y: 0, z: 0}
   canCraft: 0
+  isConsumable: 1
+--- !u!54 &-4631963393278291410
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410002613971536728}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4410002614431303368
 GameObject:
   m_ObjectHideFlags: 0

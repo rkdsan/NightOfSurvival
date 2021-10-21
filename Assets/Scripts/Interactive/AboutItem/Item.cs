@@ -8,11 +8,13 @@ public abstract class Item : InteractiveObject
     public Sprite itemImage;
     public Vector3 originRotate;
     public bool canCraft;
+    public bool isConsumable;
 
     private void Reset()
     {
         explainComment = "LB: ащ╠Б";
         canCraft = false;
+        isConsumable = false;
     }
 
     public abstract void UseItem();
