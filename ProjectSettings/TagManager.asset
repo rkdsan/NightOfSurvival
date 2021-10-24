@@ -6,14 +6,15 @@ TagManager:
   tags:
   - InteractiveObject
   - Item
+  - Ghost
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Item
   - 
   - 
   - 

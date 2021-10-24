@@ -7,98 +7,104 @@ using UnityEngine.AI;
 
 public class Ghost : MonoBehaviour
 {
-    public enum GhostTarget
-    {
-        Patrol,
-        Player,
-        SongPyeon
-    }
-
-
+    public static Transform playerTransform;
     public Transform[] patrolPoints;
     public Text stateText;
 
-    public GhostTarget nowTarget;
+    [HideInInspector] public Transform nowTarget;
 
     private NavMeshAgent navMesh;
     private int patrolCount;
-    
+    private bool isPatrol;
+    private bool isInsidePlayer;
+    private bool isInsideSongPyeon;
 
     void Awake()
     {
         navMesh = GetComponent<NavMeshAgent>();
         patrolCount = 0;
-        StartCoroutine(MoveToPatrolPoint());
+        isPatrol = true;
+        isInsidePlayer = false;
+        StartCoroutine(MoveStart());
     }
 
-    void OnCollisionEnter(Collision col)
+    private void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (CheckIsSongPyeon(other))
         {
-            stateText.text = "공격중";
-        }    
-    }
-
-    public void SetTargetSongPyeon(Transform songPyeon)
-    {
-        nowTarget = GhostTarget.SongPyeon;
-        StartCoroutine(FollowingSongPyeon(songPyeon));
-
-    }
-
-    public void SetTargetPlayer(Transform player)
-    {
-        if (nowTarget == GhostTarget.SongPyeon) return;
-
-        nowTarget = GhostTarget.Player;
-        StartCoroutine(FollowingPlayer(player));
-    }
-
-    public void SetPatrol()
-    {
-        if (nowTarget == GhostTarget.SongPyeon) return;
-
-        nowTarget = GhostTarget.Patrol;
-        StartCoroutine(MoveToPatrolPoint());
-    }
-
-    IEnumerator FollowingSongPyeon(Transform songPyeon)
-    {
-        stateText.text = "송편 발견";
-        while (nowTarget == GhostTarget.SongPyeon)
+            isInsideSongPyeon = true;
+            isPatrol = false;
+            nowTarget = other.transform;
+        }
+        if (CheckIsPlayer(other))
         {
-            navMesh.SetDestination(songPyeon.position);
-            yield return new WaitForSeconds(0.2f);
+            isInsidePlayer = true;
+            isPatrol = false;
+            if (!isInsideSongPyeon) nowTarget = other.transform;
+        }
+        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (CheckIsPlayer(other))
+        {
+            isInsidePlayer = false;
+            if (!isInsideSongPyeon) isPatrol = true;
+        }
+        if (CheckIsSongPyeon(other))
+        {
+            isInsideSongPyeon = false;
+            if (isInsidePlayer) nowTarget = playerTransform;
+            else isPatrol = true;
         }
     }
 
-    IEnumerator FollowingPlayer(Transform player)
+    private bool CheckIsPlayer(Collider other)
     {
-        yield return new WaitForSeconds(0.2f);
-        stateText.text = "적 발견";
-        while (nowTarget == GhostTarget.Player)
+        if (other.CompareTag("Player"))
         {
-            navMesh.SetDestination(player.position);
-            yield return new WaitForSeconds(0.2f);
+            return true;
         }
+        return false;
     }
 
-    IEnumerator MoveToPatrolPoint()
+    private bool CheckIsSongPyeon(Collider other)
     {
-        stateText.text = "순찰중";
-        yield return new WaitForSeconds(0.5f);
-        navMesh.SetDestination(patrolPoints[patrolCount].position);
-        while (nowTarget == GhostTarget.Patrol)
+        SongPyeon temp = other.GetComponent<SongPyeon>();
+        if (temp != null)
         {
-            if (navMesh.velocity == Vector3.zero)
+            return true;
+        }
+        return false;
+    }
+
+    IEnumerator MoveStart()
+    {
+        while (true)
+        {
+            if (nowTarget == null) isPatrol = true; // 오류 방지
+
+            if (isPatrol)
             {
-                navMesh.SetDestination(patrolPoints[patrolCount++].position);
-                if (patrolCount >= patrolPoints.Length)
-                {
-                    patrolCount = 0;
-                }
+                yield return new WaitForSeconds(1f);
+                Patrol();
             }
-            yield return new WaitForSeconds(2f);
+            else
+            {
+                navMesh.SetDestination(nowTarget.position);
+            }
+
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
+
+    private void Patrol()
+    {
+        if (navMesh.velocity == Vector3.zero)
+        {
+            navMesh.SetDestination(patrolPoints[patrolCount++].position);
+            if (patrolCount >= patrolPoints.Length) patrolCount = 0;
         }
     }
 

@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Slot.inventoryManager = inventoryManager;
+        Ghost.playerTransform = player.transform;
     }
 
 }

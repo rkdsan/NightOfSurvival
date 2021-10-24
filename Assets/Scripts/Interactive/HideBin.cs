@@ -18,7 +18,7 @@ public class HideBin : InteractiveObject
         isHide = false;
         if (playerController == null)
         {
-            playerController = GameManager.instance.player.GetComponent<PlayerController>();
+            playerController = GameManager.instance.playerController;
         }
     }
 
