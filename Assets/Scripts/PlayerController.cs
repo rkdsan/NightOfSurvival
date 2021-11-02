@@ -59,6 +59,11 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    void FixedUpdate()
+    {
+        //controller.SimpleMove(Vector3.down);
+    }
+
     void Update()
     {
         ManageMove();
