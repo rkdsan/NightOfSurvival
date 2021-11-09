@@ -17,7 +17,7 @@ public abstract class Item : InteractiveObject
         isConsumable = false;
     }
 
-    public abstract void UseItem();
+    public abstract bool UseItem();
 
     public override void Interact()
     {

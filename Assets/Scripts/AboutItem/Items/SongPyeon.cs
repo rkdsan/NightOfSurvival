@@ -8,7 +8,7 @@ public class SongPyeon : Item
     public BoxCollider boxCollider;
 
 
-    public override void UseItem()
+    public override bool UseItem()
     {
         Vector3 forward = transform.parent.forward;
         forward.y += 0.3f;
@@ -16,11 +16,12 @@ public class SongPyeon : Item
 
         SongPyeon copySP = copy.GetComponent<SongPyeon>();
 
-        copySP.boxCollider.enabled = true;
         copySP.rigid.isKinematic = false;
         copySP.rigid.velocity = forward * 8f;
 
         copySP.DestoryThis();
+
+        return true;
     }
 
     public void DestoryThis()
@@ -31,9 +32,6 @@ public class SongPyeon : Item
     IEnumerator DestoryTimer()
     {
         yield return new WaitForSeconds(5);
-        boxCollider.isTrigger = false;
-        yield return null;
-        yield return null;
         Destroy(gameObject);
     }
 

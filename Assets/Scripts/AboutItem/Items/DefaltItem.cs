@@ -14,8 +14,9 @@ public class DefaltItem : Item
     }
 
 
-    public override void UseItem()
+    public override bool UseItem()
     {
 
+        return false;
     }
 }

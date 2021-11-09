@@ -30,6 +30,7 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (CheckIsSongPyeon(other))
         {
             isInsideSongPyeon = true;
@@ -54,9 +55,8 @@ public class Ghost : MonoBehaviour
         }
         if (CheckIsSongPyeon(other))
         {
-            isInsideSongPyeon = false;
-            if (isInsidePlayer) nowTarget = playerTransform;
-            else isPatrol = true;
+            Debug.Log("송편 나감");
+            ExitSongPyeon();   
         }
     }
 
@@ -79,11 +79,21 @@ public class Ghost : MonoBehaviour
         return false;
     }
 
+    private void ExitSongPyeon()
+    {
+        isInsideSongPyeon = false;
+        if (isInsidePlayer) nowTarget = playerTransform;
+        else isPatrol = true;
+    }
+
     IEnumerator MoveStart()
     {
         while (true)
         {
-            if (nowTarget == null) isPatrol = true; // 오류 방지
+            if (nowTarget == null)
+            {
+                ExitSongPyeon();
+            }
 
             if (isPatrol)
             {
@@ -99,6 +109,7 @@ public class Ghost : MonoBehaviour
         }
     }
 
+
     private void Patrol()
     {
         if (navMesh.velocity == Vector3.zero)
@@ -106,6 +117,18 @@ public class Ghost : MonoBehaviour
             navMesh.SetDestination(patrolPoints[patrolCount++].position);
             if (patrolCount >= patrolPoints.Length) patrolCount = 0;
         }
+    }
+
+    public void Stuned(int stunTime)
+    {
+        StartCoroutine(StunTimer(stunTime));
+    }
+
+    IEnumerator StunTimer(int stunTime)
+    {
+        navMesh.speed = 0;
+        yield return new WaitForSeconds(stunTime);
+        navMesh.speed = 3;
     }
 
 }

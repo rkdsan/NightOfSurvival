@@ -24,6 +24,7 @@ public class Slot : MonoBehaviour
         image.color = Color.white;
         itemCount = 1;
         item.gameObject.layer = 1 << 1;
+        
 
         Transform ItemObj = item.gameObject.transform;
         ItemObj.transform.parent = GameManager.instance.playerController.hand.transform;
@@ -88,10 +89,14 @@ public class Slot : MonoBehaviour
     public void UseSlotItem()
     {
         if (item == null) return;
-        item.UseItem();
+
+        //UseItem은 bool을 반환
+        //true면 아이템을 소모 또는 아이템이 잘 사용됐다는 의미
+        //false면 소모성이 아닌 아이템 또는 사정거리 등의 이유로 미사용
+        if(!item.UseItem()) return;
 
         //소모성 아이템은 개수차감
-        if (!item.isConsumable) return;
+        //if (!item.isConsumable) return;
 
         DownCount();
         inventoryManager.SortInventory();

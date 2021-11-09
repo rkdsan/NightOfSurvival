@@ -155,6 +155,7 @@ public class PlayerController : MonoBehaviour
     public void ShootRaycast()
     {
         isInteractiveObj = false;
+
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, 2.5f, rayLayerMask))
         {
             if(hit.collider.CompareTag("InteractiveObject"))
@@ -162,6 +163,7 @@ public class PlayerController : MonoBehaviour
                 OnObjectInformation();
             }
         }
+        
 
         if (!isInteractiveObj)
         {

@@ -53,22 +53,26 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AboutItem\Items\ThrowTestItem.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\SongPyeon.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\DefaltItem.cs" />
+    <Compile Include="Assets\Scripts\Interactive\Lamp.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Item.cs" />
+    <Compile Include="Assets\Scripts\AboutGhost\GhostArea.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftRecipe.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Slot.cs" />
     <Compile Include="Assets\Scripts\AboutItem\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveObject.cs" />
+    <Compile Include="Assets\Scripts\AboutItem\Items\InstalledTalisman.cs" />
+    <Compile Include="Assets\Scripts\AboutItem\Items\Talisman.cs" />
     <Compile Include="Assets\Scripts\Interactive\HideBin.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\Interactive\Lamp.cs" />
+    <Compile Include="Assets\Scripts\Managers\TitleSceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

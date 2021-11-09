@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4410002613971536729}
   - component: {fileID: -4631963393278291410}
-  - component: {fileID: 6872285807915414745}
   - component: {fileID: 7126272037682081648}
+  - component: {fileID: 3437601542448610804}
   m_Layer: 6
   m_Name: SphereCube
   m_TagString: Item
@@ -51,19 +51,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6872285807915414745
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4410002613971536728}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 12, y: 12, z: 12}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7126272037682081648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +70,20 @@ MonoBehaviour:
   canCraft: 0
   isConsumable: 1
   rigid: {fileID: -4631963393278291410}
-  boxCollider: {fileID: 6872285807915414745}
+  boxCollider: {fileID: 0}
+--- !u!135 &3437601542448610804
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410002613971536728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4410002614431303368
 GameObject:
   m_ObjectHideFlags: 0
