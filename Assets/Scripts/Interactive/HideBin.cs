@@ -14,7 +14,6 @@ public class HideBin : InteractiveObject
 
     private void Start()
     {
-        hideCamera.enabled = false;
         isHide = false;
         if (playerController == null)
         {

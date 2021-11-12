@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Managers\TitleSceneManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\SongPyeon.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
@@ -72,7 +73,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\TitleSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\WaitTimeManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

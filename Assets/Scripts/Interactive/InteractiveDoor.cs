@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class InteractiveDoor : InteractiveObject
 {
+    public GameObject targetDoor;
+
+    private static string openString = "LB: 열기";
+    private static string closeString = "LB: 닫기";
+
     private bool isOpen;
     private bool isMoving;
-    private Vector3 movePos;
+    private Vector3 originPos;
+    private Vector3 targetPos;
 
-    public string openString;
-    public string closeString;
+    private void Reset()
+    {
+        objectName = "문";
+        explainComment = "LB: 열기";
+    }
 
     void Start()
     {
         isOpen = false;
         isMoving = false;
-        movePos = new Vector3(2, 0, 0);
+        originPos = transform.position;
+        targetPos.x = 0;
+        SetTargetPos();
     }
 
 
@@ -31,7 +42,7 @@ public class InteractiveDoor : InteractiveObject
     {
         isMoving = true;
         int repeat = 10;
-        Vector3 addPos = movePos / repeat;
+        Vector3 addPos = targetPos / repeat;
         if (isOpen) addPos *= -1;
 
         while (repeat-- > 0)
@@ -44,10 +55,27 @@ public class InteractiveDoor : InteractiveObject
         SetComment();
     }
 
-    public void SetComment()
+    private void SetComment()
     {
         if (isOpen) explainComment = closeString;
         else explainComment = openString;
     }
 
+    private void SetTargetPos()
+    {
+        if (targetDoor == null) return;
+        Vector3 gap = targetDoor.transform.position - transform.position;
+
+        gap.y = 0;
+        if(Mathf.Abs(gap.x) > Mathf.Abs(gap.z))
+        {
+            gap.z = 0;
+        }
+        else
+        {
+            gap.x = 0;
+        }
+
+        targetPos = gap;
+    }
 }

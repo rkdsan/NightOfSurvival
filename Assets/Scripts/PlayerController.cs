@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     public float lookSensitivity = 1;
     public float camRotateLimit = 80;
 
+    private const float SPEED_STANDARD = 0.02f;
+
     private CharacterController controller;
     private InteractiveObject hitInteractiveObj;
     private Camera playerCam;
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDir;
     private Vector3 camApplyRotate;
     private Vector3 playerRotate;
+    private Color runGaugeColor;
 
     private float runGaugeAddValue;
     private float runGaugeUsevalue;
@@ -51,17 +54,18 @@ public class PlayerController : MonoBehaviour
         runGaugeUsevalue = runGaugeAddValue * 5;
         applySpeed = walkSpeed;
 
+        runGaugeColor = Color.white;
+
         isInteractiveObj = false;
         isRunning = false;
         onTab = false;
-
         Cursor.lockState = CursorLockMode.Locked;
     }
 
 
     void FixedUpdate()
     {
-        //controller.SimpleMove(Vector3.down);
+        MovePos();
     }
 
     void Update()
@@ -81,7 +85,7 @@ public class PlayerController : MonoBehaviour
     private void ManageMove()
     {
         CheckRun();
-        MovePos();
+        //MovePos();
         if (onTab) return;
         RotateCamera();
         RotatePlayer();
@@ -99,9 +103,11 @@ public class PlayerController : MonoBehaviour
     {
         isRunning = true;
         applySpeed = runSpeed;
+        runGaugeColor.a = 1;
         while (Input.GetKey(KeyCode.LeftShift) && runGaugeImage.fillAmount > runGaugeUsevalue)
         {
             runGaugeImage.fillAmount -= runGaugeUsevalue;
+            UpdateRunGaugeColor();
             yield return new WaitForFixedUpdate();
 
         } 
@@ -117,8 +123,23 @@ public class PlayerController : MonoBehaviour
         while (!isRunning && runGaugeImage.fillAmount < 1)
         {
             runGaugeImage.fillAmount += runGaugeAddValue;
+            UpdateRunGaugeColor();
             yield return new WaitForFixedUpdate();
         }
+
+        if (!isRunning)
+        {
+            runGaugeColor.a = 0.5f;
+            UpdateRunGaugeColor();
+        }
+    }
+
+    private void UpdateRunGaugeColor()
+    {
+        float amout = runGaugeImage.fillAmount;
+        runGaugeColor.g = runGaugeColor.b = amout;
+
+        runGaugeImage.color = runGaugeColor;
     }
 
     private void MovePos()
@@ -126,9 +147,9 @@ public class PlayerController : MonoBehaviour
         moveHorizontal = transform.right * Input.GetAxisRaw("Horizontal");
         moveVertical = transform.forward * Input.GetAxisRaw("Vertical");
 
-        moveDir = (moveHorizontal + moveVertical).normalized * applySpeed;
+        moveDir = (moveHorizontal + moveVertical).normalized * applySpeed * SPEED_STANDARD;
 
-        controller.Move(moveDir * Time.deltaTime);
+        controller.Move(moveDir );
     }
 
     private void RotatePlayer()
