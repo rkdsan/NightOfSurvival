@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.17f1</UnityVersion>
@@ -63,17 +63,18 @@
     <Compile Include="Assets\Scripts\AboutGhost\GhostArea.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftRecipe.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Slot.cs" />
+    <Compile Include="Assets\Scripts\AboutItem\ItemNamePrinter.cs" />
     <Compile Include="Assets\Scripts\AboutItem\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Managers\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Interactive\InteractiveObject.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\InstalledTalisman.cs" />
+    <Compile Include="Assets\Scripts\Managers\WaitTimeManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\Talisman.cs" />
     <Compile Include="Assets\Scripts\Interactive\HideBin.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\WaitTimeManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

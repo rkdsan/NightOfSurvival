@@ -7,13 +7,14 @@ public class InventoryManager : MonoBehaviour
 {
     public PlayerController playerController;
     public CraftManager craftManager;
+    public ItemNamePrinter nowItemName;
     public GameObject CraftWindow;
     public GameObject ItemFrame;
     public Slot[] slots;
 
     [HideInInspector] public int itemKindCount;
 
-    private GameObject nowItemObject;
+    [HideInInspector] public GameObject nowItemObject;
     private Slot clickedSlot;
 
     private int nowItemIndex;
@@ -137,11 +138,11 @@ public class InventoryManager : MonoBehaviour
 
     public void SetNowItem()
     {
-        if (nowItemObject != null)
+        if (nowItemObject != null) 
         {
             nowItemObject.SetActive(false);
         }
-        if (itemKindCount == 0)
+        if (itemKindCount == 0) //아이템이 없으면
         {
             nowItemIndex = 0;
             ItemFrame.SetActive(false);
@@ -152,6 +153,9 @@ public class InventoryManager : MonoBehaviour
         nowItemObject = slots[nowItemIndex - 1].item.gameObject;
         nowItemObject.SetActive(true);
         ItemFrame.transform.position = slots[nowItemIndex - 1].transform.position;
+
+        //현재 아이템 표시
+        nowItemName.OnText(slots[nowItemIndex - 1].item.objectName);
     }
 
     public void ClickItem()
@@ -170,5 +174,6 @@ public class InventoryManager : MonoBehaviour
         if (nowItemObject == null) return;
         slots[nowItemIndex - 1].UseSlotItem();
     }
+
 
 }

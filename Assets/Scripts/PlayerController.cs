@@ -110,8 +110,7 @@ public class PlayerController : MonoBehaviour
             UpdateRunGaugeColor();
             yield return new WaitForFixedUpdate();
 
-        } 
-
+        }
         isRunning = false;
         applySpeed = walkSpeed;
         StartCoroutine(UpRunGauge());
@@ -223,6 +222,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             inventoryManager.UseNowItem();
+            
         }
     }
 
