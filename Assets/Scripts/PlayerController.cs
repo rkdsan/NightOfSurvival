@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private float runGaugeUsevalue;
     private bool isInteractiveObj;
     private bool isRunning;
-
+    
     void Awake()
     {
         playerCam = Camera.main;
@@ -62,11 +62,11 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-
     void FixedUpdate()
     {
         MovePos();
     }
+
 
     void Update()
     {
@@ -227,5 +227,6 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
+
 
 }

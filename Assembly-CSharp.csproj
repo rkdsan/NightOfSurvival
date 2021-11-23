@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\AboutItem\Item.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\GhostArea.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftRecipe.cs" />
+    <Compile Include="Assets\Scripts\AboutGhost\DarkZone.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Slot.cs" />
     <Compile Include="Assets\Scripts\AboutItem\ItemNamePrinter.cs" />
     <Compile Include="Assets\Scripts\AboutItem\InventoryManager.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
+    <Compile Include="Assets\Scripts\FrameCounter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />
