@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\Interactive\InteractiveDoor.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\DefaltItem.cs" />
+    <Compile Include="Assets\Scripts\FrameCounter.cs" />
     <Compile Include="Assets\Scripts\Interactive\Lamp.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Item.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\GhostArea.cs" />
@@ -76,7 +77,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\FrameCounter.cs" />
+    <Compile Include="Assets\Scripts\InstallingBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />

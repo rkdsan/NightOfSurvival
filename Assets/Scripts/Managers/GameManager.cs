@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public PlayerController playerController;
     public InventoryManager inventoryManager;
+    public InstallingBar installingBar;
     public GameObject player;
     public GameObject hideWindow;
 
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Talisman.installingBar = installingBar;
         Slot.inventoryManager = inventoryManager;
         Ghost.playerTransform = player.transform;
     }
