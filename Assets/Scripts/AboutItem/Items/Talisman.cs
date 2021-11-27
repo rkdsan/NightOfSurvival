@@ -18,13 +18,19 @@ public class Talisman : Item
         return false;
     }
 
-    IEnumerator StartInstall()
+    private void OnDisable()
+    {
+        installingBar.ResetTime();
+        installingBar.gameObject.SetActive(false);
+    }
+
+    private IEnumerator StartInstall()
     {
         installingBar.gameObject.SetActive(true);
         while (Input.GetMouseButton(1) && ShootRaycast())
         {
-            installingBar.UpTime();
-            if(installingBar.fillImage.fillAmount >= 1)
+            //fillAmout°¡ ¹ÝÈ¯µÊ
+            if(installingBar.UpTime() >= 1)
             {
                 Install();
                 break;
@@ -41,6 +47,8 @@ public class Talisman : Item
         {
             rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
             Instantiate(installedTalisman, hit.point, rot);
+
+            GameManager.instance.inventoryManager.nowSlot.ConsumeItem();
         };
     }
 

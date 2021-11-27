@@ -15,6 +15,8 @@ public class InventoryManager : MonoBehaviour
     [HideInInspector] public int itemKindCount;
 
     [HideInInspector] public GameObject nowItemObject;
+    [HideInInspector] public Slot nowSlot;
+
     private Slot clickedSlot;
 
     private int nowItemIndex;
@@ -150,12 +152,13 @@ public class InventoryManager : MonoBehaviour
         }
         if (nowItemIndex > itemKindCount) nowItemIndex = itemKindCount;
 
-        nowItemObject = slots[nowItemIndex - 1].item.gameObject;
+        nowSlot = slots[nowItemIndex - 1];
+        nowItemObject = nowSlot.item.gameObject;
         nowItemObject.SetActive(true);
-        ItemFrame.transform.position = slots[nowItemIndex - 1].transform.position;
+        ItemFrame.transform.position = nowSlot.transform.position;
 
         //현재 아이템 표시
-        nowItemName.OnText(slots[nowItemIndex - 1].item.objectName);
+        nowItemName.OnText(nowSlot.item.objectName);
     }
 
     public void ClickItem()
@@ -172,7 +175,7 @@ public class InventoryManager : MonoBehaviour
     public void UseNowItem()
     {
         if (nowItemObject == null) return;
-        slots[nowItemIndex - 1].UseSlotItem();
+        nowSlot.UseSlotItem();
     }
 
 

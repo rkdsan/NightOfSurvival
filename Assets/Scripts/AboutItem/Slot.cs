@@ -95,12 +95,13 @@ public class Slot : MonoBehaviour
         //false면 소모성이 아닌 아이템 또는 사정거리 등의 이유로 미사용
         if(!item.UseItem()) return;
 
-        //소모성 아이템은 개수차감
-        //if (!item.isConsumable) return;
+        ConsumeItem();
+    }
 
+    public void ConsumeItem()
+    {
         DownCount();
         inventoryManager.SortInventory();
         inventoryManager.SetNowItem();
     }
-
 }

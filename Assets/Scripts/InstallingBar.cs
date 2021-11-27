@@ -9,14 +9,16 @@ public class InstallingBar : MonoBehaviour
     public Image fillImage;
 
     private float timeSum;
+    private float fillAmout;
 
     public InstallingBar() { timeSum = 0; }
 
 
-    public void UpTime()
+    public float UpTime()
     {
         timeSum += Time.deltaTime;
         SetImageFill();
+        return fillAmout;
     }
 
     public void ResetTime()
@@ -27,6 +29,7 @@ public class InstallingBar : MonoBehaviour
 
     private void SetImageFill()
     {
-        fillImage.fillAmount = timeSum / MAX_TIME;
+        fillAmout = timeSum / MAX_TIME;
+        fillImage.fillAmount = fillAmout;
     }
 }
