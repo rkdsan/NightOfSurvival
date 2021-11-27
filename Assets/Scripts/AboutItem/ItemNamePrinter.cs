@@ -25,7 +25,7 @@ public class ItemNamePrinter : MonoBehaviour
 
     IEnumerator OffTimer(int ck)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return WaitTimeManager.WaitForSeconds(1.5f);
 
         if (ck == checker)//템이 안바꼈으면
         { 

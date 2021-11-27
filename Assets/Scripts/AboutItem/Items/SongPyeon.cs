@@ -31,7 +31,7 @@ public class SongPyeon : Item
 
     IEnumerator DestoryTimer()
     {
-        yield return new WaitForSeconds(5);
+        yield return WaitTimeManager.WaitForSeconds(5);
         Destroy(gameObject);
     }
 

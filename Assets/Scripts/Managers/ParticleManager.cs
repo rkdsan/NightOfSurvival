@@ -21,7 +21,7 @@ public class ParticleManager : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            yield return new WaitForSeconds(1);
+            yield return WaitTimeManager.WaitForSeconds(1);
         }
     }
 }

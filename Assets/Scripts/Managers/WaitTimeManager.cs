@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class WaitTimeManager
 {
-    public static WaitForFixedUpdate waitFixed = new WaitForFixedUpdate();
+    public static WaitForFixedUpdate waitFixedUpdate = new WaitForFixedUpdate();
+
+    public static Dictionary<float, WaitForSeconds> waitSeconds 
+        = new Dictionary<float, WaitForSeconds>();
+
+    public static WaitForSeconds WaitForSeconds(float second)
+    {
+        WaitForSeconds wait;
+        if(!waitSeconds.TryGetValue(second, out wait))
+        {
+            waitSeconds.Add(second, wait = new WaitForSeconds(second));
+        }
+
+        return wait;
+    }
+
 
 }

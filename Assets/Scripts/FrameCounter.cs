@@ -17,7 +17,7 @@ public class FrameCounter : MonoBehaviour
         while (true)
         {
             frameText.text = "" + (int)(1 / Time.deltaTime);
-            yield return new WaitForSeconds(1);
+            yield return WaitTimeManager.WaitForSeconds(1);
         }
     }
 

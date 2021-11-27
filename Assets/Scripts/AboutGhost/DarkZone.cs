@@ -46,7 +46,7 @@ public class DarkZone : MonoBehaviour
 
             inDarkTime++;
             Debug.Log("어둠속에 있던 시간: " + inDarkTime);
-            yield return new WaitForSeconds(1);
+            yield return WaitTimeManager.WaitForSeconds(1);
         }
     }
 

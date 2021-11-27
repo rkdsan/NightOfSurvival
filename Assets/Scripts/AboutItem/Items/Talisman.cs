@@ -20,8 +20,11 @@ public class Talisman : Item
 
     private void OnDisable()
     {
-        installingBar.ResetTime();
-        installingBar.gameObject.SetActive(false);
+        if (installingBar != null)
+        {
+            installingBar.ResetTime();
+            installingBar.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator StartInstall()

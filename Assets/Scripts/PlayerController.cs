@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
         {
             runGaugeImage.fillAmount -= runGaugeUsevalue;
             UpdateRunGaugeColor();
-            yield return new WaitForFixedUpdate();
+            yield return WaitTimeManager.waitFixedUpdate;
 
         }
         isRunning = false;
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         {
             runGaugeImage.fillAmount += runGaugeAddValue;
             UpdateRunGaugeColor();
-            yield return new WaitForFixedUpdate();
+            yield return WaitTimeManager.waitFixedUpdate;
         }
 
         if (!isRunning)

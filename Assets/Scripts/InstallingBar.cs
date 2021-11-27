@@ -31,5 +31,6 @@ public class InstallingBar : MonoBehaviour
     {
         fillAmout = timeSum / MAX_TIME;
         fillImage.fillAmount = fillAmout;
+        
     }
 }

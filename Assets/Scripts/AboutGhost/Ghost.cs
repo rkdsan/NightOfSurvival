@@ -105,7 +105,7 @@ public class Ghost : MonoBehaviour
                 navMesh.SetDestination(nowTarget.position);
             }
 
-            yield return new WaitForSeconds(0.2f);
+            yield return WaitTimeManager.WaitForSeconds(0.2f);
         }
     }
 
@@ -127,7 +127,7 @@ public class Ghost : MonoBehaviour
     IEnumerator StunTimer(int stunTime)
     {
         navMesh.speed = 0;
-        yield return new WaitForSeconds(stunTime);
+        yield return WaitTimeManager.WaitForSeconds(stunTime);
         navMesh.speed = 3;
     }
 
