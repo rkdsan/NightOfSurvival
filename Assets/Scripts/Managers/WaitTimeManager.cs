@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaitTimeManager
 {
-    public static WaitForFixedUpdate waitFixedUpdate = new WaitForFixedUpdate();
+    private static WaitForFixedUpdate waitFixedUpdate = new WaitForFixedUpdate();
 
     public static Dictionary<float, WaitForSeconds> waitSeconds 
         = new Dictionary<float, WaitForSeconds>();
@@ -18,6 +18,11 @@ public class WaitTimeManager
         }
 
         return wait;
+    }
+
+    public static WaitForFixedUpdate WaitForFixedUpdate()
+    {
+        return waitFixedUpdate;
     }
 
 

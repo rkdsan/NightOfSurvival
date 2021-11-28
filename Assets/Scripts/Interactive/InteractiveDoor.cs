@@ -48,7 +48,7 @@ public class InteractiveDoor : InteractiveObject
         while (repeat-- > 0)
         {
             transform.position += addPos;
-            yield return WaitTimeManager.waitFixedUpdate;
+            yield return WaitTimeManager.WaitForFixedUpdate();
         }
         isMoving = false;
         isOpen = !isOpen;
