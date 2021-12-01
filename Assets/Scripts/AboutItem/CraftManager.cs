@@ -98,7 +98,7 @@ public class CraftManager : MonoBehaviour
             craftSlots[i] = null;
         }
 
-        inventoryManager.SortInventory();
+        inventoryManager.TrySortInventory();
         inventoryManager.AddItem(temp);
         inventoryManager.SetNowItem();
         isCrafting = false;

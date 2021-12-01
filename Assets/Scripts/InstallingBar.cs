@@ -11,7 +11,10 @@ public class InstallingBar : MonoBehaviour
     private float timeSum;
     private float fillAmout;
 
-    public InstallingBar() { timeSum = 0; }
+    public InstallingBar() 
+    { 
+        timeSum = 0; 
+    }
 
 
     public float UpTime()

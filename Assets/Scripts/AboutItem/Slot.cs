@@ -12,10 +12,6 @@ public class Slot : MonoBehaviour
     [HideInInspector] public Item item;
     [HideInInspector] public int itemCount;
 
-    private void Awake()
-    {
-        //DeleteItem();
-    }
 
     public void NewItem(Item _item)
     {
@@ -101,7 +97,7 @@ public class Slot : MonoBehaviour
     public void ConsumeItem()
     {
         DownCount();
-        inventoryManager.SortInventory();
+        inventoryManager.TrySortInventory();
         inventoryManager.SetNowItem();
     }
 }

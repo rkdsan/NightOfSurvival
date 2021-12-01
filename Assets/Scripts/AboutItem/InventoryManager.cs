@@ -74,6 +74,7 @@ public class InventoryManager : MonoBehaviour
 
         foreach (Slot slot in slots)
         {
+            //∫Ûƒ≠¿Ã∏È
             if (slot.itemCount == 0)
             {
                 slot.NewItem(_item);
@@ -81,6 +82,7 @@ public class InventoryManager : MonoBehaviour
                 CheckItemIndex();
                 break;
             }
+            //∞∞¿∫≈€¿Ã∏È
             else if (slot.item.objectName.Equals(_item.objectName))
             {
                 slot.UpCount();
@@ -100,7 +102,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void SortInventory()
+    public void TrySortInventory()
     {
         //StartCoroutine(TTest());
         int lastIndex;
@@ -111,18 +113,26 @@ public class InventoryManager : MonoBehaviour
 
             for (int i = 0; i < lastIndex; i++)
             {
-                if (slots[i].itemCount == 0)
-                {
-                    if (slots[i + 1].itemCount == 0) slots[i].ClearSlot();
-                    else
-                    {
-                        slots[i].NewItem(slots[i + 1].item);
-                        slots[i].itemCount = slots[i + 1].itemCount;
-                        slots[i + 1].ClearSlot();
-                    }
-                }
+                PullItem(i);
             }
+
             slots[lastIndex].ClearSlot();
+        }
+    }
+
+    private void PullItem(int i)
+    {
+        //∫ÛΩΩ∑‘¿Ã∏È ¥Á∞‹ø»
+        if (slots[i].itemCount == 0)
+        {
+            if (slots[i + 1].itemCount == 0)
+                slots[i].ClearSlot();
+            else
+            {
+                slots[i].NewItem(slots[i + 1].item);
+                slots[i].itemCount = slots[i + 1].itemCount;
+                slots[i + 1].ClearSlot();
+            }
         }
     }
 
