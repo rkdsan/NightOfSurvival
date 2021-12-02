@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,11 +12,12 @@ public class GameManager : MonoBehaviour
     public InstallingBar installingBar;
     public GameObject player;
     public GameObject hideWindow;
+    public Image fadeImage;
 
     void Awake()
     {
         instance = this;
-        Application.targetFrameRate = 144;
+        Application.targetFrameRate = 60;
     }
 
     void Start()
@@ -22,6 +25,9 @@ public class GameManager : MonoBehaviour
         Talisman.installingBar = installingBar;
         Slot.inventoryManager = inventoryManager;
         Ghost.playerTransform = player.transform;
+
+        fadeImage.DOColor(Color.clear, 1)
+            .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
 }
