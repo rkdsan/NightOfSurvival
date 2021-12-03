@@ -14,6 +14,9 @@ public class TitleSceneManager : MonoBehaviour
     public void Awake()
     {
         Application.targetFrameRate = 60;
+        Cursor.lockState = CursorLockMode.Confined;
+        fadeImage.DOColor(Color.clear, 1)
+            .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
     public void Button_NewGame()

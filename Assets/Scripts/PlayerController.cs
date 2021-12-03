@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 2;
     private float applySpeed;
 
-    public float lookSensitivity = 1;
+    public float lookSensitivity;
     public float camRotateLimit = 80;
 
     private const float SPEED_STANDARD = 0.02f;
@@ -59,7 +59,6 @@ public class PlayerController : MonoBehaviour
         isInteractiveObj = false;
         isRunning = false;
         onTab = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void FixedUpdate()

@@ -15,7 +15,7 @@ public class WindowManager : MonoBehaviour
         return Input.GetKeyDown(KeyCode.Escape);
     }
 
-    private void CloseTab()
+    protected void CloseTab()
     {
         if (CheckKey_ESC())
         {

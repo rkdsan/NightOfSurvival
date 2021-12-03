@@ -170,7 +170,7 @@ public class CraftManager : MonoBehaviour
     private void OnCraftWindow()
     {
         craftWindow.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
         playerController.onTab = true;
     }
 
