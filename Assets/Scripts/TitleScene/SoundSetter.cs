@@ -11,14 +11,14 @@ public class SoundSetter : MonoBehaviour
 
     private int value = 0;
 
-    private void Update()
+    private void Awake()
     {
-        SetValue();
+        SetValue();   
     }
 
-    private void SetValue()
+    public void SetValue()
     {
-        value = (int)(100 * slider.value);
+        value = (int)slider.value;
         valueText.text = "" + value;
     }
 

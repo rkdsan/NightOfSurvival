@@ -74,11 +74,12 @@
     <Compile Include="Assets\Scripts\Managers\WaitTimeManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\Items\Talisman.cs" />
     <Compile Include="Assets\Scripts\Interactive\HideBin.cs" />
+    <Compile Include="Assets\Scripts\TitleScene\SoundSetter.cs" />
     <Compile Include="Assets\Scripts\AboutGhost\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\AboutItem\CraftManager.cs" />
-    <Compile Include="Assets\Scripts\TitleScene\SoundSetter.cs" />
+    <Compile Include="Assets\Scripts\TitleScene\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Demo01.shader" />
@@ -306,11 +307,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\unity\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\unity\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
