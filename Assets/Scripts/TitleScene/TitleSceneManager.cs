@@ -15,14 +15,14 @@ public class TitleSceneManager : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Cursor.lockState = CursorLockMode.Confined;
-        fadeImage.DOColor(Color.clear, 1)
+        fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
             .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
     public void Button_NewGame()
     {
         fadeImage.raycastTarget = true;
-        fadeImage.DOColor(Color.black, 1)
+        fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
             .OnComplete(()=> SceneManager.LoadScene("GameScene"));
     }
 

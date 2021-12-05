@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         Ghost.playerTransform = player.transform;
         Cursor.lockState = CursorLockMode.Locked;
 
-        fadeImage.DOColor(Color.clear, 1)
+        fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
             .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     public void LoadTitleScene()
     {
         fadeImage.raycastTarget = true;
-        fadeImage.DOColor(Color.black, 1)
+        fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
             .OnComplete(() => SceneManager.LoadScene("TitleScene"));
     }
 
