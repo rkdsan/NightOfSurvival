@@ -1,5 +1,6 @@
 -a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\Assembly-CSharp-firstpass.dll"
 -a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\Assembly-CSharp.dll"
+-a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
 -a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\UnityEngine.TestRunner.dll"
 -a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\Unity.Timeline.dll"
 -a="D:\unity\project\NightOfSurvival\Library\PlayerScriptAssemblies\Unity.TextMeshPro.dll"
