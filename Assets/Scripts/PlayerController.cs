@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
         camApplyRotate = playerCam.transform.localEulerAngles;
         playerRotate = transform.localEulerAngles;
-        runGaugeAddValue = 0.005f;
+        runGaugeAddValue = 0.002f;
         runGaugeUsevalue = runGaugeAddValue * 5;
         applySpeed = walkSpeed;
 
@@ -144,29 +144,10 @@ public class PlayerController : MonoBehaviour
         moveHorizontal = transform.right * Input.GetAxisRaw("Horizontal");
         moveVertical = transform.forward * Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            applySpeed = runSpeed;
-        }
-        else
-        {
-            applySpeed = walkSpeed;
-        }
-
         moveDir = (moveHorizontal + moveVertical).normalized * applySpeed * SPEED_STANDARD;
 
         controller.Move(moveDir);
     }
-
-    //private void MovePos()
-    //{
-    //    moveHorizontal = transform.right * Input.GetAxisRaw("Horizontal");
-    //    moveVertical = transform.forward * Input.GetAxisRaw("Vertical");
-
-    //    moveDir = (moveHorizontal + moveVertical).normalized * applySpeed * SPEED_STANDARD;
-
-    //    controller.Move(moveDir );
-    //}
 
     private void RotatePlayer()
     {

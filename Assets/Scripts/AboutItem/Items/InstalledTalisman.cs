@@ -17,7 +17,7 @@ public class InstalledTalisman : MonoBehaviour
         if (other.CompareTag("Ghost"))
         {
             Debug.Log("고스트태그");
-            other.GetComponent<Ghost>().Stuned(3);
+            other.GetComponent<Ghost>().Stuned(2);
             Instantiate(explosionParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

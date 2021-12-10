@@ -41,7 +41,7 @@ public class InteractiveDoor : InteractiveObject
     IEnumerator MoveDoor()
     {
         isMoving = true;
-        int repeat = 10;
+        int repeat = 20;
         Vector3 addPos = targetPos / repeat;
         if (isOpen) addPos *= -1;
 
