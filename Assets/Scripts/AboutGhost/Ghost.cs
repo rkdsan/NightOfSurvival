@@ -14,6 +14,7 @@ public class Ghost : MonoBehaviour
     [HideInInspector] public Transform nowTarget;
 
     private NavMeshAgent navMesh;
+    private RaycastHit hit;
     private int patrolCount;
     private bool isPatrol;
     private bool isInsidePlayer;
@@ -105,7 +106,7 @@ public class Ghost : MonoBehaviour
                 navMesh.SetDestination(nowTarget.position);
                 if (CheckKillPlayer())
                 {
-                    GameManager.instance.GameOver();
+                    GameManager.instance.GameOver(0);
                 }
             }
 
@@ -137,7 +138,10 @@ public class Ghost : MonoBehaviour
 
     private bool CheckKillPlayer()
     {
-        Debug.DrawRay(transform.position, transform.forward);
-        return Physics.Raycast(transform.position, transform.forward, 1, playerMask);
+        bool temp;
+        temp = Physics.Raycast
+            (transform.position + Vector3.up, transform.forward, out hit, 1, playerMask);
+
+        return temp && !hit.collider.isTrigger;
     }
 }

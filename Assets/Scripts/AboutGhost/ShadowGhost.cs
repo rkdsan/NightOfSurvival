@@ -35,7 +35,7 @@ public class ShadowGhost : MonoBehaviour
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
 
-        GameManager.instance.GameOver();
+        GameManager.instance.GameOver(1);
     }
 
     private float GetDistance()

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject hideWindow;
     public GameObject pauseWindow;
     public Image fadeImage;
-    public Image gameOverImage;
+    public Image[] gameOverImages;
 
     void Awake()
     {
@@ -55,10 +55,10 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void GameOver()
+    public void GameOver(int index)
     {
-        gameOverImage.gameObject.SetActive(true);
-        gameOverImage.DOColor(Color.grey, 2);
+        gameOverImages[index].gameObject.SetActive(true);
+        gameOverImages[index].DOColor(Color.grey, 2);
         StartCoroutine(GameOverDelay());
     }
 
