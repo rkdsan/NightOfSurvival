@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask rayLayerMask;
 
     [HideInInspector] public bool onTab;
+    [HideInInspector] public bool canMove;
     [HideInInspector] public InventoryManager inventoryManager;
 
     public float walkSpeed = 1;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
     private bool isInteractiveObj;
     private bool isRunning;
     
+    
     void Awake()
     {
         playerCam = Camera.main;
@@ -58,12 +60,15 @@ public class PlayerController : MonoBehaviour
 
         isInteractiveObj = false;
         isRunning = false;
+        canMove = true;
         onTab = false;
+
+        ShadowGhost.playerController = this;
     }
 
     void FixedUpdate()
     {
-        MovePos();
+        if(canMove) MovePos();
     }
 
 

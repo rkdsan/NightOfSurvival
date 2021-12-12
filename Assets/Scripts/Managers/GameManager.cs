@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject hideWindow;
     public GameObject pauseWindow;
     public Image fadeImage;
+    public Image gameOverImage;
 
     void Awake()
     {
@@ -53,4 +54,17 @@ public class GameManager : MonoBehaviour
             .OnComplete(() => SceneManager.LoadScene("TitleScene"));
     }
 
+
+    public void GameOver()
+    {
+        gameOverImage.gameObject.SetActive(true);
+        gameOverImage.DOColor(Color.grey, 2);
+        StartCoroutine(GameOverDelay());
+    }
+
+    private IEnumerator GameOverDelay()
+    {
+        yield return WaitTimeManager.WaitForSeconds(5);
+        LoadTitleScene();
+    }
 }

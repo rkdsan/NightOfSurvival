@@ -31,5 +31,10 @@ public class TitleSceneManager : MonoBehaviour
         OptionWindow.SetActive(true);
     }
 
+    public void Button_Exit()
+    {
+        Application.Quit();
+    }
+
 
 }

@@ -9,6 +9,7 @@ public class SoundSetter : MonoBehaviour
     public Slider slider;
     public Text valueText;
     public string keyString;
+    public AudioSource source;
 
     private int value = 0;
 
@@ -24,12 +25,14 @@ public class SoundSetter : MonoBehaviour
             slider.value = PlayerPrefs.GetInt(keyString);
         }
         SetValue();
+        
     }
 
     public void SetValue()
     {
         value = (int)slider.value;
         valueText.text = "" + value;
+        if (source != null) source.volume = value * 0.01f;
         PlayerPrefs.SetInt(keyString, value);
     }
 

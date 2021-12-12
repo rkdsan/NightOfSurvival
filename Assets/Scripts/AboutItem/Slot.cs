@@ -25,7 +25,8 @@ public class Slot : MonoBehaviour
         Transform ItemObj = item.gameObject.transform;
         ItemObj.transform.parent = GameManager.instance.playerController.hand.transform;
         ItemObj.localPosition = Vector3.zero;
-        ItemObj.localRotation = Quaternion.Euler(item.originRotate);
+        ItemObj.transform.position += item.offsetPosition;
+        ItemObj.localRotation = Quaternion.Euler(item.offsetRotate);
         
         item.gameObject.SetActive(false);
 

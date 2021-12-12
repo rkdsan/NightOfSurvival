@@ -1,0 +1,3782 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &66275691408033984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288997924213645350}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint55
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &288997924213645350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66275691408033984}
+  m_LocalRotation: {x: 0.8088574, y: 0.58729964, z: 0.023296684, w: -0.016915385}
+  m_LocalPosition: {x: 0.065318294, y: 0.18937427, z: -0.009214616}
+  m_LocalScale: {x: 1.3690064, y: 1.3690064, z: 1.3690064}
+  m_Children:
+  - {fileID: 981758147689892193}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &277874196910674135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586315677412659354}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint83
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1586315677412659354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277874196910674135}
+  m_LocalRotation: {x: 7.819933e-25, y: -0.19264412, z: -8.129687e-17, w: 0.9812687}
+  m_LocalPosition: {x: -0.06942151, y: 0.003944978, z: -0.031692855}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 5516809503979440131}
+  m_Father: {fileID: 4150493049608889324}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &401184740851904763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159948117294850627}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159948117294850627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401184740851904763}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: 0.026152886, y: 0.0249212, z: 0.0006378306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5921639441587457753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404847275679382763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3419721315286808164}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint99
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3419721315286808164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404847275679382763}
+  m_LocalRotation: {x: 2.982262e-26, y: 0.011118202, z: 7.991765e-17, w: 0.9999382}
+  m_LocalPosition: {x: 0.01995037, y: 0.015490337, z: -0.0011650397}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 7132932918723325024}
+  m_Father: {fileID: 5405330760392625731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &447014323059614062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139062751409698104}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint50
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139062751409698104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447014323059614062}
+  m_LocalRotation: {x: -2.2110332e-25, y: 0.19390158, z: -2.2631844e-17, w: 0.981021}
+  m_LocalPosition: {x: -0.016045423, y: -0.0167985, z: 0.0010851995}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 2861149126937385887}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &467958184118118323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589348477398772399}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint62
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589348477398772399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467958184118118323}
+  m_LocalRotation: {x: -2.7916964e-28, y: -0.03345819, z: 7.998308e-17, w: 0.99944013}
+  m_LocalPosition: {x: 0.02824035, y: 0.007126994, z: -0.0014423762}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 543385276664750432}
+  m_Father: {fileID: 868077853246410207}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &529961677039406092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3316985760873733014}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3316985760873733014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529961677039406092}
+  m_LocalRotation: {x: 0, y: -0.19264412, z: -0, w: 0.9812687}
+  m_LocalPosition: {x: -0.069075495, y: 0.003944973, z: -0.032723527}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4385738870006798508}
+  m_Father: {fileID: 3602635362060090538}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &626528944544321970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5246187307396191512}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5246187307396191512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626528944544321970}
+  m_LocalRotation: {x: 0, y: -0.27949572, z: -0, w: 0.96014696}
+  m_LocalPosition: {x: -0.062654644, y: 0.006770277, z: -0.047517266}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1945251828033856098}
+  m_Father: {fileID: 3602635362060090538}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &868886146452751027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868083796893072708}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint111
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1868083796893072708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868886146452751027}
+  m_LocalRotation: {x: -1.5038873e-24, y: -1.2420231e-16, z: 0.2461753, w: 0.96922535}
+  m_LocalPosition: {x: 0.07780751, y: 0.20756023, z: -0.066336915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3195214670987644381}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &920799506625579426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224204151190576507}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint103
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1224204151190576507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920799506625579426}
+  m_LocalRotation: {x: 1.186043e-25, y: -0.016755788, z: 7.9771876e-17, w: 0.99985963}
+  m_LocalPosition: {x: 0.021660157, y: 0.013308777, z: -0.0010872263}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 126975968916582655}
+  m_Father: {fileID: 595033673074767137}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1001829078293260864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4385738870006798508}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4385738870006798508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001829078293260864}
+  m_LocalRotation: {x: 0, y: 0.015474317, z: -0, w: 0.9998803}
+  m_LocalPosition: {x: -0.037193954, y: -0.0051231985, z: 8.216581e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4854223056982256123}
+  m_Father: {fileID: 3316985760873733014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1105688241740161675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5647778704829457273}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5647778704829457273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105688241740161675}
+  m_LocalRotation: {x: -0.023935314, y: 0.05534824, z: 0.58474874, w: 0.8089701}
+  m_LocalPosition: {x: -0.0466006, y: -0.20753103, z: 0.035208404}
+  m_LocalScale: {x: 1.3690064, y: 1.3690064, z: 1.3690064}
+  m_Children:
+  - {fileID: 3991504724732585188}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1147896589239328953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086171068009521845}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint97
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086171068009521845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147896589239328953}
+  m_LocalRotation: {x: -3.4459177e-25, y: -0.1263188, z: 8.038572e-17, w: 0.9919897}
+  m_LocalPosition: {x: 0.077005014, y: -0.0031910005, z: 0.029307654}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 5405330760392625731}
+  m_Father: {fileID: 6071673874797424758}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1385255438028009081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8510639943774095501}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint71
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8510639943774095501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385255438028009081}
+  m_LocalRotation: {x: -7.252155e-27, y: 0.0045770667, z: 7.8614934e-17, w: 0.99998957}
+  m_LocalPosition: {x: 0.021400437, y: 0.005201291, z: -0.0010679896}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 7231530945311808963}
+  m_Father: {fileID: 1736589145366981741}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720950048311870436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942634210218625955}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint51
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942634210218625955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720950048311870436}
+  m_LocalRotation: {x: 0.0000000071536523, y: -0.27949572, z: 0.0000000020824054, w: 0.96014696}
+  m_LocalPosition: {x: -0.06300007, y: 0.0067703, z: -0.046486266}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 7937326979110373527}
+  m_Father: {fileID: 1393753829374942032}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1874150116438656112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9187140653824131580}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint81
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9187140653824131580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874150116438656112}
+  m_LocalRotation: {x: -2.982262e-26, y: 0.011118202, z: -7.991765e-17, w: 0.9999382}
+  m_LocalPosition: {x: -0.01995037, y: -0.015490286, z: 0.0011650397}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 993147474455202785}
+  m_Father: {fileID: 6963650634713591897}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2016646531031777972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7937326979110373527}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint52
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7937326979110373527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016646531031777972}
+  m_LocalRotation: {x: 1.4683416e-27, y: 0.02577982, z: 8.7854175e-18, w: 0.99966764}
+  m_LocalPosition: {x: -0.031647, y: -0.001569, z: 0.0010559707}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 4155345316239113257}
+  m_Father: {fileID: 1942634210218625955}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2047118064864303005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981758147689892193}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint56
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981758147689892193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047118064864303005}
+  m_LocalRotation: {x: -0.09764363, y: -0.6862157, z: -0.14878377, w: 0.7052922}
+  m_LocalPosition: {x: 0.12576458, y: 8.881784e-18, z: -0.0025647942}
+  m_LocalScale: {x: 1.3690064, y: 1.3690064, z: 1.3690064}
+  m_Children:
+  - {fileID: 4731767035814473998}
+  m_Father: {fileID: 288997924213645350}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2160121961477435518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9160545603410106724}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint41
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9160545603410106724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160121961477435518}
+  m_LocalRotation: {x: 4.3582766e-27, y: -0.025454426, z: -1.040717e-17, w: 0.999676}
+  m_LocalPosition: {x: -0.024290351, y: -0.0099444995, z: 0.0018959014}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 4577430651214534468}
+  m_Father: {fileID: 2606161214431854630}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2188483427514724100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3310549687402167643}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint69
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3310549687402167643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2188483427514724100}
+  m_LocalRotation: {x: 1.5518548e-24, y: -0.27949572, z: 8.081035e-17, w: 0.96014696}
+  m_LocalPosition: {x: 0.06300011, y: -0.006770312, z: 0.04648623}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 1736589145366981741}
+  m_Father: {fileID: 4731767035814473998}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2280463211678240476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4731767035814473998}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint57
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4731767035814473998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2280463211678240476}
+  m_LocalRotation: {x: 1.5487112e-24, y: 0.23824967, z: 5.977711e-17, w: 0.971204}
+  m_LocalPosition: {x: 0.20727248, y: 3.5527136e-17, z: -0.024831524}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 479004051117817463}
+  - {fileID: 868077853246410207}
+  - {fileID: 8738307261813333067}
+  - {fileID: 3310549687402167643}
+  m_Father: {fileID: 981758147689892193}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2443066610528220569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2489924270510747971}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint74
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2489924270510747971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443066610528220569}
+  m_LocalRotation: {x: 0.71548504, y: 0.28122216, z: 0.04366482, w: 0.6380351}
+  m_LocalPosition: {x: -0.072884254, y: -0.10912433, z: 0.09437412}
+  m_LocalScale: {x: 0.5429922, y: 0.5429922, z: 0.5429922}
+  m_Children:
+  - {fileID: 4150493049608889324}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2462108068315788340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7269144134533423427}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint59
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7269144134533423427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462108068315788340}
+  m_LocalRotation: {x: 9.1293776e-26, y: -0.025454426, z: 7.935847e-17, w: 0.999676}
+  m_LocalPosition: {x: 0.024290273, y: 0.009944512, z: -0.0018958418}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 8424951093063552232}
+  m_Father: {fileID: 479004051117817463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2486405391490981040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5483985043399535534}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint46
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5483985043399535534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2486405391490981040}
+  m_LocalRotation: {x: 3.9022584e-27, y: 0.14845243, z: -2.2451081e-17, w: 0.98891956}
+  m_LocalPosition: {x: -0.01200142, y: -0.016501699, z: 0.0007276189}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 4491680220874318604}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2607850377865271278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3195214670987644381}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint114
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3195214670987644381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607850377865271278}
+  m_LocalRotation: {x: 0, y: -0, z: -0.2461753, w: 0.96922535}
+  m_LocalPosition: {x: -0.12945542, y: -0.022784686, z: 0.033355523}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1868083796893072708}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2611723878405294873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4829106686745245528}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint67
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4829106686745245528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611723878405294873}
+  m_LocalRotation: {x: 1.186043e-25, y: -0.016755788, z: 7.9771876e-17, w: 0.99985963}
+  m_LocalPosition: {x: 0.021660157, y: 0.013308777, z: -0.0010872263}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 5229952084718139788}
+  m_Father: {fileID: 7603196532329182014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2628169104853613625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7231530945311808963}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint72
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7231530945311808963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2628169104853613625}
+  m_LocalRotation: {x: 5.761282e-25, y: 0.25022158, z: 7.8281964e-17, w: 0.96818864}
+  m_LocalPosition: {x: 0.018254418, y: 0.006493907, z: -0.0010699161}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 8510639943774095501}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2733986755805418413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2992497051932275962}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint85
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2992497051932275962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2733986755805418413}
+  m_LocalRotation: {x: -1.186043e-25, y: -0.016755788, z: -7.9771876e-17, w: 0.99985963}
+  m_LocalPosition: {x: -0.021660157, y: -0.013308777, z: 0.0010872263}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 5586352968191353716}
+  m_Father: {fileID: 5516809503979440131}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2762847109007832949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2861149126937385887}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint49
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2861149126937385887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762847109007832949}
+  m_LocalRotation: {x: -4.307138e-29, y: -0.016755788, z: 1.1774925e-18, w: 0.99985963}
+  m_LocalPosition: {x: -0.021660063, y: -0.0133088, z: 0.0010872032}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 139062751409698104}
+  m_Father: {fileID: 5738979886975676926}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2952314744783089798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8148639476350262879}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8148639476350262879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952314744783089798}
+  m_LocalRotation: {x: 0.000000007450503, y: 0.0045770667, z: -3.4101815e-11, w: 0.99998957}
+  m_LocalPosition: {x: 0.02160739, y: 0.0052012997, z: -0.00000012908616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4082499501070902665}
+  m_Father: {fileID: 7516047775348901157}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2971303347755514392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7136819612636945897}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint110
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7136819612636945897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971303347755514392}
+  m_LocalRotation: {x: 0.8708128, y: -0.49161476, z: -7.246069e-17, w: 2.940884e-17}
+  m_LocalPosition: {x: -0.07222242, y: -0.15606923, z: 0.012019285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3849400266982058438}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3011484466910323451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7817372334082016611}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7817372334082016611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011484466910323451}
+  m_LocalRotation: {x: -6.3463686e-27, y: -0.07462923, z: 1.34989085e-17, w: 0.9972114}
+  m_LocalPosition: {x: 0.07620702, y: -8.881784e-18, z: 0.000000002395637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5921639441587457753}
+  m_Father: {fileID: 5377104490579134945}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3179483649734436124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4577430651214534468}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint42
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4577430651214534468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179483649734436124}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: -0.026286563, y: -0.0249212, z: 0.00044164248}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 9160545603410106724}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3207909286727499806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3332583886667867777}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3332583886667867777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207909286727499806}
+  m_LocalRotation: {x: 0, y: -0.025454426, z: -0, w: 0.999676}
+  m_LocalPosition: {x: -0.024102008, y: -0.009944558, z: 0.00082547206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2201546974049609205}
+  m_Father: {fileID: 7497268182930448460}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3212698815219608400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089191035215008513}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint105
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1089191035215008513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212698815219608400}
+  m_LocalRotation: {x: 1.5518548e-24, y: -0.27949572, z: 8.081035e-17, w: 0.96014696}
+  m_LocalPosition: {x: 0.065622464, y: -0.0067702387, z: 0.0611254}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 4231679555324602663}
+  m_Father: {fileID: 6071673874797424758}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3438082344011709966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3791254304896381959}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint91
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3791254304896381959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3438082344011709966}
+  m_LocalRotation: {x: 0.6662622, y: 0.3512405, z: 0.41270292, w: 0.512251}
+  m_LocalPosition: {x: -0.0043393923, y: 0.098867334, z: 0.10840832}
+  m_LocalScale: {x: 0.58445185, y: 0.58445185, z: 0.58445185}
+  m_Children:
+  - {fileID: 6267871127772771826}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3509652217364268236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4150493049608889324}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint75
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4150493049608889324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509652217364268236}
+  m_LocalRotation: {x: -1.5487112e-24, y: 0.23824967, z: -5.977711e-17, w: 0.971204}
+  m_LocalPosition: {x: -0.20727248, y: -4.440892e-18, z: 0.024831524}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 8515330931467486669}
+  - {fileID: 1802546734772333642}
+  - {fileID: 1586315677412659354}
+  - {fileID: 2180742532703121678}
+  m_Father: {fileID: 2489924270510747971}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3532763406720419939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7603196532329182014}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint66
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7603196532329182014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532763406720419939}
+  m_LocalRotation: {x: -4.8851802e-26, y: 0.015474317, z: 7.990413e-17, w: 0.9998803}
+  m_LocalPosition: {x: 0.03712394, y: 0.0051232046, z: -0.0010852581}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 4829106686745245528}
+  m_Father: {fileID: 8738307261813333067}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3648399240292904896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7132932918723325024}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint100
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7132932918723325024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648399240292904896}
+  m_LocalRotation: {x: -1.2557918e-24, y: 0.14845243, z: 7.6640924e-17, w: 0.98891956}
+  m_LocalPosition: {x: 0.012001298, y: 0.016501699, z: -0.0007275215}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children: []
+  m_Father: {fileID: 3419721315286808164}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3654572115900166272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364687566852151730}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364687566852151730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3654572115900166272}
+  m_LocalRotation: {x: 0, y: 0.0045770667, z: -0, w: 0.99998957}
+  m_LocalPosition: {x: -0.021606958, y: -0.005201249, z: 5.857658e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9094282821875130887}
+  m_Father: {fileID: 1945251828033856098}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3658229221072579334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2201546974049609205}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2201546974049609205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658229221072579334}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: -0.026153184, y: -0.024921127, z: -0.00063798204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3332583886667867777}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3714243708642588200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2810360987537444714}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2810360987537444714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714243708642588200}
+  m_LocalRotation: {x: 2.2110332e-25, y: 0.19390158, z: 2.2631844e-17, w: 0.981021}
+  m_LocalPosition: {x: 0.01611798, y: 0.0167985, z: 0.00000009613607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5339551739452381850}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3720227601600946529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2180742532703121678}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint87
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2180742532703121678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3720227601600946529}
+  m_LocalRotation: {x: -1.5518548e-24, y: -0.27949572, z: -8.081035e-17, w: 0.96014696}
+  m_LocalPosition: {x: -0.06300011, y: 0.006770312, z: -0.04648623}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 1938034784660808303}
+  m_Father: {fileID: 4150493049608889324}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3969759987128376323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3991504724732585188}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3991504724732585188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969759987128376323}
+  m_LocalRotation: {x: -0.042758975, y: -0.64870447, z: 0.0065037897, w: 0.75981045}
+  m_LocalPosition: {x: -0.12576398, y: 0, z: 0.002564938}
+  m_LocalScale: {x: 1.3690064, y: 1.3690064, z: 1.3690064}
+  m_Children:
+  - {fileID: 1393753829374942032}
+  m_Father: {fileID: 5647778704829457273}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4058226601521479179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736589145366981741}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint70
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1736589145366981741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058226601521479179}
+  m_LocalRotation: {x: 7.743595e-26, y: 0.02577982, z: 7.850424e-17, w: 0.99966764}
+  m_LocalPosition: {x: 0.031647105, y: 0.0015690211, z: -0.0010559809}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 8510639943774095501}
+  m_Father: {fileID: 3310549687402167643}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4063148618801564097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479004051117817463}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint58
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479004051117817463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4063148618801564097}
+  m_LocalRotation: {x: -2.1514845e-25, y: -0.07462923, z: 7.895014e-17, w: 0.9972114}
+  m_LocalPosition: {x: 0.076553315, y: 8.881784e-18, z: -0.0010313761}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 7269144134533423427}
+  m_Father: {fileID: 4731767035814473998}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4089875645741267142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6963650634713591897}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint80
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6963650634713591897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089875645741267142}
+  m_LocalRotation: {x: 2.7916964e-28, y: -0.03345819, z: -7.998308e-17, w: 0.99944013}
+  m_LocalPosition: {x: -0.02824035, y: -0.007126994, z: 0.0014423762}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 9187140653824131580}
+  m_Father: {fileID: 1802546734772333642}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4328385381102723296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4155345316239113257}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint53
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4155345316239113257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328385381102723296}
+  m_LocalRotation: {x: 0.000000007450503, y: 0.0045770667, z: -3.4101798e-11, w: 0.99998957}
+  m_LocalPosition: {x: -0.02140041, y: -0.0052012997, z: 0.0010679736}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 2598289390406430091}
+  m_Father: {fileID: 7937326979110373527}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4454443905806614949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2606161214431854630}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2606161214431854630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454443905806614949}
+  m_LocalRotation: {x: 6.3463686e-27, y: -0.07462923, z: -1.34989085e-17, w: 0.9972114}
+  m_LocalPosition: {x: -0.07655281, y: 0, z: 0.001031288}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 9160545603410106724}
+  m_Father: {fileID: 1393753829374942032}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4467459187916999243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595033673074767137}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint102
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595033673074767137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467459187916999243}
+  m_LocalRotation: {x: -4.8851802e-26, y: 0.015474317, z: 7.990413e-17, w: 0.9998803}
+  m_LocalPosition: {x: 0.0371245, y: 0.0051232046, z: -0.0010852941}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 1224204151190576507}
+  m_Father: {fileID: 2960556070023666645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4603061196638209323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2480916827797032442}
+  - component: {fileID: 2340942243586275044}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:Box017
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2480916827797032442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603061196638209323}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.07889333, y: 0.14754476, z: 0.07294009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6202438942098486959}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &2340942243586275044
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603061196638209323}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 9177983332822255499, guid: 362f42b60fbe26a45b8f9600a1eb9e1e, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 6244654140607402715, guid: 362f42b60fbe26a45b8f9600a1eb9e1e, type: 3}
+  m_Bones:
+  - {fileID: 5893912439545329470}
+  - {fileID: 7136819612636945897}
+  - {fileID: 3849400266982058438}
+  - {fileID: 5647778704829457273}
+  - {fileID: 3991504724732585188}
+  - {fileID: 1393753829374942032}
+  - {fileID: 2606161214431854630}
+  - {fileID: 9160545603410106724}
+  - {fileID: 4577430651214534468}
+  - {fileID: 3269506930162778970}
+  - {fileID: 1722036074035850902}
+  - {fileID: 4491680220874318604}
+  - {fileID: 5483985043399535534}
+  - {fileID: 9202299047881853253}
+  - {fileID: 5738979886975676926}
+  - {fileID: 2861149126937385887}
+  - {fileID: 139062751409698104}
+  - {fileID: 1942634210218625955}
+  - {fileID: 7937326979110373527}
+  - {fileID: 4155345316239113257}
+  - {fileID: 2598289390406430091}
+  - {fileID: 288997924213645350}
+  - {fileID: 981758147689892193}
+  - {fileID: 4731767035814473998}
+  - {fileID: 479004051117817463}
+  - {fileID: 7269144134533423427}
+  - {fileID: 8424951093063552232}
+  - {fileID: 868077853246410207}
+  - {fileID: 589348477398772399}
+  - {fileID: 543385276664750432}
+  - {fileID: 7685851704952233186}
+  - {fileID: 8738307261813333067}
+  - {fileID: 7603196532329182014}
+  - {fileID: 4829106686745245528}
+  - {fileID: 5229952084718139788}
+  - {fileID: 3310549687402167643}
+  - {fileID: 1736589145366981741}
+  - {fileID: 8510639943774095501}
+  - {fileID: 7231530945311808963}
+  - {fileID: 2489924270510747971}
+  - {fileID: 4150493049608889324}
+  - {fileID: 8515330931467486669}
+  - {fileID: 4222053576408838838}
+  - {fileID: 8886276082470550760}
+  - {fileID: 1802546734772333642}
+  - {fileID: 6963650634713591897}
+  - {fileID: 9187140653824131580}
+  - {fileID: 993147474455202785}
+  - {fileID: 1586315677412659354}
+  - {fileID: 5516809503979440131}
+  - {fileID: 2992497051932275962}
+  - {fileID: 5586352968191353716}
+  - {fileID: 2180742532703121678}
+  - {fileID: 1938034784660808303}
+  - {fileID: 1127317546423410969}
+  - {fileID: 6666526577728872448}
+  - {fileID: 3791254304896381959}
+  - {fileID: 6267871127772771826}
+  - {fileID: 6071673874797424758}
+  - {fileID: 4220158499357431869}
+  - {fileID: 886800533903367364}
+  - {fileID: 5404546673979837433}
+  - {fileID: 2086171068009521845}
+  - {fileID: 5405330760392625731}
+  - {fileID: 3419721315286808164}
+  - {fileID: 7132932918723325024}
+  - {fileID: 2960556070023666645}
+  - {fileID: 595033673074767137}
+  - {fileID: 1224204151190576507}
+  - {fileID: 126975968916582655}
+  - {fileID: 1089191035215008513}
+  - {fileID: 4231679555324602663}
+  - {fileID: 6970842793427802931}
+  - {fileID: 4405355439084866751}
+  - {fileID: 2393306305335031108}
+  - {fileID: 1184318186764409934}
+  - {fileID: 3602635362060090538}
+  - {fileID: 7497268182930448460}
+  - {fileID: 3332583886667867777}
+  - {fileID: 2201546974049609205}
+  - {fileID: 2147738644685725795}
+  - {fileID: 7980238890976762162}
+  - {fileID: 2339721375385367833}
+  - {fileID: 209997363977737513}
+  - {fileID: 3316985760873733014}
+  - {fileID: 4385738870006798508}
+  - {fileID: 4854223056982256123}
+  - {fileID: 8770342402382544242}
+  - {fileID: 5246187307396191512}
+  - {fileID: 1945251828033856098}
+  - {fileID: 1364687566852151730}
+  - {fileID: 9094282821875130887}
+  - {fileID: 3334645361035164770}
+  - {fileID: 5471512356554709911}
+  - {fileID: 5377104490579134945}
+  - {fileID: 7817372334082016611}
+  - {fileID: 5921639441587457753}
+  - {fileID: 1159948117294850627}
+  - {fileID: 1073441415895347104}
+  - {fileID: 7180586617823811907}
+  - {fileID: 422500738949519331}
+  - {fileID: 788054871180500445}
+  - {fileID: 3292657468493400547}
+  - {fileID: 5876369730087928611}
+  - {fileID: 5339551739452381850}
+  - {fileID: 2810360987537444714}
+  - {fileID: 320135240542609695}
+  - {fileID: 7516047775348901157}
+  - {fileID: 8148639476350262879}
+  - {fileID: 4082499501070902665}
+  - {fileID: 1868083796893072708}
+  - {fileID: 3195214670987644381}
+  - {fileID: 7608297106176748523}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 5893912439545329470}
+  m_AABB:
+    m_Center: {x: -0.07485187, y: 0.046598434, z: -0.5960393}
+    m_Extent: {x: 0.5358196, y: 1.6439018, z: 1.0121355}
+  m_DirtyAABB: 0
+--- !u!1 &4611523730202160024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7180586617823811907}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7180586617823811907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611523730202160024}
+  m_LocalRotation: {x: 1.0938931e-27, y: -0.03345819, z: 3.1112335e-18, w: 0.99944013}
+  m_LocalPosition: {x: 0.028163932, y: 0.007127, z: -0.00035731567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 422500738949519331}
+  m_Father: {fileID: 1073441415895347104}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4612367422257079479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2598289390406430091}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint54
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2598289390406430091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612367422257079479}
+  m_LocalRotation: {x: -3.509561e-26, y: 0.25022158, z: -2.2931809e-17, w: 0.96818864}
+  m_LocalPosition: {x: -0.018254096, y: -0.0064938995, z: 0.0010698792}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 4155345316239113257}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4641466553658274858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393753829374942032}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1393753829374942032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641466553658274858}
+  m_LocalRotation: {x: -3.5532558e-25, y: 0.23824967, z: -2.286061e-17, w: 0.971204}
+  m_LocalPosition: {x: -0.20727308, y: -6.48776e-18, z: 0.024831528}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 2606161214431854630}
+  - {fileID: 3269506930162778970}
+  - {fileID: 9202299047881853253}
+  - {fileID: 1942634210218625955}
+  m_Father: {fileID: 3991504724732585188}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4662069372382597288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4220158499357431869}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint94
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4220158499357431869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662069372382597288}
+  m_LocalRotation: {x: -2.1514845e-25, y: -0.07462923, z: 7.895014e-17, w: 0.9972114}
+  m_LocalPosition: {x: 0.079175144, y: 2.980255e-17, z: 0.0136076175}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 886800533903367364}
+  m_Father: {fileID: 6071673874797424758}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4805505513591533162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4231679555324602663}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint106
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4231679555324602663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805505513591533162}
+  m_LocalRotation: {x: 7.743595e-26, y: 0.02577982, z: 7.850424e-17, w: 0.99966764}
+  m_LocalPosition: {x: 0.031647105, y: 0.0015689482, z: -0.0010559809}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 6970842793427802931}
+  m_Father: {fileID: 1089191035215008513}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4966878420761470882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8886276082470550760}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint78
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8886276082470550760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4966878420761470882}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: -0.02628648, y: -0.024921164, z: 0.00044163692}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children: []
+  m_Father: {fileID: 4222053576408838838}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5129441458138008092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209997363977737513}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209997363977737513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129441458138008092}
+  m_LocalRotation: {x: 0, y: 0.14845243, z: -0, w: 0.98891956}
+  m_LocalPosition: {x: -0.011973667, y: -0.016501779, z: -0.00035980946}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2339721375385367833}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5220255227291741306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147738644685725795}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2147738644685725795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220255227291741306}
+  m_LocalRotation: {x: 0, y: -0.1263188, z: -0, w: 0.9919897}
+  m_LocalPosition: {x: -0.074036464, y: 0.0031909382, z: -0.015699117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7980238890976762162}
+  m_Father: {fileID: 3602635362060090538}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5468716164790275142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2393306305335031108}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2393306305335031108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5468716164790275142}
+  m_LocalRotation: {x: 0.2984377, y: -0.41503835, z: 0.5081765, w: 0.693134}
+  m_LocalPosition: {x: -0.05212937, y: -0.16024911, z: -0.12979674}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1184318186764409934}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5581392406794272709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3292657468493400547}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3292657468493400547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581392406794272709}
+  m_LocalRotation: {x: -2.0649297e-27, y: -0.19264412, z: -1.0398755e-18, w: 0.9812687}
+  m_LocalPosition: {x: 0.06907525, y: -0.003945, z: 0.03272401}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5876369730087928611}
+  m_Father: {fileID: 5377104490579134945}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5867622821909893884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5377104490579134945}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5377104490579134945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5867622821909893884}
+  m_LocalRotation: {x: 0.000000007236034, y: 0.23824967, z: -0.0000000017750984, w: 0.971204}
+  m_LocalPosition: {x: 0.14845754, y: 8.881784e-18, z: -0.00000015170775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7817372334082016611}
+  - {fileID: 1073441415895347104}
+  - {fileID: 3292657468493400547}
+  - {fileID: 320135240542609695}
+  m_Father: {fileID: 5471512356554709911}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5878352136021819588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5586352968191353716}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint86
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5586352968191353716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5878352136021819588}
+  m_LocalRotation: {x: 1.0355963e-26, y: 0.19390158, z: -7.725798e-17, w: 0.981021}
+  m_LocalPosition: {x: -0.016045729, y: -0.016798476, z: 0.0010851927}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children: []
+  m_Father: {fileID: 2992497051932275962}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5974654130297249929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2339721375385367833}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2339721375385367833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974654130297249929}
+  m_LocalRotation: {x: 0, y: 0.011118202, z: -0, w: 0.9999382}
+  m_LocalPosition: {x: -0.019946884, y: -0.015490302, z: 0.00007786322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 209997363977737513}
+  m_Father: {fileID: 7980238890976762162}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6042783642835115262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722036074035850902}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint44
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722036074035850902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042783642835115262}
+  m_LocalRotation: {x: -1.0938931e-27, y: -0.03345819, z: -3.1112335e-18, w: 0.99944013}
+  m_LocalPosition: {x: -0.028240234, y: -0.007127, z: 0.0014423548}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 4491680220874318604}
+  m_Father: {fileID: 3269506930162778970}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6104189807485429840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3849400266982058438}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint113
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3849400266982058438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104189807485429840}
+  m_LocalRotation: {x: 0, y: 0, z: 0.41581059, w: 0.90945125}
+  m_LocalPosition: {x: -0.13283981, y: 0.01447194, z: -2.4484407e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7136819612636945897}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6149282503777979555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4222053576408838838}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint77
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4222053576408838838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6149282503777979555}
+  m_LocalRotation: {x: 0.0000000074481665, y: -0.025454426, z: 1.8965017e-10, w: 0.999676}
+  m_LocalPosition: {x: -0.024290273, y: -0.009944512, z: 0.0018958418}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 8886276082470550760}
+  m_Father: {fileID: 8515330931467486669}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6256301886183350312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4405355439084866751}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint108
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4405355439084866751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256301886183350312}
+  m_LocalRotation: {x: 5.761282e-25, y: 0.25022158, z: 7.8281964e-17, w: 0.96818864}
+  m_LocalPosition: {x: 0.018253868, y: 0.006493907, z: -0.0010698145}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children: []
+  m_Father: {fileID: 6970842793427802931}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6404429197775093935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7497268182930448460}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7497268182930448460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404429197775093935}
+  m_LocalRotation: {x: 0, y: -0.07462923, z: -0, w: 0.9972114}
+  m_LocalPosition: {x: -0.076206826, y: 0, z: 4.1652534e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3332583886667867777}
+  m_Father: {fileID: 3602635362060090538}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6421760607085419928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7608297106176748523}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint112
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7608297106176748523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421760607085419928}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.012667564, y: 0.0018343154, z: 0.2672617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6580641813988082834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938034784660808303}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint88
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1938034784660808303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580641813988082834}
+  m_LocalRotation: {x: -7.743595e-26, y: 0.02577982, z: -7.850424e-17, w: 0.99966764}
+  m_LocalPosition: {x: -0.031647105, y: -0.0015690211, z: 0.0010559809}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 1127317546423410969}
+  m_Father: {fileID: 2180742532703121678}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6583117437102918244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8770342402382544242}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8770342402382544242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6583117437102918244}
+  m_LocalRotation: {x: 0, y: 0.19390158, z: -0, w: 0.981021}
+  m_LocalPosition: {x: -0.01611812, y: -0.016798507, z: -4.4395786e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4854223056982256123}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6585771419610235971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886800533903367364}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint95
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886800533903367364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585771419610235971}
+  m_LocalRotation: {x: 9.1293776e-26, y: -0.025454426, z: 7.935847e-17, w: 0.999676}
+  m_LocalPosition: {x: 0.024290273, y: 0.009944512, z: -0.0018958418}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 5404546673979837433}
+  m_Father: {fileID: 4220158499357431869}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6657858799354219788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8738307261813333067}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint65
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8738307261813333067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657858799354219788}
+  m_LocalRotation: {x: -7.819933e-25, y: -0.19264412, z: 8.129687e-17, w: 0.9812687}
+  m_LocalPosition: {x: 0.06942151, y: -0.003944978, z: 0.031692855}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 7603196532329182014}
+  m_Father: {fileID: 4731767035814473998}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6726317322101074965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6202438942098486959}
+  - component: {fileID: 5879946457997427890}
+  - component: {fileID: 5879946457997427888}
+  - component: {fileID: 5879946457997427889}
+  m_Layer: 0
+  m_Name: Ghost_Shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6202438942098486959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726317322101074965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -111.9, y: 0.213, z: 34.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2480916827797032442}
+  - {fileID: 5893912439545329470}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &5879946457997427890
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726317322101074965}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!95 &5879946457997427888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726317322101074965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37247f59fea837c4d90349b78556b023, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5879946457997427889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726317322101074965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db052d7acb6c2354f8386e445479c25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6786011399371547782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3269506930162778970}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint43
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3269506930162778970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6786011399371547782}
+  m_LocalRotation: {x: 0.0000000073908994, y: -0.1263188, z: 9.411484e-10, w: 0.9919897}
+  m_LocalPosition: {x: -0.074382626, y: 0.0031909999, z: -0.014668199}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 1722036074035850902}
+  m_Father: {fileID: 1393753829374942032}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6861764931628770159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788054871180500445}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788054871180500445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861764931628770159}
+  m_LocalRotation: {x: -3.9022584e-27, y: 0.14845243, z: 2.2451081e-17, w: 0.98891956}
+  m_LocalPosition: {x: 0.011973672, y: 0.016501699, z: 0.00035974558}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 422500738949519331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6974944411985672990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7685851704952233186}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint64
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7685851704952233186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6974944411985672990}
+  m_LocalRotation: {x: -1.2557918e-24, y: 0.14845243, z: 7.6640924e-17, w: 0.98891956}
+  m_LocalPosition: {x: 0.012001298, y: 0.01650172, z: -0.0007275215}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 543385276664750432}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7097440049195395499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7516047775348901157}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7516047775348901157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097440049195395499}
+  m_LocalRotation: {x: -1.4683416e-27, y: 0.02577982, z: -8.7854175e-18, w: 0.99966764}
+  m_LocalPosition: {x: 0.03190874, y: 0.001569, z: -0.0000002136728}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8148639476350262879}
+  m_Father: {fileID: 320135240542609695}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7165313503150258130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5876369730087928611}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5876369730087928611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165313503150258130}
+  m_LocalRotation: {x: 0.000000007449689, y: 0.015474317, z: -1.15292643e-10, w: 0.9998803}
+  m_LocalPosition: {x: 0.037194166, y: 0.0051232, z: 0.00000018330788}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5339551739452381850}
+  m_Father: {fileID: 3292657468493400547}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7174203511879096533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6267871127772771826}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint92
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6267871127772771826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174203511879096533}
+  m_LocalRotation: {x: 9.703342e-26, y: -0.10739012, z: 6.082516e-17, w: 0.994217}
+  m_LocalPosition: {x: 0.07679525, y: 2.9605983e-16, z: -0.21934749}
+  m_LocalScale: {x: 0.58445185, y: 0.58445185, z: 0.58445185}
+  m_Children:
+  - {fileID: 6071673874797424758}
+  m_Father: {fileID: 3791254304896381959}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7253061504597091622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126975968916582655}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint104
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126975968916582655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253061504597091622}
+  m_LocalRotation: {x: -1.0355963e-26, y: 0.19390158, z: 7.725798e-17, w: 0.981021}
+  m_LocalPosition: {x: 0.01604517, y: 0.016798533, z: -0.0010851553}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children: []
+  m_Father: {fileID: 1224204151190576507}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7323533409638818939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945251828033856098}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945251828033856098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7323533409638818939}
+  m_LocalRotation: {x: 0, y: 0.02577982, z: -0, w: 0.99966764}
+  m_LocalPosition: {x: -0.03190834, y: -0.0015690279, z: 3.233079e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1364687566852151730}
+  m_Father: {fileID: 5246187307396191512}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7336617199863610608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8515330931467486669}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint76
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8515330931467486669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7336617199863610608}
+  m_LocalRotation: {x: 2.1514845e-25, y: -0.07462923, z: -7.895014e-17, w: 0.9972114}
+  m_LocalPosition: {x: -0.076553315, y: 0, z: 0.0010313761}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 4222053576408838838}
+  m_Father: {fileID: 4150493049608889324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7340508196650744030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543385276664750432}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint63
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &543385276664750432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7340508196650744030}
+  m_LocalRotation: {x: 2.982262e-26, y: 0.011118202, z: 7.991765e-17, w: 0.9999382}
+  m_LocalPosition: {x: 0.01995037, y: 0.015490286, z: -0.0011650397}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 7685851704952233186}
+  m_Father: {fileID: 589348477398772399}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7377152615241728437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5738979886975676926}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint48
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5738979886975676926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377152615241728437}
+  m_LocalRotation: {x: 0.000000007449689, y: 0.015474317, z: -1.15292643e-10, w: 0.9998803}
+  m_LocalPosition: {x: -0.03712439, y: -0.0051232, z: 0.0010852949}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 2861149126937385887}
+  m_Father: {fileID: 9202299047881853253}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7382335736201438839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5893912439545329470}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint109
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5893912439545329470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382335736201438839}
+  m_LocalRotation: {x: -0.5875432, y: 0.80919284, z: -8.552541e-17, w: -1.3572127e-17}
+  m_LocalPosition: {x: 0.027369631, y: 0.050996598, z: -0.053825606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2393306305335031108}
+  - {fileID: 3334645361035164770}
+  - {fileID: 5647778704829457273}
+  - {fileID: 288997924213645350}
+  - {fileID: 2489924270510747971}
+  - {fileID: 3791254304896381959}
+  - {fileID: 7136819612636945897}
+  - {fileID: 1868083796893072708}
+  - {fileID: 7608297106176748523}
+  m_Father: {fileID: 6202438942098486959}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7450268356162226923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9202299047881853253}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint47
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9202299047881853253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7450268356162226923}
+  m_LocalRotation: {x: 2.0649297e-27, y: -0.19264412, z: 1.0398755e-18, w: 0.9812687}
+  m_LocalPosition: {x: -0.069421045, y: 0.003945, z: -0.031692717}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 5738979886975676926}
+  m_Father: {fileID: 1393753829374942032}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7471379633618535717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422500738949519331}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422500738949519331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471379633618535717}
+  m_LocalRotation: {x: 2.604682e-27, y: 0.011118202, z: 4.4687452e-18, w: 0.9999382}
+  m_LocalPosition: {x: 0.019946655, y: 0.015490299, z: -0.000077171484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 788054871180500445}
+  m_Father: {fileID: 7180586617823811907}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7482904427343850285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4082499501070902665}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4082499501070902665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482904427343850285}
+  m_LocalRotation: {x: 3.509561e-26, y: 0.25022158, z: 2.2931809e-17, w: 0.96818864}
+  m_LocalPosition: {x: 0.01845129, y: 0.0064938995, z: -0.00000018475004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8148639476350262879}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7680159747760733253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2960556070023666645}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint101
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2960556070023666645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680159747760733253}
+  m_LocalRotation: {x: -7.819933e-25, y: -0.19264412, z: 8.129687e-17, w: 0.9812687}
+  m_LocalPosition: {x: 0.07204334, y: -0.003944978, z: 0.04633185}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 595033673074767137}
+  m_Father: {fileID: 6071673874797424758}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7692813390931733031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073441415895347104}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073441415895347104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692813390931733031}
+  m_LocalRotation: {x: 0.0000000073908994, y: -0.1263188, z: 9.411484e-10, w: 0.9919897}
+  m_LocalPosition: {x: 0.07403684, y: -0.0031909999, z: 0.015699489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7180586617823811907}
+  m_Father: {fileID: 5377104490579134945}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7888360946566914084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6666526577728872448}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint90
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6666526577728872448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888360946566914084}
+  m_LocalRotation: {x: -5.761282e-25, y: 0.25022158, z: -7.8281964e-17, w: 0.96818864}
+  m_LocalPosition: {x: -0.018254418, y: -0.006493907, z: 0.0010699161}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children: []
+  m_Father: {fileID: 1127317546423410969}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7991776249899228604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184318186764409934}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1184318186764409934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7991776249899228604}
+  m_LocalRotation: {x: 0, y: -0.43844435, z: -0, w: 0.89875835}
+  m_LocalPosition: {x: -0.17024441, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3602635362060090538}
+  m_Father: {fileID: 2393306305335031108}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8036156506018259368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5921639441587457753}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5921639441587457753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036156506018259368}
+  m_LocalRotation: {x: -4.3582766e-27, y: -0.025454426, z: 1.040717e-17, w: 0.999676}
+  m_LocalPosition: {x: 0.024101913, y: 0.0099444995, z: -0.0008246303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1159948117294850627}
+  m_Father: {fileID: 7817372334082016611}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8064871487225214690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4854223056982256123}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4854223056982256123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064871487225214690}
+  m_LocalRotation: {x: 0, y: -0.016755788, z: -0, w: 0.99985963}
+  m_LocalPosition: {x: -0.021695673, y: -0.013308789, z: 1.9980389e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8770342402382544242}
+  m_Father: {fileID: 4385738870006798508}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8101519052297309613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7980238890976762162}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7980238890976762162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101519052297309613}
+  m_LocalRotation: {x: 0, y: -0.03345819, z: -0, w: 0.99944013}
+  m_LocalPosition: {x: -0.028163683, y: -0.0071269213, z: 0.0003571171}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2339721375385367833}
+  m_Father: {fileID: 2147738644685725795}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8161908385188077604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9094282821875130887}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9094282821875130887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161908385188077604}
+  m_LocalRotation: {x: 0, y: 0.25022158, z: -0, w: 0.96818864}
+  m_LocalPosition: {x: -0.018451806, y: -0.0064939563, z: -2.8764074e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364687566852151730}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8216222370583553716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4491680220874318604}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint45
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4491680220874318604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216222370583553716}
+  m_LocalRotation: {x: -2.604682e-27, y: 0.011118202, z: -4.4687452e-18, w: 0.9999382}
+  m_LocalPosition: {x: -0.019950218, y: -0.015490299, z: 0.0011648841}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 5483985043399535534}
+  m_Father: {fileID: 1722036074035850902}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8251851014668261278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3602635362060090538}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3602635362060090538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251851014668261278}
+  m_LocalRotation: {x: 0, y: 0.23824967, z: -0, w: 0.971204}
+  m_LocalPosition: {x: -0.14845774, y: 0, z: -6.217249e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7497268182930448460}
+  - {fileID: 2147738644685725795}
+  - {fileID: 3316985760873733014}
+  - {fileID: 5246187307396191512}
+  m_Father: {fileID: 1184318186764409934}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8254463314284675410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1802546734772333642}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint79
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1802546734772333642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254463314284675410}
+  m_LocalRotation: {x: 3.4459177e-25, y: -0.1263188, z: -8.038572e-17, w: 0.9919897}
+  m_LocalPosition: {x: -0.07438266, y: 0.0031910005, z: -0.014668481}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 6963650634713591897}
+  m_Father: {fileID: 4150493049608889324}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8350807608696985385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6970842793427802931}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint107
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6970842793427802931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350807608696985385}
+  m_LocalRotation: {x: -7.252155e-27, y: 0.0045770667, z: 7.8614934e-17, w: 0.99998957}
+  m_LocalPosition: {x: 0.021400437, y: 0.005201291, z: -0.0010679896}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 4405355439084866751}
+  m_Father: {fileID: 4231679555324602663}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8418088192938265884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8424951093063552232}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint60
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8424951093063552232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8418088192938265884}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: 0.02628648, y: 0.024921183, z: -0.00044163692}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 7269144134533423427}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8469069906740426824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5339551739452381850}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5339551739452381850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8469069906740426824}
+  m_LocalRotation: {x: 4.307138e-29, y: -0.016755788, z: -1.1774925e-18, w: 0.99985963}
+  m_LocalPosition: {x: 0.021696214, y: 0.0133088, z: -0.00000008570554}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2810360987537444714}
+  m_Father: {fileID: 5876369730087928611}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8495560927856346958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320135240542609695}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &320135240542609695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8495560927856346958}
+  m_LocalRotation: {x: 0.0000000071536523, y: -0.27949572, z: 0.0000000020824054, w: 0.96014696}
+  m_LocalPosition: {x: 0.06265429, y: -0.0067703, z: 0.047517553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7516047775348901157}
+  m_Father: {fileID: 5377104490579134945}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8602103340953538923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5471512356554709911}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5471512356554709911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602103340953538923}
+  m_LocalRotation: {x: -1.0470813e-18, y: -0.25995883, z: -6.684437e-18, w: 0.9656197}
+  m_LocalPosition: {x: 0.17024472, y: 0, z: -0.0000005428586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5377104490579134945}
+  m_Father: {fileID: 3334645361035164770}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8698497238577492225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127317546423410969}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint89
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127317546423410969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698497238577492225}
+  m_LocalRotation: {x: 7.252155e-27, y: 0.0045770667, z: -7.8614934e-17, w: 0.99998957}
+  m_LocalPosition: {x: -0.021400437, y: -0.005201291, z: 0.0010679896}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 6666526577728872448}
+  m_Father: {fileID: 1938034784660808303}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8713260650760965623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5404546673979837433}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint96
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5404546673979837433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8713260650760965623}
+  m_LocalRotation: {x: -7.383486e-18, y: -0.76482254, z: 7.383486e-18, w: 0.64424103}
+  m_LocalPosition: {x: 0.02628648, y: 0.024921214, z: -0.00044163692}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children: []
+  m_Father: {fileID: 886800533903367364}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8978365651197495555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5516809503979440131}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint84
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5516809503979440131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978365651197495555}
+  m_LocalRotation: {x: 4.8851802e-26, y: 0.015474317, z: -7.990413e-17, w: 0.9998803}
+  m_LocalPosition: {x: -0.03712394, y: -0.0051232046, z: 0.0010852581}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children:
+  - {fileID: 2992497051932275962}
+  m_Father: {fileID: 1586315677412659354}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9012898387925354477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6071673874797424758}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint93
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6071673874797424758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012898387925354477}
+  m_LocalRotation: {x: 1.5487112e-24, y: 0.23824967, z: 5.977711e-17, w: 0.971204}
+  m_LocalPosition: {x: 0.15414657, y: -9.7770095e-17, z: -0.063671686}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 4220158499357431869}
+  - {fileID: 2086171068009521845}
+  - {fileID: 2960556070023666645}
+  - {fileID: 1089191035215008513}
+  m_Father: {fileID: 6267871127772771826}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9076355225513320227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993147474455202785}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint82
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993147474455202785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9076355225513320227}
+  m_LocalRotation: {x: 1.2557918e-24, y: 0.14845243, z: -7.6640924e-17, w: 0.98891956}
+  m_LocalPosition: {x: -0.012001298, y: -0.016501699, z: 0.0007275215}
+  m_LocalScale: {x: 0.7088754, y: 0.5429922, z: 0.7088754}
+  m_Children: []
+  m_Father: {fileID: 9187140653824131580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9114369921848858717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5229952084718139788}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint68
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5229952084718139788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114369921848858717}
+  m_LocalRotation: {x: -1.0355963e-26, y: 0.19390158, z: 7.725798e-17, w: 0.981021}
+  m_LocalPosition: {x: 0.016045729, y: 0.016798496, z: -0.0010851927}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children: []
+  m_Father: {fileID: 4829106686745245528}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9114647501809954672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3334645361035164770}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3334645361035164770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114647501809954672}
+  m_LocalRotation: {x: 0.6365534, y: 0.46219218, z: -0.49959263, w: 0.36274695}
+  m_LocalPosition: {x: 0.029513974, y: 0.09051246, z: -0.10943823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5471512356554709911}
+  m_Father: {fileID: 5893912439545329470}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9188573378836010569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868077853246410207}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint61
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868077853246410207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9188573378836010569}
+  m_LocalRotation: {x: -3.4459177e-25, y: -0.1263188, z: 8.038572e-17, w: 0.9919897}
+  m_LocalPosition: {x: 0.07438266, y: -0.0031910005, z: 0.014668481}
+  m_LocalScale: {x: 1.7872356, y: 1.3690064, z: 1.7872356}
+  m_Children:
+  - {fileID: 589348477398772399}
+  m_Father: {fileID: 4731767035814473998}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9192639741493265864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5405330760392625731}
+  m_Layer: 0
+  m_Name: Shadow_chase3:Shadow_chase3:Shadow_chase:Shadow_chase:Shadow_chase:Shadow_weight:joint98
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5405330760392625731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9192639741493265864}
+  m_LocalRotation: {x: -2.7916964e-28, y: -0.03345819, z: 7.998308e-17, w: 0.99944013}
+  m_LocalPosition: {x: 0.02823979, y: 0.007126994, z: -0.0014424154}
+  m_LocalScale: {x: 0.76300097, y: 0.58445185, z: 0.76300097}
+  m_Children:
+  - {fileID: 3419721315286808164}
+  m_Father: {fileID: 2086171068009521845}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

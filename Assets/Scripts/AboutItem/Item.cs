@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public abstract class Item : InteractiveObject
 {
     public Sprite itemImage;
-    public Vector3 originRotate;
+    public Vector3 offsetPosition;
+    public Vector3 offsetRotate;
     public bool canCraft;
     public bool isConsumable;
 

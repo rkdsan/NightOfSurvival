@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BGMManager
     - CameraManager
     - CraftManager
     - DarkZone
@@ -8,7 +9,6 @@ ScriptsOnlyBuild:
     - FrameCounter
     - GameManager
     - Ghost
-    - HideBin
     - InstalledTalisman
     - InstallingBar
     - InteractiveDoor
@@ -17,16 +17,25 @@ ScriptsOnlyBuild:
     - Lamp
     - PauseManager
     - PlayerController
+    - ShadowGhost
     - Slot
     - SongPyeon
     - SoundSetter
     - Talisman
     - TitleSceneManager
+    - TutoCommentSender
+    - TutorialManager
     - WindowManager
     DOTweenUpgradeManager.dll:
     - DG.DOTweenUpgradeManager.UpgradeWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -67,68 +76,78 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1706}
+      Script: {instanceID: 1708}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2132}
+      Script: {instanceID: 2134}
     - Class: 114
-      Script: {instanceID: 2176}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2180}
     - Class: 114
-      Script: {instanceID: 2374}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 2480}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2528}
+      Script: {instanceID: 2522}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2584}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 3036}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 3158}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 3514}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 4320}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 4498}
+      Script: {instanceID: 3770}
+    - Class: 114
+      Script: {instanceID: 4332}
+    - Class: 114
+      Script: {instanceID: 4510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,6 +155,8 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -161,6 +182,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
     Assets/Scenes/TitleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -176,32 +199,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1692}
+      Script: {instanceID: 1694}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2374}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 2480}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 3538}
+    - Class: 114
+      Script: {instanceID: 4230}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,6 +378,12 @@ ScriptsOnlyBuild:
     className: SongPyeon
   - hash:
       serializedVersion: 2
+      Hash: d0f7fb684948b079b861debb14bf28a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TutoCommentSender
+  - hash:
+      serializedVersion: 2
       Hash: ad33feac20669108af1a73290ed72a97
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -365,7 +402,7 @@ ScriptsOnlyBuild:
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
-      Hash: b8f46fabc03af985b74beabe2fd47e0e
+      Hash: 13ff54114551fbfa0655c5f69b5a9be9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -431,10 +468,16 @@ ScriptsOnlyBuild:
     className: Lamp
   - hash:
       serializedVersion: 2
-      Hash: a3f090a4282a374500069cc4111491e2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GhostArea
+    className: MeshTest
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShadowGhost
   - hash:
       serializedVersion: 2
       Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
@@ -455,7 +498,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 6140d9a3fbd04164a2e01475fabf7713
+      Hash: 1a802c770459b257cd923c2f6ed4cb8b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DarkZone
@@ -515,6 +558,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: a4da482c1930e81fb49497222e6a6b16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BGMManager
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -555,6 +604,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryManager
+  - hash:
+      serializedVersion: 2
+      Hash: fe21642ef8b6696dc7f889fcd1b689cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestParticle
   - hash:
       serializedVersion: 2
       Hash: a53651ee3996fbba20dfe0fce02f0b23
@@ -671,6 +726,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 3f7d56de2213984a10efc3a27a4d36a1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TutorialManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -701,7 +762,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 2c3a351745ba45f9022cb48afd60218f
+      Hash: 5609a0acf09d2edddee23e7e6b3d10d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundSetter
@@ -713,7 +774,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 12cddda7edcdbcb240c3c6818709234d
+      Hash: f825221bebbba16be8ea8ea9b606e324
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ghost
@@ -737,7 +798,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: f625a283500f21c7d267184a6dc1c33d
+      Hash: 7b0235a78ee07b41ff4d485e10c64857
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController

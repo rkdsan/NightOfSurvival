@@ -8,8 +8,8 @@ using UnityEngine.AI;
 public class Ghost : MonoBehaviour
 {
     public static Transform playerTransform;
+    public LayerMask playerMask;
     public Transform[] patrolPoints;
-    public Text stateText;
 
     [HideInInspector] public Transform nowTarget;
 
@@ -103,6 +103,10 @@ public class Ghost : MonoBehaviour
             else
             {
                 navMesh.SetDestination(nowTarget.position);
+                if (CheckKillPlayer())
+                {
+                    GameManager.instance.GameOver();
+                }
             }
 
             yield return WaitTimeManager.WaitForSeconds(0.2f);
@@ -131,4 +135,9 @@ public class Ghost : MonoBehaviour
         navMesh.speed = 3;
     }
 
+    private bool CheckKillPlayer()
+    {
+        Debug.DrawRay(transform.position, transform.forward);
+        return Physics.Raycast(transform.position, transform.forward, 1, playerMask);
+    }
 }

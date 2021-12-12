@@ -111,4 +111,7 @@ MonoBehaviour:
   objectName: "\uD638\uB9AC\uBCD1"
   explainComment: "LB: \uC90D\uAE30"
   itemImage: {fileID: 21300000, guid: a1f87f0b12c87cb41b092b5d8249c0b1, type: 3}
-  originRotate: {x: 60, y: 90, z: 0}
+  offsetPosition: {x: 0, y: -0.3, z: 0}
+  offsetRotate: {x: 60, y: 90, z: 0}
+  canCraft: 0
+  isConsumable: 0

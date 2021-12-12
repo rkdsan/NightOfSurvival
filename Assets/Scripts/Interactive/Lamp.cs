@@ -8,7 +8,14 @@ public class Lamp : InteractiveObject
 
     void Awake()
     {
-        explainComment = "LB: ²ô±â";
+        if (lampLight.enabled)
+        {
+            explainComment = "LB: ²ô±â";
+        }
+        else
+        {
+            explainComment = "LB: ÄÑ±â";
+        }
     }
 
     public override void Interact()

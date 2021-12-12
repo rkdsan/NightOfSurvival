@@ -7,12 +7,6 @@ public class DefaltItem : Item
     
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public override bool UseItem()
     {
