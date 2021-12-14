@@ -8,6 +8,7 @@ using UnityEngine.AI;
 public class Ghost : MonoBehaviour
 {
     public static Transform playerTransform;
+    public AudioSource chasingSound;
     public LayerMask playerMask;
     public Transform[] patrolPoints;
 
@@ -40,6 +41,7 @@ public class Ghost : MonoBehaviour
         }
         if (CheckIsPlayer(other))
         {
+            chasingSound.Play();
             isInsidePlayer = true;
             isPatrol = false;
             if (!isInsideSongPyeon) nowTarget = other.transform;
@@ -51,6 +53,7 @@ public class Ghost : MonoBehaviour
     {
         if (CheckIsPlayer(other))
         {
+            chasingSound.Stop();
             isInsidePlayer = false;
             if (!isInsideSongPyeon) isPatrol = true;
         }

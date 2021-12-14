@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseWindow;
     public Image fadeImage;
     public Image[] gameOverImages;
+    public AudioSource dieBGM;
 
     void Awake()
     {
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(int index)
     {
+        dieBGM.Play();
         gameOverImages[index].gameObject.SetActive(true);
         gameOverImages[index].DOColor(Color.grey, 2);
         StartCoroutine(GameOverDelay());

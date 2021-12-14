@@ -80,6 +80,7 @@ public class InventoryManager : MonoBehaviour
                 slot.NewItem(_item);
                 itemKindCount++;
                 CheckItemIndex();
+                EffectSoundManager.instance.effectSound_pickUp.Play();
                 break;
             }
             //같은템이면
@@ -87,6 +88,7 @@ public class InventoryManager : MonoBehaviour
             {
                 slot.UpCount();
                 Destroy(_item.gameObject);
+                EffectSoundManager.instance.effectSound_pickUp.Play();
                 break;
             }
         }

@@ -52,6 +52,8 @@ public class Talisman : Item
             Instantiate(installedTalisman, hit.point, rot);
 
             GameManager.instance.inventoryManager.nowSlot.ConsumeItem();
+
+            EffectSoundManager.instance.effectSound_pickUp.Play();
         };
     }
 

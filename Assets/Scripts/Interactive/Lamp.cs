@@ -24,11 +24,13 @@ public class Lamp : InteractiveObject
         {
             lampLight.enabled = false;
             explainComment = "LB: ÄÑ±â";
+            EffectSoundManager.instance.effectSound_lampOff.Play();
         }
         else
         {
             lampLight.enabled = true;
             explainComment = "LB: ²ô±â";
+            EffectSoundManager.instance.effectSound_lampOn.Play();
         }
             
     }

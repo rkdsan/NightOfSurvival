@@ -8,9 +8,19 @@ public class BGMManager : MonoBehaviour
     public AudioSource source;
 
     private float targetVolume;
+
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        source.volume = PlayerPrefs.GetInt("BGMVolume", 30) * 0.01f;
         DontDestroyOnLoad(gameObject);
         StartCoroutine(SetSource());
     }
@@ -32,4 +42,8 @@ public class BGMManager : MonoBehaviour
         source.volume = targetVolume;
     }
 
+    public void SetVolume()
+    {
+        source.volume = PlayerPrefs.GetInt("BGMVolume", 30) * 0.01f;
+    }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SongPyeon : Item
 {
     public Rigidbody rigid;
-    public BoxCollider boxCollider;
+    public SphereCollider spCollider;
 
 
     public override bool UseItem()
@@ -18,9 +18,11 @@ public class SongPyeon : Item
 
         copySP.rigid.isKinematic = false;
         copySP.rigid.velocity = forward * 8f;
+        copySP.spCollider.enabled = true;
 
         copySP.DestoryThis();
 
+        EffectSoundManager.instance.effectSound_pickUp.Play();
         return true;
     }
 

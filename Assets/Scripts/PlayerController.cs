@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject informationTextObejct;
     public GameObject hand;
+    public AudioSource walkSound;
     public Image runGaugeImage;
     public Text objectName;
     public Text explainText;
+    
 
     public LayerMask rayLayerMask;
 
@@ -106,6 +108,7 @@ public class PlayerController : MonoBehaviour
     {
         isRunning = true;
         applySpeed = runSpeed;
+        //walkSound.pitch = 1.5f;
         runGaugeColor.a = 1;
         while (Input.GetKey(KeyCode.LeftShift) && runGaugeImage.fillAmount > runGaugeUsevalue)
         {
@@ -116,6 +119,7 @@ public class PlayerController : MonoBehaviour
         }
         isRunning = false;
         applySpeed = walkSpeed;
+        //walkSound.pitch = 1.2f;
         StartCoroutine(UpRunGauge());
         
     }
@@ -152,6 +156,23 @@ public class PlayerController : MonoBehaviour
         moveDir = (moveHorizontal + moveVertical).normalized * applySpeed * SPEED_STANDARD;
 
         controller.Move(moveDir);
+
+        SetWalkSound();
+    }
+
+    private void SetWalkSound()
+    {
+        if (moveDir == Vector3.zero)
+        {
+            if (walkSound.isPlaying)
+            {
+                walkSound.Stop();
+            }
+        }
+        else if(!walkSound.isPlaying)
+        {
+            walkSound.Play();
+        }
     }
 
     private void RotatePlayer()

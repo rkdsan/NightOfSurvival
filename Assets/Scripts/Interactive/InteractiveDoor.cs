@@ -43,7 +43,11 @@ public class InteractiveDoor : InteractiveObject
         isMoving = true;
         int repeat = 20;
         Vector3 addPos = targetPos / repeat;
-        if (isOpen) addPos *= -1;
+        EffectSoundManager.instance.effectSound_doorSound.Play();
+        if (isOpen)
+        {
+            addPos *= -1;
+        }
 
         while (repeat-- > 0)
         {
