@@ -116,3 +116,6 @@ MonoBehaviour:
   canCraft: 0
   isConsumable: 1
   installedTalisman: {fileID: 8653136558901662037, guid: 0026ea043bd6cc94197bbf82eb72ec17, type: 3}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 123

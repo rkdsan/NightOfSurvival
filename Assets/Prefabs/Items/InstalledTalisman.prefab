@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4636930049096337308}
   - component: {fileID: 2310484379890687491}
   - component: {fileID: 6906235758785157269}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8653136558901662041}
   - component: {fileID: 8653136558901662038}
   - component: {fileID: 6468697845243871562}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: InstalledTalisman
   m_TagString: Untagged
   m_Icon: {fileID: 0}

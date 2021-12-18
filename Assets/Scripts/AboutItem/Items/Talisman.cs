@@ -6,6 +6,7 @@ public class Talisman : Item
 {
     public static InstallingBar installingBar;
     public GameObject installedTalisman;
+    public LayerMask layermask;
 
     private Vector3 shootPos;
     private Vector3 shootDir;
@@ -62,7 +63,7 @@ public class Talisman : Item
         shootPos = Camera.main.transform.position;
         shootDir = Camera.main.transform.forward;
 
-        return Physics.Raycast(shootPos, shootDir, out hit, 2.5f);
+        return Physics.Raycast(shootPos, shootDir, out hit, 2.5f, layermask);
     }
 
     //public override bool UseItem()
