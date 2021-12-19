@@ -86,68 +86,6 @@ public class PlayerController : MonoBehaviour
         controller.SimpleMove(Vector3.down * Time.deltaTime);
     }
 
-
-    #region 이동관련
-    private void ManageMove()
-    {
-        CheckRun();
-        if (onTab) return;
-        RotateCamera();
-        RotatePlayer();
-    }
-
-    public void CheckRun()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && runGaugeImage.fillAmount > 0.2f)
-        {
-            StartCoroutine(StartRun());
-        }
-    }
-
-    IEnumerator StartRun()
-    {
-        isRunning = true;
-        applySpeed = runSpeed;
-        //walkSound.pitch = 1.5f;
-        runGaugeColor.a = 1;
-        while (Input.GetKey(KeyCode.LeftShift) && runGaugeImage.fillAmount > runGaugeUsevalue)
-        {
-            runGaugeImage.fillAmount -= runGaugeUsevalue;
-            UpdateRunGaugeColor();
-            yield return WaitTimeManager.WaitForFixedUpdate();
-
-        }
-        isRunning = false;
-        applySpeed = walkSpeed;
-        //walkSound.pitch = 1.2f;
-        StartCoroutine(UpRunGauge());
-        
-    }
-
-    IEnumerator UpRunGauge()
-    {
-        while (!isRunning && runGaugeImage.fillAmount < 1)
-        {
-            runGaugeImage.fillAmount += runGaugeAddValue;
-            UpdateRunGaugeColor();
-            yield return WaitTimeManager.WaitForFixedUpdate();
-        }
-
-        if (!isRunning)
-        {
-            runGaugeColor.a = 0.5f;
-            UpdateRunGaugeColor();
-        }
-    }
-
-    private void UpdateRunGaugeColor()
-    {
-        float amout = runGaugeImage.fillAmount;
-        runGaugeColor.g = runGaugeColor.b = amout;
-
-        runGaugeImage.color = runGaugeColor;
-    }
-
     private void MovePos()
     {
         moveHorizontal = transform.right * Input.GetAxisRaw("Horizontal");
@@ -158,6 +96,72 @@ public class PlayerController : MonoBehaviour
         controller.Move(moveDir);
 
         SetWalkSound();
+    }
+
+    #region 이동관련
+    private void ManageMove()
+    {
+        CheckRun();
+        if (onTab) return;
+        RotateCamera();
+        RotatePlayer();
+    }
+
+   
+    public void CheckRun()
+    {
+        //W키 누른 상태에서 달릴때만, 게이지가 20% 이상 차있어야함
+        if (Input.GetKeyDown(KeyCode.LeftShift)
+            && Input.GetKey(KeyCode.W)
+            && runGaugeImage.fillAmount > 0.2f)
+        {
+            StartCoroutine(StartRun());
+        }
+    }
+
+    private IEnumerator StartRun()
+    {
+        isRunning = true;
+        applySpeed = runSpeed;
+        //walkSound.pitch = 1.5f;
+        runGaugeColor.a = 1;
+        while (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) 
+            && runGaugeImage.fillAmount > runGaugeUsevalue)
+        {
+            runGaugeImage.fillAmount -= runGaugeUsevalue;
+            UpdateRunGaugeColor();
+            yield return WaitTimeManager.WaitForFixedUpdate();
+
+        }
+        isRunning = false;
+        applySpeed = walkSpeed;
+        //walkSound.pitch = 1.2f;
+        StartCoroutine(UpRunGauge());
+
+    }
+    private IEnumerator UpRunGauge()
+    {
+        runGaugeColor.a = 0.3f;
+
+        while (!isRunning && runGaugeImage.fillAmount < 1)
+        {
+            runGaugeImage.fillAmount += runGaugeAddValue;
+            UpdateRunGaugeColor();
+            yield return WaitTimeManager.WaitForFixedUpdate();
+        }
+
+        if (!isRunning)
+        {
+            
+            UpdateRunGaugeColor();
+        }
+    }
+    private void UpdateRunGaugeColor()
+    {
+        float amout = runGaugeImage.fillAmount;
+        runGaugeColor.g = runGaugeColor.b = amout;
+
+        runGaugeImage.color = runGaugeColor;
     }
 
     private void SetWalkSound()

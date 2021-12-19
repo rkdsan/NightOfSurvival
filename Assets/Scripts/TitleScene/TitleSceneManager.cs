@@ -15,6 +15,13 @@ public class TitleSceneManager : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Cursor.lockState = CursorLockMode.Confined;
+        Ani_FadeImage();
+    }
+
+
+    private void Ani_FadeImage()
+    {
+        fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
             .OnComplete(() => fadeImage.raycastTarget = false);
     }

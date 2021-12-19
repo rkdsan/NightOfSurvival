@@ -7,20 +7,20 @@ public class WindowManager : MonoBehaviour
    
     void Update()
     {
-        CloseTab();
+        CheckCloseTab();
     }
 
-    private bool CheckKey_ESC()
+    protected void CheckCloseTab()
     {
-        return Input.GetKeyDown(KeyCode.Escape);
-    }
-
-    protected void CloseTab()
-    {
-        if (CheckKey_ESC())
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            gameObject.SetActive(false);
+            CloseThisTab();
         }
+    }
+
+    public void CloseThisTab()
+    {
+        gameObject.SetActive(false);
     }
 
 }

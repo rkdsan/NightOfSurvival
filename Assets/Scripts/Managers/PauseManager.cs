@@ -18,7 +18,7 @@ public class PauseManager : WindowManager
 
     private void Update()
     {
-        CloseTab();
+        CheckCloseTab();
     }
 
     private void OnDisable()
