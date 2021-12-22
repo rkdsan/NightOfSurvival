@@ -31,6 +31,7 @@ public class TitleSceneManager : MonoBehaviour
         fadeImage.raycastTarget = true;
         fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
             .OnComplete(()=> SceneManager.LoadScene("GameScene"));
+        //LoadingSceneManager.LoatScene("GameScene")
     }
 
     public void Button_Option()
