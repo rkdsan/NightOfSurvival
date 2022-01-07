@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Take 001
+    second: Walking
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -21,7 +21,11 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftLeg'
+      has translation animation that will be discarded.\n\t'Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightLeg'
+      has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -35,7 +39,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Walking
       takeName: Take 001
       internalID: 0
       firstFrame: 0
@@ -108,8 +112,1204 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: GhostWoman_Walking(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Object011
+      parentName: GhostWoman_Walking(Clone)
+      position: {x: 0.00000008509197, y: 8.575104, z: 1.9711562}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: -1.987062, y: -1.987062, z: -1.987062}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Reference
+      parentName: GhostWoman_Walking(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Hips
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Reference
+      position: {x: 0.00025437877, y: 1.1169106, z: 0.046887152}
+      rotation: {x: 0.00000005961608, y: -2.860676e-12, z: -1.5050678e-12, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftUpLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Hips
+      position: {x: -0.089099914, y: -0.11472014, z: 0.0012973738}
+      rotation: {x: 0.000000023423212, y: 2.8606774e-12, z: 4.727589e-11, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftUpLeg
+      position: {x: -0.005335039, y: -0.4445056, z: -0.008509995}
+      rotation: {x: -0.000000046869314, y: -3.6616657e-10, z: -4.5770825e-11, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftFoot
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftLeg
+      position: {x: 0.005334528, y: -0.48956916, z: -0.019233856}
+      rotation: {x: 0.000000023434659, y: 3.6616657e-10, z: -6.938894e-18, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftToeBase
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftFoot
+      position: {x: -0.00000008585358, y: -0.050893787, z: 0.15945673}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightUpLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Hips
+      position: {x: 0.089099966, y: -0.11472019, z: 0.0012973729}
+      rotation: {x: 0.0000000029178935, y: -8.58203e-12, z: 5.080913e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightUpLeg
+      position: {x: 0.0053341906, y: -0.4445083, z: -0.0083525395}
+      rotation: {x: 0.0000000014646631, y: 3.469447e-18, z: 1.7879222e-12, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightFoot
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightLeg
+      position: {x: -0.005335589, y: -0.48956907, z: -0.019236846}
+      rotation: {x: -0.000000004394, y: 1.1442692e-11, z: -5.3637667e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightToeBase
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightFoot
+      position: {x: 0.00000008587226, y: -0.05089383, z: 0.15945683}
+      rotation: {x: 1.110223e-14, y: -0.000041891264, z: 5.421011e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Hips
+      position: {x: -1.8903007e-10, y: 0.15693644, z: -0.0055529075}
+      rotation: {x: -2.2883029e-11, y: 8.582028e-12, z: -1.2109682e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine
+      position: {x: -1.8711517e-10, y: 0.09967051, z: -0.011076508}
+      rotation: {x: -0, y: -0, z: 1.963828e-22, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine1
+      position: {x: 5.3643798e-11, y: 0.09967061, z: -0.013941412}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftShoulder
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine2
+      position: {x: -0.07164269, y: 0.03994341, z: -4.7195844e-11}
+      rotation: {x: 1.1439738e-11, y: -5.721352e-12, z: 8.981936e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftShoulder
+      position: {x: -0.072539955, y: -0.004059133, z: -6.4772986e-11}
+      rotation: {x: 0.000000013567311, y: 0.0020604923, z: -0.002679958, w: 0.9999943}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftForeArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftArm
+      position: {x: -0.25452897, y: -0.018133316, z: -0.013911079}
+      rotation: {x: 2.94903e-16, y: 6.8863665e-20, z: -0.000102705315, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftForeArm
+      position: {x: -0.25522485, y: -0.011968275, z: 0.0068018786}
+      rotation: {x: -0.000000011746088, y: 0.00000003733996, z: 0.00077002787, w: 0.9999997}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      position: {x: -0.038437713, y: -0.0021309592, z: 0.042487398}
+      rotation: {x: -0.05184784, y: 0.017372197, z: -0.045835413, w: 0.99745136}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb1
+      position: {x: -0.023689376, y: -0.008601523, z: 0.025606355}
+      rotation: {x: -0.11056475, y: 0.10497986, z: -0.057068806, w: 0.98666}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb2
+      position: {x: -0.02404964, y: -0.015827363, z: 0.013814728}
+      rotation: {x: -0.08148235, y: 0.10965635, z: -0.036005452, w: 0.98996955}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandThumb3
+      position: {x: -0.028142916, y: -0.021878147, z: 0.003706307}
+      rotation: {x: 0.000000009664379, y: 0.000000013255995, z: 0.05140261, w: 0.9986781}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      position: {x: -0.116174474, y: 0.0059639425, z: 0.039096948}
+      rotation: {x: 0.0000000060191545, y: -0.000000029962315, z: -0.003593281, w: 0.9999936}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex1
+      position: {x: -0.04610967, y: -0.0004830018, z: 0.0061890814}
+      rotation: {x: -0.008342932, y: -0.019238852, z: -0.044543777, w: 0.99878734}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex2
+      position: {x: -0.032151334, y: -0.0058946004, z: 0.0056572533}
+      rotation: {x: 0.0045062876, y: 0.29451397, z: -0.121420726, w: 0.9478915}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandIndex3
+      position: {x: -0.020031052, y: -0.011915164, z: -0.010172511}
+      rotation: {x: -0.03241554, y: 0.9648974, z: -0.026714107, w: 0.2592462}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000006}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      position: {x: -0.11773206, y: 0.009101285, z: 0.013383768}
+      rotation: {x: -0.005618649, y: 0.02651738, z: -0.070216425, w: 0.9971634}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle1
+      position: {x: -0.05517053, y: -0.011889541, z: 0.0000030151166}
+      rotation: {x: -0.0000143302605, y: -0.000030409545, z: -0.15924832, w: 0.9872386}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle2
+      position: {x: -0.032145236, y: -0.021927545, z: 0.0000037181892}
+      rotation: {x: 0.000005981781, y: 0.00049542065, z: -0.08474152, w: 0.99640286}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandMiddle3
+      position: {x: -0.017941466, y: -0.020259738, z: -0.000018142078}
+      rotation: {x: 0.0000764481, y: -0.0032624057, z: 0.051360995, w: 0.99867487}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      position: {x: -0.11588138, y: 0.006015368, z: -0.011974911}
+      rotation: {x: -0.011639242, y: 0.07751696, z: -0.156216, w: 0.98460764}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing1
+      position: {x: -0.042692177, y: -0.016640875, z: -0.0051117567}
+      rotation: {x: 0.011049564, y: -0.0006673934, z: -0.07907321, w: 0.9968074}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing2
+      position: {x: -0.0265088, y: -0.018391361, z: -0.0030706113}
+      rotation: {x: 0.013777261, y: -0.003762293, z: -0.1177001, w: 0.9929465}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandRing3
+      position: {x: -0.016306655, y: -0.021307215, z: -0.0016172418}
+      rotation: {x: 0.00007644914, y: -0.0032625694, z: 0.05136097, w: 0.99867487}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHand
+      position: {x: -0.11107642, y: -0.007757516, z: -0.036359616}
+      rotation: {x: -0.007007295, y: 0.10907475, z: -0.13592206, w: 0.98467195}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky1
+      position: {x: -0.035092473, y: -0.011443651, z: -0.0074651414}
+      rotation: {x: 0.025901278, y: 0.010255083, z: -0.12579106, w: 0.99166566}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky2
+      position: {x: -0.019512596, y: -0.014818257, z: -0.004769422}
+      rotation: {x: 0.020973317, y: 0.011529139, z: -0.14893238, w: 0.98855776}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_LeftHandPinky3
+      position: {x: -0.01292985, y: -0.02149085, z: -0.004354697}
+      rotation: {x: 0.000000007495809, y: -0.000000012082894, z: 0.052059326, w: 0.99864405}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightShoulder
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine2
+      position: {x: 0.07164268, y: 0.039943457, z: 5.9850536e-10}
+      rotation: {x: 1.1439738e-11, y: -2.2465677e-33, z: 7.6545367e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightShoulder
+      position: {x: 0.072539955, y: -0.0040592025, z: 0.000000069653474}
+      rotation: {x: 0.000000035510467, y: -0.0020619503, z: 0.0026676785, w: 0.99999434}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightForeArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightArm
+      position: {x: 0.25452954, y: -0.01812618, z: -0.013912893}
+      rotation: {x: 0.000000017587267, y: -0.00000003551627, z: 0.00032367936, w: 0.99999994}
+      scale: {x: 0.99999964, y: 1, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightForeArm
+      position: {x: 0.25521895, y: -0.012095209, z: 0.006801073}
+      rotation: {x: -0.000000011873757, y: 0.000000005830209, z: -0.002427788, w: 0.9999971}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000006}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      position: {x: 0.0384464, y: -0.001968444, z: 0.042487387}
+      rotation: {x: -0.05486036, y: -0.017178072, z: 0.055891972, w: 0.99678046}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb1
+      position: {x: 0.023489477, y: -0.009133389, z: 0.025606344}
+      rotation: {x: -0.095500186, y: -0.11166995, z: 0.016369581, w: 0.9890104}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb2
+      position: {x: 0.025300343, y: -0.013739902, z: 0.013814693}
+      rotation: {x: -0.11097511, y: -0.09364011, z: 0.17146714, w: 0.9744307}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandThumb3
+      position: {x: 0.022227414, y: -0.027867936, z: 0.0037062785}
+      rotation: {x: 0.000000017231471, y: -0.000000013453175, z: -0.16122654, w: 0.9869175}
+      scale: {x: 0.9999998, y: 1.0000004, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      position: {x: 0.11614834, y: 0.0064549274, z: 0.039096877}
+      rotation: {x: 0.000000011849333, y: 0.00000004699907, z: 0.011329456, w: 0.99993587}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex1
+      position: {x: 0.04608704, y: -0.001522368, z: 0.006189129}
+      rotation: {x: -0.0038089743, y: -0.016483974, z: -0.009662226, w: 0.99981016}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex2
+      position: {x: 0.032849725, y: -0.0031433087, z: 0.0033873287}
+      rotation: {x: -0.075716406, y: 0.28990954, z: 0.2669285, w: 0.9159524}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandIndex3
+      position: {x: 0.013765553, y: -0.01662047, z: 0.013452271}
+      rotation: {x: 0.101853415, y: 0.95564586, z: 0.0842654, w: 0.26318488}
+      scale: {x: 0.9999998, y: 1.0000004, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      position: {x: 0.11769259, y: 0.009598873, z: 0.013383723}
+      rotation: {x: -0.0062609063, y: -0.027530642, z: 0.083395846, w: 0.99611646}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle1
+      position: {x: 0.054888472, y: -0.013130301, z: 0.000003012626}
+      rotation: {x: 0.0018199567, y: -0.017358087, z: 0.104713745, w: 0.99434924}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle2
+      position: {x: 0.03386159, y: -0.019134626, z: -0.0011808231}
+      rotation: {x: -0.03409029, y: 0.27564326, z: 0.24795444, w: 0.92810416}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandMiddle3
+      position: {x: 0.010107875, y: -0.023846937, z: 0.007842801}
+      rotation: {x: 0.10185346, y: 0.9556458, z: 0.08426538, w: 0.2631849}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      position: {x: 0.11585486, y: 0.006505208, z: -0.011974903}
+      rotation: {x: -0.012479649, y: -0.07820361, z: 0.16927065, w: 0.9823828}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing1
+      position: {x: 0.042306207, y: -0.017599097, z: -0.00511175}
+      rotation: {x: 0.008346871, y: -0.015797228, z: 0.024404006, w: 0.99954253}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing2
+      position: {x: 0.027842777, y: -0.016087066, z: -0.0040464615}
+      rotation: {x: -0.020145351, y: 0.27132317, z: 0.2816812, w: 0.920127}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandRing3
+      position: {x: 0.00946119, y: -0.0245477, z: 0.0055151996}
+      rotation: {x: 0.101853415, y: 0.95564586, z: 0.08426543, w: 0.26318488}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999998}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHand
+      position: {x: 0.1111082, y: -0.0072879097, z: -0.036359645}
+      rotation: {x: -0.007897174, y: -0.110007465, z: 0.14858164, w: 0.9827306}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky1
+      position: {x: 0.034825657, y: -0.012231928, z: -0.0074651763}
+      rotation: {x: 0.022133851, y: -0.024457779, z: 0.071899556, w: 0.9968663}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky2
+      position: {x: 0.020514712, y: -0.013118251, z: -0.005488755}
+      rotation: {x: -0.015838576, y: 0.24122767, z: 0.3065235, w: 0.9206529}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_RightHandPinky3
+      position: {x: 0.008249446, y: -0.02404352, z: 0.001362766}
+      rotation: {x: 0.10186673, y: 0.95572275, z: 0.083676174, w: 0.26308867}
+      scale: {x: 1, y: 1.0000002, z: 0.9999998}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Neck
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Spine2
+      position: {x: -0.0000000015901896, y: 0.09967059, z: 0.0051995576}
+      rotation: {x: 3.4329872e-11, y: -1.1442704e-11, z: 2.7473943e-11, w: 1}
+      scale: {x: 0.99999946, y: 0.99999946, z: 0.9999995}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Head
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Neck
+      position: {x: 0.000000003762553, y: 0.05686618, z: 0.012414662}
+      rotation: {x: -2.2886582e-11, y: -5.721354e-12, z: -9.181261e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      parentName: GhostWoman_Walking(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_HipsEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.00022459983, y: 1.0021908, z: 0.048154783}
+      rotation: {x: 0.00012981199, y: -0.000036370882, z: -0.00012938344, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftAnkleEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.089083225, y: 0.17132236, z: 0.0033050536}
+      rotation: {x: 0.00000026822093, y: 1.403337e-16, z: -4.3956177e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightAnkleEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.0890986, y: 0.0690419, z: 0.02051986}
+      rotation: {x: 0.00000005029143, y: -1.4560224e-14, z: -5.067806e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftWristEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.09353362, y: 1.1222104, z: 0.23608968}
+      rotation: {x: 0.28052118, y: 0.6752772, z: 0.5578559, w: 0.39256263}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightWristEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.13238451, y: 1.1317078, z: 0.21351682}
+      rotation: {x: -0.26160628, y: 0.7592302, z: 0.46526212, w: -0.37237453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftKneeEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.08927376, y: 0.60075396, z: 0.23923945}
+      rotation: {x: 0.22948138, y: 0.0036571792, z: -0.0044324663, w: 0.9732961}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightKneeEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.094533235, y: 0.55765903, z: 0.05658119}
+      rotation: {x: 0.017195685, y: -0.00013066104, z: -0.000108658896, w: 0.9998522}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftElbowEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.19000073, y: 1.2596776, z: 0.043408327}
+      rotation: {x: -0.16166991, y: 0.49978167, z: 0.6434818, w: 0.5567875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightElbowEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.20107006, y: 1.259937, z: 0.0033531785}
+      rotation: {x: -0.21799667, y: -0.47517467, z: -0.61901456, w: 0.5860951}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_ChestOriginEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.00029536156, y: 1.273849, z: 0.041375346}
+      rotation: {x: 0.0001829812, y: -0.000055238674, z: -0.00071686343, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_ChestEndEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.00064119336, y: 1.5131423, z: 0.016445026}
+      rotation: {x: 0.00018298121, y: -0.000055238674, z: -0.00071686343, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftFootEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.08908331, y: 0.12042848, z: 0.16276176}
+      rotation: {x: 3.2847594e-23, y: -0.00000026822093, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightFootEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.08909869, y: 0.018148068, z: 0.17997663}
+      rotation: {x: 6.158924e-24, y: -0.00000005029143, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftShoulderEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.14355938, y: 1.5095215, z: 0.01641443}
+      rotation: {x: 0.045017354, y: 0.14662991, z: 0.6015795, w: 0.7839485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightShoulderEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.14481792, y: 1.5088774, z: 0.016459502}
+      rotation: {x: 0.03772058, y: -0.03449252, z: -0.597553, w: 0.8001986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_HeadEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.00080651324, y: 1.6297288, z: 0.03410315}
+      rotation: {x: 0.10505545, y: -0.00013000915, z: -0.0007080627, w: 0.9944661}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHipEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.08887523, y: 1.002214, z: 0.048148308}
+      rotation: {x: -0.22963782, y: -0.000351764, z: 0.005755392, w: 0.9732591}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHipEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.08932442, y: 1.0021678, z: 0.04816126}
+      rotation: {x: -0.018677665, y: 0.00018265248, z: -0.00013973542, w: 0.99982554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumbEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.043360062, y: 1.062983, z: 0.21057786}
+      rotation: {x: 0.28052095, y: 0.6752769, z: 0.55785656, w: 0.3925624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndexEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.06796415, y: 0.97000784, z: 0.26921624}
+      rotation: {x: 0.280521, y: 0.67527777, z: 0.5578555, w: 0.3925623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddleEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.04024283, y: 0.9364426, z: 0.2412613}
+      rotation: {x: 0.28051987, y: 0.6752772, z: 0.55785704, w: 0.39256194}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRingEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.0004473972, y: 0.93389463, z: 0.23378992}
+      rotation: {x: 0.28052112, y: 0.675277, z: 0.5578563, w: 0.3925624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinkyEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.03854417, y: 0.934604, z: 0.22582021}
+      rotation: {x: 0.28052032, y: 0.6752777, z: 0.55785495, w: 0.3925637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumbEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.0024837183, y: 1.0694637, z: 0.18462296}
+      rotation: {x: -0.2616059, y: 0.75923073, z: 0.4652622, w: -0.37237364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndexEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.037312627, y: 0.9920246, z: 0.2586386}
+      rotation: {x: -0.26160643, y: 0.7592309, z: 0.46526128, w: -0.37237406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddleEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: -0.0076531027, y: 0.95285976, z: 0.24242006}
+      rotation: {x: -0.26160607, y: 0.7592308, z: 0.4652614, w: -0.37237445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRingEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.03352205, y: 0.94837207, z: 0.24085563}
+      rotation: {x: -0.26160556, y: 0.75923085, z: 0.46526143, w: -0.3723746}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinkyEffector
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.072302386, y: 0.9469719, z: 0.23776981}
+      rotation: {x: -0.26160625, y: 0.75923127, z: 0.46526104, w: -0.3723738}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Hips
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Reference
+      position: {x: 0.0002543502, y: 1.1169112, z: 0.046887197}
+      rotation: {x: 0.00012981199, y: -0.000036370882, z: -0.00012938344, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftUpLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Hips
+      position: {x: -0.089100026, y: -0.11472018, z: 0.001297374}
+      rotation: {x: -0.2297639, y: -0.0003453295, z: 0.005889713, w: 0.9732285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftUpLeg
+      position: {x: -0.0053349794, y: -0.44450563, z: -0.008528909}
+      rotation: {x: 0.44686988, y: 0.0035988595, z: -0.009156536, w: 0.89454484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftFoot
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftLeg
+      position: {x: 0.0053349794, y: -0.4895693, z: -0.019234039}
+      rotation: {x: -0.22948112, y: -0.003657178, z: 0.0044324654, w: 0.97329617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftToeBase
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftFoot
+      position: {x: -0.000000085830706, y: -0.05089389, z: 0.15945694}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightUpLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Hips
+      position: {x: 0.089100026, y: -0.11472018, z: 0.001297374}
+      rotation: {x: -0.018807482, y: 0.00021658228, z: -0.00000971892, w: 0.9998231}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightLeg
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightUpLeg
+      position: {x: 0.0053349794, y: -0.44450563, z: -0.008528909}
+      rotation: {x: 0.035867624, y: -0.00030883134, z: 0.000031775202, w: 0.9993565}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightFoot
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightLeg
+      position: {x: -0.0053349794, y: -0.4895693, z: -0.019234039}
+      rotation: {x: -0.017195635, y: 0.00013066104, z: 0.000108658925, w: 0.9998522}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightToeBase
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightFoot
+      position: {x: 0.000000085830706, y: -0.05089389, z: 0.15945694}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Hips
+      position: {x: -0, y: 0.15693645, z: -0.005552908}
+      rotation: {x: 0.000053150317, y: -0.000018937179, z: -0.0005874795, w: 0.9999998}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine
+      position: {x: -0, y: 0.09967051, z: -0.011076527}
+      rotation: {x: 1.0591689e-32, y: -4.4589085e-17, z: 1.4960821e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine1
+      position: {x: -0, y: 0.09967058, z: -0.013941391}
+      rotation: {x: -4.1633363e-17, y: -0, z: 6.162976e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftShoulder
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine2
+      position: {x: -0.07164268, y: 0.039943397, z: 0}
+      rotation: {x: 0.0000051159695, y: -0.00009141184, z: -0.001595532, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftShoulder
+      position: {x: -0.072540045, y: -0.004059144, z: -2.220446e-18}
+      rotation: {x: 0.04461873, y: 0.14696153, z: 0.6033565, w: 0.7825423}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftForeArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftArm
+      position: {x: -0.2545277, y: -0.018148808, z: -0.013919282}
+      rotation: {x: 0.054498773, y: 0.43638656, z: 0.123300046, w: 0.88960314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftForeArm
+      position: {x: -0.25522742, y: -0.011914522, z: 0.0068025556}
+      rotation: {x: 0.37537855, y: -0.09090849, z: 0.3073717, w: 0.8696834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      position: {x: -0.038433466, y: -0.0022064215, z: 0.042487405}
+      rotation: {x: 0.00000012076603, y: 0.00000027654195, z: 0.0000002638894, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb1
+      position: {x: -0.023778157, y: -0.008352968, z: 0.025606357}
+      rotation: {x: -0.0000007007081, y: 0.00000010585682, z: -0.00000047218228, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb2
+      position: {x: -0.023409734, y: -0.016759342, z: 0.013814715}
+      rotation: {x: 2.2398087e-14, y: -0.000000045847994, z: 0.00000050434494, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandThumb3
+      position: {x: -0.030373847, y: -0.018657688, z: 0.0037062748}
+      rotation: {x: 0.00000038063433, y: 0.0000009116743, z: -0.0000009066271, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      position: {x: -0.116186015, y: 0.0057357796, z: 0.039096948}
+      rotation: {x: -0.000000073097034, y: -0.00000028422716, z: -0.00000026351046, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex1
+      position: {x: -0.04611222, y: -0.00000015258793, z: 0.006189109}
+      rotation: {x: 0.000000804203, y: 0.000001127062, z: -9.083889e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex2
+      position: {x: -0.03207284, y: -0.0071591204, z: 0.004531771}
+      rotation: {x: -0.00000012190932, y: -0.00000042303702, z: -5.235495e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandIndex3
+      position: {x: -0.023455052, y: -0.009387972, z: 0.0029020123}
+      rotation: {x: -0.0000003095885, y: -0.0000006129557, z: -0.00000034155306, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      position: {x: -0.117749736, y: 0.0088700885, z: 0.013383789}
+      rotation: {x: 0.000000029183408, y: 0.000000023237416, z: -0.0000005920883, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle1
+      position: {x: -0.05529199, y: -0.01131119, z: 0.0000030255324}
+      rotation: {x: -0.0000005315602, y: 0.0000014559942, z: 0.00000041636142, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle2
+      position: {x: -0.03125962, y: -0.023172611, z: 0.0000017166142}
+      rotation: {x: -0.00000051235327, y: -0.000000032746858, z: 0.00000012086977, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandMiddle3
+      position: {x: -0.02005631, y: -0.018168645, z: 0.0000012373927}
+      rotation: {x: -0.00000022333737, y: -0.000000042433594, z: 0.00000021448443, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      position: {x: -0.11589297, y: 0.005787812, z: -0.011974894}
+      rotation: {x: 0.00000033870973, y: 0.00000008262142, z: 0.00000010684695, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing1
+      position: {x: -0.042864084, y: -0.016192935, z: -0.005111739}
+      rotation: {x: -0.00000032148213, y: 0.0000004233082, z: 0.00000046093342, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing2
+      position: {x: -0.025766151, y: -0.019417882, z: -0.0030722592}
+      rotation: {x: -0.0000002961432, y: -0.0000003324155, z: -0.0000002380175, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandRing3
+      position: {x: -0.018547978, y: -0.019389043, z: -0.0015995626}
+      rotation: {x: 0.00000063633036, y: 0.0000011163417, z: 0.00000007678251, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHand
+      position: {x: -0.11106097, y: -0.007975618, z: -0.036359597}
+      rotation: {x: -0.0000000574267, y: 0.00000017020784, z: -0.000000054403504, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky1
+      position: {x: -0.035210427, y: -0.011075594, z: -0.007465178}
+      rotation: {x: -0.00000018271687, y: -0.00000009177588, z: -0.0000017077323, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky2
+      position: {x: -0.018915562, y: -0.0155731235, z: -0.0047694193}
+      rotation: {x: 0.00000055843043, y: -0.00000038556902, z: 0.000000055572997, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_LeftHandPinky3
+      position: {x: -0.015214542, y: -0.019938817, z: -0.0043546758}
+      rotation: {x: -0.00000033220672, y: 0.0000005754207, z: 0.00000016568755, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightShoulder
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine2
+      position: {x: 0.07164268, y: 0.039943397, z: 0}
+      rotation: {x: -0.000000026920585, y: -0.0000004811457, z: 0.0000062674485, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightShoulder
+      position: {x: 0.072540045, y: -0.004059144, z: -2.220446e-18}
+      rotation: {x: 0.037565384, y: -0.034530435, z: -0.59698004, w: 0.8006318}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightForeArm
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightArm
+      position: {x: 0.2545277, y: -0.018148808, z: -0.013919282}
+      rotation: {x: 0.06604219, y: -0.5136325, z: -0.11966855, w: 0.8470535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightForeArm
+      position: {x: 0.25522742, y: -0.011914522, z: 0.0068025556}
+      rotation: {x: 0.48339632, y: -0.0046744384, z: -0.3320009, w: 0.8099886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      position: {x: 0.038433466, y: -0.0022064215, z: 0.042487405}
+      rotation: {x: -0.00000012444484, y: -0.00000009647648, z: 0.00000011015084, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb1
+      position: {x: 0.023778157, y: -0.008352968, z: 0.025606357}
+      rotation: {x: -0.00000045864965, y: -0.0000005991235, z: 0.000000099577264, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb2
+      position: {x: 0.023409734, y: -0.016759342, z: 0.013814715}
+      rotation: {x: 0.00000087629127, y: -0.0000003510697, z: -0.00000028308543, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandThumb3
+      position: {x: 0.030373847, y: -0.018657688, z: 0.0037062748}
+      rotation: {x: -0.00000061751507, y: 0.00000008936514, z: 0.000000064739055, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      position: {x: 0.116186015, y: 0.0057357796, z: 0.039096948}
+      rotation: {x: -0.00000032020614, y: -0.0000013998866, z: 0.00000049669814, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex1
+      position: {x: 0.04611222, y: -0.00000015258793, z: 0.006189109}
+      rotation: {x: 0.0000006649988, y: 0.0000011018224, z: -0.00000019310741, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex2
+      position: {x: 0.03207284, y: -0.0071591204, z: 0.004531771}
+      rotation: {x: 0.0000008150063, y: -0.00000006066695, z: -0.00000017247584, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandIndex3
+      position: {x: 0.023455052, y: -0.009387972, z: 0.0029020123}
+      rotation: {x: -0.00000055107284, y: 0.0000016183956, z: 0.00000029881707, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      position: {x: 0.117749736, y: 0.0088700885, z: 0.013383789}
+      rotation: {x: 0.0000000913272, y: 0.00000044643096, z: 0.00000010639118, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle1
+      position: {x: 0.05529199, y: -0.01131119, z: 0.0000030255324}
+      rotation: {x: -0.00000011217828, y: -0.00000091974846, z: -0.00000010504591, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle2
+      position: {x: 0.03125962, y: -0.023172611, z: 0.0000017166142}
+      rotation: {x: 0.0000007814433, y: 0.00000016243465, z: 0.00000051681764, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandMiddle3
+      position: {x: 0.02005631, y: -0.018168645, z: 0.0000012373927}
+      rotation: {x: 0.00000040504864, y: 0.00000012664654, z: 0.00000008796598, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      position: {x: 0.11589297, y: 0.005787812, z: -0.011974894}
+      rotation: {x: 0.000000013063876, y: -0.00000016273101, z: 0.00000031431603, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing1
+      position: {x: 0.042864084, y: -0.016192935, z: -0.005111739}
+      rotation: {x: 0.00000012871959, y: -0.0000011452192, z: 0.00000007435381, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing2
+      position: {x: 0.025766151, y: -0.019417882, z: -0.0030722592}
+      rotation: {x: 0.0000004340994, y: 0.0000008790719, z: 0.00000061355246, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandRing3
+      position: {x: 0.018547978, y: -0.019389043, z: -0.0015995626}
+      rotation: {x: -0.00000016870918, y: -0.00000035379068, z: -0.0000009103455, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky1
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHand
+      position: {x: 0.11106097, y: -0.007975618, z: -0.036359597}
+      rotation: {x: -6.820429e-14, y: -0.0000004782659, z: -0.00000013174065, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky2
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky1
+      position: {x: 0.035210427, y: -0.011075594, z: -0.007465178}
+      rotation: {x: 0.00000008835503, y: -0.00000019300496, z: 0.00000032440457, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky3
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky2
+      position: {x: 0.018915562, y: -0.0155731235, z: -0.0047694193}
+      rotation: {x: 0.000001415663, y: -0.000000076910474, z: 0.000000110761, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky4
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_RightHandPinky3
+      position: {x: 0.015214542, y: -0.019938817, z: -0.0043546758}
+      rotation: {x: -0.00000045765665, y: 0.0000004709599, z: 0.000002041894, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Neck
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Spine2
+      position: {x: -0, y: 0.09967058, z: 0.00519961}
+      rotation: {x: 0.000010604428, y: 0.00000020327508, z: -0.0000009294193, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Head
+      parentName: Ghostwoman_Walking:Ghostwoman_Walking:Character1_Ctrl_Neck
+      position: {x: -0, y: 0.05686616, z: 0.0124147}
+      rotation: {x: 0.10486295, y: 6.4210036e-18, z: -6.4210036e-18, w: 0.9944867}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

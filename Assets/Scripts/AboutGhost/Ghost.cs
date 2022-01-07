@@ -10,6 +10,7 @@ public class Ghost : MonoBehaviour
     public static Transform playerTransform;
     public AudioSource chasingSound;
     public LayerMask playerMask;
+    public Animator animator;
     public Transform[] patrolPoints;
 
     [HideInInspector] public Transform nowTarget;
@@ -20,6 +21,8 @@ public class Ghost : MonoBehaviour
     private bool isPatrol;
     private bool isInsidePlayer;
     private bool isInsideSongPyeon;
+    private int hash_chasing;
+    private int hash_stun;
 
     void Awake()
     {
@@ -27,7 +30,14 @@ public class Ghost : MonoBehaviour
         patrolCount = 0;
         isPatrol = true;
         isInsidePlayer = false;
+        SetAniHash();
         StartCoroutine(MoveStart());
+    }
+
+    public void SetAniHash()
+    {
+        hash_chasing = Animator.StringToHash("Chasing");
+        hash_stun = Animator.StringToHash("Stun");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,6 +55,7 @@ public class Ghost : MonoBehaviour
             isInsidePlayer = true;
             isPatrol = false;
             if (!isInsideSongPyeon) nowTarget = other.transform;
+            animator.SetBool(hash_chasing, true);
         }
         
     }
@@ -56,10 +67,10 @@ public class Ghost : MonoBehaviour
             chasingSound.Stop();
             isInsidePlayer = false;
             if (!isInsideSongPyeon) isPatrol = true;
+            animator.SetBool(hash_chasing, false);
         }
         if (CheckIsSongPyeon(other))
         {
-            Debug.Log("송편 나감");
             ExitSongPyeon();   
         }
     }
@@ -134,9 +145,11 @@ public class Ghost : MonoBehaviour
 
     IEnumerator StunTimer(int stunTime)
     {
+        animator.SetBool(hash_stun, true);
         navMesh.speed = 0;
         yield return WaitTimeManager.WaitForSeconds(stunTime);
         navMesh.speed = 3;
+        animator.SetBool(hash_stun, false);
     }
 
     private bool CheckKillPlayer()

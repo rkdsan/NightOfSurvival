@@ -308,7 +308,6 @@ MonoBehaviour:
   slider: {fileID: 265916458}
   valueText: {fileID: 1080337457}
   keyString: EffectVolume
-  source: {fileID: 0}
 --- !u!1 &265916456
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,13 +458,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 291948391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4222dbeb411426f4cb01a40396f672c3, type: 3}
+  m_Script: {fileID: 11500000, guid: c3307ef49a829b04bb81f851cff316d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1875943556}
   valueText: {fileID: 1696003095}
-  keyString: BGMVolume
-  source: {fileID: 2033108652}
 --- !u!1 &416761243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,12 +2616,12 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 30
+  m_Value: 31.3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 291948393}
-        m_TargetAssemblyTypeName: SoundSetter, Assembly-CSharp
+        m_TargetAssemblyTypeName: BGMVolumeSetter, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 1
         m_Arguments:

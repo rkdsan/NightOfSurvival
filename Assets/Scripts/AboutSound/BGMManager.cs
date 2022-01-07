@@ -21,26 +21,10 @@ public class BGMManager : MonoBehaviour
         }
 
         source.volume = PlayerPrefs.GetInt("BGMVolume", 30) * 0.01f;
-        DontDestroyOnLoad(gameObject);
-        StartCoroutine(SetSource());
-    }
-
-    private IEnumerator SetSource()
-    {
-        targetVolume = source.volume;
-        source.volume = 0;
-        yield return WaitTimeManager.WaitForSeconds(1);
-
         source.Play();
-        int i = 20;
-        while (i-- > 0)
-        {
-            source.volume += targetVolume / 20;
-            yield return WaitTimeManager.WaitForFixedUpdate();
-        }
-
-        source.volume = targetVolume;
+        DontDestroyOnLoad(gameObject);
     }
+
 
     public void SetVolume()
     {

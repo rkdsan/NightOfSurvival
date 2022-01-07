@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundSetter : MonoBehaviour
+public class BGMVolumeSetter : MonoBehaviour
 {
+    public static string keyString = "BGMVolume";
+
     public Slider slider;
     public Text valueText;
-    public string keyString;
-    public AudioSource source;
 
     private int value = 0;
 
@@ -25,7 +24,6 @@ public class SoundSetter : MonoBehaviour
             slider.value = PlayerPrefs.GetInt(keyString);
         }
         SetValue();
-        
     }
 
     public void SetValue()
