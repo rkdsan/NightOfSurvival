@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SongPyeon : Item
+public class SongPyeon : OnGroundItem
 {
     public Rigidbody rigid;
     public SphereCollider spCollider;
 
 
-    public override bool UseItem()
+    public bool UseItem()
     {
         Vector3 forward = transform.parent.forward;
         forward.y += 0.3f;

@@ -10,7 +10,7 @@ public class LoadingSceneManager : MonoBehaviour
 
     private static string nextSceneName;
 
-    public static void LoatScene(string sceneName)
+    public static void LoadScene(string sceneName)
     {
         nextSceneName = sceneName;
         SceneManager.LoadScene("LoadingScene");
@@ -31,21 +31,25 @@ public class LoadingSceneManager : MonoBehaviour
 
             yield return null;
 
-            if(op.progress < 0.9f)
+            if(fillImage.fillAmount < 0.7f)
             {
                 Debug.Log("·Îµù");
-                fillImage.fillAmount = op.progress;
+                //fillImage.fillAmount = op.progress;
+                fillImage.fillAmount += 0.03f;
             }
             else
             {
                 timer += Time.unscaledDeltaTime;
-                fillImage.fillAmount = Mathf.Lerp(0.9f, 1, timer);
-                if(fillImage.fillAmount >= 1)
+                //fillImage.fillAmount = Mathf.Lerp(0.9f, 1, timer);
+                fillImage.fillAmount += 0.005f;
+                if (fillImage.fillAmount >= 1)
                 {
                     op.allowSceneActivation = true;
                     yield break;
                 }
             }
+
+
         }
 
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstalledTalisman : MonoBehaviour
+public class Talisman_Used : MonoBehaviour
 {
     public GameObject explosionParticle;
     

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Talisman : Item
+public class Talisman_InHand : InHandItem
 {
     public static InstallingBar installingBar;
-    public GameObject installedTalisman;
+    public GameObject talisman_Used;
     public LayerMask layermask;
 
     private Vector3 shootPos;
@@ -19,22 +19,15 @@ public class Talisman : Item
         return false;
     }
 
-    private void OnDisable()
-    {
-        if (installingBar != null)
-        {
-            installingBar.ResetTime();
-            installingBar.gameObject.SetActive(false);
-        }
-    }
 
+    #region 설치
     private IEnumerator StartInstall()
     {
         installingBar.gameObject.SetActive(true);
         while (Input.GetMouseButton(1) && ShootRaycast())
         {
             //fillAmout가 반환됨
-            if(installingBar.UpTime() >= 1)
+            if (installingBar.UpTime() >= 1)
             {
                 Install();
                 break;
@@ -50,7 +43,7 @@ public class Talisman : Item
         if (ShootRaycast())
         {
             rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
-            Instantiate(installedTalisman, hit.point, rot);
+            Instantiate(talisman_Used, hit.point, rot);
 
             GameManager.instance.inventoryManager.nowSlot.ConsumeItem();
 
@@ -66,25 +59,5 @@ public class Talisman : Item
         return Physics.Raycast(shootPos, shootDir, out hit, 2.5f, layermask);
     }
 
-    //public override bool UseItem()
-    //{
-    //    shootPos = Camera.main.transform.position;
-    //    shootDir = Camera.main.transform.forward;
-    //    if (Physics.Raycast(shootPos, shootDir, out hit, 2.5f))
-    //    {
-
-    //        rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
-    //        //벽이 아니면 false 리턴 하려고
-    //        Vector3 temp = rot.eulerAngles;
-
-
-    //        Instantiate(installedTalisman, hit.point, rot);
-    //        return true;
-    //    };
-
-
-    //    //레이가 안닿으면
-    //    return false;
-    //}
-
+    #endregion
 }

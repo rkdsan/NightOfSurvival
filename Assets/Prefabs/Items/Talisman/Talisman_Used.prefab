@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 8653136558901662038}
   - component: {fileID: 6468697845243871562}
   m_Layer: 2
-  m_Name: InstalledTalisman
+  m_Name: Talisman_Used
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

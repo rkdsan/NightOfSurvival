@@ -26,11 +26,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Talisman.installingBar = installingBar;
+        Talisman_InHand.installingBar = installingBar;
         Slot.inventoryManager = inventoryManager;
         Ghost.playerTransform = player.transform;
         Cursor.lockState = CursorLockMode.Locked;
 
+        fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
             .OnComplete(() => fadeImage.raycastTarget = false);
     }

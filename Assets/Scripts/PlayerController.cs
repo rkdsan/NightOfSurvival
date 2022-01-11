@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     public float camRotateLimit = 80;
 
     private const float SPEED_STANDARD = 0.02f;
-    private const float WALK_CAMERA_MOVE_RANGE = 0.03f;
 
     private CharacterController controller;
     private InteractiveObject hitInteractiveObj;
@@ -40,11 +39,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDir;
     private Vector3 camApplyRotate;
     private Vector3 playerRotate;
-    private Vector3 cameraLocalPos;
-    private Vector3 cameraLocalOriginPos;
     private Color runGaugeColor;
 
-    private int cameraLocalPosFlag;
     private float runGaugeAddValue;
     private float runGaugeUsevalue;
     private bool isInteractiveObj;
@@ -58,8 +54,6 @@ public class PlayerController : MonoBehaviour
 
         camApplyRotate = playerCam.transform.localEulerAngles;
         playerRotate = transform.localEulerAngles;
-        cameraLocalPos = playerCam.transform.localPosition;
-        cameraLocalOriginPos = cameraLocalPos;
         runGaugeAddValue = 0.002f;
         runGaugeUsevalue = runGaugeAddValue * 5;
         applySpeed = walkSpeed;
@@ -70,7 +64,6 @@ public class PlayerController : MonoBehaviour
         isRunning = false;
         canMove = true;
         onTab = false;
-        cameraLocalPosFlag = 1;
 
         ShadowGhost.playerController = this;
     }
@@ -103,32 +96,8 @@ public class PlayerController : MonoBehaviour
         controller.Move(moveDir);
 
         SetWalkSound();
-        //SetCameraLocalPos();
     }
 
-    private void SetCameraLocalPos()
-    {
-        if (moveDir == Vector3.zero) 
-        { 
-            //return;
-        }
-
-        float gap = Mathf.Abs(cameraLocalPos.y - cameraLocalOriginPos.y);
-
-        if(gap > WALK_CAMERA_MOVE_RANGE)
-        {
-            cameraLocalPosFlag *= -1;
-
-        }
-
-        float mulValue = 1 + gap * 100;
-        float temp = WALK_CAMERA_MOVE_RANGE * 0.1f * cameraLocalPosFlag * mulValue;
-        Debug.Log(temp);
-
-        cameraLocalPos.y += WALK_CAMERA_MOVE_RANGE * 0.1f * cameraLocalPosFlag * mulValue;
-        playerCam.transform.localPosition = cameraLocalPos;
-
-    }
 
     #region 이동관련
     private void ManageMove()

@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class CraftManager : MonoBehaviour
 {
     public GameObject craftWindow;
-    public Item[] craftItems;
+    public OnGroundItem[] craftItems;
     public Image[] craftImages;
 
     [HideInInspector] public Slot[] craftSlots;
@@ -76,7 +76,7 @@ public class CraftManager : MonoBehaviour
         craftResult = CraftRecipe.GetCraftResult(craftSlots[0].item.objectName, craftSlots[1].item.objectName);
 
         if (craftResult.Equals("")) return;
-        foreach (Item item in craftItems)
+        foreach (OnGroundItem item in craftItems)
         {
             if (craftResult.Equals(item.objectName))
             {
@@ -85,11 +85,11 @@ public class CraftManager : MonoBehaviour
         }
     }
     
-    IEnumerator MakeItem(Item item)
+    IEnumerator MakeItem(OnGroundItem item)
     {
         isCrafting = true;
         yield return new WaitForSeconds(1);
-        Item temp = Instantiate(item.gameObject).GetComponent<Item>();
+        InHandItem temp = Instantiate(item.gameObject).GetComponent<InHandItem>();
 
         for (int i = 0; i < craftImages.Length; i++)
         {

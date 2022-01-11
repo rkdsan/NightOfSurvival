@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : WindowManager
 {
-    
+    public GameObject OptionWindow;
     private CursorLockMode beforeCursorMode;
 
     private void OnEnable()
@@ -39,6 +39,11 @@ public class PauseManager : WindowManager
     {
         GameManager.instance.LoadTitleScene();
         gameObject.SetActive(false);
+    }
+
+    public void Button_Option()
+    {
+        OptionWindow.SetActive(true);
     }
 
 }

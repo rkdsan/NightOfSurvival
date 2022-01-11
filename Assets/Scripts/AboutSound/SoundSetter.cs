@@ -32,7 +32,7 @@ public class SoundSetter : MonoBehaviour
         value = (int)slider.value;
         valueText.text = "" + value;
         PlayerPrefs.SetInt(keyString, value);
-        BGMManager.instance.SetVolume();
+        //BGMManager.instance.SetVolume();
     }
 
 }

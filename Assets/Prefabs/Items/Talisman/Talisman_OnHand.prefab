@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &558040926384159605
+--- !u!1 &2589169330842061207
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 558040926384159562}
-  - component: {fileID: 558040926384159561}
-  - component: {fileID: 558040926384159560}
-  - component: {fileID: 558040926384159607}
-  - component: {fileID: 558040926384159606}
-  m_Layer: 0
-  m_Name: Talisman
+  - component: {fileID: 2589169330842061224}
+  - component: {fileID: 2589169330842061227}
+  - component: {fileID: 2589169330842061226}
+  - component: {fileID: 2589169330842061205}
+  - component: {fileID: 4132808153375074537}
+  m_Layer: 7
+  m_Name: Talisman_OnHand
   m_TagString: InteractiveObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &558040926384159562
+--- !u!4 &2589169330842061224
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558040926384159605}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13999975, y: 0.519, z: 6.01}
+  m_GameObject: {fileID: 2589169330842061207}
+  m_LocalRotation: {x: -0.5701596, y: 0.67948973, z: -0.35371995, w: -0.29680634}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2564394, y: 0.01, z: 0.5266032}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &558040926384159561
+--- !u!33 &2589169330842061227
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558040926384159605}
+  m_GameObject: {fileID: 2589169330842061207}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &558040926384159560
+--- !u!23 &2589169330842061226
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558040926384159605}
+  m_GameObject: {fileID: 2589169330842061207}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,39 +83,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &558040926384159607
+--- !u!65 &2589169330842061205
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558040926384159605}
+  m_GameObject: {fileID: 2589169330842061207}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &558040926384159606
+--- !u!114 &4132808153375074537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558040926384159605}
+  m_GameObject: {fileID: 2589169330842061207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5236fa8c0e3ad3e41acf8ca3bca7ddfb, type: 3}
+  m_Script: {fileID: 11500000, guid: a8d0174aa64557f4ab4fbac829377937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "\uBD80\uC801"
-  explainComment: "LB: \uC90D\uAE30"
   itemImage: {fileID: 21300000, guid: 2d1719bf5a98c25469f3f382ade09aa4, type: 3}
   offsetPosition: {x: 0, y: 0, z: 0}
   offsetRotate: {x: 55, y: 180, z: -80}
+  objectName: "\uBD80\uC801"
   canCraft: 0
-  isConsumable: 1
-  installedTalisman: {fileID: 8653136558901662037, guid: 0026ea043bd6cc94197bbf82eb72ec17, type: 3}
+  isConsumable: 0
+  talisman_Used: {fileID: 8653136558901662037, guid: 0026ea043bd6cc94197bbf82eb72ec17, type: 3}
   layermask:
     serializedVersion: 2
     m_Bits: 123

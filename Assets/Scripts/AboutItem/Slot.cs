@@ -9,25 +9,23 @@ public class Slot : MonoBehaviour
     public Image image;
     public Text countText;
 
-    [HideInInspector] public Item item;
+    [HideInInspector] public InHandItem item;
     [HideInInspector] public int itemCount;
 
 
-    public void NewItem(Item _item)
+    public void NewItem(InHandItem _item)
     {
         item = _item;
         image.sprite = _item.itemImage;
         image.color = Color.white;
         itemCount = 1;
-        item.gameObject.layer = 1 << 1;
         
-
         Transform ItemObj = item.gameObject.transform;
         ItemObj.transform.parent = GameManager.instance.playerController.hand.transform;
         ItemObj.localPosition = Vector3.zero;
         ItemObj.transform.localPosition += item.offsetPosition;
         ItemObj.localRotation = Quaternion.Euler(item.offsetRotate);
-        
+
         item.gameObject.SetActive(false);
 
         SetCountText();

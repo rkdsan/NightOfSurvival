@@ -64,7 +64,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(Item _item)
+    public void AddItem(InHandItem _item)
     {
         if (itemKindCount >= slots.Length)
         {
