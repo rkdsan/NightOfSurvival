@@ -15,11 +15,19 @@ public class Slot : MonoBehaviour
 
     public void NewItem(InHandItem _item)
     {
+
+
         item = _item;
         image.sprite = _item.itemImage;
         image.color = Color.white;
         itemCount = 1;
-        
+
+        SetItemLocation();
+        SetCountText();
+    }
+
+    private void SetItemLocation()
+    {
         Transform ItemObj = item.gameObject.transform;
         ItemObj.transform.parent = GameManager.instance.playerController.hand.transform;
         ItemObj.localPosition = Vector3.zero;
@@ -27,8 +35,6 @@ public class Slot : MonoBehaviour
         ItemObj.localRotation = Quaternion.Euler(item.offsetRotate);
 
         item.gameObject.SetActive(false);
-
-        SetCountText();
     }
 
     public void UpCount()

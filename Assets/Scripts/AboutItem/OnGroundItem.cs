@@ -5,7 +5,17 @@ using UnityEngine.UI;
 
 public class OnGroundItem : InteractiveObject
 {
-    public InHandItem inHandItem;
+    public GameObject inHandPrefab;
+
+    private InHandItem inHandItem;
+
+    private void Awake()
+    {
+        inHandItem = Instantiate(inHandPrefab, transform.position, Quaternion.identity)
+            .GetComponent<InHandItem>();
+        inHandItem.transform.parent = transform;
+        inHandItem.gameObject.SetActive(false);
+    }
 
     private void Reset()
     {
