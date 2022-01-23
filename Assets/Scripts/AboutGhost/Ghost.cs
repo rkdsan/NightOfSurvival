@@ -86,7 +86,7 @@ public class Ghost : MonoBehaviour
 
     private bool CheckIsSongPyeon(Collider other)
     {
-        SongPyeon temp = other.GetComponent<SongPyeon>();
+        SongPyeon_Used temp = other.GetComponent<SongPyeon_Used>();
         if (temp != null)
         {
             return true;

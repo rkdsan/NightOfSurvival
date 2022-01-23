@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 3311054739298912365, guid: 38c583bde738622429a27cb8bb9afc73, type: 3}
+  boomSound: {fileID: 8300000, guid: 6b917fa5188774244acaa93c50615082, type: 3}
 --- !u!135 &6468697845243871562
 SphereCollider:
   m_ObjectHideFlags: 0

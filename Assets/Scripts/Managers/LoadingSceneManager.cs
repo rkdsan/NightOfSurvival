@@ -33,7 +33,6 @@ public class LoadingSceneManager : MonoBehaviour
 
             if(fillImage.fillAmount < 0.7f)
             {
-                Debug.Log("·Îµù");
                 //fillImage.fillAmount = op.progress;
                 fillImage.fillAmount += 0.03f;
             }

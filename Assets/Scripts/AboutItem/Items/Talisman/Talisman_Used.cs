@@ -5,7 +5,7 @@ using UnityEngine;
 public class Talisman_Used : MonoBehaviour
 {
     public GameObject explosionParticle;
-    
+    public AudioClip boomSound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +13,7 @@ public class Talisman_Used : MonoBehaviour
         {
             other.GetComponent<Ghost>().Stuned(2);
             Instantiate(explosionParticle, transform.position, Quaternion.identity);
-            EffectSoundManager.instance.effectSound_boom.Play();
+            SFXPlayer.instance.Play(boomSound);
             Destroy(gameObject);
         }
     }

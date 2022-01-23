@@ -6,6 +6,7 @@ public class DoorBinder : MonoBehaviour
 {
     public Door moveDoorScript;
     public Door targetDoorScript;
+    public AudioClip doorSound;
 
     private GameObject moveDoor;
     private GameObject targetDoor;
@@ -41,7 +42,7 @@ public class DoorBinder : MonoBehaviour
     IEnumerator MoveDoor()
     {
         isMoving = true;
-        EffectSoundManager.instance.effectSound_doorSound.Play();
+        SFXPlayer.instance.Play(doorSound);
 
         int remind = repeat;
         while (remind-- > 0)

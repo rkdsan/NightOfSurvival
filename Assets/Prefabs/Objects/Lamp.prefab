@@ -115,7 +115,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6444506, b: 0.3915094, a: 1}
+  m_Color: {r: 0.9529412, g: 0.2509804, b: 0.003921569, a: 1}
   m_Intensity: 1
   m_Range: 20
   m_SpotAngle: 30
@@ -181,3 +181,4 @@ MonoBehaviour:
   objectName: "\uB7A8\uD504"
   explainComment: 
   lampLight: {fileID: 5487017708092729542}
+  turnOffOnSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}

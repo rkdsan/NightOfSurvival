@@ -3,7 +3,10 @@ guid: d1d40ff6910aa0b43a754806a90366f2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - itemImage: {instanceID: 0}
+  - songPyeon_Used: {instanceID: 0}
+  - useSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

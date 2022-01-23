@@ -5,6 +5,7 @@ using UnityEngine;
 public class SongPyeon_InHand : InHandItem
 {
     public GameObject songPyeon_Used;
+    public AudioClip useSound;
 
     public override bool UseItem()
     {
@@ -12,7 +13,7 @@ public class SongPyeon_InHand : InHandItem
         Instantiate(songPyeon_Used, transform.position + forward, transform.rotation
             , transform.parent);
 
-        EffectSoundManager.instance.effectSound_pickUp.Play();
+        SFXPlayer.instance.Play(useSound);
         return true;
     }
 }

@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public ItemNamePrinter nowItemName;
     public GameObject CraftWindow;
     public GameObject ItemFrame;
+    public AudioClip pickUpSound;
     public Slot[] slots;
 
     [HideInInspector] public int itemKindCount;
@@ -80,7 +81,6 @@ public class InventoryManager : MonoBehaviour
                 slot.NewItem(_item);
                 itemKindCount++;
                 CheckItemIndex();
-                EffectSoundManager.instance.effectSound_pickUp.Play();
                 break;
             }
             //같은템이면
@@ -88,10 +88,10 @@ public class InventoryManager : MonoBehaviour
             {
                 slot.UpCount();
                 Destroy(_item.gameObject);
-                EffectSoundManager.instance.effectSound_pickUp.Play();
                 break;
             }
         }
+        SFXPlayer.instance.Play(pickUpSound);
     }
 
     public void CheckItemIndex()

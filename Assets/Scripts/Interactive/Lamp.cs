@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lamp : InteractiveObject
 {
     public Light lampLight;
+    public AudioClip turnOffOnSound;
 
     void Awake()
     {
@@ -24,13 +25,13 @@ public class Lamp : InteractiveObject
         {
             lampLight.enabled = false;
             explainComment = "LB: ÄÑ±â";
-            EffectSoundManager.instance.effectSound_lampOff.Play();
+            SFXPlayer.instance.Play(turnOffOnSound);
         }
         else
         {
             lampLight.enabled = true;
             explainComment = "LB: ²ô±â";
-            EffectSoundManager.instance.effectSound_lampOn.Play();
+            SFXPlayer.instance.Play(turnOffOnSound);
         }
             
     }

@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject informationTextObejct;
     public GameObject hand;
-    public AudioSource walkSound;
+    public AudioClip walkSound;
+    public AudioClip runSound;
     public Image runGaugeImage;
     public Text objectName;
     public Text explainText;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private const float SPEED_STANDARD = 0.02f;
 
+    private AudioSource moveSoundPlayer;
     private CharacterController controller;
     private InteractiveObject hitInteractiveObj;
     private Camera playerCam;
@@ -124,7 +126,7 @@ public class PlayerController : MonoBehaviour
     {
         isRunning = true;
         applySpeed = runSpeed;
-        //walkSound.pitch = 1.5f;
+        moveSoundPlayer.clip = runSound;
         runGaugeColor.a = 1;
         while (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) 
             && runGaugeImage.fillAmount > runGaugeUsevalue)
@@ -136,7 +138,7 @@ public class PlayerController : MonoBehaviour
         }
         isRunning = false;
         applySpeed = walkSpeed;
-        //walkSound.pitch = 1.2f;
+        moveSoundPlayer.clip = walkSound;
         StartCoroutine(UpRunGauge());
 
     }
@@ -153,7 +155,6 @@ public class PlayerController : MonoBehaviour
 
         if (!isRunning)
         {
-            
             UpdateRunGaugeColor();
         }
     }
@@ -169,14 +170,17 @@ public class PlayerController : MonoBehaviour
     {
         if (moveDir == Vector3.zero)
         {
-            if (walkSound.isPlaying)
+            if (moveSoundPlayer != null && moveSoundPlayer.isPlaying)
             {
-                walkSound.Stop();
+                moveSoundPlayer.Stop();
+                moveSoundPlayer = null;
             }
         }
-        else if(!walkSound.isPlaying)
+        else if(moveSoundPlayer == null || 
+            (moveSoundPlayer != null && !moveSoundPlayer.isPlaying))
         {
-            walkSound.Play();
+            moveSoundPlayer = SFXPlayer.instance.Play(walkSound);
+            
         }
     }
 

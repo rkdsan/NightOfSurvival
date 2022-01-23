@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4588255320788811563}
   m_Layer: 7
   m_Name: SoungPyeon_InHand
-  m_TagString: InteractiveObject
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,3 +115,4 @@ MonoBehaviour:
   canCraft: 0
   isConsumable: 1
   songPyeon_Used: {fileID: 6014514722436928302, guid: ccc2f096975b278469d89a7d39e591ec, type: 3}
+  useSound: {fileID: 8300000, guid: 6309570fa36ed7c4c9c9f72054bbecc3, type: 3}

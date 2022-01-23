@@ -31,7 +31,7 @@ public class BGMVolumeSetter : MonoBehaviour
         value = (int)slider.value;
         valueText.text = "" + value;
         PlayerPrefs.SetInt(keyString, value);
-        BGMManager.instance.SetVolume();
+        BGMPlayer.instance.SetVolume();
     }
 
 }

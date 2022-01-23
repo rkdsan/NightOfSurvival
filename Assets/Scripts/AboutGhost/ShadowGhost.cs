@@ -35,7 +35,6 @@ public class ShadowGhost : MonoBehaviour
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
 
-        EffectSoundManager.instance.effectSound_chop.Play();
         GameManager.instance.GameOver(1);
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractiveDoor : InteractiveObject
 {
     public GameObject targetDoor;
-
+    public AudioClip doorSound;
     private static string openString = "LB: ¿­±â";
     private static string closeString = "LB: ´Ý±â";
 
@@ -43,7 +43,7 @@ public class InteractiveDoor : InteractiveObject
         isMoving = true;
         int repeat = 20;
         Vector3 addPos = targetPos / repeat;
-        EffectSoundManager.instance.effectSound_doorSound.Play();
+        SFXPlayer.instance.Play(doorSound);
 
         if (isOpen)
         {

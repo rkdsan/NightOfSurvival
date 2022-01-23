@@ -118,3 +118,4 @@ MonoBehaviour:
   layermask:
     serializedVersion: 2
     m_Bits: 123
+  installSound: {fileID: 8300000, guid: 87ccdde4f8c370b43855c939d7430d33, type: 3}

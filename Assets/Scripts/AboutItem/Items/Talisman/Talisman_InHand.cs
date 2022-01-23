@@ -7,6 +7,7 @@ public class Talisman_InHand : InHandItem
     public static InstallingBar installingBar;
     public GameObject talisman_Used;
     public LayerMask layermask;
+    public AudioClip installSound;
 
     private Vector3 shootPos;
     private Vector3 shootDir;
@@ -47,7 +48,7 @@ public class Talisman_InHand : InHandItem
 
             GameManager.instance.inventoryManager.nowSlot.ConsumeItem();
 
-            EffectSoundManager.instance.effectSound_pickUp.Play();
+            SFXPlayer.instance.Play(installSound);
         };
     }
 
