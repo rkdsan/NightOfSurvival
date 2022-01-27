@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveHorizontal;
     private Vector3 moveVertical;
     private Vector3 moveDir;
-    private Vector3 camApplyRotate;
+    private Vector3 camRotate;
     private Vector3 playerRotate;
     private Color runGaugeColor;
 
@@ -48,14 +48,15 @@ public class PlayerController : MonoBehaviour
     private float runGaugeUsevalue;
     private bool isInteractiveObj;
     private bool isRunning;
-    
-    
+
+    private Vector3 temp;
+
     void Awake()
     {
         playerCam = Camera.main;
         controller = GetComponent<CharacterController>();
 
-        camApplyRotate = playerCam.transform.localEulerAngles;
+        camRotate = playerCam.transform.localEulerAngles;
         playerRotate = transform.localEulerAngles;
         runGaugeAddValue = 0.002f;
         runGaugeUsevalue = runGaugeAddValue * 5;
@@ -192,16 +193,18 @@ public class PlayerController : MonoBehaviour
         playerRotate.y += addRotY;
 
         transform.localEulerAngles = playerRotate;
+
     }
 
     private void RotateCamera()
     {
         float addRotX = Input.GetAxisRaw("Mouse Y") * lookSensitivity;
 
-        camApplyRotate.x -= addRotX;
-        camApplyRotate.x = Mathf.Clamp(camApplyRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
+        camRotate.x -= addRotX;
+        camRotate.x = Mathf.Clamp(camRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
 
-        playerCam.transform.localEulerAngles = camApplyRotate;
+        playerCam.transform.localEulerAngles = camRotate;
+
     }
     #endregion
 
@@ -262,6 +265,13 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    public void SetRotateWhenOutHideBin(Vector3 rotate)
+    {
+        rotate.x = 0;
+        rotate.z = 0;
+        rotate.y += 180;
 
+        playerRotate = rotate;
+    }
 
 }

@@ -20,19 +20,10 @@ public class HideBin : InteractiveObject
 
     private void Start()
     {
+        
         if (playerController == null)
         {
             playerController = GameManager.instance.playerController;
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            Debug.Log("룩앳");
-
-            
         }
     }
 
@@ -59,6 +50,7 @@ public class HideBin : InteractiveObject
         hideCamera.SetActive(true);
         playerController.OffObjectInformation();
         GameManager.instance.hideWindow.SetActive(true);
+        SFXPlayer.instance.Play(hideSound);
 
         //뒤주에서 나왔을때 뒤주를 보고 서있도록
         playerController.gameObject.transform.position = forwardTransform.position;
@@ -72,8 +64,17 @@ public class HideBin : InteractiveObject
         explainComment = hideString;
         hideCamera.SetActive(false);
         GameManager.instance.hideWindow.SetActive(false);
-        playerController.gameObject.transform.LookAt(gameObject.transform.position);
+
+        SetPlayerLook();
         playerController.gameObject.SetActive(true);
+    }
+
+    private void SetPlayerLook()
+    {
+        playerController.gameObject.transform.LookAt(gameObject.transform);
+        Vector3 rot = playerController.transform.eulerAngles;
+
+        playerController.SetRotateWhenOutHideBin(rot);
     }
 
 }

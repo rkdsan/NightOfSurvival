@@ -12746,7 +12746,7 @@ MonoBehaviour:
   explainComment: "LB: \uC228\uAE30"
   hideCamera: {fileID: 899900195}
   forwardTransform: {fileID: 1147478442}
-  hideSound: {fileID: 0}
+  hideSound: {fileID: 8300000, guid: 2cc50e543bbf4e54ab51a181cd156d48, type: 3}
 --- !u!1 &1695895797
 GameObject:
   m_ObjectHideFlags: 0
