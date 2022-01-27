@@ -8,27 +8,27 @@ using UnityEngine.AI;
 public class Ghost : MonoBehaviour
 {
     public static Transform playerTransform;
-    public AudioSource chasingSound;
+    public AudioClip chasingSoundClip;
     public LayerMask playerMask;
     public Animator animator;
     public Transform[] patrolPoints;
 
-    [HideInInspector] public Transform nowTarget;
+    [HideInInspector] public Transform songPyeon;
 
+    private AudioSource chasingSoundPlayer;
     private NavMeshAgent navMesh;
     private RaycastHit hit;
+
     private int patrolCount;
-    private bool isPatrol;
-    private bool isInsidePlayer;
-    private bool isInsideSongPyeon;
     private int hash_chasing;
     private int hash_stun;
+    private bool isInsidePlayer;
+    private bool isInsideSongPyeon;
 
     void Awake()
     {
         navMesh = GetComponent<NavMeshAgent>();
         patrolCount = 0;
-        isPatrol = true;
         isInsidePlayer = false;
         SetAniHash();
         StartCoroutine(MoveStart());
@@ -46,15 +46,12 @@ public class Ghost : MonoBehaviour
         if (CheckIsSongPyeon(other))
         {
             isInsideSongPyeon = true;
-            isPatrol = false;
-            nowTarget = other.transform;
+            songPyeon = other.transform;
         }
         if (CheckIsPlayer(other))
         {
-            chasingSound.Play();
+            chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
             isInsidePlayer = true;
-            isPatrol = false;
-            if (!isInsideSongPyeon) nowTarget = other.transform;
             animator.SetBool(hash_chasing, true);
         }
         
@@ -62,17 +59,21 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (CheckIsPlayer(other))
-        {
-            chasingSound.Stop();
-            isInsidePlayer = false;
-            if (!isInsideSongPyeon) isPatrol = true;
-            animator.SetBool(hash_chasing, false);
-        }
         if (CheckIsSongPyeon(other))
         {
-            ExitSongPyeon();   
+            isInsideSongPyeon = false;
         }
+        if (CheckIsPlayer(other))
+        {
+            ExitPlayer();
+        }
+    }
+
+    private void ExitPlayer()
+    {
+        chasingSoundPlayer.Stop();
+        isInsidePlayer = false;
+        animator.SetBool(hash_chasing, false);
     }
 
     private bool CheckIsPlayer(Collider other)
@@ -94,34 +95,31 @@ public class Ghost : MonoBehaviour
         return false;
     }
 
-    private void ExitSongPyeon()
-    {
-        isInsideSongPyeon = false;
-        if (isInsidePlayer) nowTarget = playerTransform;
-        else isPatrol = true;
-    }
 
     IEnumerator MoveStart()
     {
         while (true)
         {
-            if (nowTarget == null)
+            if (isInsideSongPyeon)
             {
-                ExitSongPyeon();
+                if (songPyeon == null) isInsideSongPyeon = false;
+                else navMesh.SetDestination(songPyeon.transform.position);
             }
+            else if (isInsidePlayer)
+            {
+                if (!playerTransform.gameObject.activeSelf) ExitPlayer();
 
-            if (isPatrol)
-            {
-                yield return new WaitForSeconds(1f);
-                Patrol();
-            }
-            else
-            {
-                navMesh.SetDestination(nowTarget.position);
+                navMesh.SetDestination(playerTransform.position);
+
                 if (CheckKillPlayer())
                 {
                     GameManager.instance.GameOver(0);
                 }
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f);
+                Patrol();
             }
 
             yield return WaitTimeManager.WaitForSeconds(0.2f);

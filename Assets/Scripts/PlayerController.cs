@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public const float CAM_ROTATE_LIMIT = 80;
+
+    public CharacterController controller;
     public GameObject informationTextObejct;
     public GameObject hand;
     public AudioClip walkSound;
@@ -23,15 +26,13 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed = 1;
     public float runSpeed = 2;
-    private float applySpeed;
-
     public float lookSensitivity;
-    public float camRotateLimit = 80;
+
+    private float applySpeed;
 
     private const float SPEED_STANDARD = 0.02f;
 
     private AudioSource moveSoundPlayer;
-    private CharacterController controller;
     private InteractiveObject hitInteractiveObj;
     private Camera playerCam;
     private RaycastHit hit;
@@ -198,7 +199,7 @@ public class PlayerController : MonoBehaviour
         float addRotX = Input.GetAxisRaw("Mouse Y") * lookSensitivity;
 
         camApplyRotate.x -= addRotX;
-        camApplyRotate.x = Mathf.Clamp(camApplyRotate.x, -camRotateLimit, camRotateLimit);
+        camApplyRotate.x = Mathf.Clamp(camApplyRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
 
         playerCam.transform.localEulerAngles = camApplyRotate;
     }

@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(int index)
     {
+        Debug.Log("게임오버");
         dieBGM.Play();
         SFXPlayer.instance.Play(dieSFX);
         gameOverImages[index].gameObject.SetActive(true);
