@@ -12,6 +12,11 @@ public class HideBin : InteractiveObject
     public Transform forwardTransform;
     public AudioClip hideSound;
 
+    private void Awake()
+    {
+        hideCamera.SetActive(false);
+    }
+
     private void Reset()
     {
         objectName = "╣заж";
@@ -19,8 +24,7 @@ public class HideBin : InteractiveObject
     }
 
     private void Start()
-    {
-        
+    {   
         if (playerController == null)
         {
             playerController = GameManager.instance.playerController;

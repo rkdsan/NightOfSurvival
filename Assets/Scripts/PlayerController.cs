@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
         }
         isRunning = false;
         applySpeed = walkSpeed;
-        moveSoundPlayer.clip = walkSound;
+        if(moveSoundPlayer != null) moveSoundPlayer.clip = walkSound;
         StartCoroutine(UpRunGauge());
 
     }
@@ -173,16 +173,20 @@ public class PlayerController : MonoBehaviour
         if (moveDir == Vector3.zero)
         {
             if (moveSoundPlayer != null && moveSoundPlayer.isPlaying)
-            {
+            {//사용한 플레이어 반환
                 moveSoundPlayer.Stop();
+                moveSoundPlayer.loop = false;
                 moveSoundPlayer = null;
             }
         }
-        else if(moveSoundPlayer == null || 
-            (moveSoundPlayer != null && !moveSoundPlayer.isPlaying))
+        else if(moveSoundPlayer == null)
         {
             moveSoundPlayer = SFXPlayer.instance.Play(walkSound);
-            
+            moveSoundPlayer.loop = true;
+        }
+        else if(!moveSoundPlayer.isPlaying)
+        {
+            moveSoundPlayer.Play();
         }
     }
 
@@ -264,6 +268,7 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
+
 
     public void SetRotateWhenOutHideBin(Vector3 rotate)
     {
