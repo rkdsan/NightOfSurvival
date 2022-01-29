@@ -6,31 +6,34 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public const float CAM_ROTATE_LIMIT = 80;
-
     public CharacterController controller;
-    public GameObject informationTextObejct;
     public GameObject hand;
+
+    [Header("Sound Clip")]
     public AudioClip walkSound;
     public AudioClip runSound;
+
+    [Header("UI")]
+    public GameObject informationTextObejct;
     public Image runGaugeImage;
     public Text objectName;
     public Text explainText;
     
-
+    [Header("etc")]
     public LayerMask rayLayerMask;
-
-    [HideInInspector] public bool onTab;
-    [HideInInspector] public bool canMove;
-    [HideInInspector] public InventoryManager inventoryManager;
-
-    public float walkSpeed = 1;
-    public float runSpeed = 2;
     public float lookSensitivity;
 
-    private float applySpeed;
+    [HideInInspector] public bool onTab = false;
+    [HideInInspector] public bool canMove = true;
+    [HideInInspector] public InventoryManager inventoryManager;
 
+
+    private const float WALK_SPEED = 4;
+    private const float RUN_SPEED = 8;
     private const float SPEED_STANDARD = 0.02f;
+    private const float CAM_ROTATE_LIMIT = 80;
+    private const float RUN_GAUGE_ADD_VALUE = 0.002f;
+    private const float RUN_GAUGE_USE_VALUE = 0.004f;
 
     private AudioSource moveSoundPlayer;
     private InteractiveObject hitInteractiveObj;
@@ -44,10 +47,10 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerRotate;
     private Color runGaugeColor;
 
-    private float runGaugeAddValue;
-    private float runGaugeUsevalue;
-    private bool isInteractiveObj;
-    private bool isRunning;
+    
+    private float applySpeed = WALK_SPEED;
+    private bool isInteractiveObj = false;
+    private bool isRunning = true;
 
     private Vector3 temp;
 
@@ -58,16 +61,7 @@ public class PlayerController : MonoBehaviour
 
         camRotate = playerCam.transform.localEulerAngles;
         playerRotate = transform.localEulerAngles;
-        runGaugeAddValue = 0.002f;
-        runGaugeUsevalue = runGaugeAddValue * 5;
-        applySpeed = walkSpeed;
-
         runGaugeColor = Color.white;
-
-        isInteractiveObj = false;
-        isRunning = false;
-        canMove = true;
-        onTab = false;
 
         ShadowGhost.playerController = this;
     }
@@ -127,30 +121,32 @@ public class PlayerController : MonoBehaviour
     private IEnumerator StartRun()
     {
         isRunning = true;
-        applySpeed = runSpeed;
+        applySpeed = RUN_SPEED;
         moveSoundPlayer.clip = runSound;
         runGaugeColor.a = 1;
+
         while (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) 
-            && runGaugeImage.fillAmount > runGaugeUsevalue)
+            && runGaugeImage.fillAmount > RUN_GAUGE_USE_VALUE)
         {
-            runGaugeImage.fillAmount -= runGaugeUsevalue;
+            runGaugeImage.fillAmount -= RUN_GAUGE_USE_VALUE;
             UpdateRunGaugeColor();
             yield return WaitTimeManager.WaitForFixedUpdate();
 
         }
-        isRunning = false;
-        applySpeed = walkSpeed;
-        if(moveSoundPlayer != null) moveSoundPlayer.clip = walkSound;
+        
         StartCoroutine(UpRunGauge());
 
     }
-    private IEnumerator UpRunGauge()
+    public IEnumerator UpRunGauge()
     {
+        isRunning = false;
+        applySpeed = WALK_SPEED;
+        if (moveSoundPlayer != null) moveSoundPlayer.clip = walkSound;
         runGaugeColor.a = 0.3f;
 
         while (!isRunning && runGaugeImage.fillAmount < 1)
         {
-            runGaugeImage.fillAmount += runGaugeAddValue;
+            runGaugeImage.fillAmount += RUN_GAUGE_ADD_VALUE;
             UpdateRunGaugeColor();
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
@@ -172,12 +168,7 @@ public class PlayerController : MonoBehaviour
     {
         if (moveDir == Vector3.zero)
         {
-            if (moveSoundPlayer != null && moveSoundPlayer.isPlaying)
-            {//사용한 플레이어 반환
-                moveSoundPlayer.Stop();
-                moveSoundPlayer.loop = false;
-                moveSoundPlayer = null;
-            }
+            ReturnMoveSoundPlayer();
         }
         else if(moveSoundPlayer == null)
         {
@@ -187,6 +178,16 @@ public class PlayerController : MonoBehaviour
         else if(!moveSoundPlayer.isPlaying)
         {
             moveSoundPlayer.Play();
+        }
+    }
+
+    public void ReturnMoveSoundPlayer()
+    {
+        if (moveSoundPlayer != null && moveSoundPlayer.isPlaying)
+        {
+            moveSoundPlayer.Stop();
+            moveSoundPlayer.loop = false;
+            moveSoundPlayer = null;
         }
     }
 

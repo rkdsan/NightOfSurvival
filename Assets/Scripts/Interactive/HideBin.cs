@@ -58,8 +58,10 @@ public class HideBin : InteractiveObject
 
         //뒤주에서 나왔을때 뒤주를 보고 서있도록
         playerController.gameObject.transform.position = forwardTransform.position;
-        playerController.gameObject.SetActive(false);
+        playerController.ReturnMoveSoundPlayer();
 
+        playerController.gameObject.SetActive(false);
+        StartCoroutine(playerController.UpRunGauge());
         StartCoroutine(CheckUnHide());
     }
 
@@ -69,8 +71,8 @@ public class HideBin : InteractiveObject
         hideCamera.SetActive(false);
         GameManager.instance.hideWindow.SetActive(false);
 
-        SetPlayerLook();
         playerController.gameObject.SetActive(true);
+        SetPlayerLook();
     }
 
     private void SetPlayerLook()
