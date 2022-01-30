@@ -8,14 +8,21 @@ using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
     public PlayerController playerController;
     public InventoryManager inventoryManager;
     public InstallingBar installingBar;
+
+    [Header("GameObject")]
     public GameObject player;
     public GameObject hideWindow;
     public GameObject pauseWindow;
+
+    [Header("Image")]
     public Image fadeImage;
     public Image[] gameOverImages;
+
+    [Header("Sound")]
     public AudioSource dieBGM;
     public AudioClip dieSFX;
 

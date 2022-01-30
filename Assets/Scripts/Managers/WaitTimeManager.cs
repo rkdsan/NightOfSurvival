@@ -6,7 +6,7 @@ public class WaitTimeManager
 {
     private static WaitForFixedUpdate waitFixedUpdate = new WaitForFixedUpdate();
 
-    public static Dictionary<float, WaitForSeconds> waitSeconds 
+    private static Dictionary<float, WaitForSeconds> waitSeconds 
         = new Dictionary<float, WaitForSeconds>();
 
     public static WaitForSeconds WaitForSeconds(float second)

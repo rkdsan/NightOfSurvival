@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
 
     private const float WALK_SPEED = 4;
     private const float RUN_SPEED = 8;
-    private const float SPEED_STANDARD = 0.02f;
     private const float CAM_ROTATE_LIMIT = 80;
     private const float RUN_GAUGE_ADD_VALUE = 0.002f;
     private const float RUN_GAUGE_USE_VALUE = 0.004f;
@@ -47,12 +46,10 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerRotate;
     private Color runGaugeColor;
 
-    
     private float applySpeed = WALK_SPEED;
     private bool isInteractiveObj = false;
     private bool isRunning = true;
 
-    private Vector3 temp;
 
     void Awake()
     {
@@ -66,47 +63,58 @@ public class PlayerController : MonoBehaviour
         ShadowGhost.playerController = this;
     }
 
-    void FixedUpdate()
-    {
-        if(canMove) MovePos();
-    }
-
-
     void Update()
     {
-        ManageMove();
+        if (canMove)
+        {
+            CheckRun();
+            MovePos();
+        }
+
         if (!onTab)
         {
+            RotateCamera();
+            RotatePlayer();
             ShootRaycast();
             CheckInteracteObject();
             CheckUseItem();
         }
-        controller.SimpleMove(Vector3.down * Time.deltaTime);
     }
 
+
+    #region 플레이어 이동
     private void MovePos()
     {
         moveHorizontal = transform.right * Input.GetAxisRaw("Horizontal");
         moveVertical = transform.forward * Input.GetAxisRaw("Vertical");
 
-        moveDir = (moveHorizontal + moveVertical).normalized * applySpeed * SPEED_STANDARD;
-
-        controller.Move(moveDir);
+        moveDir = (moveHorizontal + moveVertical).normalized * applySpeed;
+        controller.SimpleMove(moveDir);
 
         SetWalkSound();
     }
 
-
-    #region 이동관련
-    private void ManageMove()
+    private void RotatePlayer()
     {
-        CheckRun();
-        if (onTab) return;
-        RotateCamera();
-        RotatePlayer();
+        float addRotY = Input.GetAxisRaw("Mouse X") * lookSensitivity * Time.deltaTime;
+
+        playerRotate.y += addRotY;
+
+        transform.localEulerAngles = playerRotate;
+
     }
 
-   
+    private void RotateCamera()
+    {
+        float addRotX = Input.GetAxisRaw("Mouse Y") * lookSensitivity * Time.deltaTime;
+
+        camRotate.x -= addRotX;
+        camRotate.x = Mathf.Clamp(camRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
+
+        playerCam.transform.localEulerAngles = camRotate;
+
+    }
+
     public void CheckRun()
     {
         //W키 누른 상태에서 달릴때만, 게이지가 20% 이상 차있어야함
@@ -140,9 +148,11 @@ public class PlayerController : MonoBehaviour
     public IEnumerator UpRunGauge()
     {
         isRunning = false;
-        applySpeed = WALK_SPEED;
-        if (moveSoundPlayer != null) moveSoundPlayer.clip = walkSound;
         runGaugeColor.a = 0.3f;
+        applySpeed = WALK_SPEED;
+
+        if (moveSoundPlayer != null) 
+            moveSoundPlayer.clip = walkSound;
 
         while (!isRunning && runGaugeImage.fillAmount < 1)
         {
@@ -151,10 +161,6 @@ public class PlayerController : MonoBehaviour
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
 
-        if (!isRunning)
-        {
-            UpdateRunGaugeColor();
-        }
     }
     private void UpdateRunGaugeColor()
     {
@@ -189,27 +195,6 @@ public class PlayerController : MonoBehaviour
             moveSoundPlayer.loop = false;
             moveSoundPlayer = null;
         }
-    }
-
-    private void RotatePlayer()
-    {
-        float addRotY = Input.GetAxisRaw("Mouse X") * lookSensitivity;
-
-        playerRotate.y += addRotY;
-
-        transform.localEulerAngles = playerRotate;
-
-    }
-
-    private void RotateCamera()
-    {
-        float addRotX = Input.GetAxisRaw("Mouse Y") * lookSensitivity;
-
-        camRotate.x -= addRotX;
-        camRotate.x = Mathf.Clamp(camRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
-
-        playerCam.transform.localEulerAngles = camRotate;
-
     }
     #endregion
 

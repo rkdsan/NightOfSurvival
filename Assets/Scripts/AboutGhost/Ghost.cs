@@ -57,6 +57,16 @@ public class Ghost : MonoBehaviour
         
     }
 
+    //추적을 시작할 때 사이에 벽이 있는지 체크
+    private IEnumerator CheckGhostSeePlayer()
+    {
+        while (true)
+        {
+            
+            yield return WaitTimeManager.WaitForFixedUpdate();
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (CheckIsSongPyeon(other))
