@@ -18,6 +18,7 @@ public class Ghost : MonoBehaviour
     private AudioSource chasingSoundPlayer;
     private NavMeshAgent navMesh;
     private RaycastHit hit;
+    private IEnumerator betweenCheckerEnumerator;
 
     private int patrolCount;
     private int hash_chasing;
@@ -50,23 +51,12 @@ public class Ghost : MonoBehaviour
         }
         if (CheckIsPlayer(other))
         {
-            chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
-            isInsidePlayer = true;
-            animator.SetBool(hash_chasing, true);
+            betweenCheckerEnumerator = CheckBetweenObstacle();
+            StartCoroutine(betweenCheckerEnumerator);
+
         }
         
     }
-
-    //추적을 시작할 때 사이에 벽이 있는지 체크
-    private IEnumerator CheckGhostSeePlayer()
-    {
-        while (true)
-        {
-            
-            yield return WaitTimeManager.WaitForFixedUpdate();
-        }
-    }
-
     private void OnTriggerExit(Collider other)
     {
         if (CheckIsSongPyeon(other))
@@ -76,8 +66,42 @@ public class Ghost : MonoBehaviour
         if (CheckIsPlayer(other))
         {
             ExitPlayer();
+            StopCoroutine(betweenCheckerEnumerator);
         }
     }
+
+
+    //추적을 시작할 때 사이에 벽이 있는지 체크
+    private IEnumerator CheckBetweenObstacle()
+    {
+        while (true)
+        {
+            if (CanSeePlayer())
+            {
+                chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
+                isInsidePlayer = true;
+                animator.SetBool(hash_chasing, true);
+                break;
+            }
+
+            yield return WaitTimeManager.WaitForFixedUpdate();
+        }
+    }
+
+    private bool CanSeePlayer()
+    {
+        Vector3 dir = playerTransform.position - (transform.position + Vector3.up * 0.1f);
+        Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
+
+        Debug.Log("player Position: " + playerTransform.position);
+        Debug.Log("ghost position: " + transform.position);
+        Debug.Log("dir: " + dir);
+
+        Debug.Log("tag: " + hit.collider.tag);
+        
+        return !hit.collider.isTrigger && hit.collider.CompareTag("Player");
+    }
+
 
     private void ExitPlayer()
     {
@@ -105,8 +129,7 @@ public class Ghost : MonoBehaviour
         return false;
     }
 
-
-    IEnumerator MoveStart()
+    private IEnumerator MoveStart()
     {
         while (true)
         {

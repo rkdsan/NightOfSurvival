@@ -9,19 +9,15 @@ public class Talisman_Used : MonoBehaviour
 
     private RaycastHit hit;
     private Collider nowGhost;
-    private IEnumerator enumerator;
-
-    private void Awake()
-    {
-        enumerator = CheckThrough();
-    }
+    private IEnumerator betweenCheckerEnumerator;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ghost"))
         {
-            nowGhost = other;
-            StartCoroutine(enumerator);
+            nowGhost = other; 
+            betweenCheckerEnumerator = CheckBetweenObstacle();
+            StartCoroutine(betweenCheckerEnumerator);
         }
     }
 
@@ -29,15 +25,17 @@ public class Talisman_Used : MonoBehaviour
     {
         if (other.CompareTag("Ghost"))
         {
-            StopCoroutine(enumerator);
+            StopCoroutine(betweenCheckerEnumerator);
         }
     }
 
-    private IEnumerator CheckThrough()
+    
+    //고스트와 사이에 장애물 있는지 체크
+    private IEnumerator CheckBetweenObstacle()
     {
         while (true)
         {
-            if (CheckGhostTag())
+            if (CanSeeGhost())
             {
                 Boom();
                 break;
@@ -55,14 +53,12 @@ public class Talisman_Used : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private bool CheckGhostTag()
+    private bool CanSeeGhost()
     {
         //커신이 공중에 떠있어서 up을 더해줌
         Vector3 dir = nowGhost.transform.position + Vector3.up * 0.1f - transform.position;
-
-
+        //바닥에 너무 붙어서 쏘면 뭔가 걸릴까봐 up더해줌
         Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
-
 
         return hit.collider.CompareTag("Ghost");
         
