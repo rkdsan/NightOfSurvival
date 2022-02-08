@@ -15,7 +15,7 @@ public class TitleSceneManager : MonoBehaviour
     public void Awake()
     {
         Application.targetFrameRate = 60;
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
         Ani_FadeImage();
     }
 
