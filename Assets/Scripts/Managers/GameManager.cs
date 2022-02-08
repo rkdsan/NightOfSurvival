@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     [Header("GameObject")]
     public GameObject player;
     public GameObject hideWindow;
-    public GameObject pauseWindow;
 
     [Header("Image")]
     public Image fadeImage;
@@ -44,18 +43,6 @@ public class GameManager : MonoBehaviour
             .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
-    private void Update()
-    {
-        SetPauseWindow();
-    }
-
-    private void SetPauseWindow()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && !pauseWindow.activeSelf)
-        {
-            pauseWindow.SetActive(true);
-        }
-    }
 
     public void LoadTitleScene()
     {
