@@ -7,8 +7,12 @@ public class Lamp : InteractiveObject
     public Light lampLight;
     public AudioClip lampSound;
 
+    private Color emissionColor;
+
     void Awake()
     {
+        emissionColor = lampLight.color;
+
         if (lampLight.enabled)
         {
             explainComment = "LB: ╡Т╠Б";
@@ -23,14 +27,18 @@ public class Lamp : InteractiveObject
     {
         if (lampLight.enabled)
         {
+            //е╡╩Себ -> ╡Ж╩Себ
             lampLight.enabled = false;
             explainComment = "LB: дя╠Б";
+            GetComponent<MeshRenderer>().materials[3].SetColor("_EmissionColor", Color.black);
             SFXPlayer.instance.Play(lampSound);
         }
         else
-        {
+        {   //╡Ж╩Себ -> е╡╩Себ
             lampLight.enabled = true;
             explainComment = "LB: ╡Т╠Б";
+            
+            GetComponent<MeshRenderer>().materials[3].SetColor("_EmissionColor", emissionColor);
             SFXPlayer.instance.Play(lampSound);
         }
             

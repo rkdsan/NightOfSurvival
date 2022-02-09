@@ -62,14 +62,14 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 359f38610b660f648a809236093c502b, type: 2}
-  - {fileID: 2100000, guid: 4cd74bc66e985d84896e83c0955baf87, type: 2}
   - {fileID: 2100000, guid: 30353fa4be925434cbde41dd2f85c46d, type: 2}
-  - {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
-  - {fileID: 2100000, guid: 30353fa4be925434cbde41dd2f85c46d, type: 2}
-  - {fileID: 2100000, guid: 8b754554126b85c4587a246ce51a3b03, type: 2}
-  - {fileID: 2100000, guid: 00097b2dd0820ae43b9d27a88f4dfdeb, type: 2}
+  - {fileID: 2100000, guid: 1d1f909b7fb5bbb4cb825051f12f77e9, type: 2}
   - {fileID: 2100000, guid: 93d86a9ec560d884bb0a6df76a41fa54, type: 2}
+  - {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
+  - {fileID: 2100000, guid: 4cd74bc66e985d84896e83c0955baf87, type: 2}
+  - {fileID: 2100000, guid: 8b754554126b85c4587a246ce51a3b03, type: 2}
+  - {fileID: 2100000, guid: 359f38610b660f648a809236093c502b, type: 2}
+  - {fileID: 2100000, guid: 00097b2dd0820ae43b9d27a88f4dfdeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,4 +181,6 @@ MonoBehaviour:
   objectName: "\uB7A8\uD504"
   explainComment: 
   lampLight: {fileID: 5487017708092729542}
-  lampSound: {fileID: 0}
+  emissionOnMaterial: {fileID: 2100000, guid: 7ab47786ce157b84088af20882af16f4, type: 2}
+  emissionOffMaterial: {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
+  lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}
