@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
         moveDir = (moveHorizontal + moveVertical).normalized * applySpeed;
         controller.SimpleMove(moveDir);
-
+        
         SetWalkSound();
     }
 
@@ -264,5 +264,6 @@ public class PlayerController : MonoBehaviour
 
         playerRotate = rotate;
     }
+
 
 }

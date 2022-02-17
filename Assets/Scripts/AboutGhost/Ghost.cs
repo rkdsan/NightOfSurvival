@@ -93,11 +93,6 @@ public class Ghost : MonoBehaviour
         Vector3 dir = playerTransform.position - (transform.position + Vector3.up * 0.1f);
         Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
 
-        Debug.Log("player Position: " + playerTransform.position);
-        Debug.Log("ghost position: " + transform.position);
-        Debug.Log("dir: " + dir);
-
-        Debug.Log("tag: " + hit.collider.tag);
         
         return !hit.collider.isTrigger && hit.collider.CompareTag("Player");
     }
@@ -147,6 +142,8 @@ public class Ghost : MonoBehaviour
                 if (CheckKillPlayer())
                 {
                     GameManager.instance.GameOver(0);
+                    chasingSoundPlayer.Stop();
+                    yield break;
                 }
             }
             else

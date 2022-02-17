@@ -1,9 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Kino;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public PlayerController playerController;
     public InventoryManager inventoryManager;
     public InstallingBar installingBar;
+    public AnalogGlitch glitch;
 
     [Header("GameObject")]
     public GameObject player;
@@ -27,6 +28,10 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        if(instance != null)
+        {
+            Debug.LogError("게임매니저 인스턴스 중복");
+        }
         instance = this;
         Application.targetFrameRate = 60;
     }
@@ -54,17 +59,27 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(int index)
     {
-        Debug.Log("게임오버");
-        dieBGM.Play();
-        SFXPlayer.instance.Play(dieSFX);
-        gameOverImages[index].gameObject.SetActive(true);
-        gameOverImages[index].DOColor(Color.grey, 2);
-        StartCoroutine(GameOverDelay());
+        
+        
+        StartCoroutine(GameOverDelay(index));
+        
     }
 
-    private IEnumerator GameOverDelay()
+    
+
+    private IEnumerator GameOverDelay(int index)
     {
-        yield return WaitTimeManager.WaitForSeconds(5);
+        yield return WaitTimeManager.WaitForSeconds(1);
+
+        dieBGM.Play();
+        SFXPlayer.instance.Play(dieSFX);
+
+        gameOverImages[index].gameObject.SetActive(true);
+        gameOverImages[index].DOColor(Color.grey, 2);
+
+        yield return WaitTimeManager.WaitForSeconds(4);
+
+        //SFXPlayer.instance.StopAllSFX();
         LoadTitleScene();
     }
 }

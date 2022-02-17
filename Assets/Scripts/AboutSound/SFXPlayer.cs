@@ -57,12 +57,21 @@ public class SFXPlayer : MonoBehaviour
         return nowPlayer;
     }
 
+    public void StopAllSFX()
+    {
+        foreach(var sfxplayer in sfxPlayers)
+        {
+            sfxplayer.Stop();
+        }
+    }
+
     private AudioSource AddNewPlayer()
     {
         AudioSource newPlayer;
         newPlayer = gameObject.AddComponent<AudioSource>();
         newPlayer.playOnAwake = false;
         newPlayer.volume = sfxVolume;
+
         playerIdx++;
         sfxPlayers.Add(newPlayer);
         return newPlayer;

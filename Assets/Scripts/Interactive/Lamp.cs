@@ -6,6 +6,7 @@ public class Lamp : InteractiveObject
 {
     public Light lampLight;
     public AudioClip lampSound;
+    public Material emissionOnMaterial;
 
     private Color emissionColor;
 
@@ -37,7 +38,6 @@ public class Lamp : InteractiveObject
         {   //╡Ж╩Себ -> е╡╩Себ
             lampLight.enabled = true;
             explainComment = "LB: ╡Т╠Б";
-            
             GetComponent<MeshRenderer>().materials[3].SetColor("_EmissionColor", emissionColor);
             SFXPlayer.instance.Play(lampSound);
         }
