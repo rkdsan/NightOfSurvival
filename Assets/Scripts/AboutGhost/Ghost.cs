@@ -100,7 +100,10 @@ public class Ghost : MonoBehaviour
 
     private void ExitPlayer()
     {
-        chasingSoundPlayer.Stop();
+        //플레이어가 벽을끼고 있다면 null일수있음
+        if(chasingSoundPlayer != null)
+            chasingSoundPlayer.Stop();
+            
         isInsidePlayer = false;
         animator.SetBool(hash_chasing, false);
     }

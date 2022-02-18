@@ -59,21 +59,34 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(int index)
     {
-        
-        
+        SFXPlayer.instance.Play(dieSFX);
+        StartCoroutine(EffectGlitch());
         StartCoroutine(GameOverDelay(index));
         
     }
-
     
+    private IEnumerator EffectGlitch()
+    {
+        float time = 0;
+
+        while (true)
+        {
+            glitch.scanLineJitter = time;
+            glitch.verticalJump = time;
+            glitch.horizontalShake = time;
+
+            time += Time.deltaTime;
+            if (time > 1.0) 
+                break;
+            yield return null;
+        }
+    }
 
     private IEnumerator GameOverDelay(int index)
     {
         yield return WaitTimeManager.WaitForSeconds(1);
 
         dieBGM.Play();
-        SFXPlayer.instance.Play(dieSFX);
-
         gameOverImages[index].gameObject.SetActive(true);
         gameOverImages[index].DOColor(Color.grey, 2);
 
