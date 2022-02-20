@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
         Talisman_InHand.installingBar = installingBar;
         Slot.inventoryManager = inventoryManager;
         Ghost.playerTransform = player.transform;
+        Compass_InHand.playerTransform = player.transform;
         Cursor.lockState = CursorLockMode.Locked;
 
         fadeImage.gameObject.SetActive(true);

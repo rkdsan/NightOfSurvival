@@ -17,6 +17,7 @@ public abstract class InHandItem : MonoBehaviour
         isConsumable = false;
     }
 
+    //false면 아이템 미사용
     public abstract bool UseItem();
 
 }
