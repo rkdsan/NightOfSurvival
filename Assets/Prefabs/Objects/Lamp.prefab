@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4676043016671597969
+--- !u!1 &6487499986648333918
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5453706272766971691}
-  - component: {fileID: 8935334489963839630}
-  - component: {fileID: 6621514286961767492}
-  - component: {fileID: 5487017708092729540}
-  - component: {fileID: 5487017708092729542}
-  - component: {fileID: 5487017708092729541}
+  - component: {fileID: 8587215537631121355}
+  - component: {fileID: 8730083585178428386}
+  - component: {fileID: 362552212052731793}
+  - component: {fileID: 6487499986648333917}
+  - component: {fileID: 6487499986648333891}
+  - component: {fileID: 6487499986648333916}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: InteractiveObject
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5453706272766971691
+--- !u!4 &8587215537631121355
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
-  m_LocalRotation: {x: 0.00000007525955, y: -0.38268346, z: 0.000000031173528, w: 0.92387956}
-  m_LocalPosition: {x: -55.05, y: 1.55, z: 32.97}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_GameObject: {fileID: 6487499986648333918}
+  m_LocalRotation: {x: 0.00000013032705, y: -0.3826835, z: 0.000000053983243, w: 0.9238795}
+  m_LocalPosition: {x: 0.41950956, y: 0.04870575, z: 0.6295464}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8935334489963839630
+--- !u!33 &8730083585178428386
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
-  m_Mesh: {fileID: -951608786083511892, guid: cd49f44797caae443bcc5ffe5de1fb81, type: 3}
---- !u!23 &6621514286961767492
+  m_GameObject: {fileID: 6487499986648333918}
+  m_Mesh: {fileID: 5760465168522449586, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+--- !u!23 &362552212052731793
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
+  m_GameObject: {fileID: 6487499986648333918}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,14 +62,14 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 30353fa4be925434cbde41dd2f85c46d, type: 2}
-  - {fileID: 2100000, guid: 1d1f909b7fb5bbb4cb825051f12f77e9, type: 2}
-  - {fileID: 2100000, guid: 93d86a9ec560d884bb0a6df76a41fa54, type: 2}
-  - {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
-  - {fileID: 2100000, guid: 4cd74bc66e985d84896e83c0955baf87, type: 2}
-  - {fileID: 2100000, guid: 8b754554126b85c4587a246ce51a3b03, type: 2}
-  - {fileID: 2100000, guid: 359f38610b660f648a809236093c502b, type: 2}
-  - {fileID: 2100000, guid: 00097b2dd0820ae43b9d27a88f4dfdeb, type: 2}
+  - {fileID: -4219079427387042102, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -1069411815626237646, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: 6321878435124732039, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -8909331147923204193, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: 4922926813860865278, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -7051857643638924853, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -3620572297651811420, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -4622259013623788082, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,26 +91,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5487017708092729540
-BoxCollider:
+--- !u!64 &6487499986648333917
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
+  m_GameObject: {fileID: 6487499986648333918}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.56355107, y: 0.7827355, z: 0.56355095}
-  m_Center: {x: 0.000013306737, y: -0.29151705, z: -0.014074743}
---- !u!108 &5487017708092729542
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5760465168522449586, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+--- !u!108 &6487499986648333891
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
+  m_GameObject: {fileID: 6487499986648333918}
   m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
@@ -166,13 +167,13 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &5487017708092729541
+--- !u!114 &6487499986648333916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4676043016671597969}
+  m_GameObject: {fileID: 6487499986648333918}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 011c0a8a38ac22b46900a58c531141e3, type: 3}
@@ -180,7 +181,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: "\uB7A8\uD504"
   explainComment: 
-  lampLight: {fileID: 5487017708092729542}
-  emissionOnMaterial: {fileID: 2100000, guid: 7ab47786ce157b84088af20882af16f4, type: 2}
-  emissionOffMaterial: {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
+  lampLight: {fileID: 6487499986648333891}
   lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}

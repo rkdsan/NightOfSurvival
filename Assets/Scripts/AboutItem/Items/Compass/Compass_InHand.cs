@@ -23,9 +23,6 @@ public class Compass_InHand : InHandItem
 
         needlePivot.transform.localRotation = Quaternion.FromToRotation(-playerTransform.forward, dir);
 
-        Debug.Log("gap dir: " + dir);
-        Debug.Log("euler rot: " + needlePivot.transform.localEulerAngles);
-
     }
 
 }

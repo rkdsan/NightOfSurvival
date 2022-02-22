@@ -6,7 +6,6 @@ public class Lamp : InteractiveObject
 {
     public Light lampLight;
     public AudioClip lampSound;
-    public Material emissionOnMaterial;
 
     private Color emissionColor;
 

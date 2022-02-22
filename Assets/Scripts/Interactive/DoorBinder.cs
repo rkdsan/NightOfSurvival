@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorBinder : MonoBehaviour
@@ -7,9 +6,6 @@ public class DoorBinder : MonoBehaviour
     public Door moveDoorScript;
     public Door targetDoorScript;
     public AudioClip doorSound;
-
-    private GameObject moveDoor;
-    private GameObject targetDoor;
 
     [HideInInspector] public bool isOpen;
     [HideInInspector] public bool isMoving;
@@ -24,8 +20,8 @@ public class DoorBinder : MonoBehaviour
         isMoving = false;
         targetPos.x = 0;
 
-        moveDoor = moveDoorScript.gameObject;
-        targetDoor = targetDoorScript.gameObject;
+        moveDoorScript._Interact += () =>{ Interact(); };
+        targetDoorScript._Interact += () => { Interact(); };
 
         SetTargetPos();
     }
@@ -39,7 +35,7 @@ public class DoorBinder : MonoBehaviour
         }
     }
 
-    IEnumerator MoveDoor()
+    private IEnumerator MoveDoor()
     {
         isMoving = true;
         SFXPlayer.instance.Play(doorSound);
@@ -47,7 +43,7 @@ public class DoorBinder : MonoBehaviour
         int remind = repeat;
         while (remind-- > 0)
         {
-            moveDoor.transform.position += addPos;
+            moveDoorScript.transform.position += addPos;
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
 
@@ -60,13 +56,13 @@ public class DoorBinder : MonoBehaviour
 
     private void SetComment()
     {
-        moveDoorScript.SetComment();
-        targetDoorScript.SetComment();
+        moveDoorScript.SetComment(isOpen);
+        targetDoorScript.SetComment(isOpen);
     }
 
     private void SetTargetPos()
     {
-        Vector3 gap = targetDoor.transform.position - moveDoor.transform.position;
+        Vector3 gap = targetDoorScript.transform.position - moveDoorScript.transform.position;
 
         gap.y = 0;
         if (Mathf.Abs(gap.x) > Mathf.Abs(gap.z))

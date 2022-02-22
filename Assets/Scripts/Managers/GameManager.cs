@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
             glitch.scanLineJitter = time;
             glitch.verticalJump = time;
             glitch.horizontalShake = time;
+            glitch.colorDrift = time;
 
             time += Time.deltaTime;
             if (time > 1.0) 

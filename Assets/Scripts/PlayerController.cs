@@ -130,7 +130,8 @@ public class PlayerController : MonoBehaviour
     {
         isRunning = true;
         applySpeed = RUN_SPEED;
-        moveSoundPlayer.clip = runSound;
+        if (moveSoundPlayer != null)
+            moveSoundPlayer.clip = runSound;
         runGaugeColor.a = 1;
 
         while (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) 

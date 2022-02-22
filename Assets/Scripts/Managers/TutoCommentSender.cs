@@ -9,7 +9,7 @@ public class TutoCommentSender : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
             tutoManager.ShowTutoWindow(comment);
             Destroy(gameObject);

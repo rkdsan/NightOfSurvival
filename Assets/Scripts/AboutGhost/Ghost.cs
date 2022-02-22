@@ -1,8 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.AI;
+using Kino;
 
 
 public class Ghost : MonoBehaviour
@@ -17,6 +16,7 @@ public class Ghost : MonoBehaviour
 
     private AudioSource chasingSoundPlayer;
     private NavMeshAgent navMesh;
+    private AnalogGlitch glitch;
     private RaycastHit hit;
     private IEnumerator betweenCheckerEnumerator;
 
@@ -33,6 +33,11 @@ public class Ghost : MonoBehaviour
         isInsidePlayer = false;
         SetAniHash();
         StartCoroutine(MoveStart());
+    }
+
+    private void Start()
+    {
+        glitch = GameManager.instance.glitch;
     }
 
     public void SetAniHash()
@@ -81,12 +86,15 @@ public class Ghost : MonoBehaviour
                 chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
                 isInsidePlayer = true;
                 animator.SetBool(hash_chasing, true);
+                SetGlitch();
                 break;
             }
 
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
     }
+
+
 
     private bool CanSeePlayer()
     {
@@ -103,9 +111,26 @@ public class Ghost : MonoBehaviour
         //플레이어가 벽을끼고 있다면 null일수있음
         if(chasingSoundPlayer != null)
             chasingSoundPlayer.Stop();
-            
+
         isInsidePlayer = false;
         animator.SetBool(hash_chasing, false);
+        StopGlitch();
+    }
+
+    private void SetGlitch()
+    {
+        glitch.scanLineJitter = 0.1f;
+        glitch.verticalJump = 0.05f;
+        glitch.horizontalShake = 0.08f;
+        glitch.colorDrift = 0.2f;
+    }
+
+    private void StopGlitch()
+    {
+        glitch.scanLineJitter = 0;
+        glitch.verticalJump = 0;
+        glitch.horizontalShake = 0;
+        glitch.colorDrift = 0;
     }
 
     private bool CheckIsPlayer(Collider other)

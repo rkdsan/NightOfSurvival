@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : InteractiveObject
 {
-    public DoorBinder binder;
+    public event Action _Interact;
     private static string openString = "LB: ¿­±â";
     private static string closeString = "LB: ´Ý±â";
 
@@ -17,15 +18,12 @@ public class Door : InteractiveObject
 
     public override void Interact()
     {
-        if (!binder.isMoving)
-        {
-            binder.Interact();
-        }
+        _Interact();
     }
 
-    public void SetComment()
+    public void SetComment(bool isOpen)
     {
-        if (binder.isOpen) explainComment = closeString;
+        if (isOpen) explainComment = closeString;
         else explainComment = openString;
     }
 
