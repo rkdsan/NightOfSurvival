@@ -15,10 +15,14 @@ public class TitleSceneManager : MonoBehaviour
     public void Awake()
     {
         Application.targetFrameRate = 60;
-        //Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.Confined;
         Ani_FadeImage();
     }
 
+    private void Start()
+    {
+        BGMPlayer.instance.source.Play();
+    }
 
     private void Ani_FadeImage()
     {

@@ -65,7 +65,7 @@ MeshRenderer:
   - {fileID: -4219079427387042102, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
   - {fileID: -1069411815626237646, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
   - {fileID: 6321878435124732039, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: -8909331147923204193, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
   - {fileID: 4922926813860865278, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
   - {fileID: -7051857643638924853, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
   - {fileID: -3620572297651811420, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
@@ -118,7 +118,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.2509804, b: 0.003921569, a: 1}
   m_Intensity: 1
-  m_Range: 20
+  m_Range: 25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

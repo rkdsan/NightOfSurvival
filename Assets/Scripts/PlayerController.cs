@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public GameObject hand;
+    public Camera playerCam;
 
     [Header("Sound Clip")]
     public AudioClip walkSound;
@@ -28,15 +29,14 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public InventoryManager inventoryManager;
 
 
-    private const float WALK_SPEED = 4;
-    private const float RUN_SPEED = 8;
+    private const float WALK_SPEED = 3;
+    private const float RUN_SPEED = 6;
     private const float CAM_ROTATE_LIMIT = 80;
     private const float RUN_GAUGE_ADD_VALUE = 0.002f;
     private const float RUN_GAUGE_USE_VALUE = 0.004f;
 
     private AudioSource moveSoundPlayer;
     private InteractiveObject hitInteractiveObj;
-    private Camera playerCam;
     private RaycastHit hit;
 
     private Vector3 moveHorizontal;
@@ -53,7 +53,6 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        playerCam = Camera.main;
         controller = GetComponent<CharacterController>();
 
         camRotate = playerCam.transform.localEulerAngles;
@@ -112,6 +111,7 @@ public class PlayerController : MonoBehaviour
         camRotate.x = Mathf.Clamp(camRotate.x, -CAM_ROTATE_LIMIT, CAM_ROTATE_LIMIT);
 
         playerCam.transform.localEulerAngles = camRotate;
+
 
     }
 

@@ -8,9 +8,11 @@ public class Lamp : InteractiveObject
     public AudioClip lampSound;
 
     private Color emissionColor;
+    private Material emissionMaterial;
 
     void Awake()
     {
+        emissionMaterial = GetComponent<MeshRenderer>().materials[3];
         emissionColor = lampLight.color;
 
         if (lampLight.enabled)
@@ -30,14 +32,14 @@ public class Lamp : InteractiveObject
             //킨상태 -> 끈상태
             lampLight.enabled = false;
             explainComment = "LB: 켜기";
-            GetComponent<MeshRenderer>().materials[3].SetColor("_EmissionColor", Color.black);
+            emissionMaterial.SetColor("_EmissionColor", Color.black);
             SFXPlayer.instance.Play(lampSound);
         }
         else
         {   //끈상태 -> 킨상태
             lampLight.enabled = true;
             explainComment = "LB: 끄기";
-            GetComponent<MeshRenderer>().materials[3].SetColor("_EmissionColor", emissionColor);
+            emissionMaterial.SetColor("_EmissionColor", emissionColor);
             SFXPlayer.instance.Play(lampSound);
         }
             

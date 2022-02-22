@@ -21,7 +21,7 @@ public class BGMPlayer : MonoBehaviour
 
         source.volume = PlayerPrefs.GetInt("BGMVolume", 30) * 0.01f;
         source.Play();
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
 
