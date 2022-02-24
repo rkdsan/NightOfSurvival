@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
         if(instance != null)
         {
             Debug.LogError("게임매니저 인스턴스 중복");
+            Destroy(gameObject);
+            return;
         }
         instance = this;
         Application.targetFrameRate = 60;
@@ -47,8 +49,17 @@ public class GameManager : MonoBehaviour
         fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
             .OnComplete(() => fadeImage.raycastTarget = false);
+
+        CheckLoadSaveGame();
     }
 
+    private void CheckLoadSaveGame()
+    {
+        if (SaveManager.instance.isLoadSaveGame)
+        {
+            SaveManager.instance.LoadGame();
+        }
+    }
 
     public void LoadTitleScene()
     {

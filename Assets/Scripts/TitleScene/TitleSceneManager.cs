@@ -47,6 +47,12 @@ public class TitleSceneManager : MonoBehaviour
         OptionWindow.SetActive(true);
     }
 
+    public void Button_Continue()
+    {
+        SaveManager.instance.isLoadSaveGame = true;
+        Button_NewGame();
+    }
+
     public void Button_Exit()
     {
         SFXPlayer.instance.Play(buttonClickSound);
