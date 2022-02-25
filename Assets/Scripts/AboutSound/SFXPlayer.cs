@@ -61,6 +61,7 @@ public class SFXPlayer : MonoBehaviour
     {
         foreach(var sfxplayer in sfxPlayers)
         {
+            sfxplayer.loop = false;
             sfxplayer.Stop();
         }
     }

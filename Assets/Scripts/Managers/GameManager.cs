@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
 
         yield return WaitTimeManager.WaitForSeconds(4);
 
-        //SFXPlayer.instance.StopAllSFX();
+        SFXPlayer.instance.StopAllSFX();
         LoadTitleScene();
     }
 }

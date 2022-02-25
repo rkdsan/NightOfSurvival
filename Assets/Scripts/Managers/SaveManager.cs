@@ -79,11 +79,7 @@ public class SaveManager : MonoBehaviour
     {
         var data = new PlayerData();
 
-        Vector3 playerPos = GameManager.instance.player.transform.position;
-
-        data.posX = playerPos.x;
-        data.posY = playerPos.y;
-        data.posZ = playerPos.z;
+        data.pos = GameManager.instance.player.transform.position;
 
         SaveJsonData(data);
     }
@@ -96,12 +92,7 @@ public class SaveManager : MonoBehaviour
 
         PlayerData playerData = JsonUtility.FromJson<PlayerData>(data);
 
-        Vector3 applyPos;
-        applyPos.x = playerData.posX;
-        applyPos.y = playerData.posY;
-        applyPos.z = playerData.posZ;
-
-        GameManager.instance.player.transform.position = applyPos;
+        GameManager.instance.player.transform.position = playerData.pos;
     }
     #endregion
 }

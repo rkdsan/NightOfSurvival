@@ -13,9 +13,7 @@ public class JsonData
 [Serializable]
 public class PlayerData : JsonData
 {
-    public float posX;
-    public float posY;
-    public float posZ;
+    public Vector3 pos;
 
     public PlayerData()
     {
