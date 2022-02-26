@@ -84,7 +84,7 @@ public class InventoryManager : MonoBehaviour
                 break;
             }
             //같은템이면
-            else if (slot.item.objectName.Equals(_item.objectName))
+            else if (slot.item.itemName.Equals(_item.itemName))
             {
                 slot.UpCount();
                 Destroy(_item.gameObject);
@@ -106,7 +106,6 @@ public class InventoryManager : MonoBehaviour
 
     public void TrySortInventory()
     {
-        //StartCoroutine(TTest());
         int lastIndex;
         while (true)
         {
@@ -152,10 +151,12 @@ public class InventoryManager : MonoBehaviour
 
     public void SetNowItem()
     {
-        if (nowItemObject != null) 
+
+        if (nowItemObject != null)
         {
             nowItemObject.SetActive(false);
         }
+
         if (itemKindCount == 0) //아이템이 없으면
         {
             nowItemIndex = 0;
@@ -168,9 +169,10 @@ public class InventoryManager : MonoBehaviour
         nowItemObject = nowSlot.item.gameObject;
         nowItemObject.SetActive(true);
         ItemFrame.transform.position = nowSlot.transform.position;
+        Debug.Log("ItemFrame설정 완료");
 
         //현재 아이템 표시
-        nowItemName.OnText(nowSlot.item.objectName);
+        nowItemName.OnText(nowSlot.item.itemName);
     }
 
     public void ClickItem()

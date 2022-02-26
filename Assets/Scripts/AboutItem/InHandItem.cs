@@ -7,7 +7,7 @@ public abstract class InHandItem : MonoBehaviour
     public Sprite itemImage;
     public Vector3 offsetPosition;
     public Vector3 offsetRotate;
-    public string objectName;
+    public string itemName;
     public bool canCraft;
     public bool isConsumable;
 
@@ -16,6 +16,7 @@ public abstract class InHandItem : MonoBehaviour
         canCraft = false;
         isConsumable = false;
     }
+
 
     //false면 아이템 미사용
     public abstract bool UseItem();

@@ -26,6 +26,14 @@ public class SaveManager : MonoBehaviour
     {
         return PlayerPrefs.HasKey("IsSave");
     }
+    public void Save()
+    {
+        PlayerPrefs.SetInt("IsSave", 0);
+        SavePlayerData();
+        SaveInventoryData();
+
+        GC.Collect();
+    }
 
     public void LoadGame()
     {
@@ -37,13 +45,11 @@ public class SaveManager : MonoBehaviour
         }
 
         LoadPlayerData();
+        LoadInventoryData();
+
+        GC.Collect();
     }
 
-    public void Save()
-    {
-        PlayerPrefs.SetInt("IsSave", 0);
-        SavePlayerData();    
-    }
 
     private void SaveJsonData(JsonData data) 
     {
@@ -83,16 +89,68 @@ public class SaveManager : MonoBehaviour
 
         SaveJsonData(data);
     }
+
+    private void SaveInventoryData()
+    {
+        var data = new InventoryData();
+        InventoryManager inventory = GameManager.instance.inventoryManager;
+        Slot[] slots = inventory.slots;
+        data.itemKindCount = inventory.itemKindCount;
+
+        for(int i = 0; i < data.itemKindCount; i++)
+        {
+            data.slotdata[i].itemName = slots[i].item.itemName;
+            data.slotdata[i].itemCount = slots[i].itemCount;
+        }
+
+        SaveJsonData(data);
+    }
+
     #endregion
 
     #region Load
     private void LoadPlayerData()
     {
         string data = LoadJsonData(GetJsonDataPath("PlayerData"));
-
         PlayerData playerData = JsonUtility.FromJson<PlayerData>(data);
 
         GameManager.instance.player.transform.position = playerData.pos;
     }
+
+    private void LoadInventoryData()
+    {
+        string data = LoadJsonData(GetJsonDataPath("InventoryData"));
+        InventoryManager inventory = GameManager.instance.inventoryManager;
+        Slot[] slots = inventory.slots;
+
+        InventoryData inventoryData = JsonUtility.FromJson<InventoryData>(data);
+        SlotData[] slotData = inventoryData.slotdata;
+
+
+        for (int i = 0; i < inventoryData.itemKindCount; i++)
+        {
+            if (slotData[i].itemCount == 0) break;
+
+            InHandItem nowItem = InHandItemManager.instance.GetItemPrefab(slotData[i].itemName);
+
+            nowItem = Instantiate(nowItem.gameObject).GetComponent<InHandItem>();
+
+            inventory.AddItem(nowItem);
+            slots[i].itemCount = slotData[i].itemCount;
+        }
+
+
+        StartCoroutine(LateSetNowItem());
+    }
+
+    private IEnumerator LateSetNowItem()
+    {
+        //아이템 프레임이 포지션에 맞게 조절되는데 프레임이 이상한곳으로 감.
+        //포지션이 설정되기전에 실행되는것으로 추측
+        //업데이트 한번 끝나고 실행되도록 설정
+        yield return null;
+        GameManager.instance.inventoryManager.SetNowItem();
+    }
+
     #endregion
 }

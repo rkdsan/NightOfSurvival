@@ -39,7 +39,7 @@ public class CraftManager : MonoBehaviour
 
         if (craftImages[0].sprite == null)
         {
-            if (craftSlots[1] != null && slot.item.objectName.Equals(craftSlots[1].item.objectName))
+            if (craftSlots[1] != null && slot.item.itemName.Equals(craftSlots[1].item.itemName))
             {
                 return;
             }
@@ -48,7 +48,7 @@ public class CraftManager : MonoBehaviour
         }
         else if (craftImages[1].sprite == null)
         {
-            if (craftSlots[0] != null && slot.item.objectName.Equals(craftSlots[0].item.objectName))
+            if (craftSlots[0] != null && slot.item.itemName.Equals(craftSlots[0].item.itemName))
             {
                 return;
             }
@@ -73,7 +73,7 @@ public class CraftManager : MonoBehaviour
         }
 
         //조합 목록에 아이템이 있는지 검사
-        craftResult = CraftRecipe.GetCraftResult(craftSlots[0].item.objectName, craftSlots[1].item.objectName);
+        craftResult = CraftRecipe.GetCraftResult(craftSlots[0].item.itemName, craftSlots[1].item.itemName);
 
         if (craftResult.Equals("")) return;
         foreach (OnGroundItem item in craftItems)

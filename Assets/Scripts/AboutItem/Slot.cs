@@ -16,6 +16,7 @@ public class Slot : MonoBehaviour
     public void NewItem(InHandItem _item)
     {
         item = _item;
+        
         image.sprite = _item.itemImage;
         image.color = Color.white;
         itemCount = 1;

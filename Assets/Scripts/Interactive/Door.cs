@@ -6,9 +6,8 @@ using UnityEngine;
 public class Door : InteractiveObject
 {
     public event Action _Interact;
-    private static string openString = "LB: ¿­±â";
-    private static string closeString = "LB: ´Ý±â";
-
+    private const string OPEN_STRING = "LB: ¿­±â";
+    private const string CLOSE_STRING = "LB: ´Ý±â";
 
     private void Reset()
     {
@@ -23,8 +22,8 @@ public class Door : InteractiveObject
 
     public void SetComment(bool isOpen)
     {
-        if (isOpen) explainComment = closeString;
-        else explainComment = openString;
+        if (isOpen) explainComment = CLOSE_STRING;
+        else explainComment = OPEN_STRING;
     }
 
 }

@@ -28,7 +28,6 @@ public class Talisman_Used : MonoBehaviour
             StopCoroutine(betweenCheckerEnumerator);
         }
     }
-
     
     //고스트와 사이에 장애물 있는지 체크
     private IEnumerator CheckBetweenObstacle()
@@ -44,7 +43,6 @@ public class Talisman_Used : MonoBehaviour
         }
     }
 
-
     private void Boom()
     {
         nowGhost.GetComponent<Ghost>().Stuned(2);
@@ -55,13 +53,10 @@ public class Talisman_Used : MonoBehaviour
 
     private bool CanSeeGhost()
     {
-        //커신이 공중에 떠있어서 up을 더해줌
+        //귀신이 공중에 떠있어서 up을 더해줌
         Vector3 dir = nowGhost.transform.position + Vector3.up * 0.1f - transform.position;
-        //바닥에 너무 붙어서 쏘면 뭔가 걸릴까봐 up더해줌
         Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
 
         return hit.collider.CompareTag("Ghost");
-        
     }
-
 }
