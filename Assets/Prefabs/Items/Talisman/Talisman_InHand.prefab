@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2589169330842061226}
   - component: {fileID: 2589169330842061205}
   - component: {fileID: 4132808153375074537}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Talisman_InHand
-  m_TagString: InteractiveObject
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

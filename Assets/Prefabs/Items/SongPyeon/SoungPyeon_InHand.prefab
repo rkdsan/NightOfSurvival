@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4261537878535427582}
   - component: {fileID: 3798384088612334181}
   - component: {fileID: 4588255320788811563}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SoungPyeon_InHand
   m_TagString: Item
   m_Icon: {fileID: 0}

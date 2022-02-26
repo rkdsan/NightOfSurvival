@@ -36,7 +36,9 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         Application.targetFrameRate = 60;
+
     }
+
 
     void Start()
     {
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         fadeImage.gameObject.SetActive(true);
-        fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
+        fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => fadeImage.raycastTarget = false);
 
         CheckLoadSaveGame();
@@ -55,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     private void CheckLoadSaveGame()
     {
-        if (SaveManager.instance.isLoadSaveGame)
+        if (SaveManager.instance != null && SaveManager.instance.isLoadSaveGame)
         {
             SaveManager.instance.LoadGame();
         }
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
     public void LoadTitleScene()
     {
         fadeImage.raycastTarget = true;
-        fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
+        fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => SceneManager.LoadScene("TitleScene"));
     }
 

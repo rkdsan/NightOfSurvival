@@ -17,6 +17,8 @@ public class TitleSceneManager : MonoBehaviour
         Application.targetFrameRate = 60;
         Cursor.lockState = CursorLockMode.Confined;
         Ani_FadeImage();
+
+        
     }
 
     private void Start()
@@ -27,7 +29,7 @@ public class TitleSceneManager : MonoBehaviour
     private void Ani_FadeImage()
     {
         fadeImage.gameObject.SetActive(true);
-        fadeImage.DOColor(Color.clear, GameData.sceneChangeFadeTime)
+        fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => fadeImage.raycastTarget = false);
     }
 
@@ -37,7 +39,7 @@ public class TitleSceneManager : MonoBehaviour
         fadeImage.raycastTarget = true;
         //fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
         //    .OnComplete(()=> SceneManager.LoadScene("GameScene"));
-        fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
+        fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => LoadingSceneManager.LoadScene("GameScene"));
     }
 

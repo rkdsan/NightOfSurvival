@@ -12,7 +12,7 @@ public class SongPyeon_InHand : InHandItem
         Vector3 forward = transform.parent.forward;
         Instantiate(songPyeon_Used, transform.position + forward, transform.rotation
             , transform.parent);
-
+        
         SFXPlayer.instance.Play(useSound);
         return true;
     }
