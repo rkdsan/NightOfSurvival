@@ -135,7 +135,7 @@ public class Ghost : MonoBehaviour
 
     private bool CheckIsPlayer(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(GameData.PLAYER_TAG))
         {
             return true;
         }
