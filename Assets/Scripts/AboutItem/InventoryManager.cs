@@ -169,7 +169,6 @@ public class InventoryManager : MonoBehaviour
         nowItemObject = nowSlot.item.gameObject;
         nowItemObject.SetActive(true);
         ItemFrame.transform.position = nowSlot.transform.position;
-        Debug.Log("ItemFrame설정 완료");
 
         //현재 아이템 표시
         nowItemName.OnText(nowSlot.item.itemName);

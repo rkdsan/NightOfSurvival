@@ -83,9 +83,22 @@ public class Ghost : MonoBehaviour
         {
             if (CanSeePlayer())
             {
+                animator.SetBool(hash_chasing, true);
+
+                float temp = navMesh.speed;
+                navMesh.speed = 0;
+
+                //애니메이션 바뀐 후 시간체크 하기위해 1프레임 건너뜀
+                yield return null;
+                while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+                {
+                    yield return null;
+                }
+                navMesh.speed = temp;
+                navMesh.SetDestination(playerTransform.position);
+
                 chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
                 isInsidePlayer = true;
-                animator.SetBool(hash_chasing, true);
                 SetGlitch();
                 break;
             }
@@ -93,7 +106,6 @@ public class Ghost : MonoBehaviour
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
     }
-
 
 
     private bool CanSeePlayer()
@@ -199,7 +211,7 @@ public class Ghost : MonoBehaviour
         StartCoroutine(StunTimer(stunTime));
     }
 
-    IEnumerator StunTimer(int stunTime)
+    private IEnumerator StunTimer(int stunTime)
     {
         animator.SetBool(hash_stun, true);
         navMesh.speed = 0;
