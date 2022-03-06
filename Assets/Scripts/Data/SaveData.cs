@@ -52,3 +52,35 @@ public class SlotData : JsonData
         typeName = "SlotData";
     }
 }
+
+[Serializable]
+public class OnGroundItemManagerData : JsonData
+{
+    public OnGroundItemData[] groundItemData;
+
+    public OnGroundItemManagerData()
+    {
+        typeName = "OnGroundItemManagerData";
+
+        int length = OnGroundItemManager.instance.allOnGroundItems.Count;
+
+        for(int i = 0; i < length; i++)
+        {
+            groundItemData[i] = new OnGroundItemData();
+        }
+
+    }
+}
+
+[Serializable]
+public class OnGroundItemData : JsonData
+{
+    public string itemName;
+    public Vector3 position;
+
+    public OnGroundItemData()
+    {
+        typeName = "OnGroundItemData";
+
+    }
+}

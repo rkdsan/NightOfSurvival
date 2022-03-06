@@ -6,7 +6,7 @@ public class OnGroundItemManager : MonoBehaviour
 {
     public static OnGroundItemManager instance;
 
-    public OnGroundItem allOnGroundItems;
+    public List<OnGroundItem> allOnGroundItems;
 
     private Dictionary<string, OnGroundItem> itemDictionary;
 

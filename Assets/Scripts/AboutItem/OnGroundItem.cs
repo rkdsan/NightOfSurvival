@@ -15,6 +15,7 @@ public class OnGroundItem : InteractiveObject
             .GetComponent<InHandItem>();
         inHandItem.transform.parent = transform;
         inHandItem.gameObject.SetActive(false);
+        OnGroundItemManager.instance.allOnGroundItems.Add(this);
     }
 
     private void Reset()

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 using Kino;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     [Header("Image")]
     public Image fadeImage;
     public Image[] gameOverImages;
+    public Image gameOverImage;
+    public Sprite[] gameOverSprites;
 
     [Header("Sound")]
     public AudioSource dieBGM;
@@ -50,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)
-            .OnComplete(() => fadeImage.raycastTarget = false);
+                 .OnComplete(() => fadeImage.raycastTarget = false);
 
         CheckLoadSaveGame();
     }
@@ -66,8 +69,9 @@ public class GameManager : MonoBehaviour
     public void LoadTitleScene()
     {
         fadeImage.raycastTarget = true;
+        
         fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
-            .OnComplete(() => SceneManager.LoadScene("TitleScene"));
+                 .OnComplete(() => SceneManager.LoadScene("TitleScene"));
     }
 
 
@@ -102,8 +106,12 @@ public class GameManager : MonoBehaviour
         yield return WaitTimeManager.WaitForSeconds(1);
 
         dieBGM.Play();
-        gameOverImages[index].gameObject.SetActive(true);
-        gameOverImages[index].DOColor(Color.grey, 2);
+        gameOverImage.sprite = gameOverSprites[index];
+        gameOverImage.gameObject.SetActive(true);
+        gameOverImage.DOColor(Color.grey, 2);
+        
+        //gameOverImages[index].gameObject.SetActive(true);
+        //gameOverImages[index].DOColor(Color.grey, 2);
 
         yield return WaitTimeManager.WaitForSeconds(4);
 
