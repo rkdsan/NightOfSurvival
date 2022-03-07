@@ -63,7 +63,7 @@ public class OnGroundItemManagerData : JsonData
         typeName = "OnGroundItemManagerData";
 
         int length = OnGroundItemManager.instance.allOnGroundItems.Count;
-
+        groundItemData = new OnGroundItemData[length];
         for(int i = 0; i < length; i++)
         {
             groundItemData[i] = new OnGroundItemData();

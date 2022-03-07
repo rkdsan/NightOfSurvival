@@ -31,6 +31,7 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("IsSave", 0);
         SavePlayerData();
         SaveInventoryData();
+        SaveOnGroundItemData();
 
         GC.Collect();
     }
@@ -46,6 +47,7 @@ public class SaveManager : MonoBehaviour
 
         LoadPlayerData();
         LoadInventoryData();
+        LoadOnGroundItemData();
 
         GC.Collect();
     }
@@ -106,6 +108,22 @@ public class SaveManager : MonoBehaviour
         SaveJsonData(data);
     }
 
+    private void SaveOnGroundItemData()
+    {
+        var data = new OnGroundItemManagerData();
+        var items = OnGroundItemManager.instance.allOnGroundItems;
+
+        Debug.Log("onGround Item 갯수: " + items.Count);
+
+        for(int i = 0; i < data.groundItemData.Length; i++)
+        {
+            data.groundItemData[i].itemName = items[i].objectName;
+            data.groundItemData[i].position = items[i].transform.position;
+        }
+
+        SaveJsonData(data);
+    }
+
     #endregion
 
     #region Load
@@ -150,6 +168,24 @@ public class SaveManager : MonoBehaviour
         //업데이트 한번 끝나고 실행되도록 설정
         yield return null;
         GameManager.instance.inventoryManager.SetNowItem();
+    }
+
+    private void LoadOnGroundItemData()
+    {
+        string data = LoadJsonData(GetJsonDataPath("OnGroundItemManagerData"));
+        var manager = OnGroundItemManager.instance;
+        manager.DeleteAllItem();
+
+        var managerData = JsonUtility.FromJson<OnGroundItemManagerData>(data);
+        var itemData = managerData.groundItemData;
+
+        for(int i = 0; i < managerData.groundItemData.Length; i++)
+        {
+            OnGroundItem itemPrefab = manager.GetItemPrefab(itemData[i].itemName);
+            GameObject item = Instantiate(itemPrefab.gameObject);
+            item.transform.position = itemData[i].position;
+        }
+
     }
 
     #endregion

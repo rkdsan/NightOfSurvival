@@ -15,6 +15,10 @@ public class OnGroundItem : InteractiveObject
             .GetComponent<InHandItem>();
         inHandItem.transform.parent = transform;
         inHandItem.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
         OnGroundItemManager.instance.allOnGroundItems.Add(this);
     }
 
@@ -26,6 +30,7 @@ public class OnGroundItem : InteractiveObject
     public override void Interact()
     {
         GameManager.instance.inventoryManager.AddItem(inHandItem);
+        OnGroundItemManager.instance.allOnGroundItems.Remove(this);
         Destroy(gameObject);
     }
 }
