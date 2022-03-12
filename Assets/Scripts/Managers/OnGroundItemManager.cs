@@ -44,7 +44,6 @@ public class OnGroundItemManager : MonoBehaviour
             Destroy(item.gameObject);
         }
         
-        Debug.Log("리스트 길이: " + allOnGroundItems.Count);
         allOnGroundItems.Clear();
     }
 

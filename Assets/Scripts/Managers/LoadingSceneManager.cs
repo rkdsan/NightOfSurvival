@@ -41,7 +41,7 @@ public class LoadingSceneManager : MonoBehaviour
                 timer += Time.unscaledDeltaTime;
                 //fillImage.fillAmount = Mathf.Lerp(0.9f, 1, timer);
                 fillImage.fillAmount += 0.005f;
-                if (fillImage.fillAmount >= 0.95)
+                if (fillImage.fillAmount >= 1)
                 {
                     op.allowSceneActivation = true;
                     yield break;

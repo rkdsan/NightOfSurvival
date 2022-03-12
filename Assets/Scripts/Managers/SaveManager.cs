@@ -155,6 +155,7 @@ public class SaveManager : MonoBehaviour
 
             inventory.AddItem(nowItem);
             slots[i].itemCount = slotData[i].itemCount;
+            slots[i].SetCountText();
         }
 
 

@@ -14,9 +14,9 @@ public class GameData
     /// <summary>
     /// Layer Types
     /// </summary>
-    public LayerMask PLAYER_LAYER = 1 << LayerMask.NameToLayer("Player");
-    public LayerMask GHOST_LAYER = 1 << LayerMask.NameToLayer("Ghost");
-    public LayerMask IN_HAND_LAYER = 1 << LayerMask.NameToLayer("InHand");
+    public static LayerMask PLAYER_LAYER = 1 << LayerMask.NameToLayer("Player");
+    public static LayerMask GHOST_LAYER = 1 << LayerMask.NameToLayer("Ghost");
+    public static LayerMask IN_HAND_LAYER = 1 << LayerMask.NameToLayer("InHand");
 
 
     /// <summary>

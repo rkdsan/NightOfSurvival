@@ -8,7 +8,8 @@ using DG.Tweening;
 
 public class TitleSceneManager : MonoBehaviour
 {
-    public GameObject OptionWindow;
+    public GameObject optionWindow;
+    public GameObject ghostDictionary;
     public AudioClip buttonClickSound; 
     public Image fadeImage;
 
@@ -46,13 +47,18 @@ public class TitleSceneManager : MonoBehaviour
     public void Button_Option()
     {
         SFXPlayer.instance.Play(buttonClickSound);
-        OptionWindow.SetActive(true);
+        optionWindow.SetActive(true);
     }
 
     public void Button_Continue()
     {
         SaveManager.instance.isLoadSaveGame = true;
         Button_NewGame();
+    }
+
+    public void Button_GhostDictionary()
+    {
+        ghostDictionary.SetActive(true);
     }
 
     public void Button_Exit()
