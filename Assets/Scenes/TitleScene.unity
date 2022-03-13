@@ -900,8 +900,9 @@ GameObject:
   - component: {fileID: 468466912}
   - component: {fileID: 468466911}
   - component: {fileID: 468466910}
+  - component: {fileID: 468466913}
   m_Layer: 5
-  m_Name: ItemPostItButton
+  m_Name: ItemPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1009,6 +1010,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468466908}
   m_CullTransparentMesh: 1
+--- !u!114 &468466913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468466908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f7912e8db8ed4428e48b80a2390ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: ItemExplainData
+  button: {fileID: 468466910}
+  explainSpriteList:
+  - {fileID: 21300000, guid: 0dce967f3b801324aad4b1a87227ee86, type: 3}
+  - {fileID: 21300000, guid: cb0d54c7573fe174b98d29065a51db60, type: 3}
+  - {fileID: 21300000, guid: 489c5401d3ca5eb4196cb7b37e7d5645, type: 3}
+  - {fileID: 21300000, guid: 7ead7c1f7aecbf34e8adc8bfdb0eab55, type: 3}
+  - {fileID: 21300000, guid: 27409820a254d2d47a6d721bb9e3063a, type: 3}
 --- !u!1 &474784383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,8 +1428,9 @@ GameObject:
   - component: {fileID: 704336771}
   - component: {fileID: 704336770}
   - component: {fileID: 704336769}
+  - component: {fileID: 704336772}
   m_Layer: 5
-  m_Name: GhostPostItButton
+  m_Name: GhostPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,6 +1538,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704336767}
   m_CullTransparentMesh: 1
+--- !u!114 &704336772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704336767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f7912e8db8ed4428e48b80a2390ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: GhostExplainData
+  button: {fileID: 704336769}
+  explainSpriteList:
+  - {fileID: 21300000, guid: befa76bdcde0d984db803f8939d18382, type: 3}
+  - {fileID: 21300000, guid: b7f0f7c08bb462f468e097ff2895f978, type: 3}
+  - {fileID: 21300000, guid: 98d2a11e6d28c8940a2ab43bd41e2bfc, type: 3}
+  - {fileID: 21300000, guid: fc7d2ffa111fe1842b5ef0707342fd42, type: 3}
 --- !u!1 &719491451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,20 +4241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24321cacf8eea249b16f6b0b6a0b185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemButton: {fileID: 0}
+  ghostButton: {fileID: 0}
   explainImage: {fileID: 422401476}
   explainTitle: {fileID: 1969848810}
   explainContents: {fileID: 719491453}
-  itemExplainSpriteList:
-  - {fileID: 21300000, guid: 0dce967f3b801324aad4b1a87227ee86, type: 3}
-  - {fileID: 21300000, guid: cb0d54c7573fe174b98d29065a51db60, type: 3}
-  - {fileID: 21300000, guid: 489c5401d3ca5eb4196cb7b37e7d5645, type: 3}
-  - {fileID: 21300000, guid: 7ead7c1f7aecbf34e8adc8bfdb0eab55, type: 3}
-  - {fileID: 21300000, guid: 27409820a254d2d47a6d721bb9e3063a, type: 3}
-  ghostExplainSpriteList:
-  - {fileID: 21300000, guid: befa76bdcde0d984db803f8939d18382, type: 3}
-  - {fileID: 21300000, guid: b7f0f7c08bb462f468e097ff2895f978, type: 3}
-  - {fileID: 21300000, guid: 98d2a11e6d28c8940a2ab43bd41e2bfc, type: 3}
-  - {fileID: 21300000, guid: fc7d2ffa111fe1842b5ef0707342fd42, type: 3}
+  partList:
+  - {fileID: 468466913}
+  - {fileID: 704336772}
 --- !u!1 &1887536883
 GameObject:
   m_ObjectHideFlags: 0
