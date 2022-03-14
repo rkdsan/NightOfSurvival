@@ -62,7 +62,7 @@ public class GhostDictionary : MonoBehaviour
     private void SetExplain()
     {
         explainImage.sprite = nowSpriteList[nowIndex];
-        explainTitle.text = partList[0].explainDataList[0].title;
+        explainTitle.text = nowExplainDataList[nowIndex].title;
         explainContents.text = nowExplainDataList[nowIndex].contents;
     }
 
