@@ -9,6 +9,7 @@ public class DictionaryPart : MonoBehaviour
     public Button button;
     public List<Sprite> explainSpriteList;
     public List<ExplainData> explainDataList;
+    
 
 
     public void SetExplaindata()

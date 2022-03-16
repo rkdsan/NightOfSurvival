@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Kino;
@@ -6,6 +7,7 @@ using Kino;
 
 public class Ghost : MonoBehaviour
 {
+    public static List<Ghost> allGhostList = new List<Ghost>();
     public static Transform playerTransform;
     public AudioClip chasingSoundClip;
     public LayerMask playerMask;
@@ -28,6 +30,7 @@ public class Ghost : MonoBehaviour
 
     void Awake()
     {
+        allGhostList.Add(this);
         navMesh = GetComponent<NavMeshAgent>();
         patrolCount = 0;
         isInsidePlayer = false;

@@ -16,7 +16,7 @@ public class Compass_InHand : InHandItem
 
     private void FixedUpdate()
     {
-        
+        PointGhost();
     }
 
     private void PointTarget()
