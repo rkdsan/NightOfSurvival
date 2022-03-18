@@ -15,7 +15,9 @@ public class DictionaryPart : MonoBehaviour
     public void SetExplaindata()
     {
         explainDataList = new List<ExplainData>();
+
         TextAsset assetData = Resources.Load(fileName) as TextAsset;
+        
         string data = assetData.text;
 
         foreach(string line in data.Split('\n'))

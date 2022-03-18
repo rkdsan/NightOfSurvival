@@ -8,6 +8,11 @@ public class JsonData
 {
     public string typeName;
 
+    public JsonData()
+    {
+        typeName = GetType().Name;
+    }
+
 }
 
 [Serializable]
@@ -15,9 +20,9 @@ public class PlayerData : JsonData
 {
     public Vector3 pos;
 
-    public PlayerData()
+    public PlayerData() : base()
     {
-        typeName = "PlayerData";
+        
     }
 }
 
@@ -27,10 +32,8 @@ public class InventoryData : JsonData
     public SlotData[] slotdata;
     public int itemKindCount;
 
-    public InventoryData()
+    public InventoryData() : base()
     {
-        typeName = "InventoryData";
-
         int length = GameManager.instance.inventoryManager.slots.Length;
         slotdata = new SlotData[length];
 
@@ -47,9 +50,9 @@ public class SlotData : JsonData
     public string itemName;
     public int itemCount;
 
-    public SlotData()
+    public SlotData() : base()
     {
-        typeName = "SlotData";
+
     }
 }
 
@@ -58,10 +61,8 @@ public class OnGroundItemManagerData : JsonData
 {
     public OnGroundItemData[] groundItemData;
 
-    public OnGroundItemManagerData()
+    public OnGroundItemManagerData() : base()
     {
-        typeName = "OnGroundItemManagerData";
-
         int length = OnGroundItemManager.instance.allOnGroundItems.Count;
         groundItemData = new OnGroundItemData[length];
         for(int i = 0; i < length; i++)
@@ -78,9 +79,8 @@ public class OnGroundItemData : JsonData
     public string itemName;
     public Vector3 position;
 
-    public OnGroundItemData()
+    public OnGroundItemData() : base()
     {
-        typeName = "OnGroundItemData";
 
     }
 }

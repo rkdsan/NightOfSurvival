@@ -63,17 +63,19 @@ public class SaveManager : MonoBehaviour
         System.IO.File.WriteAllText(file.FullName, jsonData);
     }
 
-    private string LoadJsonData(string path)
+    private T LoadJsonData<T>(string typeName)
     {
+        string path = GetJsonDataPath(typeName);
         var file = new System.IO.FileInfo(path);
 
         if(file.Exists == false)
         {
             Debug.LogError("ÆÄÀÏ ¾øÀ½: " + path);
-            return null;
+            return default(T);
         }
 
-        return System.IO.File.ReadAllText(file.FullName);
+        string jsonData = System.IO.File.ReadAllText(file.FullName);
+        return JsonUtility.FromJson<T>(jsonData);
 
     }
 
@@ -113,7 +115,7 @@ public class SaveManager : MonoBehaviour
         var data = new OnGroundItemManagerData();
         var items = OnGroundItemManager.instance.allOnGroundItems;
 
-        Debug.Log("onGround Item °¹¼ö: " + items.Count);
+        //Debug.Log("onGround Item °¹¼ö: " + items.Count);
 
         for(int i = 0; i < data.groundItemData.Length; i++)
         {
@@ -129,19 +131,19 @@ public class SaveManager : MonoBehaviour
     #region Load
     private void LoadPlayerData()
     {
-        string data = LoadJsonData(GetJsonDataPath("PlayerData"));
-        PlayerData playerData = JsonUtility.FromJson<PlayerData>(data);
+        PlayerData playerData = new PlayerData();
+        playerData = LoadJsonData<PlayerData>(playerData.typeName);
 
         GameManager.instance.player.transform.position = playerData.pos;
     }
 
     private void LoadInventoryData()
     {
-        string data = LoadJsonData(GetJsonDataPath("InventoryData"));
         InventoryManager inventory = GameManager.instance.inventoryManager;
         Slot[] slots = inventory.slots;
 
-        InventoryData inventoryData = JsonUtility.FromJson<InventoryData>(data);
+        InventoryData inventoryData = new InventoryData();
+        inventoryData = LoadJsonData<InventoryData>(inventoryData.typeName);
         SlotData[] slotData = inventoryData.slotdata;
 
 
@@ -173,21 +175,23 @@ public class SaveManager : MonoBehaviour
 
     private void LoadOnGroundItemData()
     {
-        string data = LoadJsonData(GetJsonDataPath("OnGroundItemManagerData"));
         var manager = OnGroundItemManager.instance;
         manager.DeleteAllItem();
 
-        var managerData = JsonUtility.FromJson<OnGroundItemManagerData>(data);
+        var managerData = new OnGroundItemManagerData();
+        managerData = LoadJsonData<OnGroundItemManagerData>(managerData.typeName);
         var itemData = managerData.groundItemData;
 
         for(int i = 0; i < managerData.groundItemData.Length; i++)
         {
             OnGroundItem itemPrefab = manager.GetItemPrefab(itemData[i].itemName);
+            if (itemPrefab == null) continue;
             GameObject item = Instantiate(itemPrefab.gameObject);
             item.transform.position = itemData[i].position;
         }
 
     }
+
 
     #endregion
 }

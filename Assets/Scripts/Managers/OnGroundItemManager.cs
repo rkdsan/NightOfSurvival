@@ -24,7 +24,13 @@ public class OnGroundItemManager : MonoBehaviour
 
     public OnGroundItem GetItemPrefab(string itemName)
     {
-        return itemDictionary[itemName];
+        if (itemDictionary.ContainsKey(itemName))
+        {
+            return itemDictionary[itemName];
+        }
+
+        Debug.LogWarning(itemName + "이(가) On Ground Item Dictionary에 등록돼있지 않습니다.");
+        return null;
     }
 
     private void SetItemDictionary()
