@@ -14,6 +14,7 @@ public class SaveLamp : InteractiveObject
             Debug.Log("데이터를 저장합니다");
             isSave = true;
             SaveManager.instance.Save();
+            TutorialManager.instance.ShowTutoWindow("저장되었습니다.");
         }
     }
 
