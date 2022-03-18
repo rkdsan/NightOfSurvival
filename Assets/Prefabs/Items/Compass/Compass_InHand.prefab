@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7888835781572740362}
   - component: {fileID: 5600709064987516716}
   - component: {fileID: 4546174842764129171}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Compass_InHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   offsetPosition: {x: 0, y: 0.21, z: 0}
-  offsetRotate: {x: 40, y: -150, z: -12}
-  objectName: "\uB098\uCE68\uBC18"
+  offsetRotate: {x: 40, y: -180, z: -12}
+  itemName: "\uB098\uCE68\uBC18"
   canCraft: 0
   isConsumable: 0
   needlePivot: {fileID: 5604058365924533903}
@@ -126,7 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7845765876813589787}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: NeedlePivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 2198098192116557174}
   - component: {fileID: 8851445711982116892}
   - component: {fileID: 8393036978319472581}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Needle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

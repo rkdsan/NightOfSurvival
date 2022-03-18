@@ -28,6 +28,9 @@ public class Ghost : MonoBehaviour
     private bool isInsidePlayer;
     private bool isInsideSongPyeon;
 
+    private float beforeSpeed;
+
+
     void Awake()
     {
         allGhostList.Add(this);
@@ -75,6 +78,7 @@ public class Ghost : MonoBehaviour
         {
             ExitPlayer();
             StopCoroutine(betweenCheckerEnumerator);
+            navMesh.speed = beforeSpeed;
         }
     }
 
@@ -88,16 +92,16 @@ public class Ghost : MonoBehaviour
             {
                 animator.SetBool(hash_chasing, true);
 
-                float temp = navMesh.speed;
+                beforeSpeed = navMesh.speed;
                 navMesh.speed = 0;
 
-                //애니메이션 바뀐 후 시간체크 하기위해 1프레임 건너뜀
+                //변경된 애니메이션으로 체크하기위해 1프레임 건너뜀
                 yield return null;
                 while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
                 {
                     yield return null;
                 }
-                navMesh.speed = temp;
+                navMesh.speed = beforeSpeed;
                 navMesh.SetDestination(playerTransform.position);
 
                 chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
@@ -178,6 +182,7 @@ public class Ghost : MonoBehaviour
             }
             else if (isInsidePlayer)
             {
+                //뒤주에 숨었을때
                 if (!playerTransform.gameObject.activeSelf) ExitPlayer();
 
                 navMesh.SetDestination(playerTransform.position);
