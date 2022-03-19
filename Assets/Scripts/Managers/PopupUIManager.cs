@@ -6,6 +6,7 @@ public class PopupUIManager : MonoBehaviour
 {
     public PopupUI pausePopup;
     public PopupUI optionPopup;
+    public PopupUI ghostDictionaryPopup;
 
     private Stack<PopupUI> activePopupList;
 
@@ -31,7 +32,7 @@ public class PopupUIManager : MonoBehaviour
 
         List<PopupUI> allPopupList = new List<PopupUI>()
         {
-            pausePopup, optionPopup
+            pausePopup, optionPopup, ghostDictionaryPopup
         };
 
         foreach(var popup in allPopupList)
@@ -54,7 +55,7 @@ public class PopupUIManager : MonoBehaviour
     }
 
     public void Button_Continue()
-    {//이 버튼을 누르려면 이게 제일 위로 와야함
+    {   //이 버튼을 누르려면 이게 제일 위로 와야함
         ClosePopup();
     }
 
@@ -67,5 +68,10 @@ public class PopupUIManager : MonoBehaviour
     public void Button_Option()
     {
         OpenPopup(optionPopup);
+    }
+
+    public void Button_Dictionary()
+    {
+        OpenPopup(ghostDictionaryPopup);
     }
 }
