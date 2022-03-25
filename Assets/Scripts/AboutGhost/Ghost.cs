@@ -232,7 +232,7 @@ public class Ghost : MonoBehaviour
     {
         bool temp;
         temp = Physics.Raycast
-            (transform.position + Vector3.up, transform.forward, out hit, 1, playerMask);
+            (transform.position + Vector3.up, transform.forward, out hit, 1, GameData.PLAYER_LAYER);
 
         return temp && !hit.collider.isTrigger;
     }
