@@ -13,6 +13,7 @@ public class Ghost : MonoBehaviour
     public LayerMask playerMask;
     public Animator animator;
     public Transform[] patrolPoints;
+    public float walkSpeed;
 
     [HideInInspector] public Transform songPyeon;
 
@@ -78,7 +79,7 @@ public class Ghost : MonoBehaviour
         {
             ExitPlayer();
             StopCoroutine(betweenCheckerEnumerator);
-            navMesh.speed = beforeSpeed;
+            navMesh.speed = walkSpeed;
         }
     }
 
@@ -92,7 +93,6 @@ public class Ghost : MonoBehaviour
             {
                 animator.SetBool(hash_chasing, true);
 
-                beforeSpeed = navMesh.speed;
                 navMesh.speed = 0;
 
                 //변경된 애니메이션으로 체크하기위해 1프레임 건너뜀
@@ -101,7 +101,7 @@ public class Ghost : MonoBehaviour
                 {
                     yield return null;
                 }
-                navMesh.speed = beforeSpeed;
+                navMesh.speed = walkSpeed;
                 navMesh.SetDestination(playerTransform.position);
 
                 chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
@@ -209,6 +209,11 @@ public class Ghost : MonoBehaviour
     {
         if (navMesh.velocity == Vector3.zero)
         {
+            if(patrolPoints.Length < 1 || patrolPoints[patrolCount] == null)
+            {
+                Debug.LogError("Ghost Patrol Point 설정 오류입니다.");
+            }
+
             navMesh.SetDestination(patrolPoints[patrolCount++].position);
             if (patrolCount >= patrolPoints.Length) patrolCount = 0;
         }
@@ -224,7 +229,7 @@ public class Ghost : MonoBehaviour
         animator.SetBool(hash_stun, true);
         navMesh.speed = 0;
         yield return WaitTimeManager.WaitForSeconds(stunTime);
-        navMesh.speed = 3;
+        navMesh.speed = walkSpeed;
         animator.SetBool(hash_stun, false);
     }
 
@@ -235,5 +240,10 @@ public class Ghost : MonoBehaviour
             (transform.position + Vector3.up, transform.forward, out hit, 1, GameData.PLAYER_LAYER);
 
         return temp && !hit.collider.isTrigger;
+    }
+
+    public void GetSlow()
+    {
+        //navMesh.speed *= 0.2f;
     }
 }

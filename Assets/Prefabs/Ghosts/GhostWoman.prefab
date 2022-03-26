@@ -4345,6 +4345,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
+  walkSpeed: 3
   songPyeon: {fileID: 0}
 --- !u!136 &9076307678613613134
 CapsuleCollider:

@@ -15,6 +15,7 @@ public abstract class InHandItem : MonoBehaviour
     {
         canCraft = false;
         isConsumable = false;
+        gameObject.layer = LayerMask.NameToLayer(GameData.IN_HAND_STRING);
     }
 
 

@@ -21,8 +21,10 @@ public class GhostFoxRoom : MonoBehaviour
         while (ghostCount > 0)
         {
             int nowIdx = GetRandomNum();
-            if (nowIdx < 0) 
+            if (nowIdx < 0)
+            {
                 break;
+            }
 
             Instantiate(ghostFox, sittingCushions[nowIdx].transform.position, Quaternion.identity);
             sittingCushions.RemoveAt(nowIdx);
@@ -34,9 +36,11 @@ public class GhostFoxRoom : MonoBehaviour
         {
             int nowIdx = GetRandomNum();
             if (nowIdx < 0)
+            {
                 break;
+            }
 
-            Instantiate(item, sittingCushions[nowIdx].transform.position, Quaternion.identity);
+            Instantiate(item, sittingCushions[nowIdx].transform.position + Vector3.up, Quaternion.identity);
             sittingCushions.RemoveAt(nowIdx);
 
             itemCount--;
@@ -48,8 +52,9 @@ public class GhostFoxRoom : MonoBehaviour
     {
         if(sittingCushions.Count > 0)
         {
-            int num = Random.Range(0, sittingCushions.Count);
+            return Random.Range(0, sittingCushions.Count);
         }
+        Debug.LogWarning("방석 개수가 부족합니다.");
         return -1;
     }
     
