@@ -4,13 +4,30 @@ using UnityEngine;
 
 public class StickyBottle_Used : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public Rigidbody rigid;
+    public GameObject sticky;
+
+    private void Awake()
     {
-        if (other.CompareTag(GameData.GHOST_TAG))
-        {
-            other.GetComponent<Ghost>().GetSlow();
-        }
+        Vector3 forward = transform.parent.forward;
+        forward.y += 0.3f;
+        transform.parent = null;
+        rigid.velocity = forward * 8f;
+        Debug.Log(rigid.velocity.magnitude);
+        StartCoroutine(CheckGround());
     }
 
+    private IEnumerator CheckGround()
+    {
+        while (rigid.velocity.magnitude > 2)
+        {
+            yield return WaitTimeManager.WaitForFixedUpdate();
+        }
+
+        //º´ÀÌ ±úÁü
+        Instantiate(sticky, transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
+    }
 
 }

@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d0174aa64557f4ab4fbac829377937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImage: {fileID: 21300000, guid: 2d1719bf5a98c25469f3f382ade09aa4, type: 3}
+  itemImage: {fileID: 21300000, guid: 22fd9bd025634694783caac251c1298d, type: 3}
   offsetPosition: {x: 0, y: 0, z: 0}
   offsetRotate: {x: 55, y: 180, z: -80}
   itemName: "\uBD80\uC801"
