@@ -30,6 +30,7 @@ public class Ghost : MonoBehaviour
     private bool isInsideSongPyeon;
 
     private float beforeSpeed;
+    private bool _isSlow;
 
 
     void Awake()
@@ -79,7 +80,7 @@ public class Ghost : MonoBehaviour
         {
             ExitPlayer();
             StopCoroutine(betweenCheckerEnumerator);
-            navMesh.speed = walkSpeed;
+            SetSpeed();
         }
     }
 
@@ -101,7 +102,7 @@ public class Ghost : MonoBehaviour
                 {
                     yield return null;
                 }
-                navMesh.speed = walkSpeed;
+                SetSpeed();
                 navMesh.SetDestination(playerTransform.position);
 
                 chasingSoundPlayer = SFXPlayer.instance.Play(chasingSoundClip);
@@ -229,7 +230,7 @@ public class Ghost : MonoBehaviour
         animator.SetBool(hash_stun, true);
         navMesh.speed = 0;
         yield return WaitTimeManager.WaitForSeconds(stunTime);
-        navMesh.speed = walkSpeed;
+        SetSpeed();
         animator.SetBool(hash_stun, false);
     }
 
@@ -242,8 +243,15 @@ public class Ghost : MonoBehaviour
         return temp && !hit.collider.isTrigger;
     }
 
-    public void GetSlow()
+    public void SetSlow(bool isSlow)
     {
-        //navMesh.speed *= 0.2f;
+        _isSlow = isSlow;
+        SetSpeed();
+    }
+
+    private void SetSpeed()
+    {
+        float slowSpeed = _isSlow ? 0.5f : 1;
+        navMesh.speed = walkSpeed * slowSpeed;
     }
 }

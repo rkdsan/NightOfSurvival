@@ -13,7 +13,6 @@ public class StickyBottle_Used : MonoBehaviour
         forward.y += 0.3f;
         transform.parent = null;
         rigid.velocity = forward * 8f;
-        Debug.Log(rigid.velocity.magnitude);
         StartCoroutine(CheckGround());
     }
 

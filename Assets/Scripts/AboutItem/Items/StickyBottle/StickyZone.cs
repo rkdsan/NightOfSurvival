@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sticky : MonoBehaviour
+public class StickyZone : MonoBehaviour
 {
     // Start is called before the first frame update
     private void Awake()
@@ -12,14 +12,24 @@ public class Sticky : MonoBehaviour
         setPos.y = 0.1f;
         transform.position = setPos;
 
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 8);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(GameData.GHOST_TAG))
         {
-            other.GetComponent<Ghost>().GetSlow();
+            Debug.Log("고스트 엔터");
+            other.GetComponent<Ghost>().SetSlow(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(GameData.GHOST_TAG))
+        {
+            Debug.Log("고스트 아웃");
+            other.GetComponent<Ghost>().SetSlow(false);
         }
     }
 
