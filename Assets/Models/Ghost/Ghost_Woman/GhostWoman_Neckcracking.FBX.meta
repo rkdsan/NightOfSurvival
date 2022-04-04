@@ -1,0 +1,1305 @@
+fileFormatVersion: 2
+guid: 908f73ed789327a45973defdf893241d
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftLeg'
+      has translation animation that will be discarded.\n\t'Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightLeg'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: GhostWoman_Neckcracking(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Object011
+      parentName: GhostWoman_Neckcracking(Clone)
+      position: {x: 0.00000008509197, y: 8.575104, z: 1.9711562}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: -1.987062, y: -1.987062, z: -1.987062}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Reference
+      parentName: GhostWoman_Neckcracking(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Hips
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Reference
+      position: {x: 0.00025393546, y: 1.1170349, z: 0.046894986}
+      rotation: {x: 0.000000059604634, y: -4.60534e-19, z: 7.72648e-12, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftUpLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Hips
+      position: {x: -0.089099966, y: -0.11472015, z: 0.0012973752}
+      rotation: {x: 3.5527137e-15, y: 2.2885409e-11, z: 1.0152746e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftUpLeg
+      position: {x: -0.005333847, y: -0.4445102, z: -0.008295378}
+      rotation: {x: -0.0000000014646702, y: -3.4328113e-11, z: 2.5030924e-12, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftFoot
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftLeg
+      position: {x: 0.005335528, y: -0.489569, z: -0.019237028}
+      rotation: {x: 0.0000000014646773, y: 1.1442701e-11, z: -2.038231e-11, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftToeBase
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftFoot
+      position: {x: -0.00000008583609, y: -0.050893817, z: 0.15945677}
+      rotation: {x: -0, y: -0, z: -1.6759863e-20, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightUpLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Hips
+      position: {x: 0.089099914, y: -0.11472018, z: 0.0012973736}
+      rotation: {x: -0.0000000029293332, y: 1.1442705e-11, z: -2.0957104e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightUpLeg
+      position: {x: 0.0053343177, y: -0.44450915, z: -0.008360009}
+      rotation: {x: 0.0000000029293368, y: -1.1442705e-11, z: 1.5018545e-11, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightFoot
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightLeg
+      position: {x: -0.0053356322, y: -0.48956886, z: -0.019236952}
+      rotation: {x: -3.5527137e-15, y: 1.1275703e-17, z: -1.7879214e-12, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightToeBase
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightFoot
+      position: {x: 0.00000008584465, y: -0.0508938, z: 0.15945673}
+      rotation: {x: 2.9694286e-16, y: -0.00004189126, z: 6.801278e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Hips
+      position: {x: -4.3708978e-10, y: 0.15693644, z: -0.00555291}
+      rotation: {x: 1.1443291e-11, y: 5.721352e-12, z: 2.413486e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine
+      position: {x: -1.7749564e-10, y: 0.099670514, z: -0.011076502}
+      rotation: {x: -0, y: -0, z: -6.5471094e-23, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine1
+      position: {x: 1.06644395e-10, y: 0.09967061, z: -0.013941412}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftShoulder
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine2
+      position: {x: -0.0716427, y: 0.0399434, z: -1.9242383e-10}
+      rotation: {x: 1.1237495e-33, y: -1.7164055e-11, z: 4.2315096e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftShoulder
+      position: {x: -0.072539985, y: -0.004059139, z: -0.0000000010291848}
+      rotation: {x: 0.000000013496559, y: 0.002060898, z: -0.0026804833, w: 0.9999943}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftForeArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftArm
+      position: {x: -0.25452918, y: -0.018133467, z: -0.013911232}
+      rotation: {x: 0.000000011716127, y: 0.000000011716128, z: -0.000102686274, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftForeArm
+      position: {x: -0.25522482, y: -0.011968277, z: 0.006802023}
+      rotation: {x: -0.000000017610386, y: 0.000000044676824, z: 0.0007700044, w: 0.9999997}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      position: {x: -0.03843771, y: -0.00213096, z: 0.042487405}
+      rotation: {x: -0.051849518, y: 0.017372835, z: -0.04583672, w: 0.9974512}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb1
+      position: {x: -0.02368941, y: -0.008601511, z: 0.025606338}
+      rotation: {x: -0.11056427, y: 0.10497898, z: -0.05706863, w: 0.98666006}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb2
+      position: {x: -0.024049634, y: -0.015827345, z: 0.013814732}
+      rotation: {x: -0.081483595, y: 0.10965878, z: -0.03600416, w: 0.98996925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandThumb3
+      position: {x: -0.028142972, y: -0.021878162, z: 0.0037062706}
+      rotation: {x: 0.0000000013020703, y: -0.000000015718966, z: 0.05140263, w: 0.9986781}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      position: {x: -0.116174534, y: 0.005963894, z: 0.039096933}
+      rotation: {x: 2.552465e-10, y: -0.000000018266112, z: -0.003593246, w: 0.9999936}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex1
+      position: {x: -0.046109684, y: -0.00048301075, z: 0.006189089}
+      rotation: {x: -0.008342651, y: -0.019238602, z: -0.044541743, w: 0.99878746}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex2
+      position: {x: -0.032151327, y: -0.005894631, z: 0.0056572556}
+      rotation: {x: 0.004506192, y: 0.2945138, z: -0.121418945, w: 0.9478918}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandIndex3
+      position: {x: -0.020031054, y: -0.011915154, z: -0.01017251}
+      rotation: {x: -0.03241555, y: 0.9648974, z: -0.02671411, w: 0.2592463}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      position: {x: -0.11773201, y: 0.009101304, z: 0.013383836}
+      rotation: {x: -0.00561864, y: 0.026517464, z: -0.07021603, w: 0.9971635}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle1
+      position: {x: -0.055170525, y: -0.011889559, z: 0.000003016544}
+      rotation: {x: -0.000014378224, y: -0.000030038878, z: -0.15925087, w: 0.98723817}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle2
+      position: {x: -0.032145295, y: -0.021927543, z: 0.0000036762099}
+      rotation: {x: 0.0000063395355, y: 0.00049499347, z: -0.08474151, w: 0.9964029}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandMiddle3
+      position: {x: -0.017941441, y: -0.020259751, z: -0.000018118522}
+      rotation: {x: 0.00007644051, y: -0.0032624097, z: 0.05136101, w: 0.99867487}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      position: {x: -0.115881376, y: 0.006015368, z: -0.011974902}
+      rotation: {x: -0.0116395345, y: 0.07751736, z: -0.15621792, w: 0.98460734}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing1
+      position: {x: -0.042692177, y: -0.016640889, z: -0.0051117456}
+      rotation: {x: 0.011049521, y: -0.00066751987, z: -0.079072714, w: 0.99680746}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing2
+      position: {x: -0.026508782, y: -0.018391382, z: -0.0030705945}
+      rotation: {x: 0.013777141, y: -0.0037621425, z: -0.117700316, w: 0.99294645}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandRing3
+      position: {x: -0.016306702, y: -0.021307237, z: -0.0016172621}
+      rotation: {x: 0.000076451055, y: -0.0032626132, z: 0.051361002, w: 0.99867487}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHand
+      position: {x: -0.111076355, y: -0.007757524, z: -0.036359563}
+      rotation: {x: -0.007007431, y: 0.10907543, z: -0.13592282, w: 0.9846718}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky1
+      position: {x: -0.035092536, y: -0.011443678, z: -0.0074651735}
+      rotation: {x: 0.025901208, y: 0.010254577, z: -0.12578979, w: 0.9916658}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky2
+      position: {x: -0.01951253, y: -0.014818252, z: -0.004769378}
+      rotation: {x: 0.02097259, y: 0.011528889, z: -0.14892966, w: 0.98855823}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_LeftHandPinky3
+      position: {x: -0.012929863, y: -0.021490846, z: -0.0043546725}
+      rotation: {x: -0.0000000038989705, y: 5.788471e-10, z: 0.05205934, w: 0.99864405}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightShoulder
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine2
+      position: {x: 0.071642675, y: 0.039943464, z: -0.0000000013240549}
+      rotation: {x: -1.1443291e-11, y: -7.4920477e-34, z: 7.6545367e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightShoulder
+      position: {x: 0.072539955, y: -0.004059196, z: 0.000000070473234}
+      rotation: {x: 0.000000029662129, y: -0.0020619424, z: 0.0026676902, w: 0.99999434}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightForeArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightArm
+      position: {x: 0.25452954, y: -0.018126247, z: -0.013912855}
+      rotation: {x: 0.000000017578964, y: -0.000000014282394, z: 0.0003236798, w: 0.99999994}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightForeArm
+      position: {x: 0.25521886, y: -0.012094946, z: 0.0068010585}
+      rotation: {x: -0.000000017625721, y: 0.000000002943552, z: -0.002427753, w: 0.9999971}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      position: {x: 0.038446415, y: -0.0019684522, z: 0.042487383}
+      rotation: {x: -0.05485907, y: -0.017178008, z: 0.055890933, w: 0.9967807}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb1
+      position: {x: 0.023489475, y: -0.009133364, z: 0.025606344}
+      rotation: {x: -0.09550029, y: -0.11166969, z: 0.01636972, w: 0.98901045}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb2
+      position: {x: 0.025300337, y: -0.013739892, z: 0.013814713}
+      rotation: {x: -0.11097449, y: -0.093639016, z: 0.17146714, w: 0.97443086}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandThumb3
+      position: {x: 0.02222739, y: -0.0278679, z: 0.0037062913}
+      rotation: {x: 0.00000004058871, y: -0.000000034692107, z: -0.16122656, w: 0.98691744}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      position: {x: 0.1161483, y: 0.0064549516, z: 0.039096896}
+      rotation: {x: 0.000000011484267, y: 0.000000037946137, z: 0.011329386, w: 0.99993587}
+      scale: {x: 1.0000005, y: 1, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex1
+      position: {x: 0.046087082, y: -0.0015223811, z: 0.0061890916}
+      rotation: {x: -0.0038087864, y: -0.016483704, z: -0.009663396, w: 0.9998102}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000006}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex2
+      position: {x: 0.032849677, y: -0.0031432544, z: 0.003387359}
+      rotation: {x: -0.0757169, y: 0.2899084, z: 0.26692846, w: 0.91595274}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandIndex3
+      position: {x: 0.0137655875, y: -0.016620504, z: 0.013452242}
+      rotation: {x: 0.10185339, y: 0.9556458, z: 0.08426538, w: 0.2631849}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      position: {x: 0.117692605, y: 0.009598864, z: 0.013383727}
+      rotation: {x: -0.0062608835, y: -0.027530683, z: 0.083395556, w: 0.99611646}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle1
+      position: {x: 0.05488846, y: -0.013130307, z: 0.0000029977593}
+      rotation: {x: 0.001819944, y: -0.017357934, z: 0.104709856, w: 0.99434966}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle2
+      position: {x: 0.033861544, y: -0.019134592, z: -0.0011807953}
+      rotation: {x: -0.0340906, y: 0.27564332, z: 0.2479552, w: 0.92810386}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandMiddle3
+      position: {x: 0.01010785, y: -0.023846917, z: 0.007842812}
+      rotation: {x: 0.10185346, y: 0.95564586, z: 0.084265396, w: 0.26318493}
+      scale: {x: 0.9999997, y: 1.0000002, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      position: {x: 0.11585491, y: 0.006505167, z: -0.011974915}
+      rotation: {x: -0.012479578, y: -0.07820374, z: 0.16927029, w: 0.9823829}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing1
+      position: {x: 0.04230622, y: -0.01759912, z: -0.005111776}
+      rotation: {x: 0.008346562, y: -0.015796978, z: 0.024400908, w: 0.9995426}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing2
+      position: {x: 0.027842745, y: -0.016087035, z: -0.004046449}
+      rotation: {x: -0.020144915, y: 0.2713236, z: 0.28167874, w: 0.92012763}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000004}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandRing3
+      position: {x: 0.009461231, y: -0.02454771, z: 0.0055152196}
+      rotation: {x: 0.10185339, y: 0.9556458, z: 0.08426539, w: 0.2631849}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHand
+      position: {x: 0.111108236, y: -0.00728793, z: -0.03635964}
+      rotation: {x: -0.007897408, y: -0.11000758, z: 0.14858387, w: 0.9827303}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky1
+      position: {x: 0.034825623, y: -0.012231918, z: -0.007465171}
+      rotation: {x: 0.022134582, y: -0.02445734, z: 0.071901985, w: 0.9968661}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky2
+      position: {x: 0.020514678, y: -0.013118262, z: -0.0054887296}
+      rotation: {x: -0.015839107, y: 0.24122787, z: 0.30651903, w: 0.92065424}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_RightHandPinky3
+      position: {x: 0.008249487, y: -0.024043553, z: 0.0013627677}
+      rotation: {x: 0.101866685, y: 0.95572275, z: 0.083676115, w: 0.26308867}
+      scale: {x: 0.9999997, y: 1.0000001, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Neck
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Spine2
+      position: {x: -4.214458e-10, y: 0.09967059, z: 0.005199507}
+      rotation: {x: -2.2883029e-11, y: 5.721354e-12, z: -9.4032164e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Head
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Neck
+      position: {x: 0.0000000029715015, y: 0.056866236, z: 0.012414713}
+      rotation: {x: -0, y: -0, z: 1.309219e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      parentName: GhostWoman_Neckcracking(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_HipsEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.0002241516, y: 1.0023152, z: 0.04816263}
+      rotation: {x: 0.00012977519, y: -0.000036372672, z: -0.00012940489, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftAnkleEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.089098565, y: 0.06912273, z: 0.020522611}
+      rotation: {x: 0.000000098720214, y: 4.3983724e-17, z: 5.92479e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightAnkleEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.08909874, y: 0.06907852, z: 0.020521065}
+      rotation: {x: 0.000000011175874, y: -1.4717692e-14, z: -4.574434e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftWristEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.09371387, y: 1.1223725, z: 0.23627026}
+      rotation: {x: 0.28052178, y: 0.6752772, z: 0.5578559, w: 0.39256227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightWristEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.13259998, y: 1.1318525, z: 0.21364222}
+      rotation: {x: -0.26160678, y: 0.7592302, z: 0.46526134, w: -0.37237525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftKneeEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.094300516, y: 0.5578141, z: 0.055593237}
+      rotation: {x: 0.01618259, y: 0.000098301214, z: -0.00013107849, w: 0.99986905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightKneeEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.094533324, y: 0.5577655, z: 0.055610914}
+      rotation: {x: 0.016201735, y: -0.00012339756, z: -0.00010814428, w: 0.99986875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftElbowEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.19011934, y: 1.2598393, z: 0.043557715}
+      rotation: {x: -0.16173284, y: 0.49974632, z: 0.6434139, w: 0.55687946}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightElbowEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.20121787, y: 1.2600898, z: 0.0034612322}
+      rotation: {x: -0.21804605, y: -0.4751152, z: -0.6189519, w: 0.5861911}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_ChestOriginEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.0002949822, y: 1.2739733, z: 0.04138317}
+      rotation: {x: 0.00018296696, y: -0.000055240667, z: -0.00071690686, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_ChestEndEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.00064082386, y: 1.5132667, z: 0.016452847}
+      rotation: {x: 0.00018296696, y: -0.000055240667, z: -0.00071690686, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftFootEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.089098655, y: 0.018228864, z: 0.17997941}
+      rotation: {x: 1.208974e-23, y: -0.000000098720214, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightFootEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.089098826, y: 0.018184705, z: 0.17997785}
+      rotation: {x: 1.3686498e-24, y: -0.000000011175874, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftShoulderEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.14355975, y: 1.5096458, z: 0.01642225}
+      rotation: {x: 0.044870447, y: 0.14682513, z: 0.6013469, w: 0.7840988}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightShoulderEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.14481755, y: 1.5090017, z: 0.016467324}
+      rotation: {x: 0.03759292, y: -0.034621734, z: -0.59730834, w: 0.8003817}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_HeadEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.0008061436, y: 1.6298535, z: 0.03411004}
+      rotation: {x: 0.00018486707, y: -0.000055079898, z: -0.00071764615, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHipEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.08887567, y: 1.0023383, z: 0.048156157}
+      rotation: {x: -0.017415006, y: -0.00022434826, z: -0.000104566825, w: 0.99984837}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHipEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.089323975, y: 1.0022922, z: 0.04816911}
+      rotation: {x: -0.017602956, y: 0.00015766916, z: -0.00013927951, w: 0.9998451}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumbEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.04317973, y: 1.0631452, z: 0.21075834}
+      rotation: {x: 0.28052175, y: 0.675277, z: 0.55785614, w: 0.39256236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndexEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.06778386, y: 0.97017, z: 0.26939663}
+      rotation: {x: 0.2805212, y: 0.6752775, z: 0.55785555, w: 0.39256266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddleEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.040062465, y: 0.93660474, z: 0.24144167}
+      rotation: {x: 0.28052053, y: 0.67527735, z: 0.5578567, w: 0.3925617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRingEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.0006277442, y: 0.9340568, z: 0.23397025}
+      rotation: {x: 0.2805217, y: 0.675277, z: 0.55785614, w: 0.39256233}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinkyEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.038724493, y: 0.93476623, z: 0.22600067}
+      rotation: {x: 0.2805205, y: 0.67527777, z: 0.5578552, w: 0.39256316}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumbEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.002268107, y: 1.0696081, z: 0.18474849}
+      rotation: {x: -0.26160637, y: 0.75923073, z: 0.46526128, w: -0.37237442}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndexEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.037096865, y: 0.9921691, z: 0.25876418}
+      rotation: {x: -0.2616069, y: 0.75923085, z: 0.46526045, w: -0.37237495}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddleEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: -0.007437253, y: 0.9530043, z: 0.2425457}
+      rotation: {x: -0.26160657, y: 0.75923055, z: 0.4652608, w: -0.37237525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRingEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.03373792, y: 0.9485166, z: 0.24098124}
+      rotation: {x: -0.26160592, y: 0.75923085, z: 0.46526057, w: -0.3723755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinkyEffector
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.07251829, y: 0.9471166, z: 0.23789549}
+      rotation: {x: -0.2616065, y: 0.75923127, z: 0.4652603, w: -0.37237465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Hips
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Reference
+      position: {x: 0.0002539641, y: 1.1170355, z: 0.046895035}
+      rotation: {x: 0.00012977519, y: -0.000036372672, z: -0.00012940487, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftUpLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Hips
+      position: {x: -0.089100026, y: -0.11472018, z: 0.001297374}
+      rotation: {x: -0.017544733, y: -0.00019024826, z: 0.00002548096, w: 0.9998461}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftUpLeg
+      position: {x: -0.0053349794, y: -0.44450563, z: -0.008528909}
+      rotation: {x: 0.03359282, y: 0.00032658002, z: -0.000028424085, w: 0.99943554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftFoot
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftLeg
+      position: {x: 0.0053349794, y: -0.4895693, z: -0.019234039}
+      rotation: {x: -0.016182492, y: -0.0000983012, z: 0.00013107849, w: 0.99986905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftToeBase
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftFoot
+      position: {x: -0.000000085830706, y: -0.05089389, z: 0.15945694}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightUpLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Hips
+      position: {x: 0.089100026, y: -0.11472018, z: 0.001297374}
+      rotation: {x: -0.017732736, y: 0.00019174021, z: -0.000009274864, w: 0.99984276}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightLeg
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightUpLeg
+      position: {x: 0.0053349794, y: -0.44450563, z: -0.008528909}
+      rotation: {x: 0.0337999, y: -0.00027686666, z: 0.00003151604, w: 0.99942863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightFoot
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightLeg
+      position: {x: -0.0053349794, y: -0.4895693, z: -0.019234039}
+      rotation: {x: -0.016201723, y: 0.00012339758, z: 0.00010814427, w: 0.99986875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightToeBase
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightFoot
+      position: {x: 0.000000085830706, y: -0.05089389, z: 0.15945694}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Hips
+      position: {x: -0, y: 0.15693645, z: -0.005552908}
+      rotation: {x: 0.00005317287, y: -0.000018937355, z: -0.00058750145, w: 0.9999998}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine
+      position: {x: -0, y: 0.09967051, z: -0.011076527}
+      rotation: {x: 1.0591689e-32, y: -4.4589085e-17, z: 1.4960821e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine1
+      position: {x: -0, y: 0.09967058, z: -0.013941391}
+      rotation: {x: -4.1633363e-17, y: -0, z: 6.162976e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftShoulder
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine2
+      position: {x: -0.07164268, y: 0.039943397, z: 0}
+      rotation: {x: 0.000005115803, y: -0.00009141183, z: -0.00159553, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftShoulder
+      position: {x: -0.072540045, y: -0.004059144, z: -2.220446e-18}
+      rotation: {x: 0.0444713, y: 0.14715637, z: 0.6031242, w: 0.7826931}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftForeArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftArm
+      position: {x: -0.2545277, y: -0.018148808, z: -0.013919282}
+      rotation: {x: 0.054249566, y: 0.43621448, z: 0.12345212, w: 0.8896817}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftForeArm
+      position: {x: -0.25522742, y: -0.011914522, z: 0.0068025556}
+      rotation: {x: 0.37540329, y: -0.09084883, z: 0.30748266, w: 0.86963975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      position: {x: -0.038433466, y: -0.0022064215, z: 0.042487405}
+      rotation: {x: -0.0000001178795, y: 0.0000005605649, z: 0.00000018675901, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb1
+      position: {x: -0.023778157, y: -0.008352968, z: 0.025606357}
+      rotation: {x: -0.0000002951139, y: -0.00000060688984, z: -0.0000004728895, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb2
+      position: {x: -0.023409734, y: -0.016759342, z: 0.013814715}
+      rotation: {x: 0.00000011204704, y: 0.000000023264636, z: 0.00000031338553, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandThumb3
+      position: {x: -0.030373847, y: -0.018657688, z: 0.0037062748}
+      rotation: {x: 0.00000006531859, y: 0.0000010757448, z: -0.00000092583053, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      position: {x: -0.116186015, y: 0.0057357796, z: 0.039096948}
+      rotation: {x: -0.00000023081667, y: -0.00000020963344, z: -0.0000007153128, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex1
+      position: {x: -0.04611222, y: -0.00000015258793, z: 0.006189109}
+      rotation: {x: 0.00000069433855, y: 0.00000076500123, z: -0.00000007594562, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex2
+      position: {x: -0.03207284, y: -0.0071591204, z: 0.004531771}
+      rotation: {x: -0.00000038098534, y: -0.0000004179343, z: -0.000000047749136, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandIndex3
+      position: {x: -0.023455052, y: -0.009387972, z: 0.0029020123}
+      rotation: {x: -0.00000039281076, y: -0.00000037446733, z: -0.0000002477253, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      position: {x: -0.117749736, y: 0.0088700885, z: 0.013383789}
+      rotation: {x: -0.00000022202624, y: -0.000000050148188, z: -0.0000006775513, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle1
+      position: {x: -0.05529199, y: -0.01131119, z: 0.0000030255324}
+      rotation: {x: -0.00000017381987, y: 0.0000012441852, z: 0.00000034605728, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle2
+      position: {x: -0.03125962, y: -0.023172611, z: 0.0000017166142}
+      rotation: {x: -0.000000332797, y: 0.00000015128313, z: 0.000000030886337, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandMiddle3
+      position: {x: -0.02005631, y: -0.018168645, z: 0.0000012373927}
+      rotation: {x: -0.0000004827472, y: -0.0000004987321, z: 0.0000003170002, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      position: {x: -0.11589297, y: 0.005787812, z: -0.011974894}
+      rotation: {x: 0.00000012925672, y: -0.000000013373943, z: -0.00000006635945, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing1
+      position: {x: -0.042864084, y: -0.016192935, z: -0.005111739}
+      rotation: {x: -0.0000003125776, y: 0.000000053112082, z: 0.00000050268966, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing2
+      position: {x: -0.025766151, y: -0.019417882, z: -0.0030722592}
+      rotation: {x: -0.00000010712923, y: 3.881011e-14, z: -0.00000041318398, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandRing3
+      position: {x: -0.018547978, y: -0.019389043, z: -0.0015995626}
+      rotation: {x: 0.0000003589633, y: 0.0000009344485, z: 0.0000003049769, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHand
+      position: {x: -0.11106097, y: -0.007975618, z: -0.036359597}
+      rotation: {x: 0.00000012201492, y: 0.00000012240075, z: -0.00000025310308, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky1
+      position: {x: -0.035210427, y: -0.011075594, z: -0.007465178}
+      rotation: {x: -0.00000040861357, y: 0.000000045683905, z: -0.0000016412655, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky2
+      position: {x: -0.018915562, y: -0.0155731235, z: -0.0047694193}
+      rotation: {x: 0.00000027748158, y: -0.000000052771945, z: 0.00000006939804, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_LeftHandPinky3
+      position: {x: -0.015214542, y: -0.019938817, z: -0.0043546758}
+      rotation: {x: -0.00000012460194, y: 0.00000027802398, z: 0.00000017645839, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightShoulder
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine2
+      position: {x: 0.07164268, y: 0.039943397, z: 0}
+      rotation: {x: -0.00000002691881, y: -0.000000481114, z: 0.0000062675063, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightShoulder
+      position: {x: 0.072540045, y: -0.004059144, z: -2.220446e-18}
+      rotation: {x: 0.037437797, y: -0.034659695, z: -0.5967352, w: 0.80081475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightForeArm
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightArm
+      position: {x: 0.2545277, y: -0.018148808, z: -0.013919282}
+      rotation: {x: 0.06580437, y: -0.5134875, z: -0.11985079, w: 0.8471341}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightForeArm
+      position: {x: 0.25522742, y: -0.011914522, z: 0.0068025556}
+      rotation: {x: 0.48342082, y: -0.004762485, z: -0.33209032, w: 0.8099369}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      position: {x: 0.038433466, y: -0.0022064215, z: 0.042487405}
+      rotation: {x: 4.5820595e-15, y: -0.00000006166225, z: 0.00000009794043, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb1
+      position: {x: 0.023778157, y: -0.008352968, z: 0.025606357}
+      rotation: {x: -0.00000042824803, y: -0.00000040497358, z: 0.0000003047856, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb2
+      position: {x: 0.023409734, y: -0.016759342, z: 0.013814715}
+      rotation: {x: 0.0000007559842, y: -0.0000004866262, z: -0.00000027825672, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandThumb3
+      position: {x: 0.030373847, y: -0.018657688, z: 0.0037062748}
+      rotation: {x: -0.0000002981312, y: 0.00000031832926, z: 0.00000025773562, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      position: {x: 0.116186015, y: 0.0057357796, z: 0.039096948}
+      rotation: {x: -0.00000034377263, y: -0.0000010781619, z: 0.00000022270184, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex1
+      position: {x: 0.04611222, y: -0.00000015258793, z: 0.006189109}
+      rotation: {x: 0.0000007285192, y: 0.0000012693467, z: 0.000000082275896, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex2
+      position: {x: 0.03207284, y: -0.0071591204, z: 0.004531771}
+      rotation: {x: 0.00000062048736, y: -0.0000003102437, z: 1.915894e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandIndex3
+      position: {x: 0.023455052, y: -0.009387972, z: 0.0029020123}
+      rotation: {x: -0.0000003571649, y: 0.0000015236667, z: 0.0000005951646, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      position: {x: 0.117749736, y: 0.0088700885, z: 0.013383789}
+      rotation: {x: 0.0000002971201, y: 0.0000006225089, z: 0.000000049669996, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle1
+      position: {x: 0.05529199, y: -0.01131119, z: 0.0000030255324}
+      rotation: {x: -0.00000016010829, y: -0.0000008593563, z: 0.00000018708675, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle2
+      position: {x: 0.03125962, y: -0.023172611, z: 0.0000017166142}
+      rotation: {x: 0.00000031759424, y: 0.00000014364169, z: 0.00000026134384, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandMiddle3
+      position: {x: 0.02005631, y: -0.018168645, z: 0.0000012373927}
+      rotation: {x: 0.00000039456202, y: -0.000000034814068, z: 0.000000012210664, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      position: {x: 0.11589297, y: 0.005787812, z: -0.011974894}
+      rotation: {x: -0.000000057635496, y: -0.000000040349867, z: 0.0000002847489, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing1
+      position: {x: 0.042864084, y: -0.016192935, z: -0.005111739}
+      rotation: {x: 0.00000026926946, y: -0.0000009048266, z: 0.000000105892894, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing2
+      position: {x: 0.025766151, y: -0.019417882, z: -0.0030722592}
+      rotation: {x: 0.00000022637668, y: 0.00000073388645, z: 0.00000086193455, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandRing3
+      position: {x: 0.018547978, y: -0.019389043, z: -0.0015995626}
+      rotation: {x: 0.00000017216217, y: -0.0000002774307, z: -0.00000078179494, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky1
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHand
+      position: {x: 0.11106097, y: -0.007975618, z: -0.036359597}
+      rotation: {x: 0.0000001722647, y: -0.00000014845665, z: -0.00000013956634, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky2
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky1
+      position: {x: 0.035210427, y: -0.011075594, z: -0.007465178}
+      rotation: {x: 0.0000001458256, y: -0.000000022908734, z: 0.00000042702132, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky3
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky2
+      position: {x: 0.018915562, y: -0.0155731235, z: -0.0047694193}
+      rotation: {x: 0.0000010137653, y: -0.0000004641161, z: 0.00000033406192, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky4
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_RightHandPinky3
+      position: {x: 0.015214542, y: -0.019938817, z: -0.0043546758}
+      rotation: {x: -0.00000006529086, y: 0.0000008646787, z: 0.0000019871165, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Neck
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Spine2
+      position: {x: -0, y: 0.09967058, z: 0.00519961}
+      rotation: {x: 0.0000018999482, y: 0.00000016199941, z: -0.00000073946387, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Head
+      parentName: Ghostwoman_neckcracking:Ghostwoman_Find:Character1_Ctrl_Neck
+      position: {x: -0, y: 0.05686616, z: 0.0124147}
+      rotation: {x: 3.0616168e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
