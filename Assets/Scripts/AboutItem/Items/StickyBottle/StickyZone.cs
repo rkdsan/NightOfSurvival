@@ -19,7 +19,6 @@ public class StickyZone : MonoBehaviour
     {
         if (other.CompareTag(GameData.GHOST_TAG))
         {
-            Debug.Log("고스트 엔터");
             other.GetComponent<Ghost>().SetSlow(true);
         }
     }
@@ -28,7 +27,6 @@ public class StickyZone : MonoBehaviour
     {
         if (other.CompareTag(GameData.GHOST_TAG))
         {
-            Debug.Log("고스트 아웃");
             other.GetComponent<Ghost>().SetSlow(false);
         }
     }
