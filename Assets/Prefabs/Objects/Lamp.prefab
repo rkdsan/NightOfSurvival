@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6487499986648333918
+--- !u!1 &2853538721359662846
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8587215537631121355}
-  - component: {fileID: 8730083585178428386}
-  - component: {fileID: 362552212052731793}
-  - component: {fileID: 6487499986648333917}
-  - component: {fileID: 6487499986648333891}
-  - component: {fileID: 6487499986648333916}
+  - component: {fileID: 7993937477951240091}
+  - component: {fileID: 3299150327121796189}
+  - component: {fileID: 3557199575902303938}
+  - component: {fileID: 8073372086023022473}
+  - component: {fileID: 2375633320129372914}
+  - component: {fileID: 8289101335262562709}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: InteractiveObject
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8587215537631121355
+--- !u!4 &7993937477951240091
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
-  m_LocalRotation: {x: 0.00000013032705, y: -0.3826835, z: 0.000000053983243, w: 0.9238795}
-  m_LocalPosition: {x: 0.41950956, y: 0.04870575, z: 0.6295464}
+  m_GameObject: {fileID: 2853538721359662846}
+  m_LocalRotation: {x: 0.65328157, y: -0.27059814, z: -0.27059808, w: 0.6532814}
+  m_LocalPosition: {x: -1.4865804, y: -2.8072157, z: -0.18021943}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8730083585178428386
+--- !u!33 &3299150327121796189
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
-  m_Mesh: {fileID: 5760465168522449586, guid: c8af1bf75c3b71a4289bb25315109a0f, type: 3}
---- !u!23 &362552212052731793
+  m_GameObject: {fileID: 2853538721359662846}
+  m_Mesh: {fileID: -5208879343037863941, guid: c8af1bf75c3b71a4289bb25315109a0f, type: 3}
+--- !u!23 &3557199575902303938
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
+  m_GameObject: {fileID: 2853538721359662846}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,14 +62,14 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4219079427387042102, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: -1069411815626237646, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: 6321878435124732039, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: 2100000, guid: 6ef176387b47a96419c0be1ac26a5144, type: 2}
-  - {fileID: 4922926813860865278, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: -7051857643638924853, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: -3620572297651811420, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
-  - {fileID: -4622259013623788082, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
+  - {fileID: -4219079427387042102, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: -1069411815626237646, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: 6321878435124732039, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: 2100000, guid: 2ac1d4cb8065b6f4383f6457cd41e92a, type: 2}
+  - {fileID: 4922926813860865278, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: -7051857643638924853, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: 4922926813860865278, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
+  - {fileID: -4622259013623788082, guid: a9324177c1bbc7543b7bdeeeb241f93b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,27 +91,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6487499986648333917
-MeshCollider:
+--- !u!114 &8073372086023022473
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 2853538721359662846}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5760465168522449586, guid: b914caeb0a045304abee12d717b0e49a, type: 3}
---- !u!108 &6487499986648333891
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011c0a8a38ac22b46900a58c531141e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: "\uB7A8\uD504"
+  explainComment: 
+  lampLight: {fileID: 2375633320129372914}
+  lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}
+--- !u!108 &2375633320129372914
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
+  m_GameObject: {fileID: 2853538721359662846}
   m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
@@ -156,7 +158,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -167,19 +169,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &6487499986648333916
-MonoBehaviour:
+--- !u!136 &8289101335262562709
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487499986648333918}
+  m_GameObject: {fileID: 2853538721359662846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011c0a8a38ac22b46900a58c531141e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: "\uB7A8\uD504"
-  explainComment: 
-  lampLight: {fileID: 6487499986648333891}
-  lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}
+  m_Radius: 0.7157099
+  m_Height: 1.9881483
+  m_Direction: 1
+  m_Center: {x: 0.00000059604645, y: -0.000000029802298, z: -0.000000029802326}

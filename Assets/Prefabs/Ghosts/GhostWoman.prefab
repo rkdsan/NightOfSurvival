@@ -4337,15 +4337,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374baa3a2a676104aa4be060d81604f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 9076307678613613129}
+  navMesh: {fileID: 9076307678613613135}
+  walkSpeed: 3
   chasingSoundClip: {fileID: 8300000, guid: a9e899ea575bc9a43be76b5b4262e3a0, type: 3}
   playerMask:
     serializedVersion: 2
     m_Bits: 8
-  animator: {fileID: 9076307678613613129}
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  walkSpeed: 3
+  patrolPoints: []
   songPyeon: {fileID: 0}
 --- !u!136 &9076307678613613134
 CapsuleCollider:
