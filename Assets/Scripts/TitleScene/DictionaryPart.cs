@@ -20,6 +20,7 @@ public class DictionaryPart : MonoBehaviour
         
         string data = assetData.text;
 
+
         foreach(string line in data.Split('\n'))
         {
             string[] str = line.Split(',');

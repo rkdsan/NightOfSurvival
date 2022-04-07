@@ -111,7 +111,7 @@ MonoBehaviour:
   itemImage: {fileID: 21300000, guid: 67f3c3f5535943f4e8f9e60340fd3cfc, type: 3}
   offsetPosition: {x: 0, y: 0.1, z: 0}
   offsetRotate: {x: 0, y: 60, z: 120}
-  itemName: "\uC1A1\uD3B8"
+  itemName: "\uB5A1"
   canCraft: 0
   isConsumable: 1
   songPyeon_Used: {fileID: 6014514722436928302, guid: ccc2f096975b278469d89a7d39e591ec, type: 3}

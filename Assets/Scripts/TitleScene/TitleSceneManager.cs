@@ -25,6 +25,9 @@ public class TitleSceneManager : MonoBehaviour
     private void Start()
     {
         BGMPlayer.instance.source.Play();
+
+        optionWindow.SetActive(false);
+        ghostDictionary.SetActive(false);
     }
 
     private void Ani_FadeImage()

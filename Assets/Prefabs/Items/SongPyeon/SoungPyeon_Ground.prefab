@@ -108,6 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6244ab4fbc8a7fd45bfb939e07e722be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "\uC1A1\uD3B8"
+  objectName: "\uB5A1"
   explainComment: "LB: \uC90D\uAE30"
   inHandPrefab: {fileID: 7282247608598260852, guid: a7ef746286d6b0147b2b6b28772ecb67, type: 3}

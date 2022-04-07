@@ -1025,11 +1025,11 @@ MonoBehaviour:
   fileName: ItemExplainData
   button: {fileID: 468466910}
   explainSpriteList:
-  - {fileID: 21300000, guid: 0dce967f3b801324aad4b1a87227ee86, type: 3}
-  - {fileID: 21300000, guid: cb0d54c7573fe174b98d29065a51db60, type: 3}
-  - {fileID: 21300000, guid: 489c5401d3ca5eb4196cb7b37e7d5645, type: 3}
-  - {fileID: 21300000, guid: 7ead7c1f7aecbf34e8adc8bfdb0eab55, type: 3}
-  - {fileID: 21300000, guid: 27409820a254d2d47a6d721bb9e3063a, type: 3}
+  - {fileID: 21300000, guid: 67f3c3f5535943f4e8f9e60340fd3cfc, type: 3}
+  - {fileID: 21300000, guid: ed4a3caa6ba4a824cb6bd3105458fb39, type: 3}
+  - {fileID: 21300000, guid: e289fc926ecf9fb49b1792d0201e5181, type: 3}
+  - {fileID: 21300000, guid: b4c7cc3b28f700c4d9ea19420b4d3495, type: 3}
+  - {fileID: 21300000, guid: 64be7bb24383ad1448f493f148ee05f8, type: 3}
 --- !u!1 &474784383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,10 +1553,10 @@ MonoBehaviour:
   fileName: GhostExplainData
   button: {fileID: 704336769}
   explainSpriteList:
-  - {fileID: 21300000, guid: befa76bdcde0d984db803f8939d18382, type: 3}
-  - {fileID: 21300000, guid: b7f0f7c08bb462f468e097ff2895f978, type: 3}
-  - {fileID: 21300000, guid: 98d2a11e6d28c8940a2ab43bd41e2bfc, type: 3}
-  - {fileID: 21300000, guid: fc7d2ffa111fe1842b5ef0707342fd42, type: 3}
+  - {fileID: 21300000, guid: b6b023a22c81f3049a76ba93be74fd3d, type: 3}
+  - {fileID: 21300000, guid: 05d8b72a4d12928438befffaa29a7c5f, type: 3}
+  - {fileID: 21300000, guid: d8d9f02b9b0cefd45aafdfcc0fe738d9, type: 3}
+  - {fileID: 21300000, guid: ba2ed455ff65400489bdf729af799942, type: 3}
 --- !u!1 &719491451
 GameObject:
   m_ObjectHideFlags: 0
