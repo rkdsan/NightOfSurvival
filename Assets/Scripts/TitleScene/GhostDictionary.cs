@@ -62,8 +62,13 @@ public class GhostDictionary : MonoBehaviour
     private void SetExplain()
     {
         explainImage.sprite = nowSpriteList[nowIndex];
-        explainTitle.text = nowExplainDataList[nowIndex].title;
-        explainContents.text = nowExplainDataList[nowIndex].contents;
+
+        //sprite 카운트로 인덱스 조절해서 스프라이트는 체크X
+        if (nowIndex < nowExplainDataList.Count)
+        {
+            explainTitle.text = nowExplainDataList[nowIndex].title;
+            explainContents.text = nowExplainDataList[nowIndex].contents;
+        }
     }
 
     private void SetPostItSibling(DictionaryPart part)

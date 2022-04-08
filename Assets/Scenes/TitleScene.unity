@@ -1030,6 +1030,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e289fc926ecf9fb49b1792d0201e5181, type: 3}
   - {fileID: 21300000, guid: b4c7cc3b28f700c4d9ea19420b4d3495, type: 3}
   - {fileID: 21300000, guid: 64be7bb24383ad1448f493f148ee05f8, type: 3}
+  - {fileID: 21300000, guid: 1c736e7b007181a4e8938c6b70f15244, type: 3}
+  - {fileID: 21300000, guid: 22fd9bd025634694783caac251c1298d, type: 3}
+  - {fileID: 21300000, guid: a542d8a45644241418d0a8b877bcda72, type: 3}
+  - {fileID: 21300000, guid: 811b0bd832a58ff40964e34e2140f346, type: 3}
+  - {fileID: 21300000, guid: 64be7bb24383ad1448f493f148ee05f8, type: 3}
+  - {fileID: 21300000, guid: d093620f00e7d3d48916429a39955b37, type: 3}
 --- !u!1 &474784383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4550,7 +4556,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC81C\uBAA91"

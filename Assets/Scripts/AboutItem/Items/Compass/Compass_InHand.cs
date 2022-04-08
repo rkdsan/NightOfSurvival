@@ -19,17 +19,16 @@ public class Compass_InHand : InHandItem
     private void FixedUpdate()
     {
         PointGhost();
-        //PointTarget();
     }
 
-    private void PointTarget()
-    {
-        Vector3 dir = target.position - transform.position;
-        dir.y = 0;
-        dir = dir.normalized;
+    //private void PointTarget()
+    //{
+    //    Vector3 dir = target.position - transform.position;
+    //    dir.y = 0;
+    //    dir = dir.normalized;
 
-        needlePivot.transform.localRotation = Quaternion.FromToRotation(-playerTransform.forward, dir);
-    }
+    //    needlePivot.transform.localRotation = Quaternion.FromToRotation(-playerTransform.forward, dir);
+    //}
 
     private void PointGhost()
     {

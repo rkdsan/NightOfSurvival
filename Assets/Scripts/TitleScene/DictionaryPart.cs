@@ -31,7 +31,7 @@ public class DictionaryPart : MonoBehaviour
 
         if(explainDataList.Count != explainSpriteList.Count)
         {
-            Debug.LogError("귀신도감 데이터 개수가 맞지 않습니다. 파일이름: " + fileName
+            Debug.LogWarning("귀신도감 데이터 개수가 맞지 않습니다. 파일이름: " + fileName
                 + "\n Sprite개수: " + explainSpriteList.Count + ", 데이터 개수: " + explainDataList.Count);
         }
     }
