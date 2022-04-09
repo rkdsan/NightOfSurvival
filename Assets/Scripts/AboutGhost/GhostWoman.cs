@@ -7,6 +7,7 @@ using Kino;
 public class GhostWoman : Ghost 
 {
     public AudioClip chasingSoundClip;
+    public AudioClip neckCrackingSoundClip;
     public LayerMask playerMask;
     public Transform[] patrolPoints;
 
@@ -20,8 +21,6 @@ public class GhostWoman : Ghost
     private int patrolCount = 0;
     private bool isInsidePlayer = false;
     private bool isInsideSongPyeon;
-
-
     
 
     private void Start()
@@ -69,6 +68,7 @@ public class GhostWoman : Ghost
             if (CanSeePlayer())
             {
                 animator.SetBool(hash_chasing, true);
+                SFXPlayer.instance.Play(neckCrackingSoundClip);
 
                 navMesh.speed = 0;
 

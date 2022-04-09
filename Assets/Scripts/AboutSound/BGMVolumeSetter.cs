@@ -33,5 +33,4 @@ public class BGMVolumeSetter : MonoBehaviour
         PlayerPrefs.SetInt(keyString, value);
         BGMPlayer.instance.SetVolume();
     }
-
 }

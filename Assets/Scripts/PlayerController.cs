@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
         runGaugeColor = Color.white;
 
         ShadowGhost.playerController = this;
+
+        InitMouseSense();
     }
 
     void Update()
@@ -266,5 +268,22 @@ public class PlayerController : MonoBehaviour
         playerRotate = rotate;
     }
 
+    private void InitMouseSense()
+    {
+        int value;
+        if (PlayerPrefs.HasKey(LookSensitivitySetter.MOUSE_SENSE_KEY))
+        {
+            value = PlayerPrefs.GetInt(LookSensitivitySetter.MOUSE_SENSE_KEY);
+        }
+        else
+        {
+            value = LookSensitivitySetter.DEFAULT_MOUSE_SENSE;
+        }
+        SetMouseSense(value);
+    }
 
+    public void SetMouseSense(int value)
+    {
+        lookSensitivity = (value + 1) * 4;
+    }
 }

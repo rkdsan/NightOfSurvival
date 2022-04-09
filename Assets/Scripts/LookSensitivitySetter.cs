@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LookSensitivitySetter : MonoBehaviour
 {
     public const string MOUSE_SENSE_KEY = "MouseSense";
+    public const int DEFAULT_MOUSE_SENSE = 35;
 
     public Slider slider;
     public Text valueText;
@@ -18,6 +19,10 @@ public class LookSensitivitySetter : MonoBehaviour
         {
             slider.value = PlayerPrefs.GetInt(MOUSE_SENSE_KEY);
         }
+        else
+        {
+            slider.value = DEFAULT_MOUSE_SENSE;
+        }
         SetMouseSense();
     }
 
@@ -27,7 +32,7 @@ public class LookSensitivitySetter : MonoBehaviour
         value = (int)slider.value;
         valueText.text = "" + value;
         PlayerPrefs.SetInt(MOUSE_SENSE_KEY, value);
-        GameManager.instance.playerController.lookSensitivity = (value + 1) * 2;
+        GameManager.instance.playerController.SetMouseSense(value);
     }
 
 }

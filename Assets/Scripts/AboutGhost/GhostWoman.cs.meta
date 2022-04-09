@@ -3,7 +3,12 @@ guid: 374baa3a2a676104aa4be060d81604f0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - navMesh: {instanceID: 0}
+  - chasingSoundClip: {instanceID: 0}
+  - neckCrackingSoundClip: {fileID: 8300000, guid: 8ce661114791277489a311c72754634c, type: 3}
+  - songPyeon: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

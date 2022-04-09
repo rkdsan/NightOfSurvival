@@ -4341,6 +4341,7 @@ MonoBehaviour:
   navMesh: {fileID: 9076307678613613135}
   walkSpeed: 3
   chasingSoundClip: {fileID: 8300000, guid: a9e899ea575bc9a43be76b5b4262e3a0, type: 3}
+  neckCrackingSoundClip: {fileID: 8300000, guid: 8ce661114791277489a311c72754634c, type: 3}
   playerMask:
     serializedVersion: 2
     m_Bits: 8
