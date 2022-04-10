@@ -14,6 +14,7 @@ public class Lamp : InteractiveObject
     {
         emissionMaterial = GetComponent<MeshRenderer>().materials[3];
         emissionColor = lampLight.color;
+        emissionColor.r = 0.8f;
 
         if (lampLight.enabled)
         {
