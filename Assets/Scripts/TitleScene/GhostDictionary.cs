@@ -63,7 +63,7 @@ public class GhostDictionary : MonoBehaviour
     {
         explainImage.sprite = nowSpriteList[nowIndex];
 
-        //sprite 카운트로 인덱스 조절해서 스프라이트는 체크X
+        //sprite 카운트로 인덱스 조절해서 스프라이트는 체크안함.
         if (nowIndex < nowExplainDataList.Count)
         {
             explainTitle.text = nowExplainDataList[nowIndex].title;
@@ -84,7 +84,8 @@ public class GhostDictionary : MonoBehaviour
     public void Button_Next()
     {
         nowIndex++;
-        if (nowIndex >= nowSpriteList.Count) nowIndex = 0;
+        if (nowIndex >= nowSpriteList.Count)
+            nowIndex = 0;
         SetExplain();
     }
 

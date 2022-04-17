@@ -76,7 +76,6 @@ public class SaveManager : MonoBehaviour
 
         string jsonData = System.IO.File.ReadAllText(file.FullName);
         return JsonUtility.FromJson<T>(jsonData);
-
     }
 
     private string GetJsonDataPath(string typeName)
@@ -166,9 +165,8 @@ public class SaveManager : MonoBehaviour
 
     private IEnumerator LateSetNowItem()
     {
-        //아이템 프레임이 포지션에 맞게 조절되는데 프레임이 이상한곳으로 감.
-        //포지션이 설정되기전에 실행되는것으로 추측
-        //업데이트 한번 끝나고 실행되도록 설정
+        //현재 아이템 표시해주는 프레임이 이상한곳으로 가서
+        //한프레임 쉬고 설정되도록 함.
         yield return null;
         GameManager.instance.inventoryManager.SetNowItem();
     }

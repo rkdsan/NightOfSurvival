@@ -89,6 +89,28 @@ public class GhostWoman : Ghost
 
             yield return WaitTimeManager.WaitForFixedUpdate();
         }
+
+        float cantSeeTime = 0;
+        while (isInsidePlayer)
+        {
+            if (CanSeePlayer())
+            {
+                cantSeeTime = 0;
+            }
+            else
+            {
+                cantSeeTime += Time.fixedDeltaTime;
+                if(cantSeeTime > 5)
+                {
+                    ExitPlayer();
+                    betweenCheckerEnumerator = CheckBetweenObstacle();
+                    StartCoroutine(betweenCheckerEnumerator);
+                }
+            }
+
+            yield return WaitTimeManager.WaitForFixedUpdate();
+        }
+
     }
 
 
@@ -202,7 +224,7 @@ public class GhostWoman : Ghost
     {
         bool temp;
         temp = Physics.Raycast
-            (transform.position + Vector3.up, transform.forward, out hit, 1, GameData.PLAYER_LAYER);
+            (transform.position + Vector3.up, transform.forward, out hit, 1.3f, GameData.PLAYER_LAYER);
 
         return temp && !hit.collider.isTrigger;
     }

@@ -11,7 +11,6 @@ public class DictionaryPart : MonoBehaviour
     public List<ExplainData> explainDataList;
     
 
-
     public void SetExplaindata()
     {
         explainDataList = new List<ExplainData>();
@@ -24,7 +23,8 @@ public class DictionaryPart : MonoBehaviour
         foreach(string line in data.Split('\n'))
         {
             string[] str = line.Split(',');
-            if (str.Length < 2) break;
+            if (str.Length < 2) 
+                break;
             explainDataList.Add(new ExplainData(str[0], str[1]));
         }
 
