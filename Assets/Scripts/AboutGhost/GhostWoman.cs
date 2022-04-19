@@ -171,8 +171,12 @@ public class GhostWoman : Ghost
 
     protected override IEnumerator MoveStart()
     {
+        WaitForSeconds baseTime = WaitTimeManager.WaitForSeconds(0.2f);
+        WaitForSeconds applyWaitTime;
+
         while (true)
         {
+            applyWaitTime = baseTime;            
             if (isInsideSongPyeon)
             {
                 if (songPyeon == null) isInsideSongPyeon = false;
@@ -181,25 +185,32 @@ public class GhostWoman : Ghost
             else if (isInsidePlayer)
             {
                 //뒤주 들어가면
-                if (!playerTransform.gameObject.activeSelf) 
-                    ExitPlayer();
-
-                navMesh.SetDestination(playerTransform.position);
-
-                if (CheckKillPlayer())
+                if (!playerTransform.gameObject.activeSelf)
                 {
-                    GameManager.instance.GameOver(0);
-                    chasingSoundPlayer.Stop();
-                    yield break;
+                    ExitPlayer();
+                }
+                else
+                {
+                    applyWaitTime = null;
+                    LookPlayer();
+                    navMesh.SetDestination(playerTransform.position);
+
+                    if (CheckKillPlayer())
+                    {
+                        GameManager.instance.GameOver(0);
+                        chasingSoundPlayer.Stop();
+                        yield break;
+                    }
+
                 }
             }
             else
             {
-                yield return new WaitForSeconds(1f);
+                yield return WaitTimeManager.WaitForSeconds(1f);
                 Patrol();
             }
 
-            yield return WaitTimeManager.WaitForSeconds(0.2f);
+            yield return applyWaitTime;
         }
     }
 
@@ -219,14 +230,24 @@ public class GhostWoman : Ghost
     }
 
     
+    private void LookPlayer()
+    {
+        float dis = (playerTransform.position - transform.position).magnitude;
 
+        if(dis > 2.5f) 
+            return;
+
+        Vector3 targetPos = playerTransform.position;
+        targetPos.y = transform.position.y;
+        transform.LookAt(targetPos);
+    }
+    
     private bool CheckKillPlayer()
     {
-        bool temp;
-        temp = Physics.Raycast
-            (transform.position + Vector3.up, transform.forward, out hit, 1.3f, GameData.PLAYER_LAYER);
+        bool flag = Physics.Raycast
+            (transform.position + Vector3.up, transform.forward, out hit, 1.5f, GameData.PLAYER_LAYER);
 
-        return temp && !hit.collider.isTrigger;
+        return flag && !hit.collider.isTrigger;
     }
 
     
