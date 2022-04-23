@@ -19,21 +19,57 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'Foxnui_run:joint14'
+      : rotation error = 59.506611 deg\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Foxnui_run:Character1_LeftLeg' has translation
+      animation that will be discarded.\n\t'Foxnui_run:Character1_RightLeg' has translation
+      animation that will be discarded.\n\t'Foxnui_run:Character1_RightForeArm' has
+      translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -79,8 +115,1295 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: Foxnui_run:Character1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:joint12
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:joint15
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foxnui_run:Character1_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Foxnui_running(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:foxnuiiiiii:Object013
+      parentName: Foxnui_running(Clone)
+      position: {x: 1.5790236, y: -2.596757, z: 0.3834716}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 4.6965547, y: 4.6965547, z: 4.6965547}
+    - name: Foxnui_run:Character1_Reference
+      parentName: Foxnui_running(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Hips
+      parentName: Foxnui_run:Character1_Reference
+      position: {x: 0.0068060467, y: 0.959138, z: 0.024921488}
+      rotation: {x: -0.0000000049574775, y: -3.0984235e-10, z: -5.422241e-10, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Foxnui_run:joint1
+      parentName: Foxnui_run:Character1_Hips
+      position: {x: -0, y: 0.07, z: 0}
+      rotation: {x: 0.003928182, y: -0.70709586, z: -0.003928181, w: 0.70709586}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:joint2
+      parentName: Foxnui_run:joint1
+      position: {x: -0.20369777, y: -0.0010424673, z: -2.2614996e-17}
+      rotation: {x: -9.313227e-10, y: -0, z: 0.15635361, w: 0.9877012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:joint3
+      parentName: Foxnui_run:joint2
+      position: {x: -0.12278259, y: 0, z: 0}
+      rotation: {x: -0.0000000074063315, y: 9.8476e-10, z: 0.19902658, w: 0.9799941}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:joint4
+      parentName: Foxnui_run:joint3
+      position: {x: -0.105665036, y: 0, z: 0}
+      rotation: {x: -0.000000002168526, y: -0.000000031694334, z: 0.07733508, w: 0.99700516}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Foxnui_run:joint5
+      parentName: Foxnui_run:joint4
+      position: {x: -0.10645891, y: 0, z: 0}
+      rotation: {x: 0.000000024613765, y: 0.0000000209968, z: 0.18627326, w: 0.982498}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: Foxnui_run:joint6
+      parentName: Foxnui_run:joint5
+      position: {x: -0.12161794, y: 1.9984014e-16, z: -4.3307405e-18}
+      rotation: {x: -0.000000034761968, y: -0.000000011716806, z: 0.0025980321, w: 0.99999666}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: Foxnui_run:joint7
+      parentName: Foxnui_run:joint6
+      position: {x: -0.10848345, y: -2.842171e-16, z: -3.8037036e-18}
+      rotation: {x: 0.000000023714286, y: 0.000000021055198, z: -0.101517275, w: 0.9948338}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:joint8
+      parentName: Foxnui_run:joint7
+      position: {x: -0.09086304, y: -1.3322676e-17, z: -5.0535346e-18}
+      rotation: {x: 0.000000006553295, y: -0.000000002844277, z: -0.28974018, w: 0.95710534}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: Foxnui_run:joint9
+      parentName: Foxnui_run:joint8
+      position: {x: -0.09882928, y: 4.440892e-18, z: -9.840539e-18}
+      rotation: {x: -0.000000015757102, y: 0.000000002832999, z: -0.1852171, w: 0.9826976}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: Foxnui_run:joint10
+      parentName: Foxnui_run:joint9
+      position: {x: -0.082018755, y: -2.4424906e-17, z: -9.072571e-18}
+      rotation: {x: 0.000000020355928, y: -0.000000029653215, z: -0.08995545, w: 0.99594575}
+      scale: {x: 1.0000007, y: 0.99999994, z: 1.0000004}
+    - name: Foxnui_run:joint11
+      parentName: Foxnui_run:joint10
+      position: {x: -0.08102244, y: -2.7755576e-17, z: -8.955117e-18}
+      rotation: {x: -0.037341017, y: 0.7061202, z: 0.03734101, w: 0.7061202}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.9999998}
+    - name: Foxnui_run:Character1_LeftUpLeg
+      parentName: Foxnui_run:Character1_Hips
+      position: {x: -0.12721102, y: -0.06270004, z: 0.000000006516425}
+      rotation: {x: 0.00000004461729, y: 4.6476353e-10, z: -7.7460705e-11, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
+    - name: Foxnui_run:Character1_LeftLeg
+      parentName: Foxnui_run:Character1_LeftUpLeg
+      position: {x: 0.0031669769, y: -0.36951414, z: 0.06236355}
+      rotation: {x: -0.000000019829901, y: -3.0984232e-10, z: 5.422242e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: Foxnui_run:Character1_LeftFoot
+      parentName: Foxnui_run:Character1_LeftLeg
+      position: {x: -0.003167641, y: -0.45673582, z: -0.06238144}
+      rotation: {x: -1.7763568e-15, y: 1.549259e-10, z: 7.746531e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_LeftToeBase
+      parentName: Foxnui_run:Character1_LeftFoot
+      position: {x: -0.00000009396854, y: -0.04408087, z: 0.17979938}
+      rotation: {x: -0, y: -0, z: 2.752037e-25, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightUpLeg
+      parentName: Foxnui_run:Character1_Hips
+      position: {x: 0.12721103, y: -0.062700085, z: 0.000000012353554}
+      rotation: {x: 0.0000000049574775, y: 5.551115e-17, z: 0.0000000010069876, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightLeg
+      parentName: Foxnui_run:Character1_RightUpLeg
+      position: {x: -0.0031669827, y: -0.3695084, z: 0.06239456}
+      rotation: {x: 0.000000009914954, y: 3.098423e-10, z: -3.873029e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_RightFoot
+      parentName: Foxnui_run:Character1_RightLeg
+      position: {x: 0.0031677117, y: -0.45673603, z: -0.06238017}
+      rotation: {x: -0.000000009914959, y: 1.3877788e-16, z: -7.746054e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_RightToeBase
+      parentName: Foxnui_run:Character1_RightFoot
+      position: {x: 0.00000008609548, y: -0.044080835, z: 0.17979918}
+      rotation: {x: 7.1054274e-15, y: -0.00004189127, z: -1.9244589e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Spine
+      parentName: Foxnui_run:Character1_Hips
+      position: {x: -0.000000016106037, y: 0.07, z: -0.000000083284654}
+      rotation: {x: 0.000000009914954, y: -9.295269e-10, z: -3.0984232e-10, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Foxnui_run:Character1_Spine1
+      parentName: Foxnui_run:Character1_Spine
+      position: {x: 2.8588837e-10, y: 0.14821099, z: -0.0051973006}
+      rotation: {x: 0.000000004957478, y: 0.0000000012393693, z: 0.0000000027111207, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Foxnui_run:Character1_Spine2
+      parentName: Foxnui_run:Character1_Spine1
+      position: {x: -0.0000000016604614, y: 0.14821096, z: -0.010438431}
+      rotation: {x: 0.000000009914958, y: -0.000000007436217, z: -6.1968447e-10, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Foxnui_run:Character1_LeftShoulder
+      parentName: Foxnui_run:Character1_Spine2
+      position: {x: -0.06999999, y: 0.080909, z: -0.0056524402}
+      rotation: {x: -0, y: -0, z: 1.8218627e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_LeftArm
+      parentName: Foxnui_run:Character1_LeftShoulder
+      position: {x: -0.111627765, y: -0.0017438916, z: -0.000667401}
+      rotation: {x: -0.00000026072797, y: -0.039254934, z: -0.45904604, w: 0.8875448}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftForeArm
+      parentName: Foxnui_run:Character1_LeftArm
+      position: {x: -0.16728936, y: -0.25682798, z: 0.021962345}
+      rotation: {x: -0.00000001982888, y: -0.000000027266127, z: -0.00008337486, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftHand
+      parentName: Foxnui_run:Character1_LeftForeArm
+      position: {x: -0.15876743, y: -0.22869472, z: 0.013418434}
+      rotation: {x: -1.8612667e-11, y: 0.0000000520436, z: 0.00050041784, w: 0.9999999}
+      scale: {x: 0.99999976, y: 1.0000008, z: 1.0000006}
+    - name: Foxnui_run:Character1_LeftHandThumb1
+      parentName: Foxnui_run:Character1_LeftHand
+      position: {x: -0.011464611, y: -0.033465188, z: 0.052608207}
+      rotation: {x: -0.18736044, y: 0.016828096, z: -0.051585957, w: 0.98079145}
+      scale: {x: 1, y: 1.0000004, z: 1}
+    - name: Foxnui_run:Character1_LeftHandThumb2
+      parentName: Foxnui_run:Character1_LeftHandThumb1
+      position: {x: -0.005678797, y: -0.017837761, z: 0.015468468}
+      rotation: {x: 0.010813966, y: 0.014049636, z: 0.024791, w: 0.99953544}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftHandThumb3
+      parentName: Foxnui_run:Character1_LeftHandThumb2
+      position: {x: -0.010333553, y: -0.019331336, z: 0.018958148}
+      rotation: {x: -0.11664124, y: 0.027228845, z: -0.04290194, w: 0.9918734}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftHandThumb4
+      parentName: Foxnui_run:Character1_LeftHandThumb3
+      position: {x: -0.008306778, y: -0.02294189, z: 0.010608449}
+      rotation: {x: -0.00000006019788, y: 0.0000000144335015, z: 0.011044394, w: 0.999939}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Foxnui_run:Character1_LeftHandIndex1
+      parentName: Foxnui_run:Character1_LeftHand
+      position: {x: -0.061563313, y: -0.06779683, z: 0.058672335}
+      rotation: {x: 0.000000019889024, y: -0.00000005701092, z: -0.0018351111, w: 0.9999984}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Foxnui_run:Character1_LeftHandIndex2
+      parentName: Foxnui_run:Character1_LeftHandIndex1
+      position: {x: -0.018623905, y: -0.025583735, z: 0.010254368}
+      rotation: {x: 0.000080102625, y: -0.017452214, z: 0.0045845266, w: 0.9998373}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: Foxnui_run:Character1_LeftHandIndex3
+      parentName: Foxnui_run:Character1_LeftHandIndex2
+      position: {x: -0.015071823, y: -0.021306707, z: 0.0080080815}
+      rotation: {x: 0.0010523152, y: 0.20790645, z: -0.008148223, w: 0.97811425}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1}
+    - name: Foxnui_run:Character1_LeftHandIndex4
+      parentName: Foxnui_run:Character1_LeftHandIndex3
+      position: {x: -0.017376086, y: -0.020382378, z: 0.0009873427}
+      rotation: {x: 0.0051279394, y: -0.9135073, z: 0.008728344, w: 0.4066964}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Foxnui_run:Character1_LeftHandMiddle1
+      parentName: Foxnui_run:Character1_LeftHand
+      position: {x: -0.06741003, y: -0.070238106, z: 0.03913763}
+      rotation: {x: -0.01966296, y: 0.008978001, z: -0.019495996, w: 0.9995762}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000002}
+    - name: Foxnui_run:Character1_LeftHandMiddle2
+      parentName: Foxnui_run:Character1_LeftHandMiddle1
+      position: {x: -0.022054061, y: -0.031652216, z: 0.0085483175}
+      rotation: {x: 0.00000013272427, y: -0.00003107062, z: 0.0045878105, w: 0.99998945}
+      scale: {x: 0.99999994, y: 0.9999996, z: 1}
+    - name: Foxnui_run:Character1_LeftHandMiddle3
+      parentName: Foxnui_run:Character1_LeftHandMiddle2
+      position: {x: -0.017204829, y: -0.02216769, z: 0.0077389344}
+      rotation: {x: 0.0000019037526, y: 0.00037312982, z: -0.008257992, w: 0.99996585}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Foxnui_run:Character1_LeftHandMiddle4
+      parentName: Foxnui_run:Character1_LeftHandMiddle3
+      position: {x: -0.017203135, y: -0.0209995, z: 0.0060029244}
+      rotation: {x: 0.000010022967, y: -0.0020522317, z: 0.011010547, w: 0.9999373}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftHandRing1
+      parentName: Foxnui_run:Character1_LeftHand
+      position: {x: -0.06993832, y: -0.076319866, z: 0.018631328}
+      rotation: {x: -0.008438888, y: 0.0030445873, z: -0.010868477, w: 0.99990076}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Foxnui_run:Character1_LeftHandRing2
+      parentName: Foxnui_run:Character1_LeftHandRing1
+      position: {x: -0.020151397, y: -0.028774103, z: 0.009188762}
+      rotation: {x: 0.0000001402663, y: -0.000031106316, z: 0.004587826, w: 0.99998945}
+      scale: {x: 1, y: 0.9999997, z: 1.0000001}
+    - name: Foxnui_run:Character1_LeftHandRing3
+      parentName: Foxnui_run:Character1_LeftHandRing2
+      position: {x: -0.014743987, y: -0.018725704, z: 0.0055670356}
+      rotation: {x: 0.0000019194574, y: 0.00037313811, z: -0.008257986, w: 0.99996585}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Foxnui_run:Character1_LeftHandRing4
+      parentName: Foxnui_run:Character1_LeftHandRing3
+      position: {x: -0.016595712, y: -0.020269616, z: 0.0062301583}
+      rotation: {x: 0.000010008104, y: -0.0020523178, z: 0.011010555, w: 0.9999373}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: Foxnui_run:Character1_LeftHandPinky1
+      parentName: Foxnui_run:Character1_LeftHand
+      position: {x: -0.07243895, y: -0.081702136, z: 0.001476203}
+      rotation: {x: 0.000000007495452, y: -0.000000056930077, z: -0.0018350878, w: 0.9999984}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Foxnui_run:Character1_LeftHandPinky2
+      parentName: Foxnui_run:Character1_LeftHandPinky1
+      position: {x: -0.017656175, y: -0.022275265, z: 0.007867474}
+      rotation: {x: 0.000000014946039, y: 0.000000008662955, z: 0.0045944853, w: 0.9999895}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+    - name: Foxnui_run:Character1_LeftHandPinky3
+      parentName: Foxnui_run:Character1_LeftHandPinky2
+      position: {x: -0.012182176, y: -0.015858129, z: 0.0053370604}
+      rotation: {x: -0.0066903713, y: -0.00014167358, z: -0.023864849, w: 0.9996928}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_LeftHandPinky4
+      parentName: Foxnui_run:Character1_LeftHandPinky3
+      position: {x: -0.013233917, y: -0.022796378, z: 0.0059903497}
+      rotation: {x: -0.00000005299377, y: -0.000000018741874, z: 0.011449977, w: 0.99993443}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightShoulder
+      parentName: Foxnui_run:Character1_Spine2
+      position: {x: 0.06999999, y: 0.08090896, z: -0.005652426}
+      rotation: {x: -0.000000019829912, y: 0.000000009914956, z: -0.0000000074362174, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_RightArm
+      parentName: Foxnui_run:Character1_RightShoulder
+      position: {x: 0.111627966, y: -0.0017438489, z: -0.000667439}
+      rotation: {x: -0.0000008024263, y: 0.039254595, z: 0.45903555, w: 0.88755023}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightForeArm
+      parentName: Foxnui_run:Character1_RightArm
+      position: {x: 0.16729562, y: -0.25682414, z: 0.021962123}
+      rotation: {x: -0.000000004953563, y: -0.000000014881559, z: 0.0002629942, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightHand
+      parentName: Foxnui_run:Character1_RightForeArm
+      position: {x: 0.15869102, y: -0.22874786, z: 0.013418717}
+      rotation: {x: 0.000000022915959, y: 0.000000021947722, z: -0.0015780553, w: 0.99999875}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandThumb1
+      parentName: Foxnui_run:Character1_RightHand
+      position: {x: 0.011525666, y: -0.033444226, z: 0.052608237}
+      rotation: {x: -0.18739462, y: -0.016429069, z: 0.05546073, w: 0.9805802}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandThumb2
+      parentName: Foxnui_run:Character1_RightHandThumb1
+      position: {x: 0.0055702347, y: -0.017871993, z: 0.015468433}
+      rotation: {x: 0.010868427, y: -0.014009243, z: -0.03466403, w: 0.9992417}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandThumb3
+      parentName: Foxnui_run:Character1_RightHandThumb2
+      position: {x: 0.010597031, y: -0.019188195, z: 0.018958183}
+      rotation: {x: -0.11675585, y: -0.026751664, z: 0.06052348, w: 0.99095374}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Foxnui_run:Character1_RightHandThumb4
+      parentName: Foxnui_run:Character1_RightHandThumb3
+      position: {x: 0.00780311, y: -0.023118049, z: 0.010608419}
+      rotation: {x: 0.0000000045069464, y: 0.0000000067480235, z: -0.034645468, w: 0.9993997}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightHandIndex1
+      parentName: Foxnui_run:Character1_RightHand
+      position: {x: 0.061686814, y: -0.06768446, z: 0.05867225}
+      rotation: {x: -0.0000000019346569, y: -0.0000000010012382, z: 0.0057861903, w: 0.9999833}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandIndex2
+      parentName: Foxnui_run:Character1_RightHandIndex1
+      position: {x: 0.01846798, y: -0.025696382, z: 0.010254366}
+      rotation: {x: -0.00025245608, y: -0.017451154, z: -0.014462844, w: 0.99974316}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Foxnui_run:Character1_RightHandIndex3
+      parentName: Foxnui_run:Character1_RightHandIndex2
+      position: {x: 0.015883677, y: -0.021094777, z: 0.00692708}
+      rotation: {x: -0.0033195491, y: 0.20786597, z: 0.02578708, w: 0.97781175}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandIndex4
+      parentName: Foxnui_run:Character1_RightHandIndex3
+      position: {x: 0.011372887, y: -0.020697836, z: 0.01267305}
+      rotation: {x: -0.01615908, y: -0.9131749, z: -0.027946014, w: 0.40628746}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: Foxnui_run:Character1_RightHandMiddle1
+      parentName: Foxnui_run:Character1_RightHand
+      position: {x: 0.06753805, y: -0.070115075, z: 0.039137628}
+      rotation: {x: -0.019681536, y: -0.008936095, z: 0.023444593, w: 0.9994915}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: Foxnui_run:Character1_RightHandMiddle2
+      parentName: Foxnui_run:Character1_RightHandMiddle1
+      position: {x: 0.02186119, y: -0.031785674, z: 0.008548288}
+      rotation: {x: -0.00025246383, y: -0.017451165, z: -0.014462847, w: 0.99974316}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandMiddle3
+      parentName: Foxnui_run:Character1_RightHandMiddle2
+      position: {x: 0.017766258, y: -0.021930285, z: 0.0071221534}
+      rotation: {x: -0.0033195533, y: 0.20786586, z: 0.02578708, w: 0.9778117}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: Foxnui_run:Character1_RightHandMiddle4
+      parentName: Foxnui_run:Character1_RightHandMiddle3
+      position: {x: 0.013247026, y: -0.021354148, z: 0.011894682}
+      rotation: {x: -0.016159054, y: -0.9131749, z: -0.02794601, w: 0.40628755}
+      scale: {x: 0.99999946, y: 0.99999994, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightHandRing1
+      parentName: Foxnui_run:Character1_RightHand
+      position: {x: 0.07007741, y: -0.07619229, z: 0.018631304}
+      rotation: {x: -0.008445462, y: -0.003026768, z: 0.014819289, w: 0.99985}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandRing2
+      parentName: Foxnui_run:Character1_RightHandRing1
+      position: {x: 0.01997609, y: -0.028895965, z: 0.009188722}
+      rotation: {x: -0.00025246287, y: -0.017451065, z: -0.014462823, w: 0.9997431}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandRing3
+      parentName: Foxnui_run:Character1_RightHandRing2
+      position: {x: 0.015184094, y: -0.018522378, z: 0.005039179}
+      rotation: {x: -0.0033195452, y: 0.20786592, z: 0.025787009, w: 0.97781175}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Foxnui_run:Character1_RightHandRing4
+      parentName: Foxnui_run:Character1_RightHandRing3
+      position: {x: 0.0126142185, y: -0.020610549, z: 0.011881779}
+      rotation: {x: -0.01615902, y: -0.9131749, z: -0.027946016, w: 0.40628755}
+      scale: {x: 0.9999997, y: 0.9999996, z: 1}
+    - name: Foxnui_run:Character1_RightHandPinky1
+      parentName: Foxnui_run:Character1_RightHand
+      position: {x: 0.0725879, y: -0.08156992, z: 0.0014762017}
+      rotation: {x: -0.000000007888588, y: -0.000000043000668, z: 0.005786183, w: 0.9999833}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandPinky2
+      parentName: Foxnui_run:Character1_RightHandPinky1
+      position: {x: 0.017520385, y: -0.022382252, z: 0.007867373}
+      rotation: {x: -0.0002526501, y: -0.017451087, z: -0.014451984, w: 0.9997433}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Foxnui_run:Character1_RightHandPinky3
+      parentName: Foxnui_run:Character1_RightHandPinky2
+      position: {x: 0.012576107, y: -0.01569048, z: 0.004901169}
+      rotation: {x: -0.012601745, y: 0.20793612, z: 0.039780326, w: 0.97725195}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Foxnui_run:Character1_RightHandPinky4
+      parentName: Foxnui_run:Character1_RightHandPinky3
+      position: {x: 0.0095512485, y: -0.023059793, z: 0.010378567}
+      rotation: {x: -0.016168997, y: -0.91318315, z: -0.027379533, w: 0.40630707}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
+    - name: Foxnui_run:Character1_Neck
+      parentName: Foxnui_run:Character1_Spine2
+      position: {x: -0.000000057444684, y: 0.1482106, z: 0.0014791745}
+      rotation: {x: -0.000000019829912, y: 0.000000007436217, z: -0.0000000043377937, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Head
+      parentName: Foxnui_run:Character1_Neck
+      position: {x: 0.000000023992992, y: 0.13366713, z: 0.047390275}
+      rotation: {x: -0.7056642, y: 0.04514424, z: 0.7056642, w: -0.045144245}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Foxnui_run:joint12
+      parentName: Foxnui_run:Character1_Head
+      position: {x: -0.11647283, y: 1.8580095e-17, z: -2.5862164e-17}
+      rotation: {x: 0.961488, y: -0.27484697, z: -0, w: -0.0000000055879354}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: Foxnui_run:joint13
+      parentName: Foxnui_run:joint12
+      position: {x: -0.2017798, y: 2.6300063e-16, z: -2.4095356e-31}
+      rotation: {x: -0.15054402, y: -0.69089544, z: -0.15054402, w: 0.69089544}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Foxnui_run:joint14
+      parentName: Foxnui_run:Character1_Head
+      position: {x: -0.061061677, y: 0.12584606, z: -0.0010248643}
+      rotation: {x: 0.9646113, y: -0.26367638, z: -0, w: 0}
+      scale: {x: 1.0000001, y: 0.99999964, z: 0.99999994}
+    - name: Foxnui_run:joint15
+      parentName: Foxnui_run:joint14
+      position: {x: -0.1579438, y: -1.7535284e-17, z: -1.3064805e-25}
+      rotation: {x: -0.0000000035934566, y: 9.822709e-10, z: -0.26367638, w: 0.9646112}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Reference
+      parentName: Foxnui_running(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_HipsEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.005452237, y: 0.8508612, z: 0.019219894}
+      rotation: {x: 0.04546772, y: -0.004523448, z: -0.01101381, w: 0.9988949}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftAnkleEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.12722187, y: 0.40965572, z: 0.039236754}
+      rotation: {x: 0.32083577, y: -0.00000003503374, z: 0.00000014388937, w: 0.94713485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightAnkleEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.12719229, y: 0.109850384, z: -0.000036296842}
+      rotation: {x: 0.00000005960466, y: -1.2915994e-14, z: -3.6254446e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftWristEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.11831064, y: 1.3596096, z: 0.63618}
+      rotation: {x: 0.78814346, y: -0.16725877, z: 0.3997305, w: -0.4371155}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightWristEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.09473893, y: 1.3494823, z: 0.68297046}
+      rotation: {x: -0.65965897, y: -0.26687765, z: 0.38779002, w: 0.5858714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftKneeEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.12089236, y: 0.72903395, z: 0.37160185}
+      rotation: {x: 0.32855785, y: 0.0005248566, z: -0.0035808203, w: 0.94447696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightKneeEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.12370113, y: 0.5224226, z: 0.20558739}
+      rotation: {x: 0.16259974, y: -0.0018465143, z: -0.00020214505, w: 0.9866904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftElbowEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.24417266, y: 1.3101215, z: 0.39246273}
+      rotation: {x: -0.36025256, y: 0.7295678, z: -0.43588674, w: 0.38464484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightElbowEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.21442632, y: 1.3029197, z: 0.43559355}
+      rotation: {x: 0.40516108, y: 0.71775836, z: -0.36210707, w: -0.4353687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_ChestOriginEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.008317467, y: 0.98298043, z: 0.031286824}
+      rotation: {x: 0.05741871, y: -0.006092475, z: -0.013180827, w: 0.9982446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_ChestEndEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.020796522, y: 1.3468548, z: 0.1170027}
+      rotation: {x: 0.26296043, y: -0.048203647, z: -0.025455322, w: 0.9632654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftFootEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.12722194, y: 0.26537684, z: 0.15523049}
+      rotation: {x: 0.32083577, y: -0.00000038173567, z: 0.000000026446385, w: 0.94713485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightFootEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.12719238, y: 0.06576953, z: 0.1797629}
+      rotation: {x: 0.00000005960465, y: -0.00000016420069, z: 9.725893e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftShoulderEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.1597222, y: 1.3592025, z: 0.1011075}
+      rotation: {x: -0.36926088, y: 0.4139991, z: -0.20572193, w: 0.80618215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightShoulderEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.20137496, y: 1.3321809, z: 0.12997575}
+      rotation: {x: -0.42760393, y: -0.48977503, z: 0.16043027, w: 0.74265563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_HeadEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.014000373, y: 1.5421672, z: 0.17053767}
+      rotation: {x: -0.02020982, y: -0.05939591, z: -0.008801237, w: 0.9979911}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHipEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.12172272, y: 0.8537126, z: 0.018197708}
+      rotation: {x: -0.5074449, y: -0.0019572938, z: -0.0024274518, w: 0.86167854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHipEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.1326272, y: 0.84800977, z: 0.02024208}
+      rotation: {x: -0.17421986, y: -0.0027051084, z: -0.007194225, w: 0.98467684}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandThumbEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.07296492, y: 1.4884175, z: 0.6666419}
+      rotation: {x: 0.78814286, y: -0.16725759, z: 0.3997318, w: -0.43711582}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandIndexEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.09236038, y: 1.5269635, z: 0.7017514}
+      rotation: {x: -0.52346426, y: 0.5508645, z: -0.37295157, w: 0.5323915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandMiddleEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.12726742, y: 1.5376507, z: 0.7073193}
+      rotation: {x: -0.6072065, y: 0.465717, z: -0.362578, w: 0.53192586}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandRingEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.15856384, y: 1.5062153, z: 0.7280497}
+      rotation: {x: -0.5362288, y: 0.4823272, z: -0.20247054, w: 0.6624386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandPinkyEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: -0.17765795, y: 1.4674085, z: 0.73575443}
+      rotation: {x: -0.52522665, y: 0.42916656, z: 0.12366388, w: 0.72433436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandThumbEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.043815434, y: 1.4497131, z: 0.7662544}
+      rotation: {x: -0.65965843, y: -0.2668797, z: 0.38778886, w: 0.5858718}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandIndexEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.06796459, y: 1.479271, z: 0.8120624}
+      rotation: {x: -0.34881446, y: -0.58516896, z: 0.39287987, w: 0.6176983}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandMiddleEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.1019549, y: 1.4754876, z: 0.82457787}
+      rotation: {x: -0.40932056, y: -0.5490034, z: 0.25016993, w: 0.68444645}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandRingEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.13986044, y: 1.461421, z: 0.8227818}
+      rotation: {x: -0.5314771, y: -0.41179734, z: 0.09845264, w: 0.7336635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandPinkyEffector
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.15358849, y: 1.4411747, z: 0.81966347}
+      rotation: {x: -0.5465907, y: -0.37428778, z: -0.012864018, w: 0.7489872}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Hips
+      parentName: Foxnui_run:Character1_Ctrl_Reference
+      position: {x: 0.0068060467, y: 0.9132868, z: 0.024921488}
+      rotation: {x: 0.045467716, y: -0.004523448, z: -0.011013808, w: 0.9988949}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftUpLeg
+      parentName: Foxnui_run:Character1_Ctrl_Hips
+      position: {x: -0.12721114, y: -0.062700056, z: 0}
+      rotation: {x: -0.5460314, y: -0.0037561462, z: 0.009449481, w: 0.837703}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftLeg
+      parentName: Foxnui_run:Character1_Ctrl_LeftUpLeg
+      position: {x: 0.0031670197, y: -0.36951154, z: 0.062379003}
+      rotation: {x: 0.76235497, y: 0.004916265, z: -0.0011698761, w: 0.6471394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftFoot
+      parentName: Foxnui_run:Character1_Ctrl_LeftLeg
+      position: {x: -0.0031670197, y: -0.45673642, z: -0.062379003}
+      rotation: {x: -0.008163757, y: 0.0006518093, z: 0.0035612641, w: 0.9999601}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftToeBase
+      parentName: Foxnui_run:Character1_Ctrl_LeftFoot
+      position: {x: -0.000000085830706, y: -0.044080928, z: 0.17979957}
+      rotation: {x: 4.482861e-23, y: -0.00000036605337, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightUpLeg
+      parentName: Foxnui_run:Character1_Ctrl_Hips
+      position: {x: 0.12721114, y: -0.062700056, z: 0}
+      rotation: {x: -0.21879779, y: -0.0004935425, z: 0.0045694117, w: 0.97575945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightLeg
+      parentName: Foxnui_run:Character1_Ctrl_RightUpLeg
+      position: {x: -0.0031670197, y: -0.36951154, z: 0.062379003}
+      rotation: {x: 0.3320164, y: 0.0020555079, z: 0.006138348, w: 0.94325143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightFoot
+      parentName: Foxnui_run:Character1_Ctrl_RightLeg
+      position: {x: 0.0031670197, y: -0.45673642, z: -0.062379003}
+      rotation: {x: -0.16259722, y: 0.0018465921, z: 0.00020213409, w: 0.98669076}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightToeBase
+      parentName: Foxnui_run:Character1_Ctrl_RightFoot
+      position: {x: 0.000000085830706, y: -0.044080928, z: 0.17979957}
+      rotation: {x: 1.9986712e-23, y: -0.00000016320391, z: -1.2246467e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Spine
+      parentName: Foxnui_run:Character1_Ctrl_Hips
+      position: {x: -0, y: 0.070000015, z: 0}
+      rotation: {x: 0.011974802, y: -0.0015371303, z: -0.0021544993, w: 0.99992484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Spine1
+      parentName: Foxnui_run:Character1_Ctrl_Spine
+      position: {x: -0, y: 0.14821102, z: -0.005197302}
+      rotation: {x: 0.10482685, y: -0.01876683, z: -0.009445798, w: 0.99426854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Spine2
+      parentName: Foxnui_run:Character1_Ctrl_Spine1
+      position: {x: -0, y: 0.14821102, z: -0.010438431}
+      rotation: {x: 0.10419525, y: -0.020923356, z: -0.001929149, w: 0.99433494}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftShoulder
+      parentName: Foxnui_run:Character1_Ctrl_Spine2
+      position: {x: -0.07000002, y: 0.080908984, z: -0.005652404}
+      rotation: {x: -0.00000042435659, y: 0.00000007424204, z: 3.150767e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftArm
+      parentName: Foxnui_run:Character1_Ctrl_LeftShoulder
+      position: {x: -0.11162796, y: -0.0017439274, z: -0.0006673933}
+      rotation: {x: -0.5881504, y: 0.3741613, z: -0.26870957, w: 0.6647388}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftForeArm
+      parentName: Foxnui_run:Character1_Ctrl_LeftArm
+      position: {x: -0.16728574, y: -0.25683117, z: 0.02195553}
+      rotation: {x: -0.1180149, y: 0.5157604, z: -0.15200882, w: 0.8348395}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHand
+      parentName: Foxnui_run:Character1_Ctrl_LeftForeArm
+      position: {x: -0.15880463, y: -0.22866887, z: 0.013420059}
+      rotation: {x: 0.07303707, y: -0.4541064, z: -0.47797304, w: 0.74832803}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandThumb1
+      parentName: Foxnui_run:Character1_Ctrl_LeftHand
+      position: {x: -0.0114363115, y: -0.03347489, z: 0.05260826}
+      rotation: {x: -0.0000012044205, y: 0.0000001615125, z: -0.00000045570522, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandThumb2
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandThumb1
+      position: {x: -0.005729066, y: -0.01782166, z: 0.015468415}
+      rotation: {x: 0.0000021280953, y: -0.00000046090378, z: -0.000000087735465, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandThumb3
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandThumb2
+      position: {x: -0.010210574, y: -0.019396596, z: 0.018958192}
+      rotation: {x: 0.00000030258616, y: 0.0000010114902, z: -0.0000007014974, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandThumb4
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandThumb3
+      position: {x: -0.008539659, y: -0.02285622, z: 0.010608485}
+      rotation: {x: -0.0000004818889, y: -0.0000015709222, z: 0.0000010829277, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandIndex1
+      parentName: Foxnui_run:Character1_Ctrl_LeftHand
+      position: {x: -0.061505828, y: -0.067848906, z: 0.058672275}
+      rotation: {x: -0.0409615, y: 0.17005011, z: 0.17463991, w: 0.96897167}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandIndex2
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandIndex1
+      position: {x: -0.018696064, y: -0.025531013, z: 0.01025438}
+      rotation: {x: 0.020356081, y: 0.028649619, z: 0.12340272, w: 0.99173415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandIndex3
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandIndex2
+      position: {x: -0.015206607, y: -0.021403661, z: 0.0074772183}
+      rotation: {x: 0.02205616, y: 0.027964558, z: 0.12326885, w: 0.991734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandIndex4
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandIndex3
+      position: {x: -0.0159454, y: -0.02021729, z: 0.0074400348}
+      rotation: {x: 0.022057831, y: 0.02796678, z: 0.123265594, w: 0.9917343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandMiddle1
+      parentName: Foxnui_run:Character1_Ctrl_LeftHand
+      position: {x: -0.067350514, y: -0.0702952, z: 0.0391376}
+      rotation: {x: -0.023384774, y: 0.11099529, z: 0.12041102, w: 0.98622227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandMiddle2
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandMiddle1
+      position: {x: -0.022143291, y: -0.031589743, z: 0.008548314}
+      rotation: {x: 0.019239413, y: 0.0251122, z: 0.11473756, w: 0.992892}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandMiddle3
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandMiddle2
+      position: {x: -0.017064136, y: -0.02227654, z: 0.0077378578}
+      rotation: {x: 0.013664151, y: 0.016341744, z: 0.09613262, w: 0.9951406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandMiddle4
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandMiddle3
+      position: {x: -0.017411692, y: -0.020823598, z: 0.0060147583}
+      rotation: {x: 0.013663397, y: 0.016343074, z: 0.09613208, w: 0.9951406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandRing1
+      parentName: Foxnui_run:Character1_Ctrl_LeftHand
+      position: {x: -0.06987367, y: -0.076379105, z: 0.01863131}
+      rotation: {x: 0.09429847, y: 0.011144966, z: 0.16337273, w: 0.9819842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandRing2
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandRing1
+      position: {x: -0.020232549, y: -0.028717047, z: 0.009188747}
+      rotation: {x: 0.024286816, y: 0.03124754, z: 0.16948207, w: 0.98473835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandRing3
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandRing2
+      position: {x: -0.014625057, y: -0.01881905, z: 0.005566102}
+      rotation: {x: 0.022542024, y: 0.026973775, z: 0.1475309, w: 0.9884326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandRing4
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandRing3
+      position: {x: -0.016796611, y: -0.020099873, z: 0.006241566}
+      rotation: {x: 0.022541683, y: 0.026974533, z: 0.14753, w: 0.9884327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandPinky1
+      parentName: Foxnui_run:Character1_Ctrl_LeftHand
+      position: {x: -0.072369784, y: -0.081763476, z: 0.0014761809}
+      rotation: {x: 0.23892826, y: -0.2529806, z: 0.20469877, w: 0.9148839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandPinky2
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandPinky1
+      position: {x: -0.017718969, y: -0.022225346, z: 0.007867437}
+      rotation: {x: 0.033600442, y: 0.044323117, z: 0.20840108, w: 0.9764607}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandPinky3
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandPinky2
+      position: {x: -0.012080995, y: -0.015935367, z: 0.0053370986}
+      rotation: {x: 0.024425607, y: 0.041087992, z: 0.21033275, w: 0.97646064}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_LeftHandPinky4
+      parentName: Foxnui_run:Character1_Ctrl_LeftHandPinky3
+      position: {x: -0.0134682115, y: -0.022658773, z: 0.005990273}
+      rotation: {x: 0.024422932, y: 0.041088995, z: 0.21033221, w: 0.97646075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightShoulder
+      parentName: Foxnui_run:Character1_Ctrl_Spine2
+      position: {x: 0.07000002, y: 0.080908984, z: -0.005652404}
+      rotation: {x: -0.000000937639, y: 0.000014069808, z: 1.3192658e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightArm
+      parentName: Foxnui_run:Character1_Ctrl_RightShoulder
+      position: {x: 0.11162796, y: -0.0017439274, z: -0.0006673933}
+      rotation: {x: -0.58699346, y: -0.40469792, z: 0.32283413, w: 0.6224439}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightForeArm
+      parentName: Foxnui_run:Character1_Ctrl_RightArm
+      position: {x: 0.16728574, y: -0.25683117, z: 0.02195553}
+      rotation: {x: -0.05251571, y: -0.40964842, z: 0.09058723, w: 0.90621424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHand
+      parentName: Foxnui_run:Character1_Ctrl_RightForeArm
+      position: {x: 0.15880463, y: -0.22866887, z: 0.013420059}
+      rotation: {x: 0.13187477, y: 0.38607287, z: 0.32203585, w: 0.8543124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandThumb1
+      parentName: Foxnui_run:Character1_Ctrl_RightHand
+      position: {x: 0.0114363115, y: -0.03347489, z: 0.05260826}
+      rotation: {x: -0.00000032282327, y: 0.00000043187552, z: -0.0000008778729, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandThumb2
+      parentName: Foxnui_run:Character1_Ctrl_RightHandThumb1
+      position: {x: 0.005729066, y: -0.01782166, z: 0.015468415}
+      rotation: {x: -0.0000003433003, y: 0.0000000113615926, z: -0.0000004237967, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandThumb3
+      parentName: Foxnui_run:Character1_Ctrl_RightHandThumb2
+      position: {x: 0.010210574, y: -0.019396596, z: 0.018958192}
+      rotation: {x: 0.00000033764243, y: -0.0000008841289, z: -0.0000011195281, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandThumb4
+      parentName: Foxnui_run:Character1_Ctrl_RightHandThumb3
+      position: {x: 0.008539659, y: -0.02285622, z: 0.010608485}
+      rotation: {x: -0.0000007606899, y: -0.00000087059976, z: 0.00000026258178, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandIndex1
+      parentName: Foxnui_run:Character1_Ctrl_RightHand
+      position: {x: 0.061505828, y: -0.067848906, z: 0.058672275}
+      rotation: {x: -0.013590924, y: -0.25004756, z: -0.086691424, w: 0.964249}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandIndex2
+      parentName: Foxnui_run:Character1_Ctrl_RightHandIndex1
+      position: {x: 0.018696064, y: -0.025531013, z: 0.01025438}
+      rotation: {x: 0.019777147, y: -0.027837355, z: -0.119918995, w: 0.99219626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandIndex3
+      parentName: Foxnui_run:Character1_Ctrl_RightHandIndex2
+      position: {x: 0.015206607, y: -0.021403661, z: 0.0074772183}
+      rotation: {x: 0.021434497, y: -0.027176837, z: -0.11978462, w: 0.9921964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandIndex4
+      parentName: Foxnui_run:Character1_Ctrl_RightHandIndex3
+      position: {x: 0.0159454, y: -0.02021729, z: 0.0074400348}
+      rotation: {x: 0.021433853, y: -0.027176399, z: -0.11978573, w: 0.99219626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandMiddle1
+      parentName: Foxnui_run:Character1_Ctrl_RightHand
+      position: {x: 0.067350514, y: -0.0702952, z: 0.0391376}
+      rotation: {x: 0.0047933157, y: -0.09399632, z: -0.11646545, w: 0.98872524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandMiddle2
+      parentName: Foxnui_run:Character1_Ctrl_RightHandMiddle1
+      position: {x: 0.022143291, y: -0.031589743, z: 0.008548314}
+      rotation: {x: 0.024089847, y: -0.031448428, z: -0.14366636, w: 0.988833}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandMiddle3
+      parentName: Foxnui_run:Character1_Ctrl_RightHandMiddle2
+      position: {x: 0.017064136, y: -0.02227654, z: 0.0077378578}
+      rotation: {x: 0.01783817, y: -0.021335093, z: -0.12550698, w: 0.9917029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandMiddle4
+      parentName: Foxnui_run:Character1_Ctrl_RightHandMiddle3
+      position: {x: 0.017411692, y: -0.020823598, z: 0.0060147583}
+      rotation: {x: 0.017840136, y: -0.021334965, z: -0.12550797, w: 0.99170274}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandRing1
+      parentName: Foxnui_run:Character1_Ctrl_RightHand
+      position: {x: 0.06987367, y: -0.076379105, z: 0.01863131}
+      rotation: {x: 0.04369922, y: 0.13604227, z: -0.12418901, w: 0.9819165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandRing2
+      parentName: Foxnui_run:Character1_Ctrl_RightHandRing1
+      position: {x: 0.020232549, y: -0.028717047, z: 0.009188747}
+      rotation: {x: 0.01845074, y: -0.023742625, z: -0.12875393, w: 0.99122065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandRing3
+      parentName: Foxnui_run:Character1_Ctrl_RightHandRing2
+      position: {x: 0.014625057, y: -0.01881905, z: 0.005566102}
+      rotation: {x: 0.016306523, y: -0.019512888, z: -0.106713645, w: 0.99396455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandRing4
+      parentName: Foxnui_run:Character1_Ctrl_RightHandRing3
+      position: {x: 0.016796611, y: -0.020099873, z: 0.006241566}
+      rotation: {x: 0.016305251, y: -0.019511824, z: -0.106714, w: 0.9939646}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandPinky1
+      parentName: Foxnui_run:Character1_Ctrl_RightHand
+      position: {x: 0.072369784, y: -0.081763476, z: 0.0014761809}
+      rotation: {x: 0.06336429, y: 0.24666913, z: -0.15479904, w: 0.9545557}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandPinky2
+      parentName: Foxnui_run:Character1_Ctrl_RightHandPinky1
+      position: {x: 0.017718969, y: -0.022225346, z: 0.007867437}
+      rotation: {x: 0.020138184, y: -0.026563076, z: -0.12489852, w: 0.99160945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandPinky3
+      parentName: Foxnui_run:Character1_Ctrl_RightHandPinky2
+      position: {x: 0.012080995, y: -0.015935367, z: 0.0053370986}
+      rotation: {x: 0.0146358805, y: -0.024623813, z: -0.12605725, w: 0.99160933}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_RightHandPinky4
+      parentName: Foxnui_run:Character1_Ctrl_RightHandPinky3
+      position: {x: 0.0134682115, y: -0.022658773, z: 0.005990273}
+      rotation: {x: 0.014636938, y: -0.024625963, z: -0.12605628, w: 0.9916094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Neck
+      parentName: Foxnui_run:Character1_Ctrl_Spine2
+      position: {x: -0, y: 0.14821094, z: 0.0014796737}
+      rotation: {x: -0.37930414, y: 0.07356294, z: 0.05669008, w: 0.9205993}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foxnui_run:Character1_Ctrl_Head
+      parentName: Foxnui_run:Character1_Ctrl_Neck
+      position: {x: -0, y: 0.13366763, z: 0.047390535}
+      rotation: {x: 0.10213206, y: -0.078337476, z: -0.0486985, w: 0.99048513}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -91,13 +1414,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
