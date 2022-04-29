@@ -20,6 +20,7 @@ public class Ghost : MonoBehaviour
     public NavMeshAgent navMesh;
 
     public float walkSpeed;
+    public int deathImageIndex;
 
     [HideInInspector] public Transform songPyeon;
 
@@ -72,7 +73,7 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (CheckIsSongPyeon(other))
+        if (CheckIsSongPyeon(other) && songPyeon == null)
         {
             isInsideSongPyeon = false;
         }
@@ -171,7 +172,7 @@ public class Ghost : MonoBehaviour
 
                     if (CheckKillPlayer())
                     {
-                        GameManager.instance.GameOver(0);
+                        GameManager.instance.GameOver(deathImageIndex);
                         chasingSoundPlayer.Stop();
                         yield break;
                     }
@@ -180,8 +181,8 @@ public class Ghost : MonoBehaviour
             }
             else
             {
-                yield return WaitTimeManager.WaitForSeconds(1f);
                 Patrol();
+                yield return WaitTimeManager.WaitForSeconds(1f);
             }
 
             yield return applyWaitTime;
