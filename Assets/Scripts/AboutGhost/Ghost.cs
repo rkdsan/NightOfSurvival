@@ -261,7 +261,7 @@ public class Ghost : MonoBehaviour
         Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
 
 
-        return !hit.collider.isTrigger && hit.collider.CompareTag("Player");
+        return !hit.collider.isTrigger && hit.collider.CompareTag(GameData.PLAYER_TAG);
     }
 
     protected void SetGlitch()

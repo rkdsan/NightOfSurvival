@@ -107,6 +107,9 @@ MonoBehaviour:
   explainComment: 
   lampLight: {fileID: 2375633320129372914}
   lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}
+  ghostLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!108 &2375633320129372914
 Light:
   m_ObjectHideFlags: 0
