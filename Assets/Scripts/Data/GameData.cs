@@ -13,11 +13,15 @@ public class GameData
     public const string IN_HAND_STRING = "InHand";
 
     /// <summary>
-    /// Layer Types
+    /// Layer
     /// </summary>
-    public static LayerMask PLAYER_LAYER = 1 << LayerMask.NameToLayer("Player");
-    public static LayerMask GHOST_LAYER = 1 << LayerMask.NameToLayer("Ghost");
-    public static LayerMask IN_HAND_LAYER = 1 << LayerMask.NameToLayer("InHand");
+    public static LayerMask PLAYER_LAYER = LayerMask.NameToLayer(PLAYER_TAG);
+    public static LayerMask GHOST_LAYER = LayerMask.NameToLayer(GHOST_TAG);
+    public static LayerMask IN_HAND_LAYER = LayerMask.NameToLayer(IN_HAND_STRING);
+
+    public static LayerMask PLAYER_LAYER_MASK = 1 << PLAYER_LAYER;
+    public static LayerMask GHOST_LAYER_MASK = 1 << GHOST_LAYER;
+    public static LayerMask IN_HAND_LAYER_MASK = 1 << IN_HAND_LAYER;
 
 
     /// <summary>

@@ -220,7 +220,7 @@ public class Ghost : MonoBehaviour
     protected bool CheckKillPlayer()
     {
         bool flag = Physics.Raycast
-            (transform.position + Vector3.up, transform.forward, out hit, 1.5f, GameData.PLAYER_LAYER);
+            (transform.position + Vector3.up, transform.forward, out hit, 1.5f, GameData.PLAYER_LAYER_MASK);
 
         return flag && !hit.collider.isTrigger;
     }

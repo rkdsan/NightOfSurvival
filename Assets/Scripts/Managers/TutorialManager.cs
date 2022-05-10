@@ -14,6 +14,8 @@ public class TutorialManager : MonoBehaviour
     private Color translucentColor;
     private Coroutine showCor;
 
+    private float waitTime;
+
     private void Awake()
     {
         TutoCommentSender.tutoManager = this;
@@ -23,11 +25,29 @@ public class TutorialManager : MonoBehaviour
 
     public void ShowTutoWindow(string comment)
     {
+        ShowTutoWindow(comment, 2f);
+    }
+
+    public void ShowTutoWindow(string comment, float time)
+    {
+        waitTime = time;
         guideText.gameObject.SetActive(true);
         backgroundImage.gameObject.SetActive(true);
+
         guideText.text = comment.Replace("\\n", "\n");
-        if(showCor != null) StopCoroutine(showCor);
+
+        if (showCor != null) StopCoroutine(showCor);
         showCor = StartCoroutine(Show());
+    }
+    public void StopShow()
+    {
+        if (showCor != null) 
+            StopCoroutine(showCor);
+
+        backgroundImage.color = Color.clear;
+        guideText.color = Color.clear;
+        backgroundImage.gameObject.SetActive(false);
+        guideText.gameObject.SetActive(false);
     }
 
     private IEnumerator Show()
@@ -35,7 +55,7 @@ public class TutorialManager : MonoBehaviour
         backgroundImage.DOColor(translucentColor, 1);
         guideText.DOColor(Color.white, 1);
 
-        yield return WaitTimeManager.WaitForSeconds(2f);
+        yield return WaitTimeManager.WaitForSeconds(waitTime);
         backgroundImage.DOColor(Color.clear, 1);
         guideText.DOColor(Color.clear, 1);
 
@@ -44,5 +64,5 @@ public class TutorialManager : MonoBehaviour
         guideText.gameObject.SetActive(false);
     }
 
-    
+
 }

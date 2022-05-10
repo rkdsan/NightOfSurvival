@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
 
     [Header("Image")]
     public Image fadeImage;
-    public Image[] gameOverImages;
     public Image gameOverImage;
     public Sprite[] gameOverSprites;
 
@@ -108,11 +107,8 @@ public class GameManager : MonoBehaviour
         dieBGM.Play();
         gameOverImage.sprite = gameOverSprites[index];
         gameOverImage.gameObject.SetActive(true);
-        gameOverImage.DOColor(Color.grey, 2);
+        gameOverImage.DOColor(Color.white, 2);
         
-        //gameOverImages[index].gameObject.SetActive(true);
-        //gameOverImages[index].DOColor(Color.grey, 2);
-
         yield return WaitTimeManager.WaitForSeconds(4);
 
         SFXPlayer.instance.StopAllSFX();

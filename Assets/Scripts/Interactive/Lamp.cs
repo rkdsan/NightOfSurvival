@@ -5,17 +5,19 @@ using DG.Tweening;
 
 public class Lamp : InteractiveObject
 {
+    //켜져있을 때, 꺼져있을 때 나오는 문자열
+    public const string LIGHT_ON_STRING = "LB: 끄기";
+    public const string LIGHT_OFF_STRING = "LB: 켜기";
+
     public Light lampLight;
     public AudioClip lampSound;
     public LayerMask ghostLayer;
 
     private Color _emissionColor;
     private Color _lightColor;
-    private Ray forFindGhostRay;
     private Material emissionMaterial;
 
     private bool _isOnLight;
-    private bool _isInGhost;
 
     void Awake()
     {
@@ -23,13 +25,9 @@ public class Lamp : InteractiveObject
         _emissionColor = lampLight.color;
         _lightColor = lampLight.color;
 
-        lampLight.enabled = _isOnLight;
-        explainComment = _isOnLight ? "LB: 끄기" : "LB: 켜기";
-        emissionMaterial.SetColor("_EmissionColor", _isOnLight ? _emissionColor : Color.black);
+        //Set Lamp 함수를 쓰면 사운드 재생돼서 직접적음
 
-        forFindGhostRay.direction = Vector3.zero;
-        forFindGhostRay.origin = transform.position;
-
+        SetLamp();
         StartCoroutine(BlinkLight());
     }
 
@@ -37,6 +35,7 @@ public class Lamp : InteractiveObject
     {
         _isOnLight = !_isOnLight;
         SetLamp();
+        SFXPlayer.instance.Play(lampSound);
     }
 
     private void SetLamp()
@@ -44,55 +43,34 @@ public class Lamp : InteractiveObject
         lampLight.enabled = _isOnLight;
         explainComment = _isOnLight ? "LB: 끄기" : "LB: 켜기";
         emissionMaterial.SetColor("_EmissionColor", _isOnLight ? _emissionColor : Color.black);
-        SFXPlayer.instance.Play(lampSound);
-        //if (_isOnLight)
-        //    lampLight.DOColor(Color.black, 0.3f)
-        //        .SetEase(Ease.InQuart)
-        //        .SetLoops(5, LoopType.Yoyo)
-        //        .OnComplete(() =>
-        //        {
-        //            lampLight.color = _lightColor;
-        //        });
     }
 
     private IEnumerator BlinkLight()
     {
+        //램프마다 깜빡임 딜레이가 다르게 하기위한 offset 설정
+        //WaitTimeManager에 있는 딕셔너리에 각각의 시간이 추가돼있는데
+        //실수로 하면 램프개수만큼 추가되어서 0~10 정수로 지정
+        yield return WaitTimeManager.WaitForSeconds(Random.Range(0, 10) * 0.1f);
+
         while (true)
         {
             if (_isOnLight && CheckIsInsideGhost())
             {
                 lampLight.DOColor(Color.black, 0.3f)
                 .SetEase(Ease.InQuart)
-                .SetLoops(5, LoopType.Yoyo)
+                .SetLoops(1, LoopType.Yoyo)
                 .OnComplete(() =>
                 {
                     lampLight.color = _lightColor;
                 });
             }
-            yield return WaitTimeManager.WaitForSeconds(2);
+            yield return WaitTimeManager.WaitForSeconds(1);
         }
     }
 
     private bool CheckIsInsideGhost()
     {
-        //Vector3 dir;
-        //foreach (Ghost ghost in Ghost.allGhostList)
-        //{
-        //    dir = transform.position - ghost.transform.position;
-        //    if(dir.magnitude < 10)
-        //    {
-        //        return true;
-        //    }
-        //}
-
-        //RaycastHit hit;
-        //bool flag = Physics.SphereCast(transform.position, 10, Vector3.left,
-        //    out hit, 0.1f, GameData.GHOST_LAYER);
-
-        //Debug.Log("결과: " + flag);
-        //return flag;
-
-        Collider[] cols = Physics.OverlapSphere(transform.position, 10, GameData.GHOST_LAYER);
+        Collider[] cols = Physics.OverlapSphere(transform.position, 20, GameData.GHOST_LAYER_MASK);
         if(cols.Length > 0)
         {
             return true;
@@ -101,5 +79,6 @@ public class Lamp : InteractiveObject
 
         //return false;
     }
+
 
 }
