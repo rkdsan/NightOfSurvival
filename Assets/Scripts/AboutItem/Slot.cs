@@ -62,13 +62,6 @@ public class Slot : MonoBehaviour
         SetCountText();
     }
 
-    public IEnumerator DownCountQueue()
-    {
-        yield return null;
-        itemCount--;
-        SetCountText();
-    }
-
     public void DeleteItem()
     {
         Destroy(item.gameObject);
@@ -93,7 +86,7 @@ public class Slot : MonoBehaviour
         //UseItem은 bool을 반환
         //true면 아이템을 소모 또는 아이템이 잘 사용됐다는 의미
         //false면 소모성이 아닌 아이템 또는 사정거리 등의 이유로 미사용
-        if(!item.UseItem()) return;
+        if (!item.UseItem()) return;
 
         ConsumeItem();
     }

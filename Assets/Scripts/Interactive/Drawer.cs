@@ -21,7 +21,7 @@ public class Drawer : InteractiveObject
         isOpen = false;
         originPos = transform.position;
         targetPos = targetTransform.position;
-        moveVector = (targetPos - originPos)/20;
+        moveVector = (targetPos - originPos)*0.05f;
     }
 
     private void Reset()
@@ -41,9 +41,6 @@ public class Drawer : InteractiveObject
     {
         isMoving = true;
 
-        if (isOpen) explainComment = closeString;
-        else explainComment = openString;
-
         int repeat = 20;
 
         while (repeat-- > 0)
@@ -55,6 +52,9 @@ public class Drawer : InteractiveObject
         isMoving = false;
         isOpen = !isOpen;
         moveVector *= -1;
+
+        if (isOpen) explainComment = closeString;
+        else explainComment = openString;
     }
 
 }

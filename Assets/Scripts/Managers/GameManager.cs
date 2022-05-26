@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("GameObject")]
     public GameObject player;
     public GameObject hideWindow;
+    public MeshRenderer protectiveCube;
 
     [Header("Image")]
     public Image fadeImage;

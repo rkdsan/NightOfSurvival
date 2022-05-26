@@ -191,5 +191,22 @@ public class InventoryManager : MonoBehaviour
         nowSlot.UseSlotItem();
     }
 
+    public Slot FindItem(string itemName)
+    {
+        foreach (Slot slot in slots)
+        {
+            //∫Ûƒ≠¿Ã∏È
+            if (slot.itemCount == 0)
+            {
+                break;
+            }
+            //∞∞¿∫≈€¿Ã∏È
+            else if (slot.item.itemName.Equals(itemName))
+            {
+                return slot;
+            }
+        }
+        return null;
+    }
 
 }
