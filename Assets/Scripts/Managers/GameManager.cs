@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     [Header("Sound")]
     public AudioSource dieBGM;
     public AudioClip dieSFX;
+    public AudioClip gameBGM;
 
     void Awake()
     {
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         Ghost.playerTransform = player.transform;
         Compass_InHand.playerTransform = player.transform;
         Cursor.lockState = CursorLockMode.Locked;
+        BGMPlayer.instance.SetAudioClip(gameBGM);
 
         fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)

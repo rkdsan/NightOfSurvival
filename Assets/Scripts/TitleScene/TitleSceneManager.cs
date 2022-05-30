@@ -10,7 +10,8 @@ public class TitleSceneManager : MonoBehaviour
 {
     public GameObject optionWindow;
     public GameObject ghostDictionary;
-    public AudioClip buttonClickSound; 
+    public AudioClip buttonClickSound;
+    public AudioClip titleBGM;
     public Image fadeImage;
 
     public void Awake()
@@ -24,10 +25,12 @@ public class TitleSceneManager : MonoBehaviour
 
     private void Start()
     {
+        BGMPlayer.instance.SetAudioClip(titleBGM);
         BGMPlayer.instance.source.Play();
 
         optionWindow.SetActive(false);
         ghostDictionary.SetActive(false);
+        
     }
 
     private void Ani_FadeImage()

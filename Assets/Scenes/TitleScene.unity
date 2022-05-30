@@ -1411,6 +1411,7 @@ MonoBehaviour:
   optionWindow: {fileID: 2096756333}
   ghostDictionary: {fileID: 1885398151}
   buttonClickSound: {fileID: 8300000, guid: 6b4c49e4f0c0a5046a44e099f60985cd, type: 3}
+  titleBGM: {fileID: 8300000, guid: 9abf30c85f4cbf74da0dcb4eb11f758f, type: 3}
   fadeImage: {fileID: 1694376529}
 --- !u!4 &868926541
 Transform:

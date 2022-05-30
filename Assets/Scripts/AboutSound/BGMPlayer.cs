@@ -29,4 +29,9 @@ public class BGMPlayer : MonoBehaviour
     {
         source.volume = PlayerPrefs.GetInt(BGMVolumeSetter.keyString, 30) * 0.01f;
     }
+
+    public void SetAudioClip(AudioClip clip)
+    {
+        source.clip = clip;
+    }
 }
