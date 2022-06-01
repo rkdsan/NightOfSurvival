@@ -17,6 +17,7 @@ public class LoadingSceneManager : MonoBehaviour
     }
     private void Start()
     {
+        BGMPlayer.instance.source.Stop();
         StartCoroutine(Load());
     }
 
@@ -50,6 +51,7 @@ public class LoadingSceneManager : MonoBehaviour
 
 
         }
+        BGMPlayer.instance.source.Play();
 
     }
 }
