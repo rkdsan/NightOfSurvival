@@ -51,9 +51,12 @@ public class GameManager : MonoBehaviour
         Ghost.playerTransform = player.transform;
         Compass_InHand.playerTransform = player.transform;
         Cursor.lockState = CursorLockMode.Locked;
-        
-        BGMPlayer.instance.SetAudioClip(gameBGM);
-        BGMPlayer.instance.source.Play();
+
+        if (BGMPlayer.instance != null)
+        {
+            BGMPlayer.instance.SetAudioClip(gameBGM);
+            BGMPlayer.instance.source.Play();
+        }
 
         fadeImage.gameObject.SetActive(true);
         fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)

@@ -26,7 +26,7 @@ public class DoorLock : InteractiveObject
         Slot slot = inven.FindItem(BEED_NAME);
         if (slot != null)
         {
-            slot.DownCount();
+            slot.ConsumeItem();
 
             if (lastIdx < 3)
             {

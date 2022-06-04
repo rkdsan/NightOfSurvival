@@ -8,18 +8,20 @@ using DG.Tweening;
 
 public class TitleSceneManager : MonoBehaviour
 {
+    public static TitleSceneManager instance;
     public GameObject optionWindow;
     public GameObject ghostDictionary;
     public AudioClip buttonClickSound;
     public AudioClip titleBGM;
     public Image fadeImage;
+    public GameObject prologueManager;
 
     public void Awake()
     {
+        instance = this;
         Application.targetFrameRate = 60;
         Cursor.lockState = CursorLockMode.Confined;
         Ani_FadeImage();
-
         
     }
 
@@ -42,10 +44,18 @@ public class TitleSceneManager : MonoBehaviour
 
     public void Button_NewGame()
     {
+        prologueManager.SetActive(true);
+
+        //SFXPlayer.instance.Play(buttonClickSound);
+        //fadeImage.raycastTarget = true;
+        //fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
+        //    .OnComplete(() => LoadingSceneManager.LoadScene("GameScene"));
+    }
+
+    public void LoadNextScene()
+    {
         SFXPlayer.instance.Play(buttonClickSound);
         fadeImage.raycastTarget = true;
-        //fadeImage.DOColor(Color.black, GameData.sceneChangeFadeTime)
-        //    .OnComplete(()=> SceneManager.LoadScene("GameScene"));
         fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => LoadingSceneManager.LoadScene("GameScene"));
     }
@@ -59,7 +69,7 @@ public class TitleSceneManager : MonoBehaviour
     public void Button_Continue()
     {
         SaveManager.instance.isLoadSaveGame = true;
-        Button_NewGame();
+        LoadNextScene();
     }
 
     public void Button_GhostDictionary()
