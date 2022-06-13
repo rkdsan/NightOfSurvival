@@ -46,7 +46,7 @@ public class TitleSceneManager : MonoBehaviour
     {
         prologueManager.SetActive(true);
 
-        //SFXPlayer.instance.Play(buttonClickSound);
+        SFXPlayer.instance.Play(buttonClickSound);
         //fadeImage.raycastTarget = true;
         //fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
         //    .OnComplete(() => LoadingSceneManager.LoadScene("GameScene"));
@@ -54,7 +54,7 @@ public class TitleSceneManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SFXPlayer.instance.Play(buttonClickSound);
+        
         fadeImage.raycastTarget = true;
         fadeImage.DOColor(Color.black, GameData.SCREEN_CHANGE_FADE_TIME)
             .OnComplete(() => LoadingSceneManager.LoadScene("GameScene"));
@@ -69,6 +69,7 @@ public class TitleSceneManager : MonoBehaviour
     public void Button_Continue()
     {
         SaveManager.instance.isLoadSaveGame = true;
+        SFXPlayer.instance.Play(buttonClickSound);
         LoadNextScene();
     }
 

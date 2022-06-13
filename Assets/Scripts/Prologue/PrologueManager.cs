@@ -16,6 +16,7 @@ public class PrologueManager : MonoBehaviour
             cut.gameObject.SetActive(false);
         }
         cuts[0].gameObject.SetActive(true);
+        LoadNextCut();
     }
 
     private void Update()
@@ -23,20 +24,24 @@ public class PrologueManager : MonoBehaviour
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)
             || Input.GetKeyDown(KeyCode.Return))
         {
-            if (cuts[cutIdx].isLast)
-            {
-                if (cuts.Count == cutIdx + 1)
-                {
-                    TitleSceneManager.instance.LoadNextScene();
-                    return;
-                }
-                cuts[cutIdx].gameObject.SetActive(false);
-                cuts[++cutIdx].gameObject.SetActive(true);
-                
-            }
-            cuts[cutIdx].TurnOnNextCut();
+            LoadNextCut();
         }
+    }
 
+    private void LoadNextCut()
+    {
+        if (cuts[cutIdx].isLast)
+        {
+            if (cuts.Count == cutIdx + 1)
+            {
+                TitleSceneManager.instance.LoadNextScene();
+                return;
+            }
+            cuts[cutIdx].gameObject.SetActive(false);
+            cuts[++cutIdx].gameObject.SetActive(true);
+
+        }
+        cuts[cutIdx].TurnOnNextCut();
     }
 
 

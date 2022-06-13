@@ -9,17 +9,27 @@ public class OnGroundItem : InteractiveObject
 
     private InHandItem inHandItem;
 
-    private void Awake()
+    //private void Awake()
+    //{
+    //    inHandItem = Instantiate(inHandPrefab, transform.position, Quaternion.identity)
+    //        .GetComponent<InHandItem>();
+    //    inHandItem.transform.parent = transform;
+    //    inHandItem.gameObject.SetActive(false);
+    //}
+
+    private void Start()
     {
         inHandItem = Instantiate(inHandPrefab, transform.position, Quaternion.identity)
             .GetComponent<InHandItem>();
         inHandItem.transform.parent = transform;
         inHandItem.gameObject.SetActive(false);
+        OnGroundItemManager.instance.allOnGroundItems.Add(this);
+        //Invoke("LateStart", 1);
     }
 
-    private void Start()
+    private void LateStart()
     {
-        OnGroundItemManager.instance.allOnGroundItems.Add(this);
+
     }
 
     private void Reset()

@@ -84,3 +84,19 @@ public class OnGroundItemData : JsonData
 
     }
 }
+
+[Serializable]
+public class LampData : JsonData
+{
+    public int[] id;
+    public bool[] isOn;
+
+    public LampData() : base()
+    {
+        int length = LampManager.instance.allLampDictionary.Count;
+        id = new int[length];
+        isOn = new bool[length];
+    }
+
+
+}

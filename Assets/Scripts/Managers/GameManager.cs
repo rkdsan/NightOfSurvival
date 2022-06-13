@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         fadeImage.DOColor(Color.clear, GameData.SCREEN_CHANGE_FADE_TIME)
                  .OnComplete(() => fadeImage.raycastTarget = false);
 
-        CheckLoadSaveGame();
+        Invoke("CheckLoadSaveGame", 0.1f);
     }
 
     private void CheckLoadSaveGame()

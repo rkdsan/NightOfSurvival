@@ -8,10 +8,12 @@ public class Lamp : InteractiveObject
     //켜져있을 때, 꺼져있을 때 나오는 문자열
     public const string LIGHT_ON_STRING = "LB: 끄기";
     public const string LIGHT_OFF_STRING = "LB: 켜기";
+    public static int idSetter = 0;
 
     public Light lampLight;
     public AudioClip lampSound;
     public LayerMask ghostLayer;
+    public int id;
 
     private Color _emissionColor;
     private Color _lightColor;
@@ -19,16 +21,33 @@ public class Lamp : InteractiveObject
 
     private bool _isOnLight;
 
-    void Awake()
+    //void Awake()
+    //{
+    //    emissionMaterial = GetComponent<MeshRenderer>().materials[3];
+    //    _emissionColor = lampLight.color;
+    //    _lightColor = lampLight.color;
+
+    //    //Set Lamp 함수를 쓰면 사운드 재생돼서 직접적음
+    //    SettingSave();
+    //    SetLamp();
+    //    StartCoroutine(BlinkLight());
+    //}
+
+    private void Start()
     {
         emissionMaterial = GetComponent<MeshRenderer>().materials[3];
         _emissionColor = lampLight.color;
         _lightColor = lampLight.color;
 
-        //Set Lamp 함수를 쓰면 사운드 재생돼서 직접적음
-
+        SettingSave();
         SetLamp();
         StartCoroutine(BlinkLight());
+    }
+
+    private void SettingSave()
+    {
+        id = idSetter++;
+        LampManager.instance.allLampDictionary.Add(id, this);
     }
 
     public override void Interact()
@@ -36,6 +55,12 @@ public class Lamp : InteractiveObject
         _isOnLight = !_isOnLight;
         SetLamp();
         SFXPlayer.instance.Play(lampSound);
+    }
+
+    public void SetLamp(bool isOnLight)
+    {
+        _isOnLight = isOnLight;
+        SetLamp();
     }
 
     private void SetLamp()

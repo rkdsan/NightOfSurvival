@@ -9,6 +9,7 @@ public class GameData
     /// </summary>
     public const string PLAYER_TAG = "Player";
     public const string GHOST_TAG = "Ghost";
+    public const string UNTAGGED_TAG = "Untagged";
     public const string INTERACTIVE_OBJECT_TAG = "InteractiveObject";
     public const string IN_HAND_STRING = "InHand";
 
