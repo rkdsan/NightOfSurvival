@@ -17,6 +17,7 @@ public class DarkZone : MonoBehaviour
     {
         inDarkTime = 0;
         inPlayer = false;
+        playerLayer = GameData.PLAYER_LAYER_MASK;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,6 +51,7 @@ public class DarkZone : MonoBehaviour
             {
                 if (lamp.lampLight.enabled)
                 {
+                    colls = Physics.OverlapSphere(lamp.transform.position, 3f, playerLayer);
                     Debug.Log("Length: " + colls.Length);
                     if (colls.Length > 0)
                     {
@@ -60,7 +62,7 @@ public class DarkZone : MonoBehaviour
             }
 
             inDarkTime++;
-            //Debug.Log("어둠속에 있던 시간:" + inDarkTime);
+            Debug.Log("어둠속에 있던 시간:" + inDarkTime);
             if (CheckOverTime()) break;
             yield return WaitTimeManager.WaitForSeconds(1);
         }

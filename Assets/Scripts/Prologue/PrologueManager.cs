@@ -26,6 +26,10 @@ public class PrologueManager : MonoBehaviour
         {
             LoadNextCut();
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void LoadNextCut()

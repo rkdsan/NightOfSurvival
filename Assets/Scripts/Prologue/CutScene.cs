@@ -15,6 +15,7 @@ public class CutScene : MonoBehaviour
     private void OnEnable()
     {
         imageIndex = 0;
+        isLast = false;
         foreach(var img in images)
         {
             img.color = Color.clear;
@@ -32,5 +33,6 @@ public class CutScene : MonoBehaviour
 
         isLast = imageIndex == images.Count;
     }
+
 }
 
