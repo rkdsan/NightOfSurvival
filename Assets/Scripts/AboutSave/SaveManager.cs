@@ -91,7 +91,7 @@ public class SaveManager : MonoBehaviour
         var data = new PlayerData();
 
         data.pos = GameManager.instance.player.transform.position;
-
+        Debug.Log("플레이어 위치저장: " + data.pos);
         SaveJsonData(data);
     }
 
@@ -151,7 +151,11 @@ public class SaveManager : MonoBehaviour
         PlayerData playerData = new PlayerData();
         playerData = LoadJsonData<PlayerData>(playerData.typeName);
 
+        GameManager.instance.playerController.controller.enabled = false;
         GameManager.instance.player.transform.position = playerData.pos;
+        //Physics.SyncTransforms();
+        GameManager.instance.playerController.controller.enabled = true;
+
     }
 
     private void LoadInventoryData()
@@ -218,7 +222,6 @@ public class SaveManager : MonoBehaviour
 
         foreach(var i in data.id)
         {
-            Debug.Log("키: " + i);
             dic[i].SetLamp(data.isOn[i]);
         }
 

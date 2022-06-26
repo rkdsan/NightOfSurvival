@@ -18,8 +18,8 @@ public abstract class InHandItem : MonoBehaviour
         gameObject.layer = LayerMask.NameToLayer(GameData.IN_HAND_STRING);
     }
 
-
     //false면 아이템 미사용
     public abstract bool UseItem();
 
 }
+

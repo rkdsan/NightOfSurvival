@@ -9,13 +9,6 @@ public class OnGroundItem : InteractiveObject
 
     private InHandItem inHandItem;
 
-    //private void Awake()
-    //{
-    //    inHandItem = Instantiate(inHandPrefab, transform.position, Quaternion.identity)
-    //        .GetComponent<InHandItem>();
-    //    inHandItem.transform.parent = transform;
-    //    inHandItem.gameObject.SetActive(false);
-    //}
 
     private void Start()
     {
@@ -25,11 +18,6 @@ public class OnGroundItem : InteractiveObject
         inHandItem.gameObject.SetActive(false);
         OnGroundItemManager.instance.allOnGroundItems.Add(this);
         //Invoke("LateStart", 1);
-    }
-
-    private void LateStart()
-    {
-
     }
 
     private void Reset()

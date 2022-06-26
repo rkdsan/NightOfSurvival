@@ -66,15 +66,15 @@ public class Lamp : InteractiveObject
     private void SetLamp()
     {
         lampLight.enabled = _isOnLight;
-        explainComment = _isOnLight ? "LB: 끄기" : "LB: 켜기";
+        explainComment = _isOnLight ? LIGHT_ON_STRING : LIGHT_OFF_STRING;
         emissionMaterial.SetColor("_EmissionColor", _isOnLight ? _emissionColor : Color.black);
     }
 
     private IEnumerator BlinkLight()
     {
-        //램프마다 깜빡임 딜레이가 다르게 하기위한 offset 설정
+        //램프마다 깜빡임 딜레이를 다르게 하기위한 offset 설정
         //WaitTimeManager에 있는 딕셔너리에 각각의 시간이 추가돼있는데
-        //실수로 하면 램프개수만큼 추가되어서 0~10 정수로 지정
+        //실수(0.0f ~ 0.1f)로 하면 각각 다른 실수가 나와 딕셔너리에 많이 추가돼서 정수로 10개만 나오도록 함.
         yield return WaitTimeManager.WaitForSeconds(Random.Range(0, 10) * 0.1f);
 
         while (true)
