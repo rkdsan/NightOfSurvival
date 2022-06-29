@@ -7,7 +7,6 @@ public class SFXPlayer : MonoBehaviour
     public static SFXPlayer instance;
     public List<AudioSource> sfxPlayers;
 
-    private int playerIdx;
     private float sfxVolume;
     private void Awake()
     {
@@ -19,7 +18,6 @@ public class SFXPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        playerIdx = 0;
         SetVolume();
         DontDestroyOnLoad(gameObject);
     }
@@ -73,7 +71,6 @@ public class SFXPlayer : MonoBehaviour
         newPlayer.playOnAwake = false;
         newPlayer.volume = sfxVolume;
 
-        playerIdx++;
         sfxPlayers.Add(newPlayer);
         return newPlayer;
     }

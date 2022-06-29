@@ -6,6 +6,7 @@ using UnityEngine;
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
+    public const string IS_SAVE_KEY = "IsSave";
 
     [HideInInspector] public bool isLoadSaveGame;
 
@@ -24,11 +25,11 @@ public class SaveManager : MonoBehaviour
 
     public bool HasSaveData()
     {
-        return PlayerPrefs.HasKey("IsSave");
+        return PlayerPrefs.HasKey(IS_SAVE_KEY);
     }
     public void Save()
     {
-        PlayerPrefs.SetInt("IsSave", 0);
+        PlayerPrefs.SetInt(IS_SAVE_KEY, 0);
         SavePlayerData();
         SaveInventoryData();
         SaveOnGroundItemData();
@@ -53,7 +54,6 @@ public class SaveManager : MonoBehaviour
 
         GC.Collect();
     }
-
 
     private void SaveJsonData(JsonData data) 
     {
@@ -91,7 +91,6 @@ public class SaveManager : MonoBehaviour
         var data = new PlayerData();
 
         data.pos = GameManager.instance.player.transform.position;
-        Debug.Log("플레이어 위치저장: " + data.pos);
         SaveJsonData(data);
     }
 

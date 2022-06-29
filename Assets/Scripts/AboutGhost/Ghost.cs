@@ -176,7 +176,6 @@ public class Ghost : MonoBehaviour
                         chasingSoundPlayer.Stop();
                         yield break;
                     }
-
                 }
             }
             else

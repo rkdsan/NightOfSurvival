@@ -12,7 +12,6 @@ public class Slot : MonoBehaviour
     [HideInInspector] public InHandItem item;
     [HideInInspector] public int itemCount;
 
-
     public void NewItem(InHandItem _item)
     {
         item = _item;

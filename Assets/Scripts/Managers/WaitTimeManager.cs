@@ -25,5 +25,4 @@ public class WaitTimeManager
         return waitFixedUpdate;
     }
 
-
 }
