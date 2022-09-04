@@ -4,6 +4,7 @@
 /[Ll]ogs/
 /[Bb]uild/
 /[Bb]uilds/
+/[Uu]serSettings/
 /Assets/AssetStoreTools*
 Assets/EntityCache
  
