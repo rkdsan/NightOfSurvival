@@ -7,7 +7,9 @@ public class DarkZone : MonoBehaviour
     public Lamp[] lamps;
     public LayerMask playerLayer;
     public ShadowGhost shadowGhost;
+    public AudioClip heartBeatSound;
 
+    private AudioSource heartBeatAudio;
     private Coroutine Co_CheckInLamp;
     private Collider[] colls;
     private int inDarkTime;
@@ -35,6 +37,7 @@ public class DarkZone : MonoBehaviour
         if(other.CompareTag("Player") && Co_CheckInLamp != null)
         {
             StopCoroutine(Co_CheckInLamp);
+            heartBeatAudio.Stop();
             inPlayer = false;
         }
     }
@@ -44,6 +47,8 @@ public class DarkZone : MonoBehaviour
         inPlayer = true;
         TutorialManager.instance.ShowTutoWindow
             ("그슨대의 구역에 진입하였습니다.\n어둠 속을 벗어나세요.");
+
+        heartBeatAudio = SFXPlayer.instance.Play(heartBeatSound);
 
         while (true)
         {
@@ -70,7 +75,7 @@ public class DarkZone : MonoBehaviour
 
     public bool CheckOverTime()
     {
-        if(inDarkTime > 10)
+        if(inDarkTime > 14)
         {
             shadowGhost.StartKillPlayer();
             return true;
