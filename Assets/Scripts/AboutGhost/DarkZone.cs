@@ -57,7 +57,7 @@ public class DarkZone : MonoBehaviour
                 if (lamp.lampLight.enabled)
                 {
                     colls = Physics.OverlapSphere(lamp.transform.position, 3f, playerLayer);
-                    Debug.Log("Length: " + colls.Length);
+                    //Debug.Log("Length: " + colls.Length);
                     if (colls.Length > 0)
                     {
                         inDarkTime = -1;
@@ -67,13 +67,14 @@ public class DarkZone : MonoBehaviour
             }
 
             inDarkTime++;
+            SetHeartBeatSound();
             //Debug.Log("어둠속에 있던 시간:" + inDarkTime);
             if (CheckOverTime()) break;
             yield return WaitTimeManager.WaitForSeconds(1);
         }
     }
 
-    public bool CheckOverTime()
+    private bool CheckOverTime()
     {
         if(inDarkTime > 14)
         {
@@ -83,5 +84,17 @@ public class DarkZone : MonoBehaviour
         return false;
     }
 
+    private void SetHeartBeatSound()
+    {
+        if (inDarkTime > 0)
+        {
+            heartBeatAudio ??= SFXPlayer.instance.Play(heartBeatSound);
+        }
+        else
+        {
+            heartBeatAudio?.Stop();
+            heartBeatAudio = null;
+        }
+    }
 
 }
