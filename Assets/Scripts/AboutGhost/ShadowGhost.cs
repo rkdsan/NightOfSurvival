@@ -27,7 +27,7 @@ public class ShadowGhost : MonoBehaviour
         playerController.onTab = true;
         playerController.canMove = false;
 
-        transform.LookAt(playerTransform.position + Vector3.up * 0.3f);
+        transform.LookAt(playerTransform.position + Vector3.up * 0.5f);
 
         while (GetDistance() > 1)
         {

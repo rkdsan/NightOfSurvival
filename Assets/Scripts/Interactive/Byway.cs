@@ -9,7 +9,7 @@ public class Byway : InteractiveObject
     public GameObject targetObj;
     public AudioClip openSound;
 
-    private float checkTime = 0;
+    //private float checkTime = 0;
     private Coroutine answerCor;
 
     public override void Interact()
