@@ -103,13 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011c0a8a38ac22b46900a58c531141e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "\uB7A8\uD504"
+  objectName: "\uB4F1\uBD88"
   explainComment: 
   lampLight: {fileID: 2375633320129372914}
   lampSound: {fileID: 8300000, guid: 7bb5c6779e33ad34e974150004e91cce, type: 3}
   ghostLayer:
     serializedVersion: 2
     m_Bits: 128
+  id: 0
 --- !u!108 &2375633320129372914
 Light:
   m_ObjectHideFlags: 0

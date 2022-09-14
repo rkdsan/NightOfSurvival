@@ -179,6 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0347f919b540b440a52f791189372f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "\uC138\uC774\uBE0C \uD3EC\uC778\uD2B8"
+  objectName: "\uD478\uB978 \uB4F1\uBD88"
   explainComment: "LB: \uC800\uC7A5\uD558\uAE30"
   lampLight: {fileID: 3918357770159242958}
