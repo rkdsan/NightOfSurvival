@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using DG.Tweening;
 
 public class Lamp : InteractiveObject
@@ -15,9 +16,9 @@ public class Lamp : InteractiveObject
     public LayerMask ghostLayer;
     public int id;
 
-    private Color _emissionColor;
     private Color _lightColor;
     private Material emissionMaterial;
+    private Collider[] insideGhostCols;
 
     private bool _isOnLight;
 
@@ -36,7 +37,6 @@ public class Lamp : InteractiveObject
     private void Start()
     {
         emissionMaterial = GetComponent<MeshRenderer>().materials[3];
-        _emissionColor = lampLight.color;
         _lightColor = lampLight.color;
 
         SettingSave();
@@ -67,7 +67,7 @@ public class Lamp : InteractiveObject
     {
         lampLight.enabled = _isOnLight;
         explainComment = _isOnLight ? LIGHT_ON_STRING : LIGHT_OFF_STRING;
-        emissionMaterial.SetColor("_EmissionColor", _isOnLight ? _emissionColor : Color.black);
+        emissionMaterial.SetColor("_EmissionColor", _isOnLight ? _lightColor : Color.black);
     }
 
     private IEnumerator BlinkLight()
@@ -79,28 +79,37 @@ public class Lamp : InteractiveObject
 
         while (true)
         {
+            float waitTime = 2f;
+
             if (_isOnLight && CheckIsInsideGhost())
             {
-                lampLight.DOColor(Color.black, 0.3f)
+                //가까울수록 기다리는 시간 줄여서 더 깜빡이도록
+                float closeGhostDis = insideGhostCols.Min(t => (transform.position - t.transform.position).sqrMagnitude);
+                float subTime = 2 / (closeGhostDis * 0.1f);
+                waitTime -= subTime > 1.7f ? 1.7f : subTime;
+
+                lampLight.DOColor(Color.black, 0.4f - (0.3f/waitTime)*0.2f)
                 .SetEase(Ease.InQuart)
                 .SetLoops(1, LoopType.Yoyo)
+                .OnUpdate(() => emissionMaterial.SetColor("_EmissionColor", lampLight.color))
                 .OnComplete(() =>
                 {
                     lampLight.color = _lightColor;
+                    emissionMaterial.SetColor("_EmissionColor", lampLight.color);
                 });
+                Debug.Log("waitTime: " + waitTime);
             }
-            yield return WaitTimeManager.WaitForSeconds(1);
+            
+            yield return WaitTimeManager.WaitForSeconds(waitTime);
         }
     }
 
     private bool CheckIsInsideGhost()
     {
-        Collider[] cols = Physics.OverlapSphere(transform.position, 20, GameData.GHOST_LAYER_MASK);
-        if(cols.Length > 0)
-        {
-            return true;
-        }
-        return false;
+        insideGhostCols = Physics.OverlapSphere(transform.position, 20, GameData.GHOST_LAYER_MASK);
+
+
+        return insideGhostCols.Length > 0;
 
         //return false;
     }
