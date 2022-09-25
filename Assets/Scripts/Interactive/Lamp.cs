@@ -82,19 +82,21 @@ public class Lamp : InteractiveObject
         {
             float waitTime = 2f;
 
+            DG.Tweening.Core.TweenerCore<Color, Color, DG.Tweening.Plugins.Options.ColorOptions> tweener = null;
+
             if (_isOnLight && CheckIsInsideGhost())
             {
                 //가까울수록 기다리는 시간 줄여서 더 깜빡이도록
                 float closeGhostDis = insideGhostCols.Min(t => (transform.position - t.transform.position).sqrMagnitude);
                 int maxRan = 20;
-                if (closeGhostDis < 70)
-                    maxRan = 8;
+                if (closeGhostDis < 64)
+                    maxRan = 5;
 
                 waitTime = Random.Range(1, maxRan) * 0.1f;
-                float blickTime = waitTime > 0.4f ? 0.2f : waitTime * 0.5f;
-                lampLight.DOColor(Color.black, 0.4f - blickTime)
+                float blickTime = waitTime > 0.4f ? 0.2f : waitTime * 0.6f;
+
+                lampLight.DOColor(Color.black, blickTime)
                 .SetEase(Ease.InQuart)
-                .SetLoops(1, LoopType.Yoyo)
                 .OnUpdate(() => emissionMaterial.SetColor("_EmissionColor", lampLight.color))
                 .OnComplete(() =>
                 {
