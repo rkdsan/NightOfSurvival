@@ -21,6 +21,7 @@ public class Lamp : InteractiveObject
     private Collider[] insideGhostCols;
 
     private bool _isOnLight;
+    private int insideCheckDistance = 20;
 
     //void Awake()
     //{
@@ -85,10 +86,13 @@ public class Lamp : InteractiveObject
             {
                 //가까울수록 기다리는 시간 줄여서 더 깜빡이도록
                 float closeGhostDis = insideGhostCols.Min(t => (transform.position - t.transform.position).sqrMagnitude);
-                float subTime = 2 / (closeGhostDis * 0.1f);
-                waitTime -= subTime > 1.7f ? 1.7f : subTime;
+                int maxRan = 20;
+                if (closeGhostDis < 70)
+                    maxRan = 8;
 
-                lampLight.DOColor(Color.black, 0.4f - (0.3f/waitTime)*0.2f)
+                waitTime = Random.Range(1, maxRan) * 0.1f;
+                float blickTime = waitTime > 0.4f ? 0.2f : waitTime * 0.5f;
+                lampLight.DOColor(Color.black, 0.4f - blickTime)
                 .SetEase(Ease.InQuart)
                 .SetLoops(1, LoopType.Yoyo)
                 .OnUpdate(() => emissionMaterial.SetColor("_EmissionColor", lampLight.color))
@@ -97,7 +101,6 @@ public class Lamp : InteractiveObject
                     lampLight.color = _lightColor;
                     emissionMaterial.SetColor("_EmissionColor", lampLight.color);
                 });
-                Debug.Log("waitTime: " + waitTime);
             }
             
             yield return WaitTimeManager.WaitForSeconds(waitTime);
@@ -106,12 +109,10 @@ public class Lamp : InteractiveObject
 
     private bool CheckIsInsideGhost()
     {
-        insideGhostCols = Physics.OverlapSphere(transform.position, 20, GameData.GHOST_LAYER_MASK);
+        insideGhostCols = Physics.OverlapSphere(transform.position, insideCheckDistance, GameData.GHOST_LAYER_MASK);
 
 
         return insideGhostCols.Length > 0;
-
-        //return false;
     }
 
 
