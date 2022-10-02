@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("GameObject")]
     public GameObject player;
     public GameObject hideWindow;
+    public GameObject FinalPoint;
     public MeshRenderer protectiveCube;
 
     [Header("Image")]
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         Slot.inventoryManager = inventoryManager;
         Ghost.playerTransform = player.transform;
         Compass_InHand.playerTransform = player.transform;
+        Compass_InHand.target = FinalPoint.transform;
         Cursor.lockState = CursorLockMode.Locked;
 
         if (BGMPlayer.instance != null)
