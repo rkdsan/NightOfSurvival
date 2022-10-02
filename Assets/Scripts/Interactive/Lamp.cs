@@ -82,8 +82,6 @@ public class Lamp : InteractiveObject
         {
             float waitTime = 2f;
 
-            DG.Tweening.Core.TweenerCore<Color, Color, DG.Tweening.Plugins.Options.ColorOptions> tweener = null;
-
             if (_isOnLight && CheckIsInsideGhost())
             {
                 //가까울수록 기다리는 시간 줄여서 더 깜빡이도록
