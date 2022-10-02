@@ -6,6 +6,7 @@ public class SFXPlayer : MonoBehaviour
 {
     public static SFXPlayer instance;
     public List<AudioSource> sfxPlayers;
+    public List<AudioSource> managedPlayers = new List<AudioSource>();
 
     private float sfxVolume;
     private void Awake()
@@ -25,11 +26,14 @@ public class SFXPlayer : MonoBehaviour
     public void SetVolume()
     {
         sfxVolume = PlayerPrefs.GetInt(SFXVolumeSetter.keyString, 30) * 0.01f;
-        foreach(AudioSource sfxplayer in sfxPlayers)
-        {
-            sfxplayer.volume = sfxVolume;
-        }
+        foreach(AudioSource player in sfxPlayers)
+            player.volume = sfxVolume;
+
+        foreach (var player in managedPlayers)
+            player.volume = sfxVolume;
     }
+
+    public float GetVolume() => sfxVolume;
 
     public AudioSource Play(AudioClip clip)
     {

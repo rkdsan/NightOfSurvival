@@ -13,6 +13,7 @@ public class Ghost : MonoBehaviour
 
     public AudioClip chasingSoundClip;
     public AudioClip neckCrackingSoundClip;
+    public AudioSource baseSound;
     public LayerMask playerMask;
     public Transform[] patrolPoints;
 
@@ -52,6 +53,11 @@ public class Ghost : MonoBehaviour
     {
         glitch = GameManager.instance.glitch;
         _returnTime = 5;
+        if (baseSound != null)
+        {
+            SFXPlayer.instance.managedPlayers.Add(baseSound);
+            baseSound.volume = SFXPlayer.instance.GetVolume();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
