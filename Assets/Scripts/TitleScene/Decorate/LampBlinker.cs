@@ -33,12 +33,12 @@ public class LampBlinker : MonoBehaviour
             _emissionMaterial.SetColor("_EmissionColor", lampLight.color);
             yield return WaitTimeManager.WaitForSeconds(waitTime);
 
-            if ((waitTime > 1f && counter < 1) || counter < 6)
+            if ((waitTime > 1f && counter < 1) || counter < 4)
                 continue;
 
             counter = 0;
             waitTime = 0.2f;
-            int repeat = Random.Range(7, 15);
+            int repeat = Random.Range(4, 8);
             for (int i = 0; i < repeat; i++)
             {
                 ExecuteDOColor();
