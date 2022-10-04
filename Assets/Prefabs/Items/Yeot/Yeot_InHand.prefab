@@ -98,5 +98,5 @@ MonoBehaviour:
   offsetPosition: {x: 0, y: 0.18, z: 0}
   offsetRotate: {x: -45, y: -140, z: -200}
   itemName: "\uC5FF"
-  canCraft: 0
+  canCraft: 1
   isConsumable: 0

@@ -6,7 +6,7 @@ public class CraftRecipe
 {
     public static List<string[]> recipeList = new List<string[]>
     {
-        new string[]{"엿", "물병", "끈끈이"},
+        new string[]{"엿", "물이 담긴 호리병", "물엿이 담긴 호리병"},
         new string[]{"정육면체", "구체", "정육구체" }
     };
     

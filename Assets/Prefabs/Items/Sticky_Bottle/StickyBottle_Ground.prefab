@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6244ab4fbc8a7fd45bfb939e07e722be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: "\uD638\uB9AC\uBCD1"
+  objectName: "\uBB3C\uC5FF\uC774 \uB2F4\uAE34 \uD638\uB9AC\uBCD1"
   explainComment: "LB: \uC90D\uAE30"
   inHandPrefab: {fileID: 3805330687004305493, guid: b03273a8ca8c677418507cd72aaaba84, type: 3}
 --- !u!136 &-6079096470714386006

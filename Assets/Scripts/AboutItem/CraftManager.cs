@@ -88,8 +88,8 @@ public class CraftManager : MonoBehaviour
     IEnumerator MakeItem(OnGroundItem item)
     {
         isCrafting = true;
-        yield return new WaitForSeconds(1);
-        InHandItem temp = Instantiate(item.gameObject).GetComponent<InHandItem>();
+        yield return new WaitForSeconds(0.5f);
+        InHandItem temp = Instantiate(item.inHandPrefab).GetComponent<InHandItem>();
 
         for (int i = 0; i < craftImages.Length; i++)
         {
