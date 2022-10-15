@@ -102,7 +102,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &955383156899590510
 Transform:
@@ -201,7 +201,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &1019635028383549360
 Transform:
@@ -3690,7 +3690,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &3722137708824796541
 Transform:
@@ -3967,7 +3967,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &1706962987943098783
 Transform:
@@ -4429,7 +4429,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2
+  m_StaticEditorFlags: 10
   m_IsActive: 1
 --- !u!4 &6886416458858032284
 Transform:
@@ -5408,7 +5408,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &4368580091460390227
 Transform:
@@ -6201,7 +6201,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &2789629714311383595
 Transform:
@@ -6673,7 +6673,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &5088451901364913157
 Transform:
@@ -6760,7 +6760,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &3978229379346844313
 Transform:
@@ -7506,7 +7506,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &3804357106992320606
 Transform:
@@ -7764,7 +7764,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &6573886826517004279
 Transform:
@@ -9018,7 +9018,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &394965134793705169
 Transform:
@@ -9971,7 +9971,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &287480283074082214
 Transform:
@@ -11368,7 +11368,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &8195006285954473000
 Transform:
@@ -11544,7 +11544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &455075411041251472
 Transform:
@@ -12216,6 +12216,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
       propertyPath: m_Name
       value: Chiffonier_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
@@ -14816,6 +14820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrawerDesk
       objectReference: {fileID: 0}
+    - target: {fileID: 3548151244858248763, guid: 577325bc0f7e323458561276df62c288, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4212625344883233921, guid: 577325bc0f7e323458561276df62c288, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -14871,6 +14879,18 @@ PrefabInstance:
     - target: {fileID: 4212625344883233921, guid: 577325bc0f7e323458561276df62c288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911791162732572530, guid: 577325bc0f7e323458561276df62c288, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069326328070095778, guid: 577325bc0f7e323458561276df62c288, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226242643362050586, guid: 577325bc0f7e323458561276df62c288, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577325bc0f7e323458561276df62c288, type: 3}
@@ -16478,6 +16498,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
       propertyPath: m_Name
       value: Chiffonier_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb17f0d99d5b2f24487ae3859fc4b29c, type: 3}
