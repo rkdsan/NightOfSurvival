@@ -682,6 +682,7 @@ MonoBehaviour:
   - {fileID: 1569653589}
   - {fileID: 1616627074}
   - {fileID: 1304207586}
+  CanCancel: 0
 --- !u!1 &1509757154
 GameObject:
   m_ObjectHideFlags: 0

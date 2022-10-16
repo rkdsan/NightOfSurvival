@@ -2700,6 +2700,7 @@ MonoBehaviour:
   sfxPlayers:
   - {fileID: 938904199}
   - {fileID: 938904198}
+  managedPlayers: []
 --- !u!1 &1001061575
 GameObject:
   m_ObjectHideFlags: 0
@@ -6237,6 +6238,7 @@ MonoBehaviour:
   - {fileID: 1793584027}
   - {fileID: 92505034}
   - {fileID: 1866229693}
+  CanCancel: 1
 --- !u!1 &2096756333
 GameObject:
   m_ObjectHideFlags: 0

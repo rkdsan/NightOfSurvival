@@ -5,6 +5,7 @@ using UnityEngine;
 public class PrologueManager : MonoBehaviour
 {
     public List<CutScene> cuts;
+    public bool CanCancel;
 
     private int cutIdx = 0;
 
@@ -26,7 +27,7 @@ public class PrologueManager : MonoBehaviour
         {
             LoadNextCut();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Escape) && CanCancel)
         {
             gameObject.SetActive(false);
         }

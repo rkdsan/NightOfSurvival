@@ -18,6 +18,7 @@ public class LoadingSceneManager : MonoBehaviour
     private void Start()
     {
         BGMPlayer.instance.source.Stop();
+        SFXPlayer.instance.StopAllSFX();
         StartCoroutine(Load());
     }
 
