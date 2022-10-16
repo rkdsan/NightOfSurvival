@@ -7,6 +7,7 @@ public class DoorLock : InteractiveObject
 {
     public const string BEED_NAME = "±¸½½";
     public GameObject[] beeds;
+    public GameObject BlockObject;
 
     private InventoryManager inven;
 
@@ -32,16 +33,18 @@ public class DoorLock : InteractiveObject
             {
                 beeds[lastIdx++].SetActive(true);
             }
-            else
+
+            if(lastIdx == 3)
             {
                 OpenDoor();
             }
+
         }
     }
 
     private void OpenDoor()
     {
-        
+        Destroy(BlockObject);
         
 
     }
