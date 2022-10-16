@@ -265,7 +265,6 @@ public class Ghost : MonoBehaviour
         Vector3 dir = playerTransform.position - (transform.position + Vector3.up * 0.1f);
         Physics.Raycast(transform.position + Vector3.up * 0.1f, dir, out hit);
 
-
         return !hit.collider.isTrigger && hit.collider.CompareTag(GameData.PLAYER_TAG);
     }
 

@@ -6617,6 +6617,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 474784387}
     m_Modifications:
+    - target: {fileID: 3956611823499959840, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956611823499959840, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956611824337826117, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956611824337826117, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c736e7b007181a4e8938c6b70f15244, type: 3}
+    - target: {fileID: 3956611824337826117, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 22fd9bd025634694783caac251c1298d, type: 3}
+    - target: {fileID: 3956611824337826117, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
+      propertyPath: explainSpriteList.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 811b0bd832a58ff40964e34e2140f346, type: 3}
     - target: {fileID: 3956611824682068259, guid: 53d1ecebc45b43e4684c92c3b09739e1, type: 3}
       propertyPath: m_Name
       value: GhostDictionary
