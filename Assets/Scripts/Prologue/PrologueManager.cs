@@ -38,7 +38,10 @@ public class PrologueManager : MonoBehaviour
         {
             if (cuts.Count == cutIdx + 1)
             {
-                TitleSceneManager.instance.LoadNextScene();
+                if (TitleSceneManager.instance == null)
+                    LoadingSceneManager.LoadScene("TitleScene");
+                else 
+                    TitleSceneManager.instance.LoadNextScene();
                 return;
             }
             cuts[cutIdx].gameObject.SetActive(false);
