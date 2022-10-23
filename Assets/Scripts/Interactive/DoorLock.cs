@@ -8,6 +8,7 @@ public class DoorLock : InteractiveObject
     public const string BEED_NAME = "±¸½½";
     public GameObject[] beeds;
     public GameObject BlockObject;
+    public GameObject Clasp;
 
     private InventoryManager inven;
 
@@ -45,7 +46,7 @@ public class DoorLock : InteractiveObject
     private void OpenDoor()
     {
         Destroy(BlockObject);
-        
+        Clasp.SetActive(false);
 
     }
 
